@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Sample Load - Combined CRM DMS REPAIR" GeneratedFromPackageID="{1392CA69-BF02-4C1B-8021-5C3C5A9BB088}" GeneratedDate="14/05/2015 15:18:43"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Sample Load - Combined CRM ROADSIDE INCIDENT.dtsx\Sample Load - Combined CRM ROADSIDE INCIDENT.log</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::FileType].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Sample</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::Questionnaire].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Roadside</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SampleFileNamePrefix].Properties[Value]" ValueType="String">
+		<ConfiguredValue>CSD_CRM_ROADSIDE</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SamplePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\DataLoading\SampleFiles\Combined_CRM_ROADSIDE_INCIDENT\</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

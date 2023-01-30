@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Sample Process - Standardisation" GeneratedFromPackageID="{199A3C7D-F663-4448-979B-46091E5937DE}" GeneratedDate="24/11/2011 16:45:47"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Sample Process - Standardisation.dtsx\Sample Process - Standardisation.log</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

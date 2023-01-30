@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\poorvi.prasad" GeneratedFromPackageName="Sample Reporting - Nonsolicitations" GeneratedFromPackageID="{0EB0BF21-E5B4-4C11-88AE-FBB297CB3D16}" GeneratedDate="14/02/2019 14:34:25"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Sample Reporting - NonSolicitations.dtsx\Sample Reporting - NonSolicitations.log</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailMarketFrom].Properties[Value]" ValueType="String">
+		<ConfiguredValue>CNX_JLR_Output@ipsos-online.com</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailProdEnvIndicator].Properties[Value]" ValueType="Int32">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailTitleEnvironmentText].Properties[Value]" ValueType="String">
+		<ConfiguredValue>UAT (Test)</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::ReportArchivePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\DataOutput\CustomerUpdateFeeds_Nonsolicitations\Archive</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::ReportPath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\DataOutput\CustomerUpdateFeeds_Nonsolicitations\</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SMTPServer].Properties[Value]" ValueType="String">
+		<ConfiguredValue>PMTA.extranet.iext</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::ZipProgramPath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>C:\Program Files\7-Zip\7z.exe</ConfiguredValue>
+	</Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::ftpEnabled].Properties[Value]" ValueType="Boolean">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

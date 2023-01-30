@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Customer Update - Lost Lead Model of Interest" GeneratedFromPackageID="{30222F3D-F027-4B40-8E3D-88F0E9DC56CB}" GeneratedDate="17/08/2016 09:27:41"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Customer Update - Lost Lead Model of Interest.dtsx\Customer Update - Lost Lead Model of Interest.log</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::FileType].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Customer Update</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::PackageFTPEnabled].Properties[Value]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

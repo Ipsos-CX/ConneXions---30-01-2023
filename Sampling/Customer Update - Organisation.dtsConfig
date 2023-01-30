@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Customer Update - Organisation" GeneratedFromPackageID="{56A1D203-5EFA-4329-BE7B-6A399A5F36AC}" GeneratedDate="04/10/2013 12:56:50"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Customer Update - Organisation.dtsx\Customer Update - Organisation.log</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::FileType].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Customer Update</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::PackageFTPEnabled].Properties[Value]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

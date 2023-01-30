@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[CaseStatusTypeID]
+	FROM TINYINT NOT NULL

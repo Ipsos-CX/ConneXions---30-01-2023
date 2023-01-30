@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[PartyRoleID]
+	FROM INT NOT NULL

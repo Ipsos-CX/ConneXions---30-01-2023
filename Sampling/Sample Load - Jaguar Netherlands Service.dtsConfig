@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Sample Load - Jaguar Japan Service" GeneratedFromPackageID="{0BF95EF0-0A60-41F4-B7C1-E552D0B2CE57}" GeneratedDate="03/11/2011 16:09:27"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Sample Load - Jaguar Netherlands Service.dtsx\Sample Load - Jaguar Netherlands Service.log</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::Brand].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Jaguar</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::Market].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Netherlands</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::Questionnaire].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Service</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SamplePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\DataLoading\SampleFiles\Jaguar_Netherlands_Service\</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::FileType].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Sample</ConfiguredValue>
+	</Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::SampleFileNamePrefix].Properties[Value]" ValueType="String">
+    <ConfiguredValue>Jaguar_Netherlands_Service</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

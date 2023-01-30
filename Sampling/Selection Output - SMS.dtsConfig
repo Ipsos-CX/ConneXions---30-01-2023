@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading><DTSConfigurationFileInfo GeneratedBy="GFK\edward.thomas" GeneratedFromPackageName="Selection Output - SMS" GeneratedFromPackageID="{CD2FCEB8-4B6F-4984-AEF7-5D05050D8062}" GeneratedDate="17/02/2017 13:39:13"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Selection Output - SMS.dtsx\Selection Output - SMS.log</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::FullpathSMS].Properties[Value]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\DataOutput\SelectionOutputSMS\SMS_OutPut.csv</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::LocalDownloadDirectory].Properties[Value]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\DataOutput\SelectionOutputSMS</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SMSTemplatePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\DataOutput\SelectionOutput\SMS Merged Output.xlsx</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[EventID]
+	FROM BIGINT NOT NULL

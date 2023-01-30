@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\poorvi.prasad" GeneratedFromPackageName="Sample Reporting - Nonsolicitations" GeneratedFromPackageID="{0EB0BF21-E5B4-4C11-88AE-FBB297CB3D16}" GeneratedDate="14/02/2019 14:34:25"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Sample Output - Medallia Selection Output FTP Upload.dtsx\Sample Output - Medallia Selection Output FTP Upload.log</ConfiguredValue>
+	</Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::FTPEnabled].Properties[Value]" ValueType="Boolean">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

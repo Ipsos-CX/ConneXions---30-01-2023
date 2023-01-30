@@ -1,0 +1,23 @@
+﻿CREATE TABLE [UsableEmailReport].[Summary] (
+	[ReportDate] [datetime] NOT NULL,
+	[DateFrom] [datetime] NOT NULL,
+	[DateTo] [datetime] NOT NULL,
+	[SubNationalRegion] [nvarchar](255) NULL,
+	[CombinedDealer] [nvarchar](255) NULL,
+	[DealerName] [nvarchar](150) NULL,
+	[DealerCode] [nvarchar](20) NULL,
+	[DealerCodeGDD] [nvarchar](20) NULL,
+	[TotalRecs] [bigint] NULL,
+	[TotalPB] [bigint] NULL,
+	[NoEmailSuppliedSum]  [bigint]  NULL,
+	[NoEmailSupplied%]  decimal(5,4) NULL,
+	[InvalidEmailSum]  [bigint]  NULL,
+	[InvalidEmail%]  decimal(5,4)  NULL,
+	[EmailSuppressionSum]  [bigint]  NULL,
+	[EmailSuppression%]  decimal(5,4) NULL,
+	[OtherReasonsNotSelectedSum]  [bigint]  NULL,
+	[OtherReasonsNotSelected%]  decimal(5,4) NULL,
+	[UsableEmailSum]  [bigint]  NULL,
+	[UsableEmail%]  decimal(5,4) NULL,
+	[TotalSalesType] [int] NULL				    -- V1.1
+) ;

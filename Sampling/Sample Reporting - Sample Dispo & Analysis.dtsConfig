@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Sample Reporting - Sample Dispo & Analysis" GeneratedFromPackageID="{FA6449BC-D179-4DCD-B57A-E16B377BF129}" GeneratedDate="11/11/2021 12:54:18"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::SamplePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\DataOutput\SampleDispoAnalysis\</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

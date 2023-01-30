@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[ContactNumber]
+	FROM NVARCHAR(70) NOT NULL

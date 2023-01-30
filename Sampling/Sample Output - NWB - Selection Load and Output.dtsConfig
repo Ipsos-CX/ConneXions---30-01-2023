@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Sample Output - NWB - Selection Load and Output" GeneratedFromPackageID="{55D4D570-AF27-476C-9914-FCB16397BF66}" GeneratedDate="12/07/2019 17:38:21"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Sample Output - NWB - Selection Load and Output\Sample Output - NWB - Selection Load and Output.log</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SamplePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\DataLoading\NWB_Load_SelectionOutputFiles\</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

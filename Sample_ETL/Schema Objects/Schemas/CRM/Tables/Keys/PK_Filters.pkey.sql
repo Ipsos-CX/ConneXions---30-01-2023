@@ -1,0 +1,3 @@
+﻿ALTER TABLE [CRM].[Filters]
+	ADD CONSTRAINT [PK_Filters]
+	PRIMARY KEY (FilterID)

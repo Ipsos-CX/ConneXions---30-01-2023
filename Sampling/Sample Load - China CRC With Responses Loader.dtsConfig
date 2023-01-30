@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Sample Load - China Global RoadSide Loader" GeneratedFromPackageID="{4D6BFAB3-40AE-4A78-A1F2-EB79F762E7EE}" GeneratedDate="15/05/2017 17:29:15"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Sample Load - China CRC With Responses Loader.dtsx\Sample Load - China CRC With Responses Loader.log</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::FileType].Properties[Description]" ValueType="String">
+		<ConfiguredValue>Sample</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::Questionnaire].Properties[Value]" ValueType="String">
+		<ConfiguredValue>CRC</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SampleFileNamePrefix].Properties[Value]" ValueType="String">
+		<ConfiguredValue>China_Resp_CRC</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SamplePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\DataLoading\SampleFiles\China_Resp_CRC\</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

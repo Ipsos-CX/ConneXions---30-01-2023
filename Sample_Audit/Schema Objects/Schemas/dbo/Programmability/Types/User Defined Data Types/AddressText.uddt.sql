@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[AddressText]
+	FROM NVARCHAR(400) NOT NULL

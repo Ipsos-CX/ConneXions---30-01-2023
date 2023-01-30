@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[ModelVINTemplate]
+	FROM VARCHAR(500) NOT NULL

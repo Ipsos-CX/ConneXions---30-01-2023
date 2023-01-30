@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[SelectionOutputTypeID]
+	FROM TINYINT NOT NULL

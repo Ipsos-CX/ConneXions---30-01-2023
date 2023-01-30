@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[FTPScriptMetadata] (
+    [FTPID]                      INT IDENTITY(1,1)      NOT NULL,
+    [FTPProcessName]			 VARCHAR(50)   NOT NULL,
+    [HostName]                   VARCHAR (50)  NOT NULL,
+    [UserID]                     VARCHAR (50)  NOT NULL,
+    [Password]                   VARCHAR (50)  NOT NULL,
+    [RemoteDirectory]        VARCHAR (255) NOT NULL,
+    [LocalDownloadDirectory]     VARCHAR (255) NULL,
+    --[LocalOutputDirectory]       VARCHAR (255) NOT NULL,
+    --[ScriptName]                 VARCHAR (255) NOT NULL,
+    [DataFileExtension]          VARCHAR (50)  NOT NULL,
+    --[RemoteArchiveDirectoryPath] VARCHAR (255) NULL,
+    [LocalArchiveDirectoryPath]  VARCHAR (255) NULL,
+    --[AddDatedDirToRemoteArchive] BIT           NOT NULL,
+    [TransferMode]               VARCHAR (50)  NOT NULL,
+    --[DecryptionScriptName]       VARCHAR (255) NULL,
+    --[DecryptionPassphrase]       VARCHAR (50)  NULL,
+    --[Project]                    VARCHAR (50)  NOT NULL,
+    [UpDown]                     CHAR(1)      NULL,
+    [Enabled]                    BIT           NOT NULL,
+    --[SpecificDownloadDay]		 VARCHAR(20)	NULL,
+    SFTPHostKey						VARCHAR(100) NULL,
+    Port							INT	NULL,
+    WebProxy						VARCHAR(255) NULL,
+	PrivateKey					varchar(400) NULL
+);
+

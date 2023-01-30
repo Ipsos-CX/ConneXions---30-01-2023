@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Internal Update - Case Rejections" GeneratedFromPackageID="{5D1CF259-A636-46D9-85FF-F6FF0B8C49F0}" GeneratedDate="25/04/2019 15:28:23"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Internal Update - Case Rejections.dtsx\Internal Update - Case Rejections.log</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailBCC].Properties[Value]" ValueType="String">
+		<ConfiguredValue>chris.ledger@ipsos.com</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailFrom].Properties[Value]" ValueType="String">
+		<ConfiguredValue>CNX_JLR_Output@ipsos-online.com</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailTo].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Andrew.Erskine@ipsos.com;Pia.Forslund@ipsos.com</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::FileType].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Internal Update</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SMTPServer].Properties[Value]" ValueType="String">
+		<ConfiguredValue>PMTA.extranet.iext</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

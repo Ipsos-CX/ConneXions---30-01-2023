@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="GFK\poorvi.prasad" GeneratedFromPackageName="Sample Reporting - CustomerUpdateFeeds" GeneratedFromPackageID="{77416B68-E0F6-412D-8940-1500716982AA}" GeneratedDate="23/04/2019 14:31:11"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailMarketFrom].Properties[Value]" ValueType="String">
+    <ConfiguredValue>CNX_JLR_Output@ipsos-online.com</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailProdEnvIndicator].Properties[Value]" ValueType="Int32">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailTitleEnvironmentText].Properties[Value]" ValueType="String">
+    <ConfiguredValue>UAT (Test)</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::FilePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\DataOutput\CustomerUpdateFeeds\</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::LocalArchivePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\DataOutput\CustomerUpdateFeeds\Archive</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::SMTPServer].Properties[Value]" ValueType="String">
+    <ConfiguredValue>PMTA.extranet.iext</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::ZipPassword].Properties[Value]" ValueType="String">
+    <ConfiguredValue>update2012</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::ZipProgramPath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>C:\Program Files\7-Zip\7z.exe</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

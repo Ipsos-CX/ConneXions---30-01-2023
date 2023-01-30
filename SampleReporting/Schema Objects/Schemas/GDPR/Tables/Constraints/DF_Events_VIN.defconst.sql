@@ -1,0 +1,5 @@
+﻿ALTER TABLE [GDPR].[Events]
+   ADD CONSTRAINT [DF_Events_VIN] 
+   DEFAULT ''
+   FOR [VIN]
+ 

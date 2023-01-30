@@ -1,0 +1,3 @@
+﻿ALTER TABLE [dbo].[SVOTypes]
+	ADD CONSTRAINT [PK_SVOTypes]
+	PRIMARY KEY (SVOTypeID)

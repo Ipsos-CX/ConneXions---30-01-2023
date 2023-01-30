@@ -1,0 +1,28 @@
+﻿CREATE TABLE [Stage].[LandRover_Belgium_Sales] (
+    [ID]						INT            IDENTITY (1, 1) NOT NULL,
+    [AuditID]					dbo.AuditID         NULL,
+    [PhysicalRowID]				INT            NULL,
+    [CompanyName]				dbo.LoadText NULL,
+    [Surname]					dbo.LoadText NULL,
+    [FirstName]					dbo.LoadText NULL,
+    [StreetHouseNo]				dbo.LoadText NULL,
+    [PostCode]					dbo.LoadText NULL,	
+    [Town]						dbo.LoadText NULL,
+    [CountryCode]				dbo.LoadText NULL,
+    [TelUnknow]					dbo.LoadText NULL,
+    [VIN]						dbo.LoadText NULL,
+    [SalesDealerCode]			dbo.LoadText NULL,
+    [RegistrationDate]			dbo.LoadText NULL,
+    [RetialDate]				dbo.LoadText NULL,	
+    [Assdate]					dbo.LoadText NULL,	
+    [LanguageCode]				dbo.LoadText NULL,
+    [EmployeeName]				dbo.LoadText NULL,
+    [GenderCode]				dbo.LoadText NULL,
+    [DealerName]				dbo.LoadText NULL,
+    [ChgDealer]					dbo.LoadText NULL,
+    [Ass]						dbo.LoadText NULL,
+    [EmailAddress]				dbo.LoadText NULL,
+    [ConvertedRegistrationDate] DATETIME2       NULL,
+    [ConvertedSalesEventDate]	DATETIME2       NULL
+);
+

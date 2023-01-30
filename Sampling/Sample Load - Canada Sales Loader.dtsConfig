@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Sample Load - Canada Sales Loader" GeneratedFromPackageID="{D5B6B36A-92AA-42D1-8945-D5849799B6B5}" GeneratedDate="06/02/2017 16:44:34"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Sample Load - Canada Sales Loader.dtsx\Sample Load - Canada Sales Loader.log</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::FileType].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Sample</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::Questionnaire].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Sales</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SampleFileNamePrefix].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Canada_Sales_VSALES</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SamplePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\DataLoading\SampleFiles\CanadaSalesLoader\</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::ZipProgramPath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>C:\Program Files\7-Zip\7z.exe</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

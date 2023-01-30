@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\edward.thomas" GeneratedFromPackageName="Sample Load - Lost Leads Agency Status" GeneratedFromPackageID="{2B0E7F9D-0521-48B5-B817-940ADB790DEB}" GeneratedDate="12/11/2018 13:13:55"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Connexions SSIS Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Daily Log\Connexions Sample System.log</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::Email_Bcc].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Eddie.Thomas@ipsos.com;Chris.Ross@ipsos.com;Ben.King@ipsos.com;Chris.Ledger@ipsos.com</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::Email_Cc].Properties[Value]" ValueType="String">
+		<ConfiguredValue></ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::Email_From].Properties[Value]" ValueType="String">
+		<ConfiguredValue>CNX_JLR_Output@ipsos-online.com</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::Email_To].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Tim.Wardle@ipsos.com;clare.yetton@ipsos.com;Simone.King@ipsos.com;Andrew.Erskine@ipsos.com;Stephen.Nunn@ipsos.com</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::FTPEnabled].Properties[Value]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SMTPServer].Properties[Value]" ValueType="String">
+		<ConfiguredValue>PMTA.extranet.iext</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

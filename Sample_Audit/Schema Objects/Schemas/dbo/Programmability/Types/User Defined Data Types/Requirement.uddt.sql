@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[Requirement]
+	FROM VARCHAR(255) NULL

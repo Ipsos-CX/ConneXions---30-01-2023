@@ -1,0 +1,10 @@
+﻿CREATE VIEW Party.vwDA_Parties
+
+AS
+
+SELECT
+	CONVERT(BIGINT, 0) AS AuditItemID, 
+	PartyID, 
+	CONVERT(DATETIME2, NULL) AS FromDate,
+	CONVERT(SMALLINT, 0) AS RoleTypeID
+FROM Party.Parties

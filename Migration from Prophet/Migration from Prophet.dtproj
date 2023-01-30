@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProductVersion>10.0.1600.22</ProductVersion>
+  <SchemaVersion>9.0.1.0</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD50cnVlPC9FbmFibGVkPg0KICA8UHJvamVjdE5hbWU+IiQvQ29ubmV4aW9ucy9Db25uZXhpb25zIiwgQ0FBQUFBQUE8L1Byb2plY3ROYW1lPg0KICA8QXV4UGF0aD48L0F1eFBhdGg+DQogIDxMb2NhbFBhdGg+Li48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPk1TU0NDSTpNaWNyb3NvZnQgVmlzdWFsIFNvdXJjZVNhZmU8L1Byb3ZpZGVyPg0KPC9Tb3VyY2VDb250cm9sSW5mbz4=</State>
+  <Database>
+    <Name>Migration from Prophet.database</Name>
+    <FullPath>Migration from Prophet.database</FullPath>
+  </Database>
+  <Cubes />
+  <Dimensions />
+  <DataSources>
+    <ProjectItem>
+      <Name>Prophet-Audit.ds</Name>
+      <FullPath>Prophet-Audit.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Prophet-ETL.ds</Name>
+      <FullPath>Prophet-ETL.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Prophet-ODS.ds</Name>
+      <FullPath>Prophet-ODS.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample.OLEDB.AUTHENTICATION.ds</Name>
+      <FullPath>Sample.OLEDB.AUTHENTICATION.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample_Audit.OLEDB.AUTHENTICATION.ds</Name>
+      <FullPath>Sample_Audit.OLEDB.AUTHENTICATION.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample_Errors.OLEDB.AUTHENTICATION.ds</Name>
+      <FullPath>Sample_Errors.OLEDB.AUTHENTICATION.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample_ETL.OLEDB.AUTHENTICATION.ds</Name>
+      <FullPath>Sample_ETL.OLEDB.AUTHENTICATION.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>WebsiteReporting.OLEDB.AUTHENTICATION.ds</Name>
+      <FullPath>WebsiteReporting.OLEDB.AUTHENTICATION.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews />
+  <MiningModels />
+  <Roles />
+  <Miscellaneous>
+    <ProjectItem>
+      <Name>Migration from Prophet.dtsConfig</Name>
+      <FullPath>Migration from Prophet.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Prophet-Audit Migration.dtsConfig</Name>
+      <FullPath>Prophet-Audit Migration.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Prophet-ODS 1 Migration.dtsConfig</Name>
+      <FullPath>Prophet-ODS 1 Migration.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Prophet-ETL Migration.dtsConfig</Name>
+      <FullPath>Prophet-ETL Migration.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>OWAP Migration.dtsConfig</Name>
+      <FullPath>OWAP Migration.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Prophet-ODS 2 Migration.dtsConfig</Name>
+      <FullPath>Prophet-ODS 2 Migration.dtsConfig</FullPath>
+    </ProjectItem>
+  </Miscellaneous>
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <OutputPath>bin</OutputPath>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Prophet-Audit</Id>
+            <Name>Prophet-Audit</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=NUEW-SQUKCXS01;Integrated Security=SSPI;Initial Catalog=Prophet-Audit</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Prophet-ODS</Id>
+            <Name>Prophet-ODS</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=NUEW-SQUKCXS01;Integrated Security=SSPI;Initial Catalog=Prophet-ODS</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Sample.OLEDB.AUTHENTICATION</Id>
+            <Name>Sample.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=NUEW-SQUKCXS01;Integrated Security=SSPI;Initial Catalog=Sample</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Sample_Audit.OLEDB.AUTHENTICATION</Id>
+            <Name>Sample_Audit.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=NUEW-SQUKCXS01;Integrated Security=SSPI;Initial Catalog=Sample_Audit</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Sample_ETL.OLEDB.AUTHENTICATION</Id>
+            <Name>Sample_ETL.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=NUEW-SQUKCXS01;Integrated Security=SSPI;Initial Catalog=Sample_ETL</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Sample_Errors.OLEDB.AUTHENTICATION</Id>
+            <Name>Sample_Errors.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=NUEW-SQUKCXS01;Integrated Security=SSPI;Initial Catalog=Sample_Errors</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Prophet-ETL</Id>
+            <Name>Prophet-ETL</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=NUEW-SQUKCXS01;Integrated Security=SSPI;Initial Catalog=Prophet-ETL</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>WebsiteReporting.OLEDB.AUTHENTICATION</Id>
+            <Name>WebsiteReporting.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=NUEW-SQUKCXS01;Integrated Security=SSPI;Initial Catalog=WebsiteReporting</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionProviderMappings />
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Prophet-Audit</Id>
+            <Name>Prophet-Audit</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Prophet-ODS</Id>
+            <Name>Prophet-ODS</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Sample.OLEDB.AUTHENTICATION</Id>
+            <Name>Sample.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Sample_Audit.OLEDB.AUTHENTICATION</Id>
+            <Name>Sample_Audit.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Sample_ETL.OLEDB.AUTHENTICATION</Id>
+            <Name>Sample_ETL.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Sample_Errors.OLEDB.AUTHENTICATION</Id>
+            <Name>Sample_Errors.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Prophet-ETL</Id>
+            <Name>Prophet-ETL</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>WebsiteReporting.OLEDB.AUTHENTICATION</Id>
+            <Name>WebsiteReporting.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+        <DatabaseStorageLocations />
+      </Options>
+    </Configuration>
+  </Configurations>
+  <DTSPackages>
+    <DtsPackage FormatVersion="3">
+      <Name>Prophet-ODS 1.dtsx</Name>
+      <FullPath>Prophet-ODS 1.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Prophet-ETL.dtsx</Name>
+      <FullPath>Prophet-ETL.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Prophet-Audit.dtsx</Name>
+      <FullPath>Prophet-Audit.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>OWAP.dtsx</Name>
+      <FullPath>OWAP.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+    <DtsPackage FormatVersion="3">
+      <Name>Prophet-ODS 2.dtsx</Name>
+      <FullPath>Prophet-ODS 2.dtsx</FullPath>
+      <References />
+    </DtsPackage>
+  </DTSPackages>
+</Project>

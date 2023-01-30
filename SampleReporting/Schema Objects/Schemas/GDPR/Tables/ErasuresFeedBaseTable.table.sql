@@ -1,0 +1,13 @@
+﻿CREATE TABLE [GDPR].[ErasuresFeedBaseTable] (
+	ID			INT IDENTITY(1,1) NOT NULL,
+	PartyID		BIGINT NOT NULL,
+	ErasureDate	DATETIME2 NOT NULL,
+	AuditItemID	BIGINT NOT NULL,
+	CaseID		VARCHAR(11)	NULL,
+	Market		VARCHAR(200) NULL,
+	Survey		VARCHAR(255) NULL,
+	FileLoadDate DATE NULL,
+	RespondedDate DATE NULL
+) ON [PRIMARY]
+
+

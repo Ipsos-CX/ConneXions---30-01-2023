@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Customer Update - Non Solicitation Removal" GeneratedFromPackageID="{E49A8F5F-B329-44A1-AD97-C007F445DE89}" GeneratedDate="20/05/2014 15:15:40"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Customer Update - Non Solicitation Removal.dtsx\Customer Update - Non Solicitation Removal.log</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::FileType].Properties[Value]" ValueType="String">
+    <ConfiguredValue>Customer Update</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::PackageFTPEnabled].Properties[Value]" ValueType="Boolean">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

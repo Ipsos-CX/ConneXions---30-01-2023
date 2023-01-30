@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Sample Load - Jaguar Japan Sales" GeneratedFromPackageID="{0BF95EF0-0A60-41F4-B7C1-E552D0B2CE57}" GeneratedDate="03/11/2011 16:09:27"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Sample Load - Land Rover Japan Service.dtsx\Sample Load - Land Rover Japan Service.log</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::Brand].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Land Rover</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::Market].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Japan</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::Questionnaire].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Service</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SamplePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\DataLoading\SampleFiles\LandRover_Japan_Service\</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::FileType].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Sample</ConfiguredValue>
+	</Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::SampleFileNamePrefix].Properties[Value]" ValueType="String">
+    <ConfiguredValue>LandRover_Japan_Service</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

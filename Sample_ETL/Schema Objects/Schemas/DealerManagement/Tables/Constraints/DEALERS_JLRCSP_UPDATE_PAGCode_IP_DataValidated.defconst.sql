@@ -1,0 +1,4 @@
+﻿ALTER TABLE [DealerManagement].[DEALERS_JLRCSP_UPDATE_PAGCode]
+   ADD  CONSTRAINT [DEALERS_JLRCSP_UPDATE_PAGCode_IP_DataValidated]  DEFAULT ((0)) FOR [IP_DataValidated]
+
+ 

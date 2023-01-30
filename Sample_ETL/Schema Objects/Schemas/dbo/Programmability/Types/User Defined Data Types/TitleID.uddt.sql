@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[TitleID]
+	FROM SMALLINT NOT NULL

@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[FileName]
+	FROM VARCHAR(100) NULL

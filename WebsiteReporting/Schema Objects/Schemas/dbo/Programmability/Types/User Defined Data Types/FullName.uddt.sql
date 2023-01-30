@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[FullName]
+	FROM NVARCHAR(510) NOT NULL

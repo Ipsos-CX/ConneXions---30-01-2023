@@ -1,0 +1,3 @@
+﻿CREATE INDEX [IX_CaseDetails_SelectionRequirementID] 
+	ON [Meta].[CaseDetails] ([SelectionRequirementID]) 
+	INCLUDE ([QuestionnaireVersion], [SelectionTypeID], [CaseID], [Title], [FirstName], [Initials], [LastName], [SecondLastName], [GenderID], [LanguageID], [OrganisationName], [PostalAddressContactMechanismID], [EmailAddressContactMechanismID], [CountryID], [Country], [EventTypeID], [EventType], [EventDate], [PartyID], [OwnershipCycle], [ModelRequirementID], [RegistrationNumber], [RegistrationDate], [ModelDescription], [VIN], [ChassisNumber], [ManufacturerPartyID], [DealerPartyID], [DealerCode], [DealerName], [SaleType])

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SqlCommandVariables xmlns="urn:Microsoft.VisualStudio.Data.Schema.Project.SqlCmdVars">
+  <Version>1</Version>
+  <Properties>
+    <Property>
+      <PropertyName>AuditDB</PropertyName>
+      <PropertyValue>Sample_Audit</PropertyValue>
+    </Property>
+    <Property>
+      <PropertyName>DataFilePath</PropertyName>
+      <PropertyValue>D:\aa08.data01\</PropertyValue>
+    </Property>
+    <Property>
+      <PropertyName>ErrorDB</PropertyName>
+      <PropertyValue>Sample_Errors</PropertyValue>
+    </Property>
+    <Property>
+      <PropertyName>ETLDB</PropertyName>
+      <PropertyValue>Sample_ETL</PropertyValue>
+    </Property>
+    <Property>
+      <PropertyName>LogFilePath</PropertyName>
+      <PropertyValue>D:\aa08.log01\</PropertyValue>
+    </Property>
+    <Property>
+      <PropertyName>ReleaseDate</PropertyName>
+      <PropertyValue>07/03/2012</PropertyValue>
+    </Property>
+    <Property>
+      <PropertyName>SampleDB</PropertyName>
+      <PropertyValue>Sample</PropertyValue>
+    </Property>
+    <Property>
+      <PropertyName>WebsiteReporting</PropertyName>
+      <PropertyValue>WebsiteReporting</PropertyValue>
+    </Property>
+    <Property>
+      <PropertyName>WebsiteReportingDB</PropertyName>
+      <PropertyValue />
+    </Property>
+  </Properties>
+</SqlCommandVariables>

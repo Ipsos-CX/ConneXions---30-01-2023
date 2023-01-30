@@ -1,0 +1,22 @@
+﻿CREATE TABLE [ParallelRun].[Vehicle] (
+	[FileName] [nvarchar](100) NULL,
+	[PhysicalFileRow] [int] NOT NULL,
+	[AuditID] [bigint] NOT NULL,
+	[AuditItemID] [bigint] NOT NULL,
+	[VehicleID] [bigint] NULL,
+	[ModelID] [smallint] NULL,
+	[VIN] [nvarchar](50) NULL,
+	[VehicleIdentificationNumberUsable] [bit] NULL,
+	[VINPrefix] [nvarchar](30) NULL,
+	[ChassisNumber] [nvarchar](20) NULL,
+	[BuildDate] [datetime2](7) NULL,
+	[BuildYear] [smallint] NULL,
+	[ThroughDate] [datetime2](7) NULL,
+	[ModelVariantID] [smallint] NULL,
+	[SVOTypeID] [int] NULL,
+	[FOBCode] [int] NULL,
+	[RegistrationID] [int] NULL,
+	[RegistrationNumber] [nvarchar](100) NULL,
+	[RegistrationDate] [datetime2](7) NULL,
+	[Reg_ThroughDate] [datetime2](7) NULL
+);

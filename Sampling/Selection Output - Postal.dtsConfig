@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\martin.riverol" GeneratedFromPackageName="Selection Output - Postal" GeneratedFromPackageID="{04E508D1-B9D8-4119-ACEE-4F2870A5A409}" GeneratedDate="14/03/2018 09:24:54"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Selection Output - Postal.dtsx\Selection Output - Postal.log</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

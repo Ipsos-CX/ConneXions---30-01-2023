@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[CRCNetworkName]
+	FROM NVARCHAR(200) NOT NULL

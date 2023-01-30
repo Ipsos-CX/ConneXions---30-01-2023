@@ -1,0 +1,2139 @@
+﻿<!-- 
+	
+UPDATE LOG:	
+2021-06-22 DL: Added InvalidDealerBrand
+2021-10-20 DL: Added new market mappings for CountryID and CRCMarketCode
+2022-02-21 DL: Added keepOriginal('Keep current [field] as survey is Lost Leads') to several fields if Lost Leads survey. Needed because some e-fields can be updated during the survey
+2022-03-14 DL: Added market mappings for CountryID and CRCMarketCode for Armenia, Belarus and Kazakhstan
+2022-04-11 DL: Fixed problem with change on 2022-02-21.  Added check that the current value is not null.
+2022-10-26 CL: Added SubBrand, ModelCode, ModelDescription, LeadVehSaleType & ModelVariant. Updated javascript-transforms for VIN & ManufacturerID. Comment out ModelID.
+2022-11-08 CL: Added NoMatch_InviteBMQ & NoMatch_InviteLanguage fields.
+-->
+<import-spec inputType="EXCEL" columnsCheck="ALLOW_EXTRA_OR_MISSING_COLUMNS" name="[LIVE] JLR: Sample Health Feed" description="An auto-generated spec to deal with Survey">
+  <input-column heading="Date_ECHO" />
+  <input-column heading="Date_DP" />
+  <input-column heading="SurveyTypeID" />
+  <input-column heading="ManufacturerID" />
+  <input-column heading="DealerCode" />
+  <input-column heading="DealerCodeGDD" />
+  <input-column heading="DealerPartyID" />
+  <input-column heading="CountryID" />
+  <input-column heading="FullName" />
+  <input-column heading="OrganisationName" />
+  <input-column heading="RegistrationNumber" />
+  <input-column heading="VIN" />
+  <input-column heading="ModelID" />
+  <input-column heading="EmailInFile" />
+  <input-column heading="EmailPreviouslySupplied" />
+  <input-column heading="RegistrationDate_ECHO" />
+  <input-column heading="EventDate_ECHO" />
+  <input-column heading="UsableFlag" />
+  <input-column heading="SentFlag" />
+  <input-column heading="DateSent_ECHO" />
+  <input-column heading="ContactMethodID" />
+  <input-column heading="SMP_SuppliedEmail" />
+  <input-column heading="SMP_SuppliedVehicle" />
+  <input-column heading="SMP_SuppliedRegistration" />
+  <input-column heading="SMP_SuppliedEventDate" />
+  <input-column heading="SMP_EventNonSolicitation" />
+  <input-column heading="SMP_PartySuppression" />
+  <input-column heading="SMP_EmailSuppression" />
+  <input-column heading="SMP_PostalSuppression" />
+  <input-column heading="SMP_PartyNonSolicitation" />
+  <input-column heading="SMP_EventOutOfDate" />
+  <input-column heading="SMP_UncodedDealer" />
+  <input-column heading="SMP_NDVODealer" />
+  <input-column heading="SMP_InvalidManufacturer" />
+  <input-column heading="SMP_DuplicateRowFlag" />
+  <input-column heading="SEL_NonLatestEvent" />
+  <input-column heading="SEL_WithinRecontactPeriod" />
+  <input-column heading="SEL_RelativeRecontactPeriod" />
+  <input-column heading="SEL_OnExclusionList" />
+  <input-column heading="SEL_BarredEmail" />
+  <input-column heading="SEL_BarredDomain" />
+  <input-column heading="SEL_InvalidEmailAddress" />
+  <input-column heading="SMP_BouncebackFlag" />
+  <input-column heading="SMP_MissingLanguageCode" />
+  <input-column heading="SEL_MissingMobilePhone" />
+  <input-column heading="SEL_MissingMobilePhoneAndEmail" />
+  <input-column heading="SEL_EventAlreadySelected" />
+  <input-column heading="SEL_InvalidOwnershipCycle" />
+  <input-column heading="SEL_InvalidVehicleRole" />
+  <input-column heading="SEL_CrossBorderAddress" />
+  <input-column heading="SEL_CrossBorderDealer" />
+  <input-column heading="SEL_WrongEventType" />
+  <input-column heading="SEL_MissingStreet" />
+  <input-column heading="SEL_MissingPostCode" />
+  <input-column heading="SEL_MissingEmail" />
+  <input-column heading="SEL_MissingTelephone" />
+  <input-column heading="SEL_MissingStreetAndEmail" />
+  <input-column heading="SEL_MissingTelephoneAndEmail" />
+  <input-column heading="SEL_InvalidModel" />
+  <input-column heading="SEL_MissingPartyName" />
+  <input-column heading="SEL_ManualRejection" />
+  <input-column heading="CaseID" />
+  <input-column heading="RespondedFlag" />
+  <input-column heading="RespondedDate_ECHO" />
+  <input-column heading="EventTypeID" />
+  <input-column heading="SMP_UnmatchedModel" />
+  <input-column heading="SMP_PreviousEventBounceBack" />
+  <input-column heading="SMP_EventDateTooYoung" />
+  <input-column heading="SMP_NoSuppliedName" />
+  <input-column heading="SMP_NoSuppliedAddress" />
+  <input-column heading="SMP_NoSuppliedPhoneNumber" />
+  <input-column heading="SMP_NoSuppliedMobilePhone" />
+  <input-column heading="SMP_NoSuppliedEmail" />
+  <input-column heading="SMP_PhoneSuppression" />
+  <input-column heading="SMP_AFRLCode" />
+  <input-column heading="SEL_DealerExclusionListMatch" />
+  <input-column heading="SEL_InvalidAFRLCode" />
+  <input-column heading="SMP_SalesType" />
+  <input-column heading="SEL_InvalidSalesType" />
+  <input-column heading="DataSource" />
+  <input-column heading="AgentCodeFlag" />
+  <input-column heading="DedupeEqualToEvents" />
+  <input-column heading="SMP_Unsubscribes" />
+  <input-column heading="SMP_HardBounce" />
+  <input-column heading="SMP_SoftBounce" />
+  <input-column heading="SMP_PrevSoftBounce" />
+  <input-column heading="SMP_PrevHardBounce" />
+  <input-column heading="SMP_ServiceTechnicianID" />
+  <input-column heading="SMP_ServiceTechnicianName" />
+  <input-column heading="SMP_ServiceAdvisorName" />
+  <input-column heading="SMP_ServiceAdvisorID" />
+  <input-column heading="SMP_CRMSalesmanName" />
+  <input-column heading="SMP_CRMSalesmanCode" />
+  <input-column heading="SVCRMSalesType" />
+  <input-column heading="SVCRMInvalidSalesType" />
+  <input-column heading="DealNumber" />
+  <input-column heading="RepairOrderNumber" />
+  <input-column heading="VistaCommonOrderNumber" />
+  <input-column heading="SalesEmployeeCode" />
+  <input-column heading="SalesEmployeeName" />
+  <input-column heading="ServiceEmployeeCode" />
+  <input-column heading="ServiceEmployeeName" />
+  <input-column heading="AuditItemId" />
+  <input-column heading="RecordChanged" />
+  <input-column heading="SEL_PDIFlagSet" />
+  <input-column heading="ContactPreferencesSuppression" />
+  <input-column heading="ContactPreferencesPartySuppress" />
+  <input-column heading="ContactPreferencesEmailSuppress" />
+  <input-column heading="ContactPreferencesPhoneSuppress" />
+  <input-column heading="ContactPreferencesPostalSuppress" />
+  <input-column heading="OriginalPartySuppression" />
+  <input-column heading="OriginalEmailSuppression" />
+  <input-column heading="OriginalPhoneSuppression" />
+  <input-column heading="OriginalPostalSuppression" />
+  <input-column heading="AnonymityManufacturer" />
+  <input-column heading="AnonymityDealer" />
+  <input-column heading="OtherExclusion" />
+  <input-column heading="OverrideFlag" />
+  <input-column heading="GDPRflag" />
+  <input-column heading="EmailExcludeBarred" />
+  <input-column heading="EmailExcludeGeneric" />
+  <input-column heading="EmailExcludeInvalid" />
+  <input-column heading="CompanyExcludeBodyShop" />
+  <input-column heading="CompanyExcludeLeasing" />
+  <input-column heading="CompanyExcludeFleet" />
+  <input-column heading="CompanyExcludeBarredCo" />
+  <input-column heading="OrignalDealerCode" />
+  <input-column heading="Dealer10DigitCode" />
+  <input-column heading="DealerOutletFunction" />
+  <input-column heading="RoadsideAssistanceProvider" />
+  <input-column heading="CDSID" />
+  <input-column heading="DealerMarket" />
+  <input-column heading="CountryIsoAlpha2" />
+  <input-column heading="CRCMarketCode" />
+  <input-column heading="EventID" />
+  <input-column heading="InvalidDealerBrand" />
+  <input-column heading="SubBrand" />
+  <input-column heading="ModelCode" />
+  <input-column heading="ModelDescription" />
+  <input-column heading="LeadVehSaleType" />
+  <input-column heading="ModelVariant" />
+  <input-column heading="NoMatch_InviteBMQ" />
+  <input-column heading="NoMatch_InviteLanguage" />
+  <input-column heading="NoMatch_CRCAgent" />
+
+  <output-column-group pluginName="Survey" recordUpdateMode="CREATE_AND_UPDATE">
+    <!-- UPDATE THROUGH IMPLEMENTATION BASED ON STAGE IN CYCLE -->
+    <output-column>
+      <constant value="6" />
+      <target-field fieldId="e_bp_development_cycle_alt" fieldName="Development Cycle" requiredness="REQUIRED" defaultValue="1" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="DEV" to="1" />
+          <mapping-transform-pair from="QA" to="2" />
+          <mapping-transform-pair from="UAT" to="3" />
+          <mapping-transform-pair from="DEMO" to="4" />
+          <mapping-transform-pair from="TEACH" to="5" />
+          <mapping-transform-pair from="LIVE" to="6" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <constant value="Yes" />
+      <target-field fieldId="e_bp_record_type_retail_store_all_yn" fieldName="Record Type - Retail Store All" requiredness="REQUIRED" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="NAME" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <constant value="Yes" />
+      <target-field fieldId="e_jlr_inmoment_data_flag_yn" fieldName="inMoment Data Flag" requiredness="REQUIRED" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="NAME" />
+      </target-field>
+    </output-column>
+    <!-- Javascript to check reusable and sent flag Set e_status to Not Sampled -->
+    <output-column>
+      <target-field fieldId="e_jlr_record_sampling_lifecycle_enum" fieldName="Sampling Lifecycle" requiredness="REQUIRED" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <javascript-transform>
+          <![CDATA[
+					//if record has already been sampled and sent then don't update lifecycle. If UsableFlag is Yes then set lifecycle to 'Sampled by Connexions' else set to 'Discarded'
+					
+					var originalValue = original['e_jlr_record_sampling_lifecycle_enum'];
+					var CaseID = record['CaseID'];
+					
+					if (originalValue != null)
+						{
+							if (originalValue.name == 'Sampled and sent')
+								{
+									return '1';				
+								}
+							else if (CaseID != null)
+								return '2';
+							else return '3';					
+						}
+					else if (CaseID != null)
+            {
+						  return '2';
+					  }
+					else return '3';
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <constant value="26" />
+      <target-field fieldId="e_status" fieldName="Status" requiredness="REQUIRED" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <javascript-transform>
+          <![CDATA[
+					originalValue = original['e_status'];
+					
+					if (originalValue !== null)
+						{
+							keepOriginal('Record already has a status');
+						}
+					else return value;
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="CaseID" />
+      <target-field fieldId="e_jlr_case_id_text" fieldName="Case ID" requiredness="OPTIONAL" type="STRING">
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+        <javascript-transform>
+          <![CDATA[
+					var originalValue = original['e_jlr_case_id_text'];
+					
+					if (originalValue !== null)
+					{
+						return 	keepOriginal('Record already has a value');
+					}
+					else
+						return value;
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="Date_ECHO" />
+      <target-field fieldId="e_jlr_sample_date_date" fieldName="Sample Date" requiredness="OPTIONAL" type="DATE">
+        <date-field-parse-options format="yyyyMMdd" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="Date_DP" />
+      <target-field fieldId="e_jlr_sample_load_date_int" fieldName="Sample Load Date" requiredness="OPTIONAL" type="INTEGER" />
+    </output-column>
+    <output-column>
+      <input-column heading="SurveyTypeID" />
+      <target-field fieldId="e_jlr_survey_type_id_enum" fieldName="Survey Type" requiredness="REQUIRED" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <javascript-transform>
+          <![CDATA[
+					if (record['SurveyTypeID'] == 1 || record['SurveyTypeID'] == 2 || record['SurveyTypeID'] == 13 || record['SurveyTypeID'] == 14 || record['SurveyTypeID'] == 15 || record['SurveyTypeID'] == 17 || record['SurveyTypeID'] == 23 || record['SurveyTypeID'] == 16)		
+						return value;
+					 else 
+            {
+						  discardRecord('Discarded as Survey Type is not in scope');
+					  }
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="ManufacturerID" />
+      <target-field fieldId="e_jlr_manufacturer_id_enum" fieldName="ManufacturerID" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <javascript-transform>
+          <![CDATA[
+          originalValue = original['e_jlr_manufacturer_id_enum'];
+					var ManufacturerID = record['ManufacturerID'];
+				  var SamplingLifecycle  = original['e_jlr_record_sampling_lifecycle_enum'];
+					
+					if (SamplingLifecycle != null)
+						{
+							if (SamplingLifecycle.name == 'Sampled and sent')
+                {
+                  keepOriginal('Record already has been sampled');
+                }
+              else if (originalValue !== null)
+						    {
+							    keepOriginal('Record already has been completed');
+						    }
+					    else return ManufacturerID;
+            }
+          else if (originalValue !== null)
+						{
+							keepOriginal('Record already has been completed');
+						}
+					else return ManufacturerID;
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="ManufacturerID" />
+      <target-field fieldId="e_jlr_manufacturer_enum" fieldName="Manufacturer" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <javascript-transform>
+          <![CDATA[
+          originalValue = original['e_jlr_manufacturer_enum'];
+					var ManufacturerID = record['ManufacturerID'];
+				  var SamplingLifecycle  = original['e_jlr_record_sampling_lifecycle_enum'];
+					
+					if (SamplingLifecycle != null)
+						{
+							if (SamplingLifecycle.name == 'Sampled and sent')
+                {
+                  keepOriginal('Record already has been sampled');
+                }
+              else if (originalValue !== null)
+						    {
+							    keepOriginal('Record already has been completed');
+						    }
+					    else return ManufacturerID;
+            }
+          else if (originalValue !== null)
+						{
+							keepOriginal('Record already has been completed');
+						}
+					else return ManufacturerID;
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="DealerCode" />
+      <target-field fieldId="e_jlr_dealer_code_auto" fieldName="Dealer Code" requiredness="OPTIONAL" type="ENUMERATED_AUTOINDEX">
+        <javascript-transform>
+          <![CDATA[
+					var originalValue = original['e_jlr_dealer_code_auto'];
+					
+					if (originalValue !== null )
+					  {
+						  return 	keepOriginal('Record already has a value');					
+					  }				
+					else
+						return value;
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="CountryID" />
+      <target-field fieldId="e_jlr_country_id_enum" fieldName="Country ID" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="DZA" to="1" />
+          <mapping-transform-pair from="3" to="1" />
+          <mapping-transform-pair from="12" to="2" />
+          <mapping-transform-pair from="AUS" to="2" />
+          <mapping-transform-pair from="AUT" to="3" />
+          <mapping-transform-pair from="13" to="3" />
+          <mapping-transform-pair from="14" to="4" />
+          <mapping-transform-pair from="AZE" to="4" />
+          <mapping-transform-pair from="BHR" to="5" />
+          <mapping-transform-pair from="16" to="5" />
+          <mapping-transform-pair from="BEL" to="6" />
+          <mapping-transform-pair from="20" to="6" />
+          <mapping-transform-pair from="BRA" to="7" />
+          <mapping-transform-pair from="28" to="7" />
+          <mapping-transform-pair from="CAN" to="8" />
+          <mapping-transform-pair from="36" to="8" />
+          <mapping-transform-pair from="CHL" to="9" />
+          <mapping-transform-pair from="CHN" to="10" />
+          <mapping-transform-pair from="43" to="10" />
+          <mapping-transform-pair from="46" to="11" />
+          <mapping-transform-pair from="CRI" to="12" />
+          <mapping-transform-pair from="55" to="13" />
+          <mapping-transform-pair from="CZE" to="13" />
+          <mapping-transform-pair from="EGY" to="14" />
+          <mapping-transform-pair from="63" to="14" />
+          <mapping-transform-pair from="73" to="15" />
+          <mapping-transform-pair from="FRA" to="15" />
+          <mapping-transform-pair from="79" to="16" />
+          <mapping-transform-pair from="DEU" to="16" />
+          <mapping-transform-pair from="44" to="17" />
+          <mapping-transform-pair from="IND" to="18" />
+          <mapping-transform-pair from="96" to="18" />
+          <mapping-transform-pair from="97" to="19" />
+          <mapping-transform-pair from="IRQ" to="20" />
+          <mapping-transform-pair from="99" to="20" />
+          <mapping-transform-pair from="100" to="21" />
+          <mapping-transform-pair from="ITA" to="22" />
+          <mapping-transform-pair from="103" to="22" />
+          <mapping-transform-pair from="JAM" to="23" />
+          <mapping-transform-pair from="JOR" to="58" />
+          <mapping-transform-pair from="106" to="58" />
+          <mapping-transform-pair from="JPN" to="24" />
+          <mapping-transform-pair from="105" to="24" />
+          <mapping-transform-pair from="110" to="25" />
+          <mapping-transform-pair from="KWT" to="25" />
+          <mapping-transform-pair from="LBN" to="26" />
+          <mapping-transform-pair from="114" to="26" />
+          <mapping-transform-pair from="LBY" to="27" />
+          <mapping-transform-pair from="LUX" to="28" />
+          <mapping-transform-pair from="120" to="28" />
+          <mapping-transform-pair from="123" to="29" />
+          <mapping-transform-pair from="MEX" to="30" />
+          <mapping-transform-pair from="132" to="30" />
+          <mapping-transform-pair from="137" to="31" />
+          <mapping-transform-pair from="MAR" to="31" />
+          <mapping-transform-pair from="NLD" to="32" />
+          <mapping-transform-pair from="143" to="32" />
+          <mapping-transform-pair from="146" to="33" />
+          <mapping-transform-pair from="153" to="34" />
+          <mapping-transform-pair from="OMN" to="35" />
+          <mapping-transform-pair from="155" to="35" />
+          <mapping-transform-pair from="PAK" to="36" />
+          <mapping-transform-pair from="PAN" to="37" />
+          <mapping-transform-pair from="PER" to="38" />
+          <mapping-transform-pair from="164" to="39" />
+          <mapping-transform-pair from="PRT" to="40" />
+          <mapping-transform-pair from="165" to="40" />
+          <mapping-transform-pair from="PSE" to="41" />
+          <mapping-transform-pair from="154" to="41" />
+          <mapping-transform-pair from="QAT" to="42" />
+          <mapping-transform-pair from="167" to="42" />
+          <mapping-transform-pair from="KOR" to="43" />
+          <mapping-transform-pair from="168" to="43" />
+          <mapping-transform-pair from="172" to="44" />
+          <mapping-transform-pair from="RUS" to="44" />
+          <mapping-transform-pair from="182" to="45" />
+          <mapping-transform-pair from="SAU" to="45" />
+          <mapping-transform-pair from="182" to="45" />
+          <mapping-transform-pair from="187" to="46" />
+          <mapping-transform-pair from="192" to="47" />
+          <mapping-transform-pair from="ZAF" to="47" />
+          <mapping-transform-pair from="193" to="48" />
+          <mapping-transform-pair from="ESP" to="48" />
+          <mapping-transform-pair from="SYR" to="49" />
+          <mapping-transform-pair from="200" to="50" />
+          <mapping-transform-pair from="TWN" to="51" />
+          <mapping-transform-pair from="202" to="51" />
+          <mapping-transform-pair from="TUN" to="52" />
+          <mapping-transform-pair from="211" to="52" />
+          <mapping-transform-pair from="212" to="53" />
+          <mapping-transform-pair from="218" to="54" />
+          <mapping-transform-pair from="ARE" to="54" />
+          <mapping-transform-pair from="219" to="55" />
+          <mapping-transform-pair from="GBR" to="55" />
+          <mapping-transform-pair from="USA" to="56" />
+          <mapping-transform-pair from="221" to="56" />
+          <mapping-transform-pair from="YEM" to="57" />
+          <mapping-transform-pair from="GEO" to="59" />
+          <mapping-transform-pair from="78" to="59" />
+          <mapping-transform-pair from="2" to="60" />
+          <mapping-transform-pair from="26" to="61" />
+          <mapping-transform-pair from="31" to="62" />
+          <mapping-transform-pair from="52" to="63" />
+          <mapping-transform-pair from="54" to="64" />
+          <mapping-transform-pair from="58" to="65" />
+          <mapping-transform-pair from="67" to="66" />
+          <mapping-transform-pair from="72" to="67" />
+          <mapping-transform-pair from="81" to="68" />
+          <mapping-transform-pair from="82" to="69" />
+          <mapping-transform-pair from="94" to="70" />
+          <mapping-transform-pair from="95" to="71" />
+          <mapping-transform-pair from="102" to="72" />
+          <mapping-transform-pair from="113" to="73" />
+          <mapping-transform-pair from="119" to="74" />
+          <mapping-transform-pair from="205" to="75" />
+          <mapping-transform-pair from="126" to="76" />
+          <mapping-transform-pair from="169" to="77" />
+          <mapping-transform-pair from="237" to="78" />
+          <mapping-transform-pair from="233" to="79" />
+          <mapping-transform-pair from="171" to="80" />
+          <mapping-transform-pair from="235" to="81" />
+          <mapping-transform-pair from="188" to="82" />
+          <mapping-transform-pair from="189" to="83" />
+          <mapping-transform-pair from="199" to="84" />
+          <mapping-transform-pair from="217" to="85" />
+          <mapping-transform-pair from="107" to="96" />
+          <mapping-transform-pair from="KAZ" to="96" />
+          <mapping-transform-pair from="10" to="97" />
+          <mapping-transform-pair from="ARM" to="97" />
+          <mapping-transform-pair from="19" to="98" />
+          <mapping-transform-pair from="BLR" to="98" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="FullName" />
+      <target-field fieldId="e_jlr_full_name_text" fieldName="Full Name" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="VIN" />
+      <target-field fieldId="e_jlr_vehicle_identification_number_text" fieldName="VIN" requiredness="OPTIONAL" type="STRING">
+      <javascript-transform>
+        <![CDATA[
+          originalValue = original['e_jlr_vehicle_identification_number_text'];
+					var VIN = record['VIN'];
+				  var SamplingLifecycle  = original['e_jlr_record_sampling_lifecycle_enum'];
+					var SurveyTypeID = record['SurveyTypeID'];
+          
+					if (VIN == null)
+            {
+              return null
+            }
+          else if (SurveyTypeID == 16 || SurveyTypeID == 25) 
+            {
+              return null
+            }
+          else if (SamplingLifecycle != null)
+						{
+							if (SamplingLifecycle.name == 'Sampled and sent')
+                {
+                  keepOriginal('Record already has been sampled');
+                }
+              else if (originalValue !== null)
+						    {
+							    keepOriginal('Record already has been completed');
+						    }
+					    else return VIN;
+            }
+          else if (originalValue !== null)
+						{
+							keepOriginal('Record already has been completed');
+						}
+					else return VIN;
+				]]>
+      </javascript-transform>
+      </target-field>
+    </output-column>
+    <!-- CL 2022-10-26 Ignore coding of ModelID
+    <output-column>
+      <input-column heading="ModelID" />
+      <target-field fieldId="e_jlr_model_code_auto" fieldName="Model Code" requiredness="OPTIONAL" type="ENUMERATED_AUTOINDEX">
+        <javascript-transform>
+          <![CDATA[
+					var originalValue = original['e_jlr_model_code_auto'];
+					
+					if (originalValue !== null )
+					  {
+						  return 	keepOriginal('Record already has a value');			
+					  }
+					else
+						return value;
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    -->
+    <output-column>
+      <input-column heading="EmailInFile" />
+      <target-field fieldId="e_jlr_email_address_text" fieldName="Email Address" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="EmailPreviouslySupplied" />
+      <target-field fieldId="e_jlr_email_previously_supplied_text" fieldName="EmailPreviouslySupplied" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="EventDate_ECHO" />
+      <target-field fieldId="e_jlr_event_date" fieldName="Event Date" requiredness="OPTIONAL" type="DATE">
+        <date-field-parse-options format="yyyyMMdd" />
+      </target-field>
+    </output-column>
+    <!-- Record is valid (data wise) flag -->
+    <output-column>
+      <input-column heading="UsableFlag" />
+      <target-field fieldId="e_jlr_usable_flag_yn" fieldName="Usable Sample" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <!-- Record was also sampled flag -->
+    <output-column>
+      <input-column heading="SentFlag" />
+      <target-field fieldId="e_jlr_mailed_sample_sent_flag_yn" fieldName="Mailed Sample" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="ContactMethodID" />
+      <target-field fieldId="e_jlr_contact_method_enum" fieldName="Contact Method" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_SuppliedEmail" />
+      <target-field fieldId="e_jlr_email_supplied_yn" fieldName="Email Supplied" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_SuppliedVehicle" />
+      <target-field fieldId="e_jlr_smp_vechile_info_supplied_yn" fieldName="Vehicle Info Supplied" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_SuppliedRegistration" />
+      <target-field fieldId="e_jlr_smp_registration_supplied_yn" fieldName="Registration Supplied" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_SuppliedEventDate" />
+      <target-field fieldId="e_jlr_smp_no_event_date" fieldName="No event date" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_EventNonSolicitation" />
+      <target-field fieldId="e_jlr_smp_event_non_solicitation_yn" fieldName="Event non-solicitation" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_PartySuppression" />
+      <target-field fieldId="e_jlr_smp_person_suppression_yn" fieldName="Person suppression" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_EmailSuppression" />
+      <target-field fieldId="e_jlr_smp_email_suppression_yn" fieldName="Email suppression" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_PostalSuppression" />
+      <target-field fieldId="e_jlr_smp_postal_suppression_yn" fieldName="Postal suppression" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_PartyNonSolicitation" />
+      <target-field fieldId="e_jlr_smp_person_non_solicitation_yn" fieldName="Person non-solicitation" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_EventOutOfDate" />
+      <target-field fieldId="e_jlr_smp_event_date_too_old_yn" fieldName="Event date too old" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_UncodedDealer" />
+      <target-field fieldId="e_jlr_smp_inactive_ndvo_dealer_yn" fieldName="Inactive or NDVO dealer" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_NDVODealer" />
+      <target-field fieldId="e_jlr_smp_dealer_exclusion_yn" fieldName="Dealer Exclusion" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_InvalidManufacturer" />
+      <target-field fieldId="e_jlr_smp_invalid_manufacturer_yn" fieldName="Invalid manufacturer" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_DuplicateRowFlag" />
+      <target-field fieldId="e_jlr_smp_duplicate_record_yn" fieldName="Duplicate record" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_NonLatestEvent" />
+      <target-field fieldId="e_jlr_sel_non_latest_event_yn" fieldName="Non latest event" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_WithinRecontactPeriod" />
+      <target-field fieldId="e_jlr_sel_within_recontractperiod_yn" fieldName="Within re-contact period" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_RelativeRecontactPeriod" />
+      <target-field fieldId="e_jlr_sel_nohold_rule_service_only_yn" fieldName="No-hold rule - Service only" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_OnExclusionList" />
+      <target-field fieldId="e_jlr_sel_company_exclusion_yn" fieldName="Company exclusion" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_BarredEmail" />
+      <target-field fieldId="e_jlr_sel_barred_email_yn" fieldName="Barred email" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_BarredDomain" />
+      <target-field fieldId="e_jlr_sel_barred_domain_yn" fieldName="Barred domain" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_InvalidEmailAddress" />
+      <target-field fieldId="e_jlr_sel_invalid_email_address_yn" fieldName="Invalid email address" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_BouncebackFlag" />
+      <target-field fieldId="e_jlr_smp_bounceback_flag_yn" fieldName="Bounceback Flag" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_MissingLanguageCode" />
+      <target-field fieldId="e_jlr_smp_missing_language_code_yn" fieldName="Missing language code" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_MissingMobilePhone" />
+      <target-field fieldId="e_jlr_sel_mobile_phone_missing_yn" fieldName="Mobile Phone Missing" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_MissingMobilePhoneAndEmail" />
+      <target-field fieldId="e_jlr_sel_mobile_phone_and_email_missing_yn" fieldName="Mobile Phone and Email Missing" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_EventAlreadySelected" />
+      <target-field fieldId="e_jlr_sel_event_already_selected_yn" fieldName="Event already selected" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_InvalidOwnershipCycle" />
+      <target-field fieldId="e_jlr_sel_pre_owned_vechile_yn" fieldName="Pre-owned vehicle" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_InvalidVehicleRole" />
+      <target-field fieldId="e_jlr_sel_invalid_vehicle_role_yn" fieldName="Invalid Vehicle Role" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_CrossBorderAddress" />
+      <target-field fieldId="e_jlr_sel_cross_border_address_yn" fieldName="Cross Border Address" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_CrossBorderDealer" />
+      <target-field fieldId="e_jlr_sel_cross_border_dealer_yn" fieldName="Cross Border Dealer" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_WrongEventType" />
+      <target-field fieldId="e_jlr_sel_wrong_event_type_yn" fieldName="Wrong event type" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_MissingStreet" />
+      <target-field fieldId="e_jlr_sel_street_missing_yn" fieldName="Street Missing" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_MissingPostCode" />
+      <target-field fieldId="e_jlr_sel_postcode_missing_yn" fieldName="Postcode Missing" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_MissingEmail" />
+      <target-field fieldId="e_jlr_sel_email_not_usable_yn" fieldName="Email not usable" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_MissingTelephone" />
+      <target-field fieldId="e_jlr_sel_telephone_missing_yn" fieldName="Telephone Missing" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_MissingStreetAndEmail" />
+      <target-field fieldId="e_jlr_sel_street_email_missing_yn" fieldName="Street and Email Missing" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_MissingTelephoneAndEmail" />
+      <target-field fieldId="e_jlr_sel_telephone_email_missing_yn" fieldName="Telephone and Email Missing" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_InvalidModel" />
+      <target-field fieldId="e_jlr_sel_invalid_model_yn" fieldName="Invalid Model" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_MissingPartyName" />
+      <target-field fieldId="e_jlr_sel_party_name_missing_yn" fieldName="Party Name Missing" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_ManualRejection" />
+      <target-field fieldId="e_jlr_sel_manual_rejection_yn" fieldName="Manual rejection" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="RespondedFlag" />
+      <target-field fieldId="e_jlr_responded_flag_yn" fieldName="Responded Flag" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_UnmatchedModel" />
+      <target-field fieldId="e_jlr_smp_incorrect_missing_vin_yn" fieldName="Incorrect / missing VIN" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_PreviousEventBounceBack" />
+      <target-field fieldId="e_jlr_smp_previous_event_bounceback_flag_yn" fieldName="Previous event Bounceback Flag" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_EventDateTooYoung" />
+      <target-field fieldId="e_jlr_smp_event_too_young_yn" fieldName="Event too young (usable on day 4)" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_NoSuppliedName" />
+      <target-field fieldId="e_jlr_smp_no_name_supplied_yn" fieldName="No name supplied" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_NoSuppliedAddress" />
+      <target-field fieldId="e_jlr_smp_no_address_supplied_yn" fieldName="No address supplied" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_NoSuppliedPhoneNumber" />
+      <target-field fieldId="e_jlr_smp_no_phone_supplied_cati_yn" fieldName="No phone supplied (CATI)" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_NoSuppliedMobilePhone" />
+      <target-field fieldId="e_jlr_smp_no_mobile_supplied_sms_cati_yn" fieldName="No mobile supplied (SMS &amp; CATI)" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_NoSuppliedEmail" />
+      <target-field fieldId="e_jlr_smp_no_email_supplied_yn" fieldName="No email supplied" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_PhoneSuppression" />
+      <target-field fieldId="e_jlr_smp_phone_suppression_yn" fieldName="Phone suppression" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_DealerExclusionListMatch" />
+      <target-field fieldId="e_jlr_sel_retailer_exclusions_uk_purchase_yn" fieldName="Retailer exclusions - UK Purchase" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_InvalidAFRLCode" />
+      <target-field fieldId="e_jlr_sel_invalid_afrl_code_yn" fieldName="Invalid AFRL Code" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_SalesType" />
+      <target-field fieldId="e_jlr_smp_sales_type_text" fieldName="Sample Sales Type" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_InvalidSalesType" />
+      <target-field fieldId="e_jlr_sel_invalid_sales_type_yn" fieldName="Invalid sales type" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="AgentCodeFlag" />
+      <target-field fieldId="e_jlr_no_agent_code_supplied_crc_yn" fieldName="No agent code supplied - CRC only" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="DedupeEqualToEvents" />
+      <target-field fieldId="e_jlr_duplicate_event_flag_yn" fieldName="Duplicate Event Flag" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_Unsubscribes" />
+      <target-field fieldId="e_jlr_smp_customer_unsubscription_yn" fieldName="Customer unsubscription" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_HardBounce" />
+      <target-field fieldId="e_jlr_smp_hard_email_bounce_back_yn" fieldName="Hard email bounce back" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_SoftBounce" />
+      <target-field fieldId="e_jlr_smp_soft_email_bounce_back_yn" fieldName="Soft email bounce back" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_PrevSoftBounce" />
+      <target-field fieldId="e_jlr_smp_previous_event_soft_email_bounceback_yn" fieldName="Previous event - soft email bounce back" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_PrevHardBounce" />
+      <target-field fieldId="e_jlr_smp_previous_event_hard_email_bounceback_yn" fieldName="Previous event - hard email bounce back" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_CRMSalesmanName" />
+      <target-field fieldId="e_jlr_crm_salesman_name_text" fieldName="Sales Consultant" requiredness="OPTIONAL" type="ENUMERATED_AUTOINDEX" />
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_CRMSalesmanCode" />
+      <target-field fieldId="e_jlr_crm_salesman_code_text" fieldName="CRM Salesman Code" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="SVCRMSalesType" />
+      <target-field fieldId="e_jlr_sv_crm_sales_type_text" fieldName="SV-CRM Sales Type" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="SVCRMInvalidSalesType" />
+      <target-field fieldId="e_jlr_invalid_sv_crm_sales_type_yn" fieldName="Invalid SV-CRM sales type" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="VistaCommonOrderNumber" />
+      <target-field fieldId="e_jlr_vista_common_order_number_text" fieldName="Vista Common Order Number" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <target-field fieldId="e_jlr_employee_code_text" fieldName="Employee Code" requiredness="OPTIONAL" type="STRING">
+        <javascript-transform>
+          <![CDATA[
+					var sales = record['SalesEmployeeCode'];
+					var service = record['ServiceEmployeeCode'];
+					
+          if (sales!=null)
+						{
+							return sales;							
+						}
+					else if (service != null)
+            {
+						  return service;
+					  }
+					else return null;
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <target-field fieldId="e_jlr_employee_name_text" fieldName="Employee Name" requiredness="OPTIONAL" type="ENUMERATED_AUTOINDEX">
+        <javascript-transform>
+          <![CDATA[
+					var sales = record['SalesEmployeeCode'];
+					var service = record['ServiceEmployeeCode'];
+					var originalValue = original['e_jlr_employee_name_text'];
+					
+					if (originalValue !== null)
+					  {
+						  return 	keepOriginal('Record already has a value');					
+					  }
+					else if (sales!=null)
+						{
+							return sales;
+						}
+					else if(service != null)
+            {
+						  return service;
+					  }
+					else return null;
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="AuditItemId" />
+      <target-field fieldId="e_jlr_audititemid_long_int_int" fieldName="LONG INT" requiredness="OPTIONAL" type="INTEGER" />
+    </output-column>
+    <output-column>
+      <input-column heading="RecordChanged" />
+      <target-field fieldId="e_jlr_record_changed_flag_yn" fieldName="Record Changed Flag" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="ContactPreferencesSuppression" />
+      <target-field fieldId="e_jlr_contact_pref_suppression_yn" fieldName="Contact Pref Suppression" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="ContactPreferencesPartySuppress" />
+      <target-field fieldId="e_jlr_contact_pref_party_suppression_yn" fieldName="Contact Pref Party Suppression" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="ContactPreferencesEmailSuppress" />
+      <target-field fieldId="e_jlr_contact_pref_email_suppression_yn" fieldName="Contact pref email supression" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="ContactPreferencesPhoneSuppress" />
+      <target-field fieldId="e_jlr_contact_pref_phone_surpression_yn" fieldName="Contact Pref Phone Surpression" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="ContactPreferencesPostalSuppress" />
+      <target-field fieldId="e_jlr_contact_pref_postal_supression_yn" fieldName="Contact Pref Postal Supression" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="OriginalPartySuppression" />
+      <target-field fieldId="e_jlr_historic_person_suppression_yn" fieldName="Historic person suppression" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="OriginalEmailSuppression" />
+      <target-field fieldId="e_jlr_historic_email_supression_yn" fieldName="Historic email suppression" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="OriginalPhoneSuppression" />
+      <target-field fieldId="e_jlr_historic_phone_suppression_yn" fieldName="Historic phone suppression" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="OriginalPostalSuppression" />
+      <target-field fieldId="e_jlr_historic_postal_suppression_yn" fieldName="Historic postal suppression" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="AnonymityManufacturer" />
+      <target-field fieldId="e_jlr_anonimty_manufacturer_flag_yn" fieldName="Anonimty Manufacturer Flag" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="AnonymityDealer" />
+      <target-field fieldId="e_jlr_anonymity_dealer_flag_yn" fieldName="Anonymity Dealer Flag" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="OtherExclusion" />
+      <target-field fieldId="e_jlr_other_yn" fieldName="Other" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="OverrideFlag" />
+      <target-field fieldId="e_jlr_suppression_override_yn" fieldName="Suppression Override" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="GDPRflag" />
+      <target-field fieldId="e_jlr_gdpr_flag_yn" fieldName="GDPR Flag" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="EmailExcludeBarred" />
+      <target-field fieldId="e_jlr_email_exclude_barred_yn" fieldName="Email Exclude Barred" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="EmailExcludeGeneric" />
+      <target-field fieldId="e_jlr_email_exclude_generic_yn" fieldName="Email Exclude Generic" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="EmailExcludeInvalid" />
+      <target-field fieldId="e_jlr_email_exclude_invalid_yn" fieldName="Email Exclude Invalid" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="CompanyExcludeBodyShop" />
+      <target-field fieldId="e_jlr_company_exclude_body_shop_yn" fieldName="Company Exclude Body Shop" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="CompanyExcludeLeasing" />
+      <target-field fieldId="e_jlr_company_exclude_leasing_yn" fieldName="Company Exclude Leasing" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="CompanyExcludeFleet" />
+      <target-field fieldId="e_jlr_company_exclude_fleet_yn" fieldName="Company Exclude Fleet" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="CompanyExcludeBarredCo" />
+      <target-field fieldId="e_jlr_company_exclude_barred_co_yn" fieldName="Company Exclude BarredCo" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="DealerCodeGDD" />
+      <target-field fieldId="e_jlr_dealer_name_auto" fieldName="Dealer Name" requiredness="OPTIONAL" type="ENUMERATED_AUTOINDEX">
+        <javascript-transform>
+          <![CDATA[
+					var originalValue = original['e_jlr_dealer_name_auto'];
+					
+					if (originalValue !== null)
+					  {
+						  return 	keepOriginal('Record already has a value');					
+					  }				
+					else 
+            return value;
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="DealerPartyID" />
+      <target-field fieldId="e_jlr_dealer_party_id_int" fieldName="Dealer Party ID" requiredness="OPTIONAL" type="INTEGER" />
+    </output-column>
+    <output-column>
+      <input-column heading="OrganisationName" />
+      <target-field fieldId="e_jlr_company_name_auto" fieldName="Company Name" requiredness="OPTIONAL" type="ENUMERATED_AUTOINDEX" />
+    </output-column>
+    <output-column>
+      <input-column heading="RegistrationNumber" />
+      <target-field fieldId="e_jlr_car_registration_text" fieldName="Car Registration Number" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="RegistrationDate_ECHO" />
+      <target-field fieldId="e_jlr_registartion_date_echo_date" fieldName="Reg. Date" requiredness="OPTIONAL" type="DATE">
+        <date-field-parse-options format="yyyyMMdd" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="DateSent_ECHO" />
+      <target-field fieldId="e_jlr_date_sent_echo_date" fieldName="Date Sent" requiredness="OPTIONAL" type="DATE">
+        <date-field-parse-options format="yyyyMMdd" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="RespondedDate_ECHO" />
+      <target-field fieldId="e_jlr_responded_date_date" fieldName="Responded date" requiredness="OPTIONAL" type="DATE">
+        <date-field-parse-options format="yyyyMMdd" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_AFRLCode" />
+      <target-field fieldId="e_jlr_smp_afrl_code_text" fieldName="AFRL Code" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="DataSource" />
+      <target-field fieldId="e_jlr_data_source_text" fieldName="Data Source" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_ServiceTechnicianID" />
+      <target-field fieldId="e_jlr_service_technician_id_text" fieldName="Service Technician ID" requiredness="OPTIONAL" type="STRING">
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_ServiceTechnicianName" />
+      <target-field fieldId="e_jlr_service_technician_name_text" fieldName="Service Technician Name" requiredness="OPTIONAL" type="ENUMERATED_AUTOINDEX" />
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_ServiceAdvisorName" />
+      <target-field fieldId="e_jlr_service_advisor_name_text" fieldName="Service Advisor Name" requiredness="OPTIONAL" type="ENUMERATED_AUTOINDEX" />
+    </output-column>
+    <output-column>
+      <input-column heading="SMP_ServiceAdvisorID" />
+      <target-field fieldId="e_jlr_service_advisor_id_text" fieldName="Service Advisor ID" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="DealNumber" />
+      <target-field fieldId="e_jlr_deal_number_text" fieldName="Deal Number" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="RepairOrderNumber" />
+      <target-field fieldId="e_jlr_repair_order_number_text" fieldName="Repair Order Number" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="SEL_PDIFlagSet" />
+      <target-field fieldId="e_jlr_pdi_event_yn" fieldName="PDI event" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="RoadsideAssistanceProvider" />
+      <target-field fieldId="e_jlr_roadside_assistance_provider_text" fieldName="Roadside Assistance Provider" requiredness="OPTIONAL" type="ENUMERATED_AUTOINDEX" />
+    </output-column>
+    <output-column>
+      <input-column heading="CountryIsoAlpha2" />
+      <target-field fieldId="e_jlr_country_iso_alpha2code_auto" fieldName="Country Iso Alpha2" requiredness="OPTIONAL" type="ENUMERATED_AUTOINDEX" />
+    </output-column>
+    <!--	
+    <output-column>
+			<input-column heading="DealerOutletFunction" />
+			<target-field fieldId="e_jlr_survey_type_id_enum" fieldName="Survey Type" requiredness="OPTIONAL" type="ENUMERATED">
+				<enumerated-field-parse-options mappingKey="NAME" />
+				<javascript-transform><![CDATA[
+					if(record['DealerOutletFunction'] == 'Sales' || record['DealerOutletFunction'] == 'Service' || record['DealerOutletFunction'] == 'Roadside' || record['DealerOutletFunction'] == 'CRC' || record['DealerOutletFunction'] == 'PreOwned' || record['DealerOutletFunction'] == 'LostLeads' || record['DealerOutletFunction'] == 'Bodyshop'){
+					if(value != null){
+						return value;
+					} else {
+						discardRecord('Discarded as Survey Type is not in scope');
+					}
+					} else {
+					return null;
+					}
+				]]></javascript-transform>
+			</target-field>
+		</output-column>   
+    -->
+    <output-column>
+      <input-column heading="CDSID" />
+      <target-field fieldId="e_jlr_crc_owner_code_text" fieldName="CRC Agent" requiredness="OPTIONAL" type="ENUMERATED_AUTOINDEX" />
+    </output-column>
+    <output-column>
+      <input-column heading="CRCMarketCode" />
+      <target-field fieldId="e_jlr_crc_code_enum" fieldName="CRC Code" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="DZA" to="1" />
+          <mapping-transform-pair from="3" to="1" />
+          <mapping-transform-pair from="12" to="2" />
+          <mapping-transform-pair from="AUS" to="2" />
+          <mapping-transform-pair from="AUT" to="3" />
+          <mapping-transform-pair from="13" to="3" />
+          <mapping-transform-pair from="14" to="4" />
+          <mapping-transform-pair from="AZE" to="4" />
+          <mapping-transform-pair from="BHR" to="5" />
+          <mapping-transform-pair from="16" to="5" />
+          <mapping-transform-pair from="BEL" to="6" />
+          <mapping-transform-pair from="20" to="6" />
+          <mapping-transform-pair from="BRA" to="7" />
+          <mapping-transform-pair from="28" to="7" />
+          <mapping-transform-pair from="CAN" to="8" />
+          <mapping-transform-pair from="36" to="8" />
+          <mapping-transform-pair from="CHL" to="9" />
+          <mapping-transform-pair from="CHN" to="10" />
+          <mapping-transform-pair from="43" to="10" />
+          <mapping-transform-pair from="46" to="11" />
+          <mapping-transform-pair from="CRI" to="12" />
+          <mapping-transform-pair from="55" to="13" />
+          <mapping-transform-pair from="CZE" to="13" />
+          <mapping-transform-pair from="EGY" to="14" />
+          <mapping-transform-pair from="63" to="14" />
+          <mapping-transform-pair from="73" to="15" />
+          <mapping-transform-pair from="FRA" to="15" />
+          <mapping-transform-pair from="79" to="16" />
+          <mapping-transform-pair from="DEU" to="16" />
+          <mapping-transform-pair from="44" to="17" />
+          <mapping-transform-pair from="IND" to="18" />
+          <mapping-transform-pair from="96" to="18" />
+          <mapping-transform-pair from="97" to="19" />
+          <mapping-transform-pair from="IRQ" to="20" />
+          <mapping-transform-pair from="99" to="20" />
+          <mapping-transform-pair from="100" to="21" />
+          <mapping-transform-pair from="ITA" to="22" />
+          <mapping-transform-pair from="103" to="22" />
+          <mapping-transform-pair from="JAM" to="23" />
+          <mapping-transform-pair from="JOR" to="58" />
+          <mapping-transform-pair from="106" to="58" />
+          <mapping-transform-pair from="JPN" to="24" />
+          <mapping-transform-pair from="105" to="24" />
+          <mapping-transform-pair from="110" to="25" />
+          <mapping-transform-pair from="KWT" to="25" />
+          <mapping-transform-pair from="LBN" to="26" />
+          <mapping-transform-pair from="114" to="26" />
+          <mapping-transform-pair from="LBY" to="27" />
+          <mapping-transform-pair from="LUX" to="28" />
+          <mapping-transform-pair from="120" to="28" />
+          <mapping-transform-pair from="123" to="29" />
+          <mapping-transform-pair from="MEX" to="30" />
+          <mapping-transform-pair from="132" to="30" />
+          <mapping-transform-pair from="137" to="31" />
+          <mapping-transform-pair from="MAR" to="31" />
+          <mapping-transform-pair from="NLD" to="32" />
+          <mapping-transform-pair from="143" to="32" />
+          <mapping-transform-pair from="146" to="33" />
+          <mapping-transform-pair from="153" to="34" />
+          <mapping-transform-pair from="OMN" to="35" />
+          <mapping-transform-pair from="155" to="35" />
+          <mapping-transform-pair from="PAK" to="36" />
+          <mapping-transform-pair from="PAN" to="37" />
+          <mapping-transform-pair from="PER" to="38" />
+          <mapping-transform-pair from="164" to="39" />
+          <mapping-transform-pair from="PRT" to="40" />
+          <mapping-transform-pair from="165" to="40" />
+          <mapping-transform-pair from="PSE" to="41" />
+          <mapping-transform-pair from="154" to="41" />
+          <mapping-transform-pair from="QAT" to="42" />
+          <mapping-transform-pair from="167" to="42" />
+          <mapping-transform-pair from="KOR" to="43" />
+          <mapping-transform-pair from="168" to="43" />
+          <mapping-transform-pair from="172" to="44" />
+          <mapping-transform-pair from="RUS" to="44" />
+          <mapping-transform-pair from="182" to="45" />
+          <mapping-transform-pair from="SAU" to="45" />
+          <mapping-transform-pair from="182" to="45" />
+          <mapping-transform-pair from="187" to="46" />
+          <mapping-transform-pair from="192" to="47" />
+          <mapping-transform-pair from="ZAF" to="47" />
+          <mapping-transform-pair from="193" to="48" />
+          <mapping-transform-pair from="ESP" to="48" />
+          <mapping-transform-pair from="SYR" to="49" />
+          <mapping-transform-pair from="200" to="50" />
+          <mapping-transform-pair from="TWN" to="51" />
+          <mapping-transform-pair from="202" to="51" />
+          <mapping-transform-pair from="TUN" to="52" />
+          <mapping-transform-pair from="211" to="52" />
+          <mapping-transform-pair from="212" to="53" />
+          <mapping-transform-pair from="218" to="54" />
+          <mapping-transform-pair from="ARE" to="54" />
+          <mapping-transform-pair from="219" to="55" />
+          <mapping-transform-pair from="GBR" to="55" />
+          <mapping-transform-pair from="USA" to="56" />
+          <mapping-transform-pair from="221" to="56" />
+          <mapping-transform-pair from="YEM" to="57" />
+          <mapping-transform-pair from="GEO" to="59" />
+          <mapping-transform-pair from="78" to="59" />
+          <mapping-transform-pair from="2" to="60" />
+          <mapping-transform-pair from="26" to="61" />
+          <mapping-transform-pair from="31" to="62" />
+          <mapping-transform-pair from="52" to="63" />
+          <mapping-transform-pair from="54" to="64" />
+          <mapping-transform-pair from="58" to="65" />
+          <mapping-transform-pair from="67" to="66" />
+          <mapping-transform-pair from="72" to="67" />
+          <mapping-transform-pair from="81" to="68" />
+          <mapping-transform-pair from="82" to="69" />
+          <mapping-transform-pair from="94" to="70" />
+          <mapping-transform-pair from="95" to="71" />
+          <mapping-transform-pair from="102" to="72" />
+          <mapping-transform-pair from="113" to="73" />
+          <mapping-transform-pair from="119" to="74" />
+          <mapping-transform-pair from="205" to="75" />
+          <mapping-transform-pair from="126" to="76" />
+          <mapping-transform-pair from="169" to="77" />
+          <mapping-transform-pair from="237" to="78" />
+          <mapping-transform-pair from="233" to="79" />
+          <mapping-transform-pair from="171" to="80" />
+          <mapping-transform-pair from="235" to="81" />
+          <mapping-transform-pair from="188" to="82" />
+          <mapping-transform-pair from="189" to="83" />
+          <mapping-transform-pair from="199" to="84" />
+          <mapping-transform-pair from="217" to="85" />
+          <mapping-transform-pair from="107" to="96" />
+          <mapping-transform-pair from="KAZ" to="96" />
+          <mapping-transform-pair from="10" to="97" />
+          <mapping-transform-pair from="ARM" to="97" />
+          <mapping-transform-pair from="19" to="98" />
+          <mapping-transform-pair from="BLR" to="98" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="DealerMarket" />
+      <target-field fieldId="e_jlr_dealer_market_text" fieldName="Dealer Market" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="Dealer10DigitCode" />
+      <target-field fieldId="e_jlr_dealer10_digit_code_text" fieldName="Dealer 10 Digit Code" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="OrignalDealerCode" />
+      <target-field fieldId="e_jlr_sample_dealer_party_id_text" fieldName="Sample Dealer Party ID" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <!-- UNIT MAPPING -->
+    <!--	
+    <output-column>
+			<constant value="TestMedalliaUnit101" />
+			<target-field fieldId="e_unitid" fieldName="Unit" requiredness="OPTIONAL" type="UNIT">
+				<enumerated-field-parse-options mappingKey="IDENTIFIER" />
+			</target-field>
+		</output-column> 
+    -->
+    <output-column>
+      <input-column heading="SurveyTypeID" />
+      <target-field fieldId="e_unitid" fieldName="Unit" requiredness="REQUIRED" type="UNIT">
+        <enumerated-field-parse-options mappingKey="IDENTIFIER" />
+        <javascript-transform>
+          <![CDATA[
+					var country = record['DealerMarket'];
+					var code = record['CDSID'];
+					var brand = record['ManufacturerID'];
+					var marketCode = record['CRCMarketCode'];
+					var dealerCode = record['Dealer10DigitCode'];
+					var SurveyTypeID = record['SurveyTypeID'];
+					var surveyName = record['DealerOutletFunction'];
+					var countryName = lookup('jlr_hierarchy_mapping', record['CountryIsoAlpha2']);
+					
+					var originalValue = original['e_unitid'];
+					if (SurveyTypeID == 16 && originalValue !== null) keepOriginal('Keep current e_unitid as survey is Lost Leads');
+					
+					if ((SurveyTypeID == 1 || SurveyTypeID == 2 || SurveyTypeID == 15 || SurveyTypeID == 16) && dealerCode != null) {
+					
+						if(SurveyTypeID == 1 || SurveyTypeID == 16){
+						return "jlr_retailer_" + noWhitespace(lower(dealerCode))+'_' +"sales";
+											}
+						else if(SurveyTypeID == 2){
+						return "jlr_retailer_" + noWhitespace(lower(dealerCode))+'_' +"aftersales";
+						}
+						else {
+						return "jlr_retailer_" + noWhitespace(lower(dealerCode))+'_' +"preowned";
+						}
+						
+						} 
+					else if((SurveyTypeID == 1 || SurveyTypeID == 2 || SurveyTypeID == 15 || SurveyTypeID == 16) && dealerCode == null){
+						return 'jlr_retailer_unknown_dealer';
+					}
+					else if (SurveyTypeID == 13 && brand == 2) {
+							return "jlr_national_jaguar_"  + noWhitespace(lower(countryName.market));						
+						}
+					else if (SurveyTypeID == 13 && brand == 3) {
+							return "jlr_national_landrover_"  + noWhitespace(lower(countryName.market));						
+						}
+					else if (SurveyTypeID == 14 ||SurveyTypeID == 23) {
+						return "jlr_agent_" + noWhitespace(lower(code));
+						}
+					else if (SurveyTypeID == 17 && dealerCode != null) {
+						return 'jlr_bodyshop_'+ noWhitespace(lower(dealerCode));
+						}
+					else if (SurveyTypeID == 17 && dealerCode == null) {
+						return 'jlr_retailer_unknown_dealer';
+						}
+					else return null;
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="CountryIsoAlpha2" />
+      <target-field fieldId="e_jlr_national_unit" fieldName="National" requiredness="OPTIONAL" type="UNIT">
+        <enumerated-field-parse-options mappingKey="IDENTIFIER" />
+        <javascript-transform>
+          <![CDATA[
+					var country = record['CountryIsoAlpha2'];
+					var SurveyTypeID = record['SurveyTypeID'];
+					var brand = record['ManufacturerID'];
+					var countryName = lookup('jlr_hierarchy_mapping', record['CountryIsoAlpha2']);
+					
+					if (SurveyTypeID == 13 && brand == 2) 
+            {
+							return "jlr_national_jaguar_"  + noWhitespace(lower(countryName.market ));						
+						}
+					else if (SurveyTypeID == 13 && brand == 3) 
+            {
+							return "jlr_national_landrover_"  + noWhitespace(lower(countryName.market ));						
+						}						
+					else
+					  {
+						  return null;
+					  }
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="CDSID" />
+      <target-field fieldId="e_bp_cc_agent_unit" fieldName="CRC Agent" requiredness="OPTIONAL" type="UNIT">
+        <enumerated-field-parse-options mappingKey="IDENTIFIER" />
+        <javascript-transform>
+          <![CDATA[
+					var code = record['CDSID'];
+					var brand = record['ManufacturerID'];
+					var SurveyTypeID = record['SurveyTypeID'];
+					var marketCode = record['CRCMarketCode'];
+					
+					if (SurveyTypeID == 14 ||SurveyTypeID == 23) 
+					  {
+						  return "jlr_agent_" + noWhitespace(lower(code));
+					  }
+					else
+					  {
+						  return null;
+					  }
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="InvalidDealerBrand" />
+      <target-field fieldId="e_jlr_invalid_dealer_brand_yn" fieldName="Invalid dealer brand" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="Dealer10DigitCode" />
+      <target-field fieldId="e_jlr_bodyshop_unit" fieldName="Bodyshop" requiredness="OPTIONAL" type="UNIT">
+        <enumerated-field-parse-options mappingKey="IDENTIFIER" />
+        <javascript-transform>
+          <![CDATA[
+					var dealerCode = record['Dealer10DigitCode'];
+					var SurveyTypeID = record['SurveyTypeID'];
+					
+					if (SurveyTypeID == '17' && dealerCode != null) 
+            {
+							return 'jlr_bodyshop_'+ noWhitespace(lower(dealerCode));
+						}
+					else if (SurveyTypeID == '17' && dealerCode == null)
+            {
+							return 'jlr_retailer_unknown_dealer';
+						}    
+					else return null;
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="Dealer10DigitCode" />
+      <target-field fieldId="e_jlr_dealership_unit" fieldName="Dealership" requiredness="OPTIONAL" type="UNIT">
+        <enumerated-field-parse-options mappingKey="IDENTIFIER" />
+        <javascript-transform>
+          <![CDATA[
+					var dealerCode = record['Dealer10DigitCode'];
+					var SurveyTypeID = record['SurveyTypeID'];
+					var surveyName = record['DealerOutletFunction'];
+										
+					var originalValue = original['e_jlr_dealership_unit'];
+					if (SurveyTypeID == 16 && originalValue !== null) keepOriginal('Keep current e_jlr_dealership_unit as survey is Lost Leads');
+					
+					if ((SurveyTypeID == 1 || SurveyTypeID == 2 || SurveyTypeID == 15 || SurveyTypeID == 16) && dealerCode != null ) 
+            {
+							if (SurveyTypeID == 1 || SurveyTypeID == 16)
+                {
+						      return "jlr_retailer_" + noWhitespace(lower(dealerCode))+'_' +"sales";
+								}
+						  else if (SurveyTypeID == 2)
+                {
+						      return "jlr_retailer_" + noWhitespace(lower(dealerCode))+'_' +"aftersales";
+						    }
+						  else 
+                {
+						      return "jlr_retailer_" + noWhitespace(lower(dealerCode))+'_' +"preowned";
+						    }
+						  }
+					else if ((SurveyTypeID == 1 || SurveyTypeID == 2 || SurveyTypeID == 15 || SurveyTypeID == 16) && dealerCode == null)
+            {
+						  return 'jlr_retailer_unknown_dealer';
+					  }
+					else
+					  {
+						  return null;
+					  }
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="EventID" />
+      <target-field fieldId="e_bp_uniquerecordid_txt" fieldName="Unique Record Id" requiredness="REQUIRED_USED_FOR_DUPLICATE_CHECK" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="EventID" />
+      <target-field fieldId="e_jlr_event_id_text" fieldName="Event ID" requiredness="REQUIRED" type="STRING" />
+    </output-column>
+    <output-column>
+      <target-field fieldId="e_jlr_sample_feed_filename_txt" fieldName="Sample Health Feed Filename" requiredness="REQUIRED" type="STRING">
+        <javascript-transform>
+          <![CDATA[
+					return requestInfo.filename;
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <target-field fieldId="e_bp_backup_field_txt" fieldName="Backup Field" requiredness="REQUIRED" type="STRING">
+        <javascript-transform>
+          <![CDATA[
+					return JSON.stringify(record);
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <target-field fieldId="e_responsedate" fieldName="Responsedate" requiredness="OPTIONAL" type="TIMESTAMP">
+        <timestamp-field-parse-options format="MM-DD-YYYY HH:mm:ss" timeZone="America/Los_Angeles" />
+        <javascript-transform>
+          <![CDATA[
+					originalValue = original['e_responsedate'];
+					
+					if (originalValue !== null)
+						{
+							keepOriginal('Record already has been completed');
+						}
+					else return null;
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="SubBrand" />
+      <target-field fieldId="e_jlr_subbrand_text" fieldName="Sub Brand" requiredness="OPTIONAL" type="ENUMERATED_AUTOINDEX">
+      <javascript-transform>
+        <![CDATA[
+          originalValue = original['e_jlr_subbrand_text'];
+					var SubBrand = record['SubBrand'];
+				  var SamplingLifecycle  = original['e_jlr_record_sampling_lifecycle_enum'];
+					
+					if (SamplingLifecycle != null)
+						{
+							if (SamplingLifecycle.name == 'Sampled and sent')
+                {
+                  keepOriginal('Record already has been sampled');
+                }
+              else if (originalValue !== null)
+						    {
+							    keepOriginal('Record already has been completed');
+						    }
+					    else return SubBrand;
+            }
+          else if (originalValue !== null)
+						{
+							keepOriginal('Record already has been completed');
+						}
+					else return SubBrand;
+				]]>
+      </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="ModelDescription" />
+      <target-field fieldId="e_jlr_model_description_text" fieldName="Model" requiredness="OPTIONAL" type="ENUMERATED_AUTOINDEX">
+      <javascript-transform>
+        <![CDATA[
+          originalValue = original['e_jlr_model_description_text'];
+					var ModelDescription = record['ModelDescription'];
+				  var SamplingLifecycle  = original['e_jlr_record_sampling_lifecycle_enum'];
+					
+					if (SamplingLifecycle != null)
+						{
+							if (SamplingLifecycle.name == 'Sampled and sent')
+                {
+                  keepOriginal('Record already has been sampled');
+                }
+              else if (originalValue !== null)
+						    {
+							    keepOriginal('Record already has been completed');
+						    }
+					    else return ModelDescription;
+            }
+          else if (originalValue !== null)
+						{
+							keepOriginal('Record already has been completed');
+						}
+					else return ModelDescription;
+				]]>
+      </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="LeadVehSaleType" />
+      <target-field fieldId="e_jlr_lost_leads_sale_type_enum" fieldName="Lead Type" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <javascript-transform>
+          <![CDATA[
+					var LeadVehSaleType = record['LeadVehSaleType'];
+          var SurveyTypeID = record['SurveyTypeID'];
+					
+					if (SurveyTypeID == '16') 
+            {
+							return LeadVehSaleType;
+						}
+					else return null;
+				]]>
+        </javascript-transform>      
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="ModelVariant" />
+      <target-field fieldId="e_jlr_model_variant_description_text" fieldName="Model Variant" requiredness="OPTIONAL" type="ENUMERATED_AUTOINDEX">
+        <javascript-transform>
+          <![CDATA[
+          originalValue = original['e_jlr_model_variant_description_text'];
+					var ModelVariant = record['ModelVariant'];
+					var SurveyTypeID = record['SurveyTypeID'];
+				  var SamplingLifecycle  = original['e_jlr_record_sampling_lifecycle_enum'];
+          
+					if (SurveyTypeID == 16 || SurveyTypeID == 25) 
+            {
+              return null;
+            }
+          else if (SamplingLifecycle != null)
+						{
+							if (SamplingLifecycle.name == 'Sampled and sent')
+                {
+                  keepOriginal('Record already has been sampled');
+                }
+              else if (originalValue !== null)
+						    {
+							    keepOriginal('Record already has been completed');
+						    }
+					    else return ModelVariant;
+            }
+          else if (originalValue !== null)
+						{
+							keepOriginal('Record already has been completed');
+						}
+					else return ModelVariant;
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="NoMatch_InviteBMQ" />
+      <target-field fieldId="e_jlr_nomatch_invitebmq" fieldName="No matched invite matrix" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="NoMatch_InviteLanguage" />
+      <target-field fieldId="e_jlr_nomatch_invitelanguage" fieldName="No matched invite language" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="NoMatch_CRCAgent" />
+      <target-field fieldId="e_jlr_nomatch_crcagent" fieldName="No matched agent code - CRC only" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+          <mapping-transform-pair from="1" to="1" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+  </output-column-group>
+</import-spec>

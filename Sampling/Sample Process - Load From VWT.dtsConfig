@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Sample Process - Load From VWT" GeneratedFromPackageID="{8A7AF32C-85D6-44F0-A690-7C3C67A1C47B}" GeneratedDate="24/11/2011 16:48:43"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Sample Process - Load From VWT.dtsx\Sample Process - Load From VWT.log</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

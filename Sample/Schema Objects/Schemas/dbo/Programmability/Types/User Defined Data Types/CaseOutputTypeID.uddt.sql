@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[CaseOutputTypeID]
+	FROM TINYINT NOT NULL

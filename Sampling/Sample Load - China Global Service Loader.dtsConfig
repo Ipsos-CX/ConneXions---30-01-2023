@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Sample Load - China Global Service Loader" GeneratedFromPackageID="{3DF79B1D-9650-419A-928F-3C158E5D12F6}" GeneratedDate="04/02/2014 17:16:08"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Sample Load - China Global Service Loader.dtsx\Sample Load - China Global Service Loader.log</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::FileType].Properties[Value]" ValueType="String">
+    <ConfiguredValue>Sample</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::Questionnaire].Properties[Value]" ValueType="String">
+    <ConfiguredValue>Service</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::SampleFileNamePrefix].Properties[Value]" ValueType="String">
+    <ConfiguredValue>GSL_Resp_Service</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::SamplePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\DataLoading\SampleFiles\GSL_Resp_Service\</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

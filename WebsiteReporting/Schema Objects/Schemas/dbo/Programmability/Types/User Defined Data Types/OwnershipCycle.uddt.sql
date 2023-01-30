@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[OwnershipCycle]
+	FROM TINYINT NOT NULL

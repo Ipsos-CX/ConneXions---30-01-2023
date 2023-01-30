@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[BlacklistTypeID]
+	FROM TINYINT NOT NULL

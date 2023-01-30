@@ -1,0 +1,2558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DeploymentModel>Package</DeploymentModel>
+  <ProductVersion>14.0.3002.113</ProductVersion>
+  <SchemaVersion>9.0.1.0</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkZGw1MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAiIHhtbG5zOmRkbDUwMF81MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAvNTAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD50cnVlPC9FbmFibGVkPg0KICA8UHJvamVjdE5hbWU+JC9Db25uZVhpb25zL0Nvbm5leGlvbnMvQ29ubmV4aW9ucy9TYW1wbGluZzwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPmh0dHA6Ly8xMDA1Nzk1LWN4bndlYnM6ODA4MC90ZnMvaXBzb3M8L0F1eFBhdGg+DQogIDxMb2NhbFBhdGg+LjwvTG9jYWxQYXRoPg0KICA8UHJvdmlkZXI+ezRDQTU4QUIyLTE4RkEtNEY4RC05NUQ0LTMyRERGMjdEMTg0Q308L1Byb3ZpZGVyPg0KPC9Tb3VyY2VDb250cm9sSW5mbz4=</State>
+  <Database>
+    <Name>Sampling.database</Name>
+    <FullPath>Sampling.database</FullPath>
+  </Database>
+  <DataSources>
+    <ProjectItem>
+      <Name>JLR-Email.ds</Name>
+      <FullPath>JLR-Email.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample.OLEDB.AUTHENTICATION.ds</Name>
+      <FullPath>Sample.OLEDB.AUTHENTICATION.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample_Audit.OLEDB.AUTHENTICATION.ds</Name>
+      <FullPath>Sample_Audit.OLEDB.AUTHENTICATION.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample_Audit_China.OLEDB.AUTHENTICATION.ds</Name>
+      <FullPath>Sample_Audit_China.OLEDB.AUTHENTICATION.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample_China.OLEDB.AUTHENTICATION.ds</Name>
+      <FullPath>Sample_China.OLEDB.AUTHENTICATION.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample_Errors.OLEDB.AUTHENTICATION.ds</Name>
+      <FullPath>Sample_Errors.OLEDB.AUTHENTICATION.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample_Errors_China.OLEDB.AUTHENTICATION.ds</Name>
+      <FullPath>Sample_Errors_China.OLEDB.AUTHENTICATION.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample_ETL.OLEDB.AUTHENTICATION.ds</Name>
+      <FullPath>Sample_ETL.OLEDB.AUTHENTICATION.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample_ETL_CHINA.OLEDB.AUTHENTICATION.ds</Name>
+      <FullPath>Sample_ETL_CHINA.OLEDB.AUTHENTICATION.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>SampleReporting.OLEDB.AUTHENTICATION.ds</Name>
+      <FullPath>SampleReporting.OLEDB.AUTHENTICATION.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>SampleReporting_China.OLEDB.AUTHENTICATION.ds</Name>
+      <FullPath>SampleReporting_China.OLEDB.AUTHENTICATION.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Warehouse.TR STAGING.OLEDB.AUTHENTICATION.ds</Name>
+      <FullPath>Warehouse.TR STAGING.OLEDB.AUTHENTICATION.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>WebsiteReporting.OLEDB.AUTHENTICATION.ds</Name>
+      <FullPath>WebsiteReporting.OLEDB.AUTHENTICATION.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>WebsiteReporting_China.OLEDB.AUTHENTICATION.ds</Name>
+      <FullPath>WebsiteReporting_China.OLEDB.AUTHENTICATION.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews />
+  <DeploymentModelSpecificContent>
+    <Manifest>
+      <DTSPackages>
+        <DtsPackage FormatVersion="8">
+          <Name>Adhoc Reporting - Party Rollup Reports.dtsx</Name>
+          <FullPath>Adhoc Reporting - Party Rollup Reports.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Archive Daily Logs.dtsx</Name>
+          <FullPath>Archive Daily Logs.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Archive Package Logs.dtsx</Name>
+          <FullPath>Archive Package Logs.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Copy 2019 Sample Files.dtsx</Name>
+          <FullPath>Copy 2019 Sample Files.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Copy Connexions Sampling Databases.dtsx</Name>
+          <FullPath>Copy Connexions Sampling Databases.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Copy Daily Customer Update Files.dtsx</Name>
+          <FullPath>Copy Daily Customer Update Files.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Copy Daily Sample Files.dtsx</Name>
+          <FullPath>Copy Daily Sample Files.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Create Sampling Folder Structure.dtsx</Name>
+          <FullPath>Create Sampling Folder Structure.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Customer Update - Agent Lookup.dtsx</Name>
+          <FullPath>Customer Update - Agent Lookup.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Customer Update - Contact Outcome.dtsx</Name>
+          <FullPath>Customer Update - Contact Outcome.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Customer Update - Dealer.dtsx</Name>
+          <FullPath>Customer Update - Dealer.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Customer Update - Email Address.dtsx</Name>
+          <FullPath>Customer Update - Email Address.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Customer Update - Extra Vehicle Feed.dtsx</Name>
+          <FullPath>Customer Update - Extra Vehicle Feed.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Customer Update - Lost Lead Model of Interest.dtsx</Name>
+          <FullPath>Customer Update - Lost Lead Model of Interest.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Customer Update - New Telephone Number.dtsx</Name>
+          <FullPath>Customer Update - New Telephone Number.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Customer Update - Non Solicitation Removal.dtsx</Name>
+          <FullPath>Customer Update - Non Solicitation Removal.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Customer Update - Organisation.dtsx</Name>
+          <FullPath>Customer Update - Organisation.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Customer Update - Person.dtsx</Name>
+          <FullPath>Customer Update - Person.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Customer Update - Postal Address.dtsx</Name>
+          <FullPath>Customer Update - Postal Address.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Customer Update - Registration Number.dtsx</Name>
+          <FullPath>Customer Update - Registration Number.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Customer Update - SMS Bouncebacks.dtsx</Name>
+          <FullPath>Customer Update - SMS Bouncebacks.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>DropZoneLoad.dtsx</Name>
+          <FullPath>DropZoneLoad.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Enprecis Output.dtsx</Name>
+          <FullPath>Enprecis Output.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Generate Metadata Tables.dtsx</Name>
+          <FullPath>Generate Metadata Tables.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Internal Update - Case Rejections.dtsx</Name>
+          <FullPath>Internal Update - Case Rejections.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Internal Update - Create ReIssue Invite File.dtsx</Name>
+          <FullPath>Internal Update - Create ReIssue Invite File.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Internal Update - Email Contact Matrix.dtsx</Name>
+          <FullPath>Internal Update - Email Contact Matrix.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Internal Update - Export Contact Matrix.dtsx</Name>
+          <FullPath>Internal Update - Export Contact Matrix.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Internal Update - Invite Matrix.dtsx</Name>
+          <FullPath>Internal Update - Invite Matrix.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Internal Update - Merge Parties.dtsx</Name>
+          <FullPath>Internal Update - Merge Parties.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Internal Update - Non Solicitations.dtsx</Name>
+          <FullPath>Internal Update - Non Solicitations.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Internal Update - Reissue Invites.dtsx</Name>
+          <FullPath>Internal Update - Reissue Invites.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Internal Update - Sample Volume Settings.dtsx</Name>
+          <FullPath>Internal Update - Sample Volume Settings.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Internal Update - UnMerge Parties.dtsx</Name>
+          <FullPath>Internal Update - UnMerge PArties.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Internal Update - VISTA Direct Sales Dealer Update.dtsx</Name>
+          <FullPath>Internal Update - VISTA Direct Sales Dealer Update.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Parallel Run - Load Comparison Files.dtsx</Name>
+          <FullPath>Parallel Run - Load Comparison Files.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Parallel Run - Output Comparison Files.dtsx</Name>
+          <FullPath>Parallel Run - Output Comparison Files.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Prophet System - Stream Old Sample File.dtsx</Name>
+          <FullPath>Prophet System - Stream Old Sample File.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Rename Archive Package Log Files.dtsx</Name>
+          <FullPath>Rename Archive Package Log Files.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Response Load - Asia Pacific Importers Feed.dtsx</Name>
+          <FullPath>Response Load - Asia Pacific Importers Feed.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Response Load - CRM Header Data.dtsx</Name>
+          <FullPath>Response Load - CRM Header Data.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Response Load - CRM Lost Lead Responses.dtsx</Name>
+          <FullPath>Response Load - CRM Lost Lead Responses.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Response Load - CRM Response Data.dtsx</Name>
+          <FullPath>Response Load - CRM Response Data.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Response Load - Load Case Suppression from EventX.dtsx</Name>
+          <FullPath>Response Load - Load Case Suppression from EventX.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Response Load - Load Responses from EventX.dtsx</Name>
+          <FullPath>Response Load - Load Responses from EventX.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Response Load - LostLeads.dtsx</Name>
+          <FullPath>Response Load - LostLeads.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Response Load - Turkey Feed.dtsx</Name>
+          <FullPath>Response Load - Turkey Feed.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample File - Crush FTP Download.dtsx</Name>
+          <FullPath>Sample File - Crush FTP Download.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample File - SET GPG KEYS.dtsx</Name>
+          <FullPath>Sample File - SET GPG KEYS.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample File Automatic Download.dtsx</Name>
+          <FullPath>Sample File Automatic Download.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample File Download India.dtsx</Name>
+          <FullPath>Sample File Download India.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample File Download.dtsx</Name>
+          <FullPath>Sample File Download.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample File Interim Download.dtsx</Name>
+          <FullPath>Sample File Interim Download.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - AFRL Lookup Data.dtsx</Name>
+          <FullPath>Sample Load - AFRL Lookup Data.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Backdata Sales Loader.dtsx</Name>
+          <FullPath>Sample Load - Backdata Sales Loader.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Canada Sales Loader.dtsx</Name>
+          <FullPath>Sample Load - Canada Sales Loader.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Canada Service Loader.dtsx</Name>
+          <FullPath>Sample Load - Canada Service Loader.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - China CRC With Responses Loader.dtsx</Name>
+          <FullPath>Sample Load - China CRC With Responses Loader.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - China Global RoadSide Loader.dtsx</Name>
+          <FullPath>Sample Load - China Global RoadSide Loader.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - China Global Sales Loader.dtsx</Name>
+          <FullPath>Sample Load - China Global Sales Loader.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - China Global Service Loader.dtsx</Name>
+          <FullPath>Sample Load - China Global Service Loader.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Combined CRC Loader.dtsx</Name>
+          <FullPath>Sample Load - Combined CRC Loader.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Combined CRM CASE.dtsx</Name>
+          <FullPath>Sample Load - Combined CRM CASE.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Combined CRM CQI VISTA CONTRACT.dtsx</Name>
+          <FullPath>Sample Load - Combined CRM CQI VISTA CONTRACT.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Combined CRM DMS REPAIR.dtsx</Name>
+          <FullPath>Sample Load - Combined CRM DMS REPAIR.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Combined CRM GENERAL ENQUIRY.dtsx</Name>
+          <FullPath>Sample Load - Combined CRM GENERAL ENQUIRY.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Combined CRM Land Rover Expereince.dtsx</Name>
+          <FullPath>Sample Load - Combined CRM Land Rover Expereince.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Combined CRM LOST LEADS.dtsx</Name>
+          <FullPath>Sample Load - Combined CRM LOST LEADS.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Combined CRM PREOWNED.dtsx</Name>
+          <FullPath>Sample Load - Combined CRM PREOWNED.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Combined CRM ROADSIDE INCIDENT.dtsx</Name>
+          <FullPath>Sample Load - Combined CRM ROADSIDE INCIDENT.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Combined CRM VISTA CONTRACT.dtsx</Name>
+          <FullPath>Sample Load - Combined CRM VISTA CONTRACT.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Combined DDW Service.dtsx</Name>
+          <FullPath>Sample Load - Combined DDW Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Combined General Enquiry.dtsx</Name>
+          <FullPath>Sample Load - Combined General Enquiry.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Combined I-Assistance.dtsx</Name>
+          <FullPath>Sample Load - Combined I-Assistance.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Combined Roadside Service.dtsx</Name>
+          <FullPath>Sample Load - Combined Roadside Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - CXP CQI Loader.dtsx</Name>
+          <FullPath>Sample Load - CXP CQI Loader.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - CXP CRC Loader.dtsx</Name>
+          <FullPath>Sample Load - CXP CRC Loader.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - CXP General Enquiry.dtsx</Name>
+          <FullPath>Sample Load - CXP General Enquiry.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - CXP LostLeads Loader.dtsx</Name>
+          <FullPath>Sample Load - CXP LostLeads Loader.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - CXP Pre-Owned Sales Loader.dtsx</Name>
+          <FullPath>Sample Load - CXP Pre-Owned Sales Loader.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - CXP Roadside Loader.dtsx</Name>
+          <FullPath>Sample Load - CXP Roadside Loader.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - CXP Sales Loader.dtsx</Name>
+          <FullPath>Sample Load - CXP Sales Loader.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - CXP Service Loader.dtsx</Name>
+          <FullPath>Sample Load - CXP Service Loader.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Franchise Dealer Hierarchy.dtsx</Name>
+          <FullPath>Sample Load - Franchise Dealer Hierarchy.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Global Bodyshop Loader.dtsx</Name>
+          <FullPath>Sample Load - Global Bodyshop Loader.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Global CQI Loader.dtsx</Name>
+          <FullPath>Sample Load - Global CQI Loader.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Global France Sales VISTA CQI.dtsx</Name>
+          <FullPath>Sample Load - Global France Sales VISTA CQI.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Global LostLeads Loader.dtsx</Name>
+          <FullPath>Sample Load - Global LostLeads Loader.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Global Low Countries Sales.dtsx</Name>
+          <FullPath>Sample Load - Global Low Countries Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Global MCQI Loader.dtsx</Name>
+          <FullPath>Sample Load - Global MCQI Loader.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Global Pre-Owned Sales Loader.dtsx</Name>
+          <FullPath>Sample Load - Global Pre-Owned Sales Loader.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Global Sales Loader.dtsx</Name>
+          <FullPath>Sample Load - Global Sales Loader.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Global Service Loader.dtsx</Name>
+          <FullPath>Sample Load - Global Service Loader.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Australia Sales.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Australia Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Australia Service.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Australia Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Austria Sales.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Austria Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Austria Service.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Austria Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Belgium Sales.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Belgium Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Belgium Service.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Belgium Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Brazil Sales VISTA.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Brazil Sales VISTA.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Brazil Service.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Brazil Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar China Retention Sales.dtsx</Name>
+          <FullPath>Sample Load - Jaguar China Retention Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar China Retention Service.dtsx</Name>
+          <FullPath>Sample Load - Jaguar China Retention Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar China Sales.dtsx</Name>
+          <FullPath>Sample Load - Jaguar China Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar China Service.dtsx</Name>
+          <FullPath>Sample Load - Jaguar China Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Cupid Sales.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Cupid Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Czech Sales.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Czech Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar France Sales VISTA.dtsx</Name>
+          <FullPath>Sample Load - Jaguar France Sales VISTA.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar France Sales.dtsx</Name>
+          <FullPath>Sample Load - Jaguar France Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar France Service.dtsx</Name>
+          <FullPath>Sample Load - Jaguar France Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Germany Sales VISTA.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Germany Sales VISTA.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Germany Sales.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Germany Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Germany Service.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Germany Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Ireland Sales.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Ireland Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Ireland Service.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Ireland Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Italy Sales.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Italy Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Italy Service.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Italy Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Japan Sales.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Japan Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Japan Service.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Japan Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Korea Sales.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Korea Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Korea Service.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Korea Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Netherlands Sales.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Netherlands Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Netherlands Service.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Netherlands Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Portugal Sales VISTA.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Portugal Sales VISTA.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Portugal Service.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Portugal Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Russia Sales.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Russia Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Russia Service.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Russia Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar South Africa Sales.dtsx</Name>
+          <FullPath>Sample Load - Jaguar South Africa Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar South Africa Service.dtsx</Name>
+          <FullPath>Sample Load - Jaguar South Africa Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Spain Legacy Service.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Spain Legacy Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Spain Sales VISTA.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Spain Sales VISTA.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Spain Service.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Spain Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Switzerland Sales.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Switzerland Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar Switzerland Service.dtsx</Name>
+          <FullPath>Sample Load - Jaguar Switzerland Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar UK Pre-Owned.dtsx</Name>
+          <FullPath>Sample Load - Jaguar UK Pre-Owned.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar UK Sales.dtsx</Name>
+          <FullPath>Sample Load - Jaguar UK Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar UK Service - LoyaltyLogistix.dtsx</Name>
+          <FullPath>Sample Load - Jaguar UK Service - LoyaltyLogistix.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Jaguar UK Service.dtsx</Name>
+          <FullPath>Sample Load - Jaguar UK Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Korea Pre-Owned.dtsx</Name>
+          <FullPath>Sample Load - Korea Pre-Owned.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Australia Sales.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Australia Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Australia Service.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Australia Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Austria Sales.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Austria Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Austria Service.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Austria Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Belgium Sales.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Belgium Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Belgium Service.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Belgium Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Brazil Sales VISTA.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Brazil Sales VISTA.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Brazil Sales.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Brazil Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Brazil Service.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Brazil Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover China Retention Sales.dtsx</Name>
+          <FullPath>Sample Load - Land Rover China Retention Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover China Retention Service.dtsx</Name>
+          <FullPath>Sample Load - Land Rover China Retention Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover China Sales.dtsx</Name>
+          <FullPath>Sample Load - Land Rover China Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover China Service.dtsx</Name>
+          <FullPath>Sample Load - Land Rover China Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Czech Sales.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Czech Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover France Sales VISTA.dtsx</Name>
+          <FullPath>Sample Load - Land Rover France Sales VISTA.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover France Sales.dtsx</Name>
+          <FullPath>Sample Load - Land Rover France Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover France Service.dtsx</Name>
+          <FullPath>Sample Load - Land Rover France Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Germany Sales VISTA.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Germany Sales VISTA.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Germany Sales.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Germany Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Germany Service.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Germany Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Ireland Sales.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Ireland Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Ireland Service.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Ireland Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Italy Sales.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Italy Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Italy Service.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Italy Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Japan Sales.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Japan Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Japan Service.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Japan Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Korea Sales.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Korea Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Korea Service.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Korea Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Netherlands Sales.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Netherlands Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Netherlands Service.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Netherlands Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Portugal Sales VISTA.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Portugal Sales VISTA.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Portugal Service.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Portugal Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Russia Sales.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Russia Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Russia Service.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Russia Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover South Africa Sales.dtsx</Name>
+          <FullPath>Sample Load - Land Rover South Africa Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover South Africa Service.dtsx</Name>
+          <FullPath>Sample Load - Land Rover South Africa Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Spain Legacy Service.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Spain Legacy Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Spain Sales VISTA.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Spain Sales VISTA.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Spain Service.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Spain Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Switzerland Sales.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Switzerland Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover Switzerland Service.dtsx</Name>
+          <FullPath>Sample Load - Land Rover Switzerland Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover UK Pre-Owned.dtsx</Name>
+          <FullPath>Sample Load - Land Rover UK Pre-Owned.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover UK Sales - Applicor.dtsx</Name>
+          <FullPath>Sample Load - Land Rover UK Sales - Applicor.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover UK Sales.dtsx</Name>
+          <FullPath>Sample Load - Land Rover UK Sales.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover UK Service - LoyaltyLogistix.dtsx</Name>
+          <FullPath>Sample Load - Land Rover UK Service - LoyaltyLogistix.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Land Rover UK Service.dtsx</Name>
+          <FullPath>Sample Load - Land Rover UK Service.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Lost Leads Agency Status.dtsx</Name>
+          <FullPath>Sample Load - Lost Leads Agency Status.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Management and Retailer files.dtsx</Name>
+          <FullPath>Sample Load - Management and Retailer files.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - NewXML.dtsx</Name>
+          <FullPath>Sample Load - NewXML.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - SVO Lookup.dtsx</Name>
+          <FullPath>Sample Load - SVO Lookup.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Template Package.dtsx</Name>
+          <FullPath>Sample Load - Template Package.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Load - Vista.dtsx</Name>
+          <FullPath>Sample Load - Vista.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Output - CRM Responses and Updates - FTP ONLY.dtsx</Name>
+          <FullPath>Sample Output - CRM Responses and Updates - FTP ONLY.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Output - CRM Responses and Updates.dtsx</Name>
+          <FullPath>Sample Output - CRM Responses and Updates.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Output - CRM SC114 Feed.dtsx</Name>
+          <FullPath>Sample Output - CRM SC114 Feed.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Output - LostLeads.dtsx</Name>
+          <FullPath>Sample Output - LostLeads.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Output - Medallia Selection Output FTP Upload.dtsx</Name>
+          <FullPath>Sample Output - Medallia Selection Output FTP Upload.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Output - NWB - Request Status Alerts.dtsx</Name>
+          <FullPath>Sample Output - NWB - Request Status Alerts.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Output - NWB - Selection Load and Output.dtsx</Name>
+          <FullPath>Sample Output - NWB - Selection Load and Output.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Process - Deduplication.dtsx</Name>
+          <FullPath>Sample Process - Deduplication.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Process - Load From VWT CGR BlacklistTest.dtsx</Name>
+          <FullPath>Sample Process - Load From VWT CGR BlacklistTest.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Process - Load From VWT.dtsx</Name>
+          <FullPath>Sample Process - Load From VWT.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Process - Load I-Assistance to VWT.dtsx</Name>
+          <FullPath>Sample Process - Load I-Assistance to VWT.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Process - Load Roadside to VWT.dtsx</Name>
+          <FullPath>Sample Process - Load Roadside to VWT.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Process - Load Warranty to VWT.dtsx</Name>
+          <FullPath>Sample Process - Load Warranty to VWT.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Process - Matching.dtsx</Name>
+          <FullPath>Sample Process - Matching.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Process - Standardisation.dtsx</Name>
+          <FullPath>Sample Process - Standardisation.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Process - Unknown Manufacturer.dtsx</Name>
+          <FullPath>Sample Process - Unknown Manufacturer.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - China EVF Data.dtsx</Name>
+          <FullPath>Sample Reporting - China EVF Data.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - Chinese VIN Report.dtsx</Name>
+          <FullPath>Sample Reporting - Chinese VIN Report.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - CRC Non Solicitations.dtsx</Name>
+          <FullPath>Sample Reporting - CRC Non Solicitations.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - CustomerUpdateFeeds.dtsx</Name>
+          <FullPath>Sample Reporting - CustomerUpdateFeeds.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - Daily Sample Volume.dtsx</Name>
+          <FullPath>Sample Reporting - Daily Sample Volume.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - Enprecis.dtsx</Name>
+          <FullPath>Sample Reporting - Enprecis.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - EventXDealerList - InclTransfers.dtsx</Name>
+          <FullPath>Sample Reporting - EventXDealerList - InclTransfers.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - EventXDealerList - UNUSED OLD.dtsx</Name>
+          <FullPath>Sample Reporting - EventXDealerList - UNUSED OLD.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - GDPR Access Report.dtsx</Name>
+          <FullPath>Sample Reporting - GDPR Access Report.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - GDPR Erasures Feed.dtsx</Name>
+          <FullPath>Sample Reporting - GDPR Erasures Feed.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - Germany Red Flag Report.dtsx</Name>
+          <FullPath>Sample Reporting - Germany Red Flag Report.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - Global Sample Report.dtsx</Name>
+          <FullPath>Sample Reporting - Global Sample Report.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - InMoment Orphan Check Download.dtsx</Name>
+          <FullPath>Sample Reporting - InMoment Orphan Check Download.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - InMoment Orphan Dealer.dtsx</Name>
+          <FullPath>Sample Reporting - InMoment Orphan Dealer.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - LoadSelectionReport.dtsx</Name>
+          <FullPath>Sample Reporting - LoadSelectionReport.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - MonthlySampleCheck.dtsx</Name>
+          <FullPath>Sample Reporting - MonthlySampleCheck.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - MSX Data.dtsx</Name>
+          <FullPath>Sample Reporting - MSX Data.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - MSX International Report.dtsx</Name>
+          <FullPath>Sample Reporting - MSX International Report.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - MysteryShoppingReport.dtsx</Name>
+          <FullPath>Sample Reporting - MysteryShoppingReport.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - Nonsolicitations.dtsx</Name>
+          <FullPath>Sample Reporting - Nonsolicitations.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - North America Selection Report.dtsx</Name>
+          <FullPath>Sample Reporting - North America Selection Report.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - Online Expiry ReOutputs.dtsx</Name>
+          <FullPath>Sample Reporting - Online Expiry ReOutputs.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - Outputs For Online.dtsx</Name>
+          <FullPath>Sample Reporting - Outputs For Online.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - Parallel Run.dtsx</Name>
+          <FullPath>Sample Reporting - Parallel Run.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - ResponseReport.dtsx</Name>
+          <FullPath>Sample Reporting - ResponseReport.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - Sample Dispo &amp; Analysis.dtsx</Name>
+          <FullPath>Sample Reporting - Sample Dispo &amp; Analysis.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - Sample Receipt Report.dtsx</Name>
+          <FullPath>Sample Reporting - Sample Receipt Report.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - SampleReport.dtsx</Name>
+          <FullPath>Sample Reporting - SampleReport.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - Uncoded Dealers Report.dtsx</Name>
+          <FullPath>Sample Reporting - Uncoded Dealers Report.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - UsableEmailReport.dtsx</Name>
+          <FullPath>Sample Reporting - UsableEmailReport.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - Weekly Sample Volume.dtsx</Name>
+          <FullPath>Sample Reporting - Weekly Sample Volume.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - Weekly Uncoded VINs.dtsx</Name>
+          <FullPath>Sample Reporting - Weekly Uncoded VINs.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Sample Reporting - WeeklySampleCheck.dtsx</Name>
+          <FullPath>Sample Reporting - WeeklySampleCheck.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>SecureFTPDownload.dtsx</Name>
+          <FullPath>SecureFTPDownload.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output - CATI.dtsx</Name>
+          <FullPath>Selection Output - CATI.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output - China With Responses.dtsx</Name>
+          <FullPath>Selection Output - China With Responses.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output - CQI  2017.dtsx</Name>
+          <FullPath>Selection Output - CQI  2017.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output - CQI .dtsx</Name>
+          <FullPath>Selection Output - CQI .dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output - Enprecis.dtsx</Name>
+          <FullPath>Selection Output - Enprecis.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output - NPS Output To Excel.dtsx</Name>
+          <FullPath>Selection Output - NPS Output To Excel.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output - OWAP Adhoc Selections.dtsx</Name>
+          <FullPath>Selection Output - OWAP Adhoc Selections.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output - OWAP Adhoc.dtsx</Name>
+          <FullPath>Selection Output - OWAP Adhoc.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output - Postal.dtsx</Name>
+          <FullPath>Selection Output - Postal.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output - SMS.dtsx</Name>
+          <FullPath>Selection Output - SMS.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output Child - Bodyshop All File.dtsx</Name>
+          <FullPath>Selection Output Child - Bodyshop ALL file.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output Child - Combined Online File.dtsx</Name>
+          <FullPath>Selection Output Child - Combined Online File.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output Child - CRC Agent Report.dtsx</Name>
+          <FullPath>Selection Output Child - CRC Agent Report.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output Child - CRC All File.dtsx</Name>
+          <FullPath>Selection Output Child - CRC ALL file.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output Child - CRC General Enquiry.dtsx</Name>
+          <FullPath>Selection Output Child - CRC General Enquiry.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output Child - I-Assistance All File.dtsx</Name>
+          <FullPath>Selection Output Child - I-Assistance ALL file.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output Child - LostLeads All File.dtsx</Name>
+          <FullPath>Selection Output Child - LostLeads ALL file.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output Child - Non Output.dtsx</Name>
+          <FullPath>Selection Output Child - Non Output.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output Child - Online File.dtsx</Name>
+          <FullPath>Selection Output Child - Online File.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output Child - Postal Output.dtsx</Name>
+          <FullPath>Selection Output Child - Postal Output.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output Child - PreOwned All File.dtsx</Name>
+          <FullPath>Selection Output Child - PreOwned ALL file.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output Child - Roadside All File.dtsx</Name>
+          <FullPath>Selection Output Child - Roadside ALL file.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output Child - Sales All File.dtsx</Name>
+          <FullPath>Selection Output Child - Sales ALL file.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output Child - Service All File.dtsx</Name>
+          <FullPath>Selection Output Child - Service ALL file.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output Child - SMS by Language and Region.dtsx</Name>
+          <FullPath>Selection Output Child - SMS by Language and Region.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output Child - SMS Output.dtsx</Name>
+          <FullPath>Selection Output Child - SMS Output.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output Child - Telephone Output.dtsx</Name>
+          <FullPath>Selection Output Child - Telephone Output.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output Master.dtsx</Name>
+          <FullPath>Selection Output Master.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Selection Output.dtsx</Name>
+          <FullPath>Selection Output.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>Warehouse - Get CaseDetails.dtsx</Name>
+          <FullPath>Warehouse - Get CaseDetails.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+        <DtsPackage FormatVersion="8">
+          <Name>WebsiteReporting - Disposition Report By Market.dtsx</Name>
+          <FullPath>WebsiteReporting - Disposition Report By Market.dtsx</FullPath>
+          <References />
+        </DtsPackage>
+      </DTSPackages>
+    </Manifest>
+  </DeploymentModelSpecificContent>
+  <ControlFlowParts />
+  <Miscellaneous>
+    <ProjectItem>
+      <Name>Archive Daily Logs.dtsConfig</Name>
+      <FullPath>Archive Daily Logs.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Archive Package Logs.dtsConfig</Name>
+      <FullPath>Archive Package Logs.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Copy Connexions Sampling Databases.dtsConfig</Name>
+      <FullPath>Copy Connexions Sampling Databases.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer Update - Agent Lookup.dtsConfig</Name>
+      <FullPath>Customer Update - Agent Lookup.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer Update - Contact Outcome.dtsConfig</Name>
+      <FullPath>Customer Update - Contact Outcome.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer Update - Dealer.dtsConfig</Name>
+      <FullPath>Customer Update - Dealer.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer Update - Email Address.dtsConfig</Name>
+      <FullPath>Customer Update - Email Address.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer Update - Extra Vehicle Feed.dtsConfig</Name>
+      <FullPath>Customer Update - Extra Vehicle Feed.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer Update - Lost Lead Model of Interest.dtsConfig</Name>
+      <FullPath>Customer Update - Lost Lead Model of Interest.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer Update - Non Solicitation Removal.dtsConfig</Name>
+      <FullPath>Customer Update - Non Solicitation Removal.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer Update - Organisation.dtsConfig</Name>
+      <FullPath>Customer Update - Organisation.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer Update - Person.dtsConfig</Name>
+      <FullPath>Customer Update - Person.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer Update - Postal Address.dtsConfig</Name>
+      <FullPath>Customer Update - Postal Address.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer Update - Registration Number.dtsConfig</Name>
+      <FullPath>Customer Update - Registration Number.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer Update - SMS Bouncebacks.dtsConfig</Name>
+      <FullPath>Customer Update - SMS Bouncebacks.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer Update - Telephone Number.dtsConfig</Name>
+      <FullPath>Customer Update - Telephone Number.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DropZoneLoad.dtsConfig</Name>
+      <FullPath>DropZoneLoad.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Enprecis Output.dtsConfig</Name>
+      <FullPath>Enprecis Output.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Generate Metadata Tables.dtsConfig</Name>
+      <FullPath>Generate Metadata Tables.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Internal Update - Case Rejections.dtsConfig</Name>
+      <FullPath>Internal Update - Case Rejections.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Internal Update - Create ReIssue Invite File.dtsConfig</Name>
+      <FullPath>Internal Update - Create ReIssue Invite File.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Internal Update - Invite Matrix.dtsConfig</Name>
+      <FullPath>Internal Update - Invite Matrix.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Internal Update - Merge Parties.dtsConfig</Name>
+      <FullPath>Internal Update - Merge Parties.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Internal Update - Non Solicitations.dtsConfig</Name>
+      <FullPath>Internal Update - Non Solicitations.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Internal Update - Reissue Invites.dtsConfig</Name>
+      <FullPath>Internal Update - Reissue Invites.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Internal Update - Sample Volume Settings.dtsConfig</Name>
+      <FullPath>Internal Update - Sample Volume Settings.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Internal Update - UnMerge Parties.dtsConfig</Name>
+      <FullPath>Internal Update - UnMerge Parties.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Internal Update - VISTA Direct Sales Dealer Update.dtsConfig</Name>
+      <FullPath>Internal Update - VISTA Direct Sales Dealer Update.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>JLREmailSampling.dtsConfig</Name>
+      <FullPath>JLREmailSampling.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>OnlineDealerList.dtsConfig</Name>
+      <FullPath>OnlineDealerList.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Parallel Run - Load Comparison Files.dtsConfig</Name>
+      <FullPath>Parallel Run - Load Comparison Files.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Parallel Run - Output Comparison Files.dtsConfig</Name>
+      <FullPath>Parallel Run - Output Comparison Files.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Response Load - Asia Pacific Importers Feed.dtsConfig</Name>
+      <FullPath>Response Load - Asia Pacific Importers Feed.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Response Load - CRM Header Data.dtsConfig</Name>
+      <FullPath>Response Load - CRM Header Data.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Response Load - CRM Lost Lead Responses.dtsConfig</Name>
+      <FullPath>Response Load - CRM Lost Lead Responses.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Response Load - CRM Response Data.dtsConfig</Name>
+      <FullPath>Response Load - CRM Response Data.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Response Load - Load Case Suppression from EventX.dtsConfig</Name>
+      <FullPath>Response Load - Load Case Suppression from EventX.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Response Load - Load Responses from EventX.dtsConfig</Name>
+      <FullPath>Response Load - Load Responses from EventX.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Response Load - LostLeads.dtsConfig</Name>
+      <FullPath>Response Load - LostLeads.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Response Load - Turkey Feed.dtsConfig</Name>
+      <FullPath>Response Load - Turkey Feed.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample File - Crush FTP Download.dtsConfig</Name>
+      <FullPath>Sample File - Crush FTP Download.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample File - SET GPG KEYS.dtsConfig</Name>
+      <FullPath>Sample File - SET GPG KEYS.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample File Automatic Download.dtsConfig</Name>
+      <FullPath>Sample File Automatic Download.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample File Download India.dtsConfig</Name>
+      <FullPath>Sample File Download India.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample File Download.dtsConfig</Name>
+      <FullPath>Sample File Download.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample File Intermin Download.dtsConfig</Name>
+      <FullPath>Sample File Intermin Download.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Backdata Sales Loader.dtsConfig</Name>
+      <FullPath>Sample Load - Backdata Sales Loader.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Canada Sales Loader.dtsConfig</Name>
+      <FullPath>Sample Load - Canada Sales Loader.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Canada Service Loader.dtsConfig</Name>
+      <FullPath>Sample Load - Canada Service Loader.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - China CRC With Responses Loader.dtsConfig</Name>
+      <FullPath>Sample Load - China CRC With Responses Loader.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - China Global Roadside Loader.dtsConfig</Name>
+      <FullPath>Sample Load - China Global Roadside Loader.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - China Global Sales Loader.dtsConfig</Name>
+      <FullPath>Sample Load - China Global Sales Loader.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - China Global Service Loader.dtsConfig</Name>
+      <FullPath>Sample Load - China Global Service Loader.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Combined CRC Loader.dtsConfig</Name>
+      <FullPath>Sample Load - Combined CRC Loader.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Combined CRM CASE.dtsConfig</Name>
+      <FullPath>Sample Load - Combined CRM CASE.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Combined CRM CQI VISTA CONTRACT.dtsConfig</Name>
+      <FullPath>Sample Load - Combined CRM CQI VISTA CONTRACT.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Combined CRM DMS REPAIR SERVICE.dtsConfig</Name>
+      <FullPath>Sample Load - Combined CRM DMS REPAIR SERVICE.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Combined CRM GENERAL ENQUIRY.dtsConfig</Name>
+      <FullPath>Sample Load - Combined CRM GENERAL ENQUIRY.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Combined CRM LOST LEADS.dtsConfig</Name>
+      <FullPath>Sample Load - Combined CRM LOST LEADS.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Combined CRM LR EXPERIENCE.dtsConfig</Name>
+      <FullPath>Sample Load - Combined CRM LR EXPERIENCE.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Combined CRM PREOWNED.dtsConfig</Name>
+      <FullPath>Sample Load - Combined CRM PREOWNED.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Combined CRM ROADSIDE INCIDENT.dtsConfig</Name>
+      <FullPath>Sample Load - Combined CRM ROADSIDE INCIDENT.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Combined CRM VISTA CONTRACT.dtsConfig</Name>
+      <FullPath>Sample Load - Combined CRM VISTA CONTRACT.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Combined DDW Service.dtsConfig</Name>
+      <FullPath>Sample Load - Combined DDW Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Combined General Enquiry.dtsConfig</Name>
+      <FullPath>Sample Load - Combined General Enquiry.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Combined I-Assistance.dtsConfig</Name>
+      <FullPath>Sample Load - Combined I-Assistance.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Combined Roadside Service.dtsConfig</Name>
+      <FullPath>Sample Load - Combined Roadside Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - CXP CQI Loader.dtsConfig</Name>
+      <FullPath>Sample Load - CXP CQI Loader.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - CXP CRC Loader.dtsConfig</Name>
+      <FullPath>Sample Load - CXP CRC Loader.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - CXP General Enquiry.dtsConfig</Name>
+      <FullPath>Sample Load - CXP General Enquiry.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - CXP LostLeads Loader.dtsConfig</Name>
+      <FullPath>Sample Load - CXP LostLeads Loader.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - CXP Pre-Owned Sales Loader.dtsConfig</Name>
+      <FullPath>Sample Load - CXP Pre-Owned Sales Loader.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - CXP Roadside Loader.dtsConfig</Name>
+      <FullPath>Sample Load - CXP Roadside Loader.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - CXP Sales Loader.dtsConfig</Name>
+      <FullPath>Sample Load - CXP Sales Loader.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - CXP Service Loader.dtsConfig</Name>
+      <FullPath>Sample Load - CXP Service Loader.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Franchise Dealer Hierarchy.dtsConfig</Name>
+      <FullPath>Sample Load - Franchise Dealer Hierarchy.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Global Bodyshop Loader.dtsConfig</Name>
+      <FullPath>Sample Load - Global Bodyshop Loader.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Global CQI Loader.dtsConfig</Name>
+      <FullPath>Sample Load - Global CQI Loader.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Global France Sales VISTA CQI.dtsConfig</Name>
+      <FullPath>Sample Load - Global France Sales VISTA CQI.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Global LostLeads Loader.dtsConfig</Name>
+      <FullPath>Sample Load - Global LostLeads Loader.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Global MCQI Loader.dtsConfig</Name>
+      <FullPath>Sample Load - Global MCQI Loader.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Global Pre-Owned Sales Loader.dtsConfig</Name>
+      <FullPath>Sample Load - Global Pre-Owned Sales Loader.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Global Sales Loader.dtsConfig</Name>
+      <FullPath>Sample Load - Global Sales Loader.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Global Service Loader.dtsConfig</Name>
+      <FullPath>Sample Load - Global Service Loader.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Australia Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Australia Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Australia Service.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Australia Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Austria Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Austria Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Austria Service.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Austria Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Belgium Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Belgium Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Belgium Service.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Belgium Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Brazil Sales VISTA.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Brazil Sales VISTA.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Brazil Service.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Brazil Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar China Retention Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar China Retention Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar China Retention Service.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar China Retention Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar China Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar China Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar China Service.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar China Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Cupid Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Cupid Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Czech Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Czech Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar France Sales VISTA CQI.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar France Sales VISTA CQI.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar France Sales VISTA.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar France Sales VISTA.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar France Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar France Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar France Service.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar France Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Germany Sales VISTA.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Germany Sales VISTA.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Germany Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Germany Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Germany Service.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Germany Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Ireland Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Ireland Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Ireland Service.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Ireland Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Italy Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Italy Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Italy Service.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Italy Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Japan Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Japan Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Japan Service.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Japan Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Korea Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Korea Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Korea Service.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Korea Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Netherlands Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Netherlands Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Netherlands Service.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Netherlands Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Portugal Sales VISTA.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Portugal Sales VISTA.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Portugal Service.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Portugal Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Russia Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Russia Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Russia Service.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Russia Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar South Africa Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar South Africa Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar South Africa Service.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar South Africa Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Spain Legacy Service.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Spain Legacy Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Spain Sales VISTA.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Spain Sales VISTA.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Spain Service.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Spain Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Switzerland Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Switzerland Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar Switzerland Service.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar Switzerland Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar UK Pre-Owned.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar UK Pre-Owned.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar UK Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar UK Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar UK Service - LoyaltyLogistix.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar UK Service - LoyaltyLogistix.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Jaguar UK Service.dtsConfig</Name>
+      <FullPath>Sample Load - Jaguar UK Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Korea Pre-Owned.dtsConfig</Name>
+      <FullPath>Sample Load - Korea Pre-Owned.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Australia Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Australia Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Australia Service.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Australia Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Austria Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Austria Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Austria Service.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Austria Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Belgium Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Belgium Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Belgium Service.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Belgium Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Brazil Sales VISTA.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Brazil Sales VISTA.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Brazil Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Brazil Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Brazil Service.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Brazil Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover China Retention Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover China Retention Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover China Retention Service.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover China Retention Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover China Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover China Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover China Service.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover China Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Czech Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Czech Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover France Sales VISTA.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover France Sales VISTA.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover France Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover France Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover France Service.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover France Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Germany Sales VISTA.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Germany Sales VISTA.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Germany Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Germany Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Germany Service.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Germany Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Ireland Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Ireland Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Ireland Service.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Ireland Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Italy Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Italy Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Italy Service.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Italy Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Japan Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Japan Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Japan Service.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Japan Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Korea Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Korea Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Korea Service.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Korea Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Netherlands Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Netherlands Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Netherlands Service.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Netherlands Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Portugal Sales VISTA.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Portugal Sales VISTA.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Portugal Service.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Portugal Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Russia Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Russia Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Russia Service.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Russia Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover South Africa Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover South Africa Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover South Africa Service.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover South Africa Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Spain Legacy Service.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Spain Legacy Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Spain Sales VISTA.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Spain Sales VISTA.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Spain Service.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Spain Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Switzerland Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Switzerland Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover Switzerland Service.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover Switzerland Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover UK Pre-Owned.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover UK Pre-Owned.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover UK Sales - Applicor.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover UK Sales - Applicor.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover UK Sales.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover UK Sales.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover UK Service - LoyaltyLogistix.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover UK Service - LoyaltyLogistix.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Land Rover UK Service.dtsConfig</Name>
+      <FullPath>Sample Load - Land Rover UK Service.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Lost Lead Agency Status.dtsConfig</Name>
+      <FullPath>Sample Load - Lost Lead Agency Status.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Management and Retailer files.dtsConfig</Name>
+      <FullPath>Sample Load - Management and Retailer files.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - NewXML.dtsConfig</Name>
+      <FullPath>Sample Load - NewXML.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - SVO Lookup.dtsConfig</Name>
+      <FullPath>Sample Load - SVO Lookup.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Load - Template Package.dtsConfig</Name>
+      <FullPath>Sample Load - Template Package.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Output - CRM Responses and Updates.dtsConfig</Name>
+      <FullPath>Sample Output - CRM Responses and Updates.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Output - CRM SC114 Feed.dtsConfig</Name>
+      <FullPath>Sample Output - CRM SC114 Feed.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Output - LostLeads.dtsConfig</Name>
+      <FullPath>Sample Output - LostLeads.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Output - Medallia Selection Output FTP Upload.dtsConfig</Name>
+      <FullPath>Sample Output - Medallia Selection Output FTP Upload.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Output - NWB - Request Status Alerts.dtsConfig</Name>
+      <FullPath>Sample Output - NWB - Request Status Alerts.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Output - NWB - Selection Load and Output.dtsConfig</Name>
+      <FullPath>Sample Output - NWB - Selection Load and Output.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Process - Deduplication.dtsConfig</Name>
+      <FullPath>Sample Process - Deduplication.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Process - Load From VWT.dtsConfig</Name>
+      <FullPath>Sample Process - Load From VWT.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Process - Load I-Assistance to VWT.dtsConfig</Name>
+      <FullPath>Sample Process - Load I-Assistance to VWT.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Process - Load Roadside to VWT.dtsConfig</Name>
+      <FullPath>Sample Process - Load Roadside to VWT.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Process - Load Warranty to VWT.dtsConfig</Name>
+      <FullPath>Sample Process - Load Warranty to VWT.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Process - Matching.dtsConfig</Name>
+      <FullPath>Sample Process - Matching.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Process - Standardisation.dtsConfig</Name>
+      <FullPath>Sample Process - Standardisation.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Process - Unknown Manufacturer.dtsConfig</Name>
+      <FullPath>Sample Process - Unknown Manufacturer.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Reporting - China EVF Data.dtsConfig</Name>
+      <FullPath>Sample Reporting - China EVF Data.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Reporting - Chinese VIN Report.dtsConfig</Name>
+      <FullPath>Sample Reporting - Chinese VIN Report.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Reporting - CRC Non Solicitations.dtsConfig</Name>
+      <FullPath>Sample Reporting - CRC Non Solicitations.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Reporting - CustomerUpdateFeeds.dtsConfig</Name>
+      <FullPath>Sample Reporting - CustomerUpdateFeeds.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Reporting - Daily Sample Volume.dtsConfig</Name>
+      <FullPath>Sample Reporting - Daily Sample Volume.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Reporting - EventXDealerList - InclTransfers.dtsConfig</Name>
+      <FullPath>Sample Reporting - EventXDealerList - InclTransfers.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Reporting - GDPR Erasures Feed.dtsConfig</Name>
+      <FullPath>Sample Reporting - GDPR Erasures Feed.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Reporting - Germany Red Flag Report.dtsConfig</Name>
+      <FullPath>Sample Reporting - Germany Red Flag Report.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Reporting - Global Sample Report.dtsConfig</Name>
+      <FullPath>Sample Reporting - Global Sample Report.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Reporting - LoadSelectionReport.dtsConfig</Name>
+      <FullPath>Sample Reporting - LoadSelectionReport.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Reporting - Monthly Response.dtsConfig</Name>
+      <FullPath>Sample Reporting - Monthly Response.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Reporting - MonthlySampleCheck.dtsConfig</Name>
+      <FullPath>Sample Reporting - MonthlySampleCheck.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Reporting - MSX Data.dtsConfig</Name>
+      <FullPath>Sample Reporting - MSX Data.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Reporting - MSX International Report.dtsConfig</Name>
+      <FullPath>Sample Reporting - MSX International Report.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Reporting - Nonsolicitations.dtsConfig</Name>
+      <FullPath>Sample Reporting - Nonsolicitations.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Reporting - North America Selection Report.dtsConfig</Name>
+      <FullPath>Sample Reporting - North America Selection Report.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Reporting - Online Expiry ReOutputs.dtsConfig</Name>
+      <FullPath>Sample Reporting - Online Expiry ReOutputs.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Reporting - Outputs For Online.dtsConfig</Name>
+      <FullPath>Sample Reporting - Outputs For Online.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Reporting - Sample Dispo &amp; Analysis.dtsConfig</Name>
+      <FullPath>Sample Reporting - Sample Dispo &amp; Analysis.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Reporting - Sample Receipt Report.dtsConfig</Name>
+      <FullPath>Sample Reporting - Sample Receipt Report.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Reporting - Sample Report.dtsConfig</Name>
+      <FullPath>Sample Reporting - Sample Report.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Reporting - Uncoded Dealers Report.dtsConfig</Name>
+      <FullPath>Sample Reporting - Uncoded Dealers Report.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Reporting - UsableEmailReport.dtsConfig</Name>
+      <FullPath>Sample Reporting - UsableEmailReport.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Reporting - Weekly Sample Volume.dtsConfig</Name>
+      <FullPath>Sample Reporting - Weekly Sample Volume.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Reporting - Weekly Uncoded VINs.dtsConfig</Name>
+      <FullPath>Sample Reporting - Weekly Uncoded VINs.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sample Reporting - WeeklySampleCheck.dtsConfig</Name>
+      <FullPath>Sample Reporting - WeeklySampleCheck.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sampling.dtsConfig</Name>
+      <FullPath>Sampling.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sampling_China.dtsConfig</Name>
+      <FullPath>Sampling_China.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Selection Output - CATI.dtsConfig</Name>
+      <FullPath>Selection Output - CATI.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Selection Output - China With Responses.dtsConfig</Name>
+      <FullPath>Selection Output - China With Responses.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Selection Output - CQI 2017.dtsConfig</Name>
+      <FullPath>Selection Output - CQI 2017.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Selection Output - CQI.dtsConfig</Name>
+      <FullPath>Selection Output - CQI.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Selection Output - Enprecis.dtsConfig</Name>
+      <FullPath>Selection Output - Enprecis.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Selection Output - OWAP Adhoc Selections.dtsConfig</Name>
+      <FullPath>Selection Output - OWAP Adhoc Selections.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Selection Output - Postal.dtsConfig</Name>
+      <FullPath>Selection Output - Postal.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Selection Output - SMS.dtsConfig</Name>
+      <FullPath>Selection Output - SMS.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Selection Output Master.dtsConfig</Name>
+      <FullPath>Selection Output Master.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Selection Output.dtsConfig</Name>
+      <FullPath>Selection Output.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Warehouse.dtsConfig</Name>
+      <FullPath>Warehouse.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>WebsiteReporting - Disposition Report By Market.dtsConfig</Name>
+      <FullPath>WebsiteReporting - Disposition Report By Market.dtsConfig</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>WebsiteReporting - Migrate Report Tables.dtsConfig</Name>
+      <FullPath>WebsiteReporting - Migrate Report Tables.dtsConfig</FullPath>
+    </ProjectItem>
+  </Miscellaneous>
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <OutputPath>bin</OutputPath>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Sample_ETL.OLEDB.AUTHENTICATION</Id>
+            <Name>Sample_ETL.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=NUEW-SQUKCXS01;Integrated Security=SSPI;Initial Catalog=Sample_ETL</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Sample_Errors.OLEDB.AUTHENTICATION</Id>
+            <Name>Sample_Errors.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=NUEW-SQUKCXS01;Integrated Security=SSPI;Initial Catalog=Sample_Errors</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Sample.OLEDB.AUTHENTICATION</Id>
+            <Name>Sample.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=NUEW-SQUKCXS01;Integrated Security=SSPI;Initial Catalog=Sample</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Sample_Audit.OLEDB.AUTHENTICATION</Id>
+            <Name>Sample_Audit.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:string">Data Source=1005797-CXNSQLS;Initial Catalog=Sample_Audit;Provider=SQLNCLI11.1;Integrated Security=SSPI</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>WebsiteReporting.OLEDB.AUTHENTICATION</Id>
+            <Name>WebsiteReporting.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:string">Data Source=1005797-CXNSQLS;Initial Catalog=WebsiteReporting;Provider=SQLNCLI11.1;Integrated Security=SSPI</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Sample</Id>
+            <Name>Sample</Name>
+            <Value xsi:type="xsd:string">Data Source=1005797-CXNSQLS;Initial Catalog=Sample;Provider=SQLNCLI11.1;Integrated Security=SSPI</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Sample_Errors</Id>
+            <Name>Sample_Errors</Name>
+            <Value xsi:type="xsd:string">Data Source=1005797-CXNSQLS;Initial Catalog=Sample_Errors;Provider=SQLNCLI11.1;Integrated Security=SSPI</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Sample_ETL</Id>
+            <Name>Sample_ETL</Name>
+            <Value xsi:type="xsd:string">Data Source=1005797-CXNSQLS;Initial Catalog=Sample_ETL;Provider=SQLNCLI11.1;Integrated Security=SSPI</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>SampleReporting.OLEDB.AUTHENTICATION</Id>
+            <Name>SampleReporting.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:string">Data Source=1005797-CXNSQLS;Initial Catalog=SampleReporting;Provider=SQLNCLI11.1;Integrated Security=SSPI</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Warehouse.TR STAGING</Id>
+            <Name>Warehouse.TR STAGING</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=nuew-squkcxp02;Persist Security Info=True;Password=;User ID=;Initial Catalog=TR_STAGING</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Sample_ETL_CHINA.OLEDB.AUTHENTICATION</Id>
+            <Name>Sample_ETL_CHINA.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=NUEW-SQAA97.ext.gfk;Integrated Security=SSPI;Initial Catalog=Sample_ETL_China</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Sample_Errors_China.OLEDB.AUTHENTICATION</Id>
+            <Name>Sample_Errors_China.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=NUEW-SQAA97.ext.gfk;Integrated Security=SSPI;Initial Catalog=Sample_Errors_China</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Sample_China.OLEDB.AUTHENTICATION</Id>
+            <Name>Sample_China.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=NUEW-SQAA97.ext.gfk;Integrated Security=SSPI;Initial Catalog=Sample_China</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Sample_Audit_China.OLEDB.AUTHENTICATION</Id>
+            <Name>Sample_Audit_China.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=NUEW-SQAA97.ext.gfk;Integrated Security=SSPI;Initial Catalog=Sample_Audit_China</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>WebsiteReporting_China.OLEDB.AUTHENTICATION</Id>
+            <Name>WebsiteReporting_China.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=NUEW-SQAA97.ext.gfk;Integrated Security=SSPI;Initial Catalog=WebsiteReporting_China</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>SampleReporting_China.OLEDB.AUTHENTICATION</Id>
+            <Name>SampleReporting_China.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=NUEW-SQAA97.ext.gfk;Integrated Security=SSPI;Initial Catalog=SampleReporting_China</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>JLR- Email</Id>
+            <Name>JLR- Email</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=1005797-CXNSQLS;Integrated Security=SSPI;Initial Catalog=JLR-Email</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionProviderMappings />
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Sample_Errors</Id>
+            <Name>Sample_Errors</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Sample</Id>
+            <Name>Sample</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Sample_Audit.OLEDB.AUTHENTICATION</Id>
+            <Name>Sample_Audit.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>WebsiteReporting.OLEDB.AUTHENTICATION</Id>
+            <Name>WebsiteReporting.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Sample_ETL</Id>
+            <Name>Sample_ETL</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>SampleReporting.OLEDB.AUTHENTICATION</Id>
+            <Name>SampleReporting.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Warehouse.TR STAGING</Id>
+            <Name>Warehouse.TR STAGING</Name>
+            <Value xsi:type="xsd:int">1</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Sample_ETL_CHINA.OLEDB.AUTHENTICATION</Id>
+            <Name>Sample_ETL_CHINA.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Sample_Errors_China.OLEDB.AUTHENTICATION</Id>
+            <Name>Sample_Errors_China.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Sample_China.OLEDB.AUTHENTICATION</Id>
+            <Name>Sample_China.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Sample_Audit_China.OLEDB.AUTHENTICATION</Id>
+            <Name>Sample_Audit_China.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>WebsiteReporting_China.OLEDB.AUTHENTICATION</Id>
+            <Name>WebsiteReporting_China.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>SampleReporting_China.OLEDB.AUTHENTICATION</Id>
+            <Name>SampleReporting_China.OLEDB.AUTHENTICATION</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>JLR- Email</Id>
+            <Name>JLR- Email</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+        <DatabaseStorageLocations />
+        <TargetServerVersion>SQLServer2016</TargetServerVersion>
+        <ParameterConfigurationValues />
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

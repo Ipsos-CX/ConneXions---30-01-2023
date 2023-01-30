@@ -1,0 +1,12 @@
+﻿CREATE TABLE [ParallelRun].[DailySelections](
+	[RemoteDateLastRun] [datetime2](7) NULL,
+	[RemoteRequirementID] [int] NULL,
+	[RemoteRequirement] [varchar](255) NULL,
+	[RemoteCaseCount] [int] NULL,
+	[RemoteRejectionCount] [int] NULL,
+	[LocalDateLastRun] [datetime2](7) NULL,
+	[LocalRequirementID] [int] NULL,
+	[LocalRequirement] [varchar](255) NULL,
+	[LocalCaseCount] [int] NULL,
+	[LocalRejectionCount] [int] NULL
+) ON [PRIMARY]

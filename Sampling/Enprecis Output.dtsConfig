@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Sample File Download" GeneratedFromPackageID="{8D044BBC-EE0C-4BCC-A0B1-F1647F2EBBBC}" GeneratedDate="30/03/2012 11:33:29"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Enprecis Output.dtsx\Enprecis Output.log</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

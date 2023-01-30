@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Sample Reporting - Weekly Sample Volume" GeneratedFromPackageID="{4DBB8655-10CA-4C79-8FF3-DD5D6BC9AD26}" GeneratedDate="19/04/2021 12:50:05"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::SamplePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\DataOutput\SampleVolumeReportWeekly\</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailEnabled].Properties[Value]" ValueType="Boolean">
+    <ConfiguredValue>FALSE</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

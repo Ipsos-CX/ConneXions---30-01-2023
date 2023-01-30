@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[OutcomeCode]
+	FROM SMALLINT NOT NULL

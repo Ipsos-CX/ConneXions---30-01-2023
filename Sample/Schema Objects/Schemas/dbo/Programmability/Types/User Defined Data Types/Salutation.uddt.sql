@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[Salutation]
+	FROM NVARCHAR(200) NOT NULL

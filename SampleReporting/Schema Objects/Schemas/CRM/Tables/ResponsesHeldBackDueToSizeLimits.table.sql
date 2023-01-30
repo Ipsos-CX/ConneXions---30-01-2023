@@ -1,0 +1,30 @@
+﻿CREATE TABLE [CRM].[ResponsesHeldBackDueToSizeLimits]
+(
+    [CaseID]			dbo.CaseID	NOT NULL,
+    
+	ACCT_ACCT_ID		NVARCHAR(100) NULL,
+	
+	 Ttl		  NVARCHAR(1000) NULL,
+	 FstNm	 	  NVARCHAR(1000) NULL,
+	 LstNm	 	  NVARCHAR(1000) NULL,
+	 AddLstNm	  NVARCHAR(1000) NULL,
+	 Cntry	 	  NVARCHAR(1000) NULL,
+	 OrgName1	  NVARCHAR(1000) NULL,
+	 RegNum	 	  NVARCHAR(1000) NULL,
+	 PhNum	 	  NVARCHAR(1000) NULL,
+	 EmailAddr 	  NVARCHAR(1000) NULL,
+	 EmailAddrBB  NVARCHAR(1000) NULL,
+	 PremNum	  NVARCHAR(1000) NULL,
+	 Prfx1	 	  NVARCHAR(1000) NULL,
+	 Prfx2	 	  NVARCHAR(1000) NULL,
+	 Street	 	  NVARCHAR(1000) NULL,
+	 Suppl1	 	  NVARCHAR(1000) NULL,
+	 Suppl2	 	  NVARCHAR(1000) NULL,
+	 CityTown	  NVARCHAR(1000) NULL,
+	 RegState	  NVARCHAR(1000) NULL,
+	 PostCdZIP 	  NVARCHAR(1000) NULL,
+	 
+	[DateAdded]		DATETIME2	NOT NULL,
+	[EventID]		BIGINT		NOT NULL
+
+);

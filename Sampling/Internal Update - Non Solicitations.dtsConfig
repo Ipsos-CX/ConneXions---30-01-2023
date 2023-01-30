@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Internal Update - Non Solicitations" GeneratedFromPackageID="{71EAD39C-C2A4-4174-A61F-1C9E0EBA626F}" GeneratedDate="23/04/2019 12:27:35"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Internal Update - Non Solicitations.dtsx\Internal Update - Non Solicitations.log</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailBCC].Properties[Value]" ValueType="String">
+		<ConfiguredValue>chris.ledger@ipsos.com</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailFrom].Properties[Value]" ValueType="String">
+		<ConfiguredValue>CNX_JLR_Output@ipsos-online.com</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailTo].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Tim.Wardle@ipsos.com;Clare.Yetton@ipsos.com;Simone.King@ipsos.com;Sally.McKee@ipsos.com;Andrew.Erskine@ipsos.com</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::FileType].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Internal Update</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SMTPServer].Properties[Value]" ValueType="String">
+		<ConfiguredValue>PMTA.extranet.iext</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

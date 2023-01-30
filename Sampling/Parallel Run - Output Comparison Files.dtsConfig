@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Parallel Run - Output Comparison Files" GeneratedFromPackageID="{D1603316-2F56-441E-872F-9C69E5B38F25}" GeneratedDate="07/06/2019 18:37:04"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Parallel Run - Output Comparison Files\Parallel Run - Output Comparison Files.log</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::LocalOutputDirectory].Properties[Value]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\ParallelRun\OutputFiles\</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

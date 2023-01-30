@@ -1,0 +1,3 @@
+﻿ALTER TABLE [OWAP].[Actions]
+	ADD CONSTRAINT [PK_Actions_AuditItemID]
+	PRIMARY KEY (AuditItemID)

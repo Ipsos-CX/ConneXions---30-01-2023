@@ -1,0 +1,27 @@
+﻿CREATE TABLE [Stage].[LandRover_Spain_Sales] (
+    [ID]                    INT             IDENTITY (1, 1) NOT NULL,
+    [AuditID]               dbo.AuditID          NULL,
+    [PhysicalRowID]         INT             NULL,
+    [Title]                 dbo.LoadText NULL,
+    [FirstName]             dbo.LoadText NULL,
+    [Surname]               dbo.LoadText NULL,
+    [CompanyName]           dbo.LoadText NULL,
+    [StreetHouseNo]         dbo.LoadText NULL,
+    [Town]                  dbo.LoadText NULL,
+    [Province]              dbo.LoadText NULL,
+    [PostCode]              dbo.LoadText NULL,
+    [CustomerType]          dbo.LoadText NULL,
+    [TelephoneHome]         dbo.LoadText NULL,
+    [TelephoneWork]         dbo.LoadText NULL,
+    [VIN]                   dbo.LoadText NULL,
+    [ModelDescription]      dbo.LoadText NULL,
+    [RegistrationNumber]    dbo.LoadText NULL,
+    [DealerCode]            dbo.LoadText NULL,
+    [PurchaseDate]          dbo.LoadText NULL,
+    [DeliveryDate]          dbo.LoadText NULL,
+    [LanguageCode]          dbo.LoadText NULL,
+    [SuppressionType]       dbo.LoadText NULL,
+    [ConvertedPurchaseDate] DATETIME2        NULL,
+    [ConvertedDeliveryDate] DATETIME2        NULL
+);
+

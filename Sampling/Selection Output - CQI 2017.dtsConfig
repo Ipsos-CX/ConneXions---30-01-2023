@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="GFK\martin.riverol" GeneratedFromPackageName="Selection Output - CQI  2017" GeneratedFromPackageID="{FDCCF088-7612-4585-BBD2-D7F07B11B951}" GeneratedDate="13/09/2019 12:00:29"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Selection Output - CQI 2017.dtsx\Selection Output - CQI 2017.log</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::RussiaOutput].Properties[Value]" ValueType="Int32">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::SurveyType].Properties[Value]" ValueType="String">
+    <ConfiguredValue>CQI</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

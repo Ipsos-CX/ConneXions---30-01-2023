@@ -1,0 +1,23 @@
+﻿CREATE TABLE [SampleReport].[SummaryDealerGroupEvents](
+	[CombinedDealer] [nvarchar](255) NULL,
+	[DealerCode] [nvarchar](20) NULL,
+	[DealerCodeGDD] [nvarchar](20) NULL,
+	[DealerName] [nvarchar](150) NULL,
+	[EventsLoaded] [int] NULL,
+	[SuppliedEmail] [int] NULL,
+	[UsableEvents] [int] NULL,
+	[InvitesSent] [int] NULL,
+	[Bouncebacks] [int] NULL,
+	[Responded] [int] NULL,
+	[EmailInvites] [int] NULL,
+	[SMSInvites] [int] NULL,
+	[PostalInvites] [int] NULL,
+	[PhoneInvites] [int] NULL,
+	[SoftBounce]             [int] NULL,
+    [HardBounce]             [int] NULL,
+    [Unsubscribes]           [int] NULL,
+    [SuppliedPhoneNumber]    [int] NULL,
+    [SuppliedMobilePhone]    [int] NULL,
+    [PrevSoftBounce]         [int] NULL,
+    [PrevHardBounce]         [int] NULL
+) ;

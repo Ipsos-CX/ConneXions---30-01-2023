@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Sample Load - Land Rover UK Sales" GeneratedFromPackageID="{C6DCE9F5-2577-4A3B-9DE8-07E88FEF8719}" GeneratedDate="13/05/2013 16:08:00"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Connexions SSIS Log.txt].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\SSIS Logs\Daily Log\Connexions Sample System.log</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Sample.OLEDB.AUTHENTICATION].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>Data Source=NUEW-SQAA97.ext.gfk;Initial Catalog=Sample_China;Provider=SQLNCLI10.1;Integrated Security=SSPI;</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Sample_Audit.OLEDB.AUTHENTICATION].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>Data Source=NUEW-SQAA97.ext.gfk;Initial Catalog=Sample_Audit_China;Provider=SQLNCLI10.1;Integrated Security=SSPI;</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Sample_Errors.OLEDB.AUTHENTICATION].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>Data Source=NUEW-SQAA97.ext.gfk;Initial Catalog=Sample_Errors_China;Provider=SQLNCLI10.1;Integrated Security=SSPI;</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Sample_ETL.OLEDB.AUTHENTICATION].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>Data Source=NUEW-SQAA97.ext.gfk;Initial Catalog=Sample_ETL_China;Provider=SQLNCLI10.1;Integrated Security=SSPI;</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[SampleReporting.OLEDB.AUTHENTICATION].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>Data Source=NUEW-SQAA97.ext.gfk;Initial Catalog=SampleReporting_China;Provider=SQLNCLI10.1;Integrated Security=SSPI;</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[WebsiteReporting.OLEDB.AUTHENTICATION].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>Data Source=NUEW-SQAA97.ext.gfk;Initial Catalog=WebsiteReporting_China;Provider=SQLNCLI10.1;Integrated Security=SSPI;</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

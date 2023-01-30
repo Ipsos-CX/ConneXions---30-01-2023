@@ -1,0 +1,4 @@
+﻿ALTER TABLE [CRM].[FilterValues]
+    ADD CONSTRAINT [FK_FilterValues_Filters] FOREIGN KEY (FilterID) 
+    REFERENCES CRM.Filters (FilterID) 
+    ON DELETE NO ACTION ON UPDATE NO ACTION;

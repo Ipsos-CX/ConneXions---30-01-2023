@@ -1,0 +1,20 @@
+<DTSConfiguration>
+<DTSConfigurationHeading>
+<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Sample Load - CXP Service Loader" GeneratedFromPackageID="{8C7056EB-7C70-492D-A34A-2FD5694241B6}" GeneratedDate="05/06/2018 14:24:04"/>
+</DTSConfigurationHeading>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Sample Load - CXP Service Loader.dtsx\Sample Load - CXP Service Loader.log</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::FileType].Properties[Value]" ValueType="String">
+<ConfiguredValue>Sample</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::Questionnaire].Properties[Value]" ValueType="String">
+<ConfiguredValue>Service</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SampleFileNamePrefix].Properties[Value]" ValueType="String">
+<ConfiguredValue>GfK_Service_</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SamplePath].Properties[Value]" ValueType="String">
+<ConfiguredValue>P:\Sampling\DataLoading\SampleFiles\CXP_Service_Loader\</ConfiguredValue>
+</Configuration>
+</DTSConfiguration>

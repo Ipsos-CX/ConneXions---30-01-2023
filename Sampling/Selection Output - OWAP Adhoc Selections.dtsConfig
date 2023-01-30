@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\Edward.Thomas" GeneratedFromPackageName="Selection Output - OWAP Adhoc Selections" GeneratedFromPackageID="{4B9F67D8-0946-49D5-9E9D-38643020E376}" GeneratedDate="20/02/2017 12:46:46"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Selection Output - OWAP Adhoc.dtsx\Selection Output - OWAP Adhoc.log</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::LocalDownloadDirectory].Properties[Value]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\DataOutput\SelectionOutput\AdhocDaily</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

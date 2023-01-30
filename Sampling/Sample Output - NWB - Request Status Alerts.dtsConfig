@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Sample Output - NWB - Selection Load and Output" GeneratedFromPackageID="{A3D0FB0B-1A15-4D53-8CB5-0192CA5C1B36}" GeneratedDate="02/09/2019 14:20:23"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Sample Output - NWB - Request Status Alerts\Sample Output - NWB - Request Status Alerts.log</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailFrom].Properties[Value]" ValueType="String">
+    <ConfiguredValue>CNX_JLR_Output@ipsos-online.com</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::SamplePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\DataLoading\NWB_Load_SelectionOutputFiles\</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::SMTPServer].Properties[Value]" ValueType="String">
+    <ConfiguredValue>PMTA.extranet.iext</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

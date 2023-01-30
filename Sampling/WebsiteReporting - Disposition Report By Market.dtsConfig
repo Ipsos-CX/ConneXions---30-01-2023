@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="WebsiteReporting - Disposition Report By Market" GeneratedFromPackageID="{B691F862-AB6D-45B4-BFC0-F921BFE623DF}" GeneratedDate="30/04/2012 14:58:02"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\WebsiteReporting - Disposition Report By Market.dtsx\WebsiteReporting - Disposition Report By Market.log</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::FileType].Properties[Value]" ValueType="String">
+    <ConfiguredValue>Sample</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

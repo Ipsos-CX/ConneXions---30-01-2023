@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Sample Reporting - CRC Non Solicitations" GeneratedFromPackageID="{D8619FF5-C854-41A4-8BE5-A78DE35F2C4C}" GeneratedDate="06/03/2012 16:45:10"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Connexions SSIS Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Daily Log\Connexions Sample System.log</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Sample Reporting - CRC Non Solicitations.dtsx\Sample Reporting - CRC Non Solicitations.log</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[PartyNonSolicitations].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\DataOutput\CRCNonSolicitations\PartyNonSolicitations.txt</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[PostalAddressNonSolicitations].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\DataOutput\CRCNonSolicitations\PostalAddressNonSolicitations.txt</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[EmailAddressNonSolicitations].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\DataOutput\CRCNonSolicitations\EmailAddressNonSolicitations.txt</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[EmailWildcardBlacklist].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\DataOutput\CRCNonSolicitations\EmailWildcardBlacklist.txt</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[SpecificEmailBlacklist].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\DataOutput\CRCNonSolicitations\SpecificEmailBlacklist.txt</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

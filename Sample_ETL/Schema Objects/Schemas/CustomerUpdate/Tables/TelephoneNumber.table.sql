@@ -1,0 +1,15 @@
+﻿CREATE TABLE [CustomerUpdate].[TelephoneNumber](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[PartyID] [dbo].[PartyID] NOT NULL,
+	[CaseID] [dbo].[CaseID] NOT NULL,
+	[HomeTelephoneContactMechanismID] [dbo].[ContactMechanismID] NULL,
+	[WorkTelephoneContactMechanismID] [dbo].[ContactMechanismID] NULL,
+	[MobileNumberContactMechanismID] [dbo].[ContactMechanismID] NULL,
+	[HomeTelephoneNumber] [dbo].[ContactNumber] NULL,
+	[WorkTelephoneNumber] [dbo].[ContactNumber] NULL,
+	[MobileNumber] [dbo].[ContactNumber] NULL,
+	[AuditID] [dbo].[AuditID] NULL,
+	[AuditItemID] [dbo].[AuditItemID] NULL,
+	[CasePartyCombinationValid] [bit] NOT NULL,
+	[ParentAuditItemID] [dbo].[AuditItemID] NULL,
+)

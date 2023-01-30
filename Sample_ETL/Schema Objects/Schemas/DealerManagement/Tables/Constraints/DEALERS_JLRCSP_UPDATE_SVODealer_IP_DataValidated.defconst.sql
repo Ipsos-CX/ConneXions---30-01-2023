@@ -1,0 +1,3 @@
+﻿ALTER TABLE [DealerManagement].[DEALERS_JLRCSP_UPDATE_SVODealer]
+   ADD  CONSTRAINT [DEALERS_JLRCSP_UPDATE_SVODealer_IP_DataValidated]  DEFAULT ((0)) FOR [IP_DataValidated]
+ 

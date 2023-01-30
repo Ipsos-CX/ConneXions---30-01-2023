@@ -1,0 +1,3 @@
+﻿ALTER TABLE [dbo].[Files]
+    ADD CONSTRAINT [FK_Files_Audit] FOREIGN KEY ([AuditID]) REFERENCES [dbo].[Audit] ([AuditID]) ON DELETE NO ACTION ON UPDATE NO ACTION;
+

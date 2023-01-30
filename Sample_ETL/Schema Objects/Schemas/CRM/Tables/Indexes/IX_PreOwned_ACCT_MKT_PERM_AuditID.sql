@@ -1,0 +1,2 @@
+﻿CREATE NONCLUSTERED INDEX [IX_PreOwned_ACCT_MKT_PERM_AuditID]
+	ON [CRM].[PreOwned_ACCT_MKT_PERM] ([AuditID],[item_Id],[ACCT_MKT_PERM_Id])

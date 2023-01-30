@@ -1,0 +1,20 @@
+﻿CREATE TABLE [ParallelRun].[Selections](
+	[RequirementID] [int] NOT NULL,
+	[RequirementTypeID] [smallint] NOT NULL,
+	[Requirement] [varchar](255) NOT NULL,
+	[RequirementCreationDate] [datetime2](7) NULL,
+	[SelectionDate] [datetime2](7) NOT NULL,
+	[SelectionStatusTypeID] [smallint] NOT NULL,
+	[SelectionTypeID] [smallint] NULL,
+	[DateLastRun] [datetime2](7) NULL,
+	[RecordsSelected] [int] NULL,
+	[RecordsRejected] [int] NULL,
+	[LastViewedDate] [datetime2](7) NULL,
+	[LastViewedPartyID] [int] NULL,
+	[LastViewedRoleTypeID] [smallint] NULL,
+	[DateOutputAuthorised] [datetime2](7) NULL,
+	[AuthorisingPartyID] [int] NULL,
+	[AuthorisingRoleTypeID] [smallint] NULL,
+	[ScheduledRunDate] [datetime2](7) NULL,
+	[UseQuotas] [bit] NULL
+) 

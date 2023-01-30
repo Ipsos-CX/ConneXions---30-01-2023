@@ -1,0 +1,3 @@
+﻿ALTER TABLE [dbo].[RDsRegions]
+	ADD CONSTRAINT [PK_RDsRegion]
+	PRIMARY KEY (RDsRegionID)

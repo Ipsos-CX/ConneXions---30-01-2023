@@ -1,0 +1,3 @@
+﻿ALTER TABLE [dbo].[VWT]
+    ADD CONSTRAINT [DF_VWT_CRCCentrePartyID] DEFAULT (0) FOR [CRCCentrePartyID];
+

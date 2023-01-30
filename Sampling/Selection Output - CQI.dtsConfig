@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="GFK\martin.riverol" GeneratedFromPackageName="Selection Output - CQI" GeneratedFromPackageID="{B05DD1ED-13FF-4B90-A079-F57C2DB6C3D7}" GeneratedDate="20/04/2016 11:11:34"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>C:\ConneXions\Sampling\SSIS Logs\Package Logs\Selection Output - CQI.dtsx\Selection Output - CQI.log</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

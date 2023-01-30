@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[YNFlag]
+	FROM CHAR(1) NULL

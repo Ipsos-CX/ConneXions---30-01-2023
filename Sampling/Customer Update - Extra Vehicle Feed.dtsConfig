@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Customer Update - Extra Vehicle Feed" GeneratedFromPackageID="{F2734EDD-192F-4511-9124-B14FF1433E49}" GeneratedDate="21/04/2017 16:10:06"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Customer Update - Extra Vehicle Feed.dtsx\Customer Update - Extra Vehicle Feed.log</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

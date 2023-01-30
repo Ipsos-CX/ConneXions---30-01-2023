@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Sample File - Crush FTP Download" GeneratedFromPackageID="{571062BD-66B9-4B3E-9BDA-6C2D9EEAF579}" GeneratedDate="20/08/2019 12:07:23"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailProdEnvIndicator].Properties[Value]" ValueType="Int32">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailRecipientsNonProd].Properties[Value]" ValueType="String">
+    <ConfiguredValue>Chris.Ledger@ipsos.com</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailRecipientsProd].Properties[Value]" ValueType="String">
+    <ConfiguredValue>Chris.Ledger@ipsos.com; Dipak.Gohil@ipsos.com</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailDupeRecipientsNonProd].Properties[Value]" ValueType="String">
+    <ConfiguredValue>Chris.Ledger@ipsos.com</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailDupeRecipientsProd].Properties[Value]" ValueType="String">
+    <ConfiguredValue>Chris.Ledger@ipsos.com; Dipak.Gohil@ipsos.com</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailTitleEnvironmentText].Properties[Value]" ValueType="String">
+    <ConfiguredValue>UAT</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::GPGPassPhrase].Properties[Value]" ValueType="String">
+    <ConfiguredValue>CnXIp5052021</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::SMTPServer].Properties[Value]" ValueType="String">
+    <ConfiguredValue>PMTA.extranet.iext</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::WinSCPExecutablePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>C:\WinSCP-5.17.8-Automation\winscp.exe</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

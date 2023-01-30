@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Selection Output" GeneratedFromPackageID="{362A233C-D1FF-4C43-89DE-235CEC1BB136}" GeneratedDate="04/04/2013 15:36:21"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Selection Output - China With Responses.dtsx\Selection Output - China With Responses.log</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::AllRoadsideTemplatePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\DataOutput\SelectionOutput\All Roadside Output.xlsx</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::AllSalesTemplatePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\DataOutput\SelectionOutput\All Sales Output.xlsx</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::AllServiceTemplatePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\DataOutput\SelectionOutput\All Service Output.xlsx</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::FTPDisabled].Properties[Value]" ValueType="Boolean">
+    <ConfiguredValue>-1</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::NonOutputTemplatePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\DataOutput\SelectionOutput\Non Output.xlsx</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::NumberRowsInPostalBatch].Properties[Value]" ValueType="Int32">
+    <ConfiguredValue>1000</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::PostalSalesTemplatePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\DataOutput\SelectionOutput\Postal Sales Output.xlsx</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::PostalServiceTemplatePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\DataOutput\SelectionOutput\Postal Service Output.xlsx</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::TelephoneOutput].Properties[Value]" ValueType="Boolean">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::ReoutputRequest].Properties[Value]" ValueType="Boolean">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

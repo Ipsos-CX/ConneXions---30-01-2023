@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[PartyTypeID]
+	FROM TINYINT NOT NULL

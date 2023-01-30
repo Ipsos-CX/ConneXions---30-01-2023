@@ -1,0 +1,49 @@
+Until a proper release/deployment process in put in place follow these steps to deploy the new system:
+
+- CREATE AN EMPTY DATABASE STRUCTURE
+
+1) For each of the database projects ensure that the project variables (Database.sqlcmdvars) are configured correctly, including setting the correct paths for the data and log files will a "\" at the end.
+2) In the properties of each database project select the "Deploy" tab.  Ensure the deploy action is set to "Create a deployment script and deploy to the database".  Set the target connection to be the server you are deploying to.  
+3) For each of the database projects open "Database.sqldeployment" and ensure the following check boxes are checked: "Deploy database properties", "Always re-create database", "Block incremental deployment..." and "Generate drop statements...". Ensure the other non-advanced options are not checked.  
+3) Right click on the solution file and click "Deploy".  This will create all the SQL objects on the server but with no data in.  
+4) The solution is now set up to drop and recreate the databases.  It is dangerous to leave it set up like this as if someone points the projects at the live environment and hits F5 it could drop and recreate the databases and lose all data.  At this point you MUST do the following:
+	- In each database project update the "Deploy" properties to have a "Deploy action" of "Create deployment script".  
+	- In each database project update the "Database.sqldeployment" by unchecking the "Always recreate database" box.  
+5) You should now not have to redeploy the solution or database projects as this will drop and recreate the databases.  You should use a schema comparison to copy any changes to SQL objects between the projects and the databases.  This will ensure no data is lost.  
+6) On the server create a SQL Login named "SampleSystem" with password "P4ssw0rd" and give it db_owner roles on each the Sample databases
+
+- ADD A LABEL TO SOURCE SAFE
+1) To allow us tosee what version of what SQL objects were deployed we need to add a label to the source safe code once we've run the deployment.  This will allow us to easily see if any changes are made to the code after the deployment.  
+2) To add the label open Source Safe
+3) Right-click on the "Connexions" folder at the top of the sturcture and click "Label".  
+4) Add the name of the server the code was deployed to into the "Label" text box.  You can leave the "Comments" box blank.  
+
+- SET UP FOLDER STRUCTURES
+1) Update the variable "RootPath" in the SSIS package "Create Sampling Folder Structure.dtsx" to point to the appropriate loading directory on the server, e.g. "\\ludw-devsql02\c$\" and execute the SSIS package.  
+
+- POPULATE THE DATABASES
+
+1) Back up the live databases: Prophet-Audit, Prophet-ETL and Prophet-ODS
+2) Restore the databases to an appropriate location - probably the same server you're deploying to
+3) Update the config files in the SSIS projects to point to the correct SQL server.  
+4) Build the SSIS projects - this will create "manifest" files in the deployment location for the projects.  
+5) Copy the deployment folder to the server. 
+6) From the server double click the "manifest" file to open the deployment wizard and deploy the packages to the required location.  
+7) Execute the migration SSIS packages to populate the databases - this can be a job if need be.  
+
+
+Database Creation
+
+General
+
+There is a know issue with the MS Visual Studio where the objects are not created in sequance. The constraints are not utilised to list the order of database object creation. A work around is the create the base schema by excluding is problematice objects within the DDL and than run a delta change creation against the database schema.
+
+WebsiteReporting
+
+This database accesses the warehouse database. In order to create the customer event list objects the remote servers need to added to host server.
+
+Sp_addserver N’NUEW-SQUKCXS02’
+
+On remote server
+
+exec sp_serveroption 'NUEW-SQUKCXS01', 'data access', 'true'

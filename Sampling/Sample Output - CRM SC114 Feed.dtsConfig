@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="GFK\poorvi.prasad" GeneratedFromPackageName="Sample Output - CRM SC114 Feed" GeneratedFromPackageID="{2E302973-DF13-4F32-86BB-847034C6E397}" GeneratedDate="14/12/2021 10:03:16"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Sample Output - CRM SC114 Feed.dtsx\Sample Output - CRM SC114 Feed.log</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::BatchSize].Properties[Value]" ValueType="Int32">
+    <ConfiguredValue>1000</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailFrom].Properties[Value]" ValueType="String">
+    <ConfiguredValue>CNX_JLR_Output@ipsos-online.com</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailProdEnvIndicator].Properties[Value]" ValueType="Int32">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailRecipients].Properties[Value]" ValueType="String">
+    <ConfiguredValue>Dipak.Gohil@ipsos.com; Chris.Ledger@ipsos.com; Eddie.Thomas@ipsos.com; Ben.King@ipsos.com</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailTitleEnvironmentText].Properties[Value]" ValueType="String">
+    <ConfiguredValue>UAT (Test Environment)</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::GPG_PublicKeyID].Properties[Value]" ValueType="String">
+    <ConfiguredValue>692C33B7</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::PackageFTPFunctionalityEnabled].Properties[Value]" ValueType="Boolean">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::ReportArchivePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\DataOutput\SC114Output\Archive</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::ReportPath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\DataOutput\SC114Output\</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::SMTPServer].Properties[Value]" ValueType="String">
+    <ConfiguredValue>PMTA.extranet.iext</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

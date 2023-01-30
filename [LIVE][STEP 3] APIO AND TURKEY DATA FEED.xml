@@ -1,0 +1,1135 @@
+﻿<import-spec columnsCheck="ALLOW_EXTRA_OR_MISSING_COLUMNS" name="[LIVE][STEP:3] APIO AND TURKEY DATA FEED">
+  <input-column heading="e_jlr_case_id_text" />
+  <input-column heading="e_jlr_id_text" />
+  <input-column heading="e_jlr_survey_type_id_enum" />
+  <input-column heading="e_responsedate" />
+  <input-column heading="e_bp_uniquerecordid_txt" />
+  <input-column heading="e_jlr_model_code_auto" />
+  <input-column heading="e_jlr_model_description_text" />
+  <input-column heading="e_jlr_model_year_auto" />
+  <input-column heading="e_jlr_manufacturer_id_enum" />
+  <input-column heading="e_jlr_manufacturer_enum" />
+  <input-column heading="e_jlr_car_registration_text" />
+  <input-column heading="e_jlr_vehicle_identification_number_text" />
+  <input-column heading="e_jlr_model_variant_code_auto" />
+  <input-column heading="e_jlr_model_variant_description_text" />
+  <input-column heading="e_jlr_party_id_int" />
+  <input-column heading="e_jlr_country_name_auto" />
+  <input-column heading="e_jlr_country_id_enum" />
+  <input-column heading="e_jlr_customer_unique_id" />
+  <input-column heading="e_jlr_language_id_enum" />
+  <input-column heading="e_jlr_gender_id_enum" />
+  <input-column heading="e_jlr_event_type_id_enum" />
+  <input-column heading="e_jlr_event_date" />
+  <input-column heading="e_jlr_itype_enum" />
+  <input-column heading="e_jlr_test_sample_yn" />
+  <input-column heading="e_jlr_dealer_name_auto" />
+  <input-column heading="e_jlr_dealer_code_auto" />
+  <input-column heading="e_jlr_global_dealer_code_auto" />
+  <input-column heading="e_jlr_business_region_auto" />
+  <input-column heading="e_jlr_ownersip_cycle_auto" />
+  <input-column heading="e_jlr_employee_code_text" />
+  <input-column heading="e_jlr_employee_name_text" />
+  <input-column heading="e_jlr_svo_type_id_enum" />
+  <input-column heading="e_jlr_svo_dealership_yn" />
+  <input-column heading="e_jlr_fob_code_enum" />
+  <input-column heading="e_jlr_service_event_type_auto" />
+  <input-column heading="e_jlr_engine_type_enum" />
+  <!-- SURVEY QUESTIONS -->
+  <input-column heading="q_jlr_anonymous_yn" />
+  <input-column heading="q_jlr_ltr_cmt" />
+  <input-column heading="q_jlr_post_service_scale11" />
+  <input-column heading="q_jlr_post_service_sv_alt" />
+  <input-column heading="q_jlr_sales_accessories_offer_scale11" />
+  <input-column heading="q_jlr_sales_accessories_offer_sp_alt" />
+  <input-column heading="q_jlr_sales_charging_explain_yn" />
+  <input-column heading="q_jlr_sales_commitments_cmt" />
+  <input-column heading="q_jlr_sales_commitments_yn" />
+  <input-column heading="q_jlr_sales_contact_scale11na" />
+  <input-column heading="q_jlr_sales_contact_sv_alt" />
+  <input-column heading="q_jlr_sales_delivery_time_scale11" />
+  <input-column heading="q_jlr_sales_feel_welcome_scale11" />
+  <input-column heading="q_jlr_sales_fs_not_applicable_radio" />
+  <input-column heading="q_jlr_sales_fs_offer_scale11na" />
+  <input-column heading="q_jlr_sales_furtherinfo_alt" />
+  <input-column heading="q_jlr_sales_furtherinfo_arrival_cmt" />
+  <input-column heading="q_jlr_sales_furtherinfo_at_retailer_cmt" />
+  <input-column heading="q_jlr_sales_furtherinfo_collection_cmt" />
+  <input-column heading="q_jlr_sales_furtherinfo_delivery_cmt" />
+  <input-column heading="q_jlr_sales_furtherinfo_recommendations_cmt" />
+  <input-column heading="q_jlr_sales_furtherinfo_vehicle_cmt" />
+  <input-column heading="q_jlr_sales_handover_scale11" />
+  <input-column heading="q_jlr_sales_homeinfo_scale11na" />
+  <input-column heading="q_jlr_sales_install_scale11" />
+  <input-column heading="q_jlr_sales_install_sv_alt" />
+  <input-column heading="q_jlr_sales_ltr_model_scale11" />
+  <input-column heading="q_jlr_sales_ltr_sales_consultant_cmt" />
+  <input-column heading="q_jlr_sales_ltr_sc_scale11" />
+  <input-column heading="q_jlr_sales_ltr_scale11" />
+  <input-column heading="q_jlr_sales_public_scale11na" />
+  <input-column heading="q_jlr_sales_recommend_mention_cmt" />
+  <input-column heading="q_jlr_sales_recommend_mention_yn" />
+  <input-column heading="q_jlr_sales_showroom_app_scale11" />
+  <input-column heading="q_jlr_sales_test_drive_alt" />
+  <input-column heading="q_jlr_sales_test_drive_scale11" />
+  <input-column heading="q_jlr_sales_understand_needs_scale11" />
+  <input-column heading="q_jlr_service_booking_ease_scale11" />
+  <input-column heading="q_jlr_service_condition_scale11" />
+  <input-column heading="q_jlr_service_days_vehicle_seen_alt" />
+  <input-column heading="q_jlr_service_explanation_work_scale11" />
+  <input-column heading="q_jlr_service_feel_welcome_scale11" />
+  <input-column heading="q_jlr_service_fixed_right_yn" />
+  <input-column heading="q_jlr_service_furtherinfo_alt" />
+  <input-column heading="q_jlr_service_furtherinfo_booking_cmt" />
+  <input-column heading="q_jlr_service_furtherinfo_contact_cmt" />
+  <input-column heading="q_jlr_service_furtherinfo_recommendations_cmt" />
+  <input-column heading="q_jlr_service_furtherinfo_retailer_cmt" />
+  <input-column heading="q_jlr_service_furtherinfo_return_cmt" />
+  <input-column heading="q_jlr_service_furtherinfo_transport_cmt" />
+  <input-column heading="q_jlr_service_ltr_advisor_cmt" />
+  <input-column heading="q_jlr_service_ltr_advisor_scale11" />
+  <input-column heading="q_jlr_service_ltr_buy_lease_scale11" />
+  <input-column heading="q_jlr_service_ltr_scale11" />
+  <input-column heading="q_jlr_service_mention_other_cmt" />
+  <input-column heading="q_jlr_service_mention_other_yn" />
+  <input-column heading="q_jlr_service_mobility_option_mvalt" />
+  <input-column heading="q_jlr_service_mobility_requirements_scale11" />
+  <input-column heading="q_jlr_service_osat_value_money_scale11" />
+  <input-column heading="q_jlr_service_osat_vehicle_seen_scale11" />
+  <input-column heading="q_jlr_service_other_cmt" />
+  <input-column heading="q_jlr_service_other_mobility_cmt" />
+  <input-column heading="q_jlr_service_reason_fixed_right_alt" />
+  <input-column heading="q_jlr_service_reason_fixed_right_cmt" />
+  <input-column heading="e_jlr_sub_brand_text" />
+  <javascript-library>
+    <![CDATA[
+		// This is a function referenced later in this AI to create an identifier from a prefix and a value. The function also changes the case to lowercase and removes spaces. If you change this function remember to also update the equivalent in the STORE: Org Hierarchy AI.	
+		function idMap(prefix, value) {
+			if (hasContent(value)) {
+				if (hasContent(prefix)) {
+					return noWhitespace(lower(prefix))+'_'+noWhitespace(lower(value));
+				}
+			}
+			return null;
+		}
+	]]>
+  </javascript-library>
+  <output-column-group pluginName="Survey" recordUpdateMode="CREATE_AND_UPDATE">
+    <!-- UPDATE THROUGH IMPLEMENTATION BASED ON STAGE IN CYCLE -->
+    <output-column>
+      <constant value="6" />
+      <target-field fieldId="e_bp_development_cycle_alt" fieldName="Development Cycle" requiredness="REQUIRED" defaultValue="1" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="DEV" to="1" />
+          <mapping-transform-pair from="QA" to="2" />
+          <mapping-transform-pair from="UAT" to="3" />
+          <mapping-transform-pair from="DEMO" to="4" />
+          <mapping-transform-pair from="TEACH" to="5" />
+          <mapping-transform-pair from="LIVE" to="6" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <constant value="1" />
+      <target-field fieldId="e_jlr_imported_data_flag" fieldName="Imported Data Flag" requiredness="REQUIRED" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <!-- RECORD TYPE - Set to yes for all Retail surveys. This is used throughout the sampling flow for inviters, quarantines, email templates, survey build, and LNF, as well as alerts and reporting.  DO NOT UPDATE without consulting Solutions Architecture-->
+    <output-column>
+      <constant value="Yes" />
+      <target-field fieldId="e_bp_record_type_retail_store_all_yn" fieldName="Record Type - Retail Store All" requiredness="REQUIRED" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="NAME" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <constant value="Yes" />
+      <target-field fieldId="e_bp_record_type_retail_store_emailtoweb_yn" fieldName="Record Type - Retail Store Email-to-Web" requiredness="REQUIRED" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="NAME" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="e_bp_uniquerecordid_txt" />
+      <target-field fieldId="e_bp_uniquerecordid_txt" fieldName="Unique Record Id" requiredness="OPTIONAL" type="STRING" />
+      <!--		<javascript-transform><![CDATA[
+					var event_id = value;
+					var market = record['e_jlr_country_id_enum'];
+					var unique_id = record['e_bp_uniquerecordid_txt'];
+					if(market == "172")
+					{
+						return value;
+					} 
+					else if (market == "43")
+					{
+						return unique_id;
+					}
+									else return null;
+				]]></javascript-transform> -->
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_case_id_text" />
+      <target-field fieldId="e_jlr_case_id_text" fieldName="Case ID" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_survey_type_id_enum" />
+      <target-field fieldId="e_jlr_survey_type_id_enum" fieldName="Survey Type" requiredness="REQUIRED" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <javascript-transform>
+          <![CDATA[
+					if(record['e_jlr_survey_type_id_enum'] == 1 || record['e_jlr_survey_type_id_enum'] == 2){
+					if(value != null){
+						return value;
+					} else {
+						discardRecord('Discarded as Survey Type is not in scope');
+					}
+					} else {
+					return null;
+					}
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_model_code_auto" />
+      <target-field fieldId="e_jlr_model_code_auto" fieldName="Model Code" requiredness="OPTIONAL" type="ENUMERATED_AUTOINDEX" />
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_model_description_text" />
+      <target-field fieldId="e_jlr_model_description_text" fieldName="Model" requiredness="OPTIONAL" type="ENUMERATED_AUTOINDEX" />
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_model_year_auto" />
+      <target-field fieldId="e_jlr_model_year_auto" fieldName="Model Year" requiredness="OPTIONAL" type="ENUMERATED_AUTOINDEX" />
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_manufacturer_id_enum" />
+      <target-field fieldId="e_jlr_manufacturer_id_enum" fieldName="ManufacturerID" requiredness="REQUIRED" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_manufacturer_enum" />
+      <target-field fieldId="e_jlr_manufacturer_enum" fieldName="Manufacturer" requiredness="REQUIRED" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="NAME" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="LandRover" to="Land Rover" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_car_registration_text" />
+      <target-field fieldId="e_jlr_car_registration_text" fieldName="Car Registration Number" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_vehicle_identification_number_text" />
+      <target-field fieldId="e_jlr_vehicle_identification_number_text" fieldName="VIN" requiredness="REQUIRED" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_model_variant_code_auto" />
+      <target-field fieldId="e_jlr_model_variant_code_auto" fieldName="Model Variant Code" requiredness="OPTIONAL" type="ENUMERATED_AUTOINDEX" />
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_model_variant_description_text" />
+      <target-field fieldId="e_jlr_model_variant_description_text" fieldName="Model Variant" requiredness="OPTIONAL" type="ENUMERATED_AUTOINDEX" />
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_party_id_int" />
+      <target-field fieldId="e_jlr_party_id_int" fieldName="Party ID" requiredness="OPTIONAL" type="INTEGER" />
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_country_name_auto" />
+      <target-field fieldId="e_jlr_country_name_auto" fieldName="Country Name" requiredness="REQUIRED" type="ENUMERATED_AUTOINDEX" />
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_country_id_enum" />
+      <target-field fieldId="e_jlr_country_id_enum" fieldName="Country ID" requiredness="REQUIRED" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="DZA" to="1" />
+          <mapping-transform-pair from="12" to="2" />
+          <mapping-transform-pair from="AUS" to="2" />
+          <mapping-transform-pair from="AUT" to="3" />
+          <mapping-transform-pair from="13" to="3" />
+          <mapping-transform-pair from="AZE" to="4" />
+          <mapping-transform-pair from="BHR" to="5" />
+          <mapping-transform-pair from="BEL" to="6" />
+          <mapping-transform-pair from="20" to="6" />
+          <mapping-transform-pair from="BRA" to="7" />
+          <mapping-transform-pair from="28" to="7" />
+          <mapping-transform-pair from="CAN" to="8" />
+          <mapping-transform-pair from="36" to="8" />
+          <mapping-transform-pair from="CHL" to="9" />
+          <mapping-transform-pair from="CHN" to="10" />
+          <mapping-transform-pair from="43" to="10" />
+          <mapping-transform-pair from="46" to="11" />
+          <mapping-transform-pair from="CRI" to="12" />
+          <mapping-transform-pair from="55" to="13" />
+          <mapping-transform-pair from="EGY" to="14" />
+          <mapping-transform-pair from="73" to="15" />
+          <mapping-transform-pair from="FRA" to="15" />
+          <mapping-transform-pair from="79" to="16" />
+          <mapping-transform-pair from="DEU" to="16" />
+          <mapping-transform-pair from="44" to="17" />
+          <mapping-transform-pair from="IND" to="18" />
+          <mapping-transform-pair from="96" to="18" />
+          <mapping-transform-pair from="97" to="19" />
+          <mapping-transform-pair from="IRQ" to="20" />
+          <mapping-transform-pair from="100" to="21" />
+          <mapping-transform-pair from="ITA" to="22" />
+          <mapping-transform-pair from="103" to="22" />
+          <mapping-transform-pair from="JAM" to="23" />
+          <mapping-transform-pair from="JOR" to="58" />
+          <mapping-transform-pair from="JPN" to="24" />
+          <mapping-transform-pair from="105" to="24" />
+          <mapping-transform-pair from="110" to="25" />
+          <mapping-transform-pair from="KWT" to="25" />
+          <mapping-transform-pair from="LBN" to="26" />
+          <mapping-transform-pair from="LBY" to="27" />
+          <mapping-transform-pair from="120" to="28" />
+          <mapping-transform-pair from="123" to="29" />
+          <mapping-transform-pair from="132" to="30" />
+          <mapping-transform-pair from="137" to="31" />
+          <mapping-transform-pair from="MAR" to="31" />
+          <mapping-transform-pair from="NLD" to="32" />
+          <mapping-transform-pair from="143" to="32" />
+          <mapping-transform-pair from="146" to="33" />
+          <mapping-transform-pair from="153" to="34" />
+          <mapping-transform-pair from="OMN" to="35" />
+          <mapping-transform-pair from="PAK" to="36" />
+          <mapping-transform-pair from="PAN" to="37" />
+          <mapping-transform-pair from="PER" to="38" />
+          <mapping-transform-pair from="164" to="39" />
+          <mapping-transform-pair from="PRT" to="40" />
+          <mapping-transform-pair from="165" to="40" />
+          <mapping-transform-pair from="PSE" to="41" />
+          <mapping-transform-pair from="QAT" to="42" />
+          <mapping-transform-pair from="168" to="43" />
+          <mapping-transform-pair from="172" to="44" />
+          <mapping-transform-pair from="RUS" to="44" />
+          <mapping-transform-pair from="182" to="45" />
+          <mapping-transform-pair from="SAU" to="45" />
+          <mapping-transform-pair from="187" to="46" />
+          <mapping-transform-pair from="192" to="47" />
+          <mapping-transform-pair from="ZAF" to="47" />
+          <mapping-transform-pair from="193" to="48" />
+          <mapping-transform-pair from="SYR" to="49" />
+          <mapping-transform-pair from="200" to="50" />
+          <mapping-transform-pair from="202" to="51" />
+          <mapping-transform-pair from="TUN" to="52" />
+          <mapping-transform-pair from="212" to="53" />
+          <mapping-transform-pair from="218" to="54" />
+          <mapping-transform-pair from="ARE" to="54" />
+          <mapping-transform-pair from="219" to="55" />
+          <mapping-transform-pair from="GBR" to="55" />
+          <mapping-transform-pair from="USA" to="56" />
+          <mapping-transform-pair from="221" to="56" />
+          <mapping-transform-pair from="YEM" to="57" />
+          <mapping-transform-pair from="30" to="86" />
+          <mapping-transform-pair from="162" to="87" />
+          <mapping-transform-pair from="204" to="88" />
+          <mapping-transform-pair from="34" to="89" />
+          <mapping-transform-pair from="112" to="90" />
+          <mapping-transform-pair from="139" to="91" />
+          <mapping-transform-pair from="227" to="92" />
+          <mapping-transform-pair from="194" to="93" />
+          <mapping-transform-pair from="145" to="94" />
+          <mapping-transform-pair from="135" to="95" />
+          <mapping-transform-pair from="233" to="79" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_customer_unique_id" />
+      <target-field fieldId="e_jlr_customer_unique_id" fieldName="Customer Unique ID" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_language_id_enum" />
+      <target-field fieldId="e_jlr_language_id_enum" fieldName="Survey Language" requiredness="REQUIRED" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="533" to="1" />
+          <mapping-transform-pair from="536" to="2" />
+          <mapping-transform-pair from="23" to="3" />
+          <mapping-transform-pair from="28" to="4" />
+          <mapping-transform-pair from="534" to="6" />
+          <mapping-transform-pair from="537" to="8" />
+          <mapping-transform-pair from="109" to="9" />
+          <mapping-transform-pair from="121" to="10" />
+          <mapping-transform-pair from="148" to="11" />
+          <mapping-transform-pair from="168" to="12" />
+          <mapping-transform-pair from="211" to="13" />
+          <mapping-transform-pair from="224" to="14" />
+          <mapping-transform-pair from="225" to="15" />
+          <mapping-transform-pair from="254" to="16" />
+          <mapping-transform-pair from="338" to="18" />
+          <mapping-transform-pair from="373" to="19" />
+          <mapping-transform-pair from="375" to="20" />
+          <mapping-transform-pair from="393" to="21" />
+          <mapping-transform-pair from="447" to="22" />
+          <mapping-transform-pair from="493" to="23" />
+          <mapping-transform-pair from="90" to="24" />
+          <mapping-transform-pair from="130" to="25" />
+          <mapping-transform-pair from="69" to="53" />
+          <mapping-transform-pair from="211" to="54" />
+          <mapping-transform-pair from="241" to="55" />
+          <mapping-transform-pair from="269" to="56" />
+          <mapping-transform-pair from="293" to="57" />
+          <mapping-transform-pair from="317" to="58" />
+          <mapping-transform-pair from="428" to="59" />
+          <mapping-transform-pair from="466" to="60" />
+          <mapping-transform-pair from="472" to="61" />
+          <mapping-transform-pair from="508" to="62" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_gender_id_enum" />
+      <target-field fieldId="e_jlr_gender_id_enum" fieldName="Gender ID" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_event_date" />
+      <target-field fieldId="e_jlr_event_date" fieldName="Event Date" requiredness="OPTIONAL" type="DATE">
+        <date-field-parse-options format="yyyy/MM/dd" />
+        <javascript-transform>
+          <![CDATA[
+					if(record['e_jlr_survey_type_id_enum'] == 1 || record['e_jlr_survey_type_id_enum'] == 2 ){
+					if(value != null){
+						return value;
+					} 
+						else {
+					return null;
+					}
+					
+					} 
+					if(record['e_jlr_survey_type_id_enum'] == 13)
+						{
+							return record['e_jlr_breakdown_date'];
+						}
+						
+						else {
+						discardRecord('Discarded as event date is not available.');
+					}
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_itype_enum" />
+      <target-field fieldId="e_jlr_itype_enum" fieldName="IType" requiredness="REQUIRED" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="H" to="1" />
+          <mapping-transform-pair from="S" to="2" />
+          <mapping-transform-pair from="P" to="3" />
+          <mapping-transform-pair from="T" to="4" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_test_sample_yn" />
+      <target-field fieldId="e_jlr_test_sample_yn" fieldName="Test Sample" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_dealer_name_auto" />
+      <target-field fieldId="e_jlr_dealer_name_auto" fieldName="Dealer Name" requiredness="OPTIONAL" type="ENUMERATED_AUTOINDEX" />
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_dealer_code_auto" />
+      <target-field fieldId="e_jlr_dealer_code_auto" fieldName="Dealer Code" requiredness="OPTIONAL" type="ENUMERATED_AUTOINDEX" />
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_global_dealer_code_auto" />
+      <target-field fieldId="e_jlr_global_dealer_code_auto" fieldName="Global Dealer Code" requiredness="OPTIONAL" type="ENUMERATED_AUTOINDEX" />
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_business_region_auto" />
+      <target-field fieldId="e_jlr_business_region_auto" fieldName="Business Region" requiredness="REQUIRED" type="ENUMERATED_AUTOINDEX" />
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_ownersip_cycle_auto" />
+      <target-field fieldId="e_jlr_ownersip_cycle_auto" fieldName="Ownership Cycle" requiredness="OPTIONAL" type="ENUMERATED_AUTOINDEX" />
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_employee_code_text" />
+      <target-field fieldId="e_jlr_employee_code_text" fieldName="Employee Code" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_employee_name_text" />
+      <target-field fieldId="e_jlr_employee_name_text" fieldName="Employee Name" requiredness="OPTIONAL" type="ENUMERATED_AUTOINDEX" />
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_engine_type_enum" />
+      <target-field fieldId="e_jlr_engine_type_enum" fieldName="Engine Type" requiredness="OPTIONAL" defaultValue="0" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_svo_type_id_enum" />
+      <target-field fieldId="e_jlr_svo_type_id_enum" fieldName="SV" requiredness="OPTIONAL" defaultValue="0" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_svo_dealership_yn" />
+      <target-field fieldId="e_jlr_svo_dealership_yn" fieldName="SV Retailer" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="0" to="2" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_fob_code_enum" />
+      <target-field fieldId="e_jlr_fob_code_enum" fieldName="Factory of Build" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_service_event_type_auto" />
+      <target-field fieldId="e_jlr_service_event_type_enum" fieldName="Service Event Type" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <constant value="2" />
+      <target-field fieldId="e_bp_historical_data_flag_yn" fieldName="Historical Data Flag" requiredness="REQUIRED" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <now />
+      <target-field fieldId="e_bp_record_processing_time" fieldName="Record Processing Date" requiredness="REQUIRED" type="TIMESTAMP">
+        <timestamp-field-parse-options format="yyyy-MM-dd HH:mm:ss" timeZone="America/Los_Angeles" />
+      </target-field>
+    </output-column>
+    <!-- UNIT MAPPING -->
+    <output-column>
+      <input-column heading="e_jlr_country_name_auto" />
+      <target-field fieldId="e_unitid" fieldName="Unit" requiredness="OPTIONAL" type="UNIT">
+        <enumerated-field-parse-options mappingKey="IDENTIFIER" caseSensitive="true" />
+        <javascript-transform>
+          <![CDATA[
+					var country = record['e_jlr_country_name_auto'];
+					var code = record['e_jlr_crc_owner_code_text'];
+					var brand = record['e_jlr_manufacturer_enum'];
+					
+					var dealerCode = record['e_jlr_global_dealer_code_auto'];
+					var SurveyTypeID = record['e_jlr_survey_type_id_enum'];
+									
+					
+					
+					if (SurveyTypeID == 1 || SurveyTypeID == 2 || SurveyTypeID == 15) {
+					
+						if(SurveyTypeID == 1){
+						return "jlr_retailer_" + noWhitespace(lower(dealerCode))+'_' +"sales";
+											}
+						else if(SurveyTypeID == 2){
+						return "jlr_retailer_" + noWhitespace(lower(dealerCode))+'_' +"aftersales";
+						}
+						else {
+						return "jlr_retailer_" + noWhitespace(lower(dealerCode))+'_' +"preowned";
+						}
+						
+						} 
+					else if (SurveyTypeID == 13) {
+							return "jlr_national_" +noWhitespace(lower(brand))  +'_' + noWhitespace(lower(country));	
+						}
+					else if (SurveyTypeID == 14||SurveyTypeID == 23) {
+					
+					return "jlr_agent_"+ noWhitespace(lower(code));
+						}
+					else if (SurveyTypeID == 17) {
+						return 'jlr_bodyshop_'+ noWhitespace(lower(dealerCode));
+						}
+					else return null;
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <target-field fieldId="e_jlr_dealership_unit" fieldName="Dealership" requiredness="OPTIONAL" type="UNIT">
+        <enumerated-field-parse-options mappingKey="IDENTIFIER" />
+        <javascript-transform>
+          <![CDATA[
+					var dealerCode = record['e_jlr_global_dealer_code_auto'];
+					var SurveyTypeID = record['e_jlr_survey_type_id_enum'];
+									
+					
+					if (SurveyTypeID == 1 || SurveyTypeID == 2 || SurveyTypeID == 15) {
+					
+						if(SurveyTypeID == 1 || SurveyTypeID == 16){
+						return "jlr_retailer_" + noWhitespace(lower(dealerCode))+'_' +"sales";
+											}
+						else if(SurveyTypeID == 2){
+						return "jlr_retailer_" + noWhitespace(lower(dealerCode))+'_' +"aftersales";
+						}
+						else {
+						return "jlr_retailer_" + noWhitespace(lower(dealerCode))+'_' +"preowned";
+						}
+						}
+					else
+					{
+						return null;
+					}
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <!--	<output-column>
+			<target-field fieldId="e_jlr_national_unit" fieldName="National" requiredness="OPTIONAL" type="UNIT">
+				<enumerated-field-parse-options mappingKey="IDENTIFIER" />
+				<mapping-transform fallbackMode="LEAVE_UNCHANGED">
+					<mapping-transform-pair from="United Kingdom" to="uk" />
+				</mapping-transform>
+				<javascript-transform><![CDATA[
+					var country = record['e_jlr_country_id_enum'];
+					var SurveyTypeID = record['e_jlr_survey_type_id_enum'];
+					var brand = record['e_jlr_manufacturer_enum'];
+					
+					if (SurveyTypeID == 13) {
+							//China
+							if (country == 43)
+								return "jlr_national_" +noWhitespace(lower(brand))  +'_china';
+							else						
+								return "jlr_national_" +noWhitespace(lower(brand))  +'_russianfederation';	
+						}
+						
+					else
+					{
+						return null;
+					}
+				]]></javascript-transform>
+			</target-field>
+		</output-column>  -->
+    <!--	<output-column>
+			<input-column heading="e_jlr_crc_owner_code_text" />
+			<target-field fieldId="e_bp_cc_agent_unit" fieldName="CRC Agent" requiredness="OPTIONAL" type="UNIT">
+				<enumerated-field-parse-options mappingKey="IDENTIFIER" />
+				<javascript-transform><![CDATA[
+					var code = record['e_jlr_crc_owner_code_text'];
+					var brand = record['e_jlr_manufacturer_enum'];
+					var SurveyTypeID = record['e_jlr_survey_type_id_enum'];
+					
+					
+					if (SurveyTypeID == 14||SurveyTypeID == 23) 
+					{
+						
+						return "jlr_agent_"+ noWhitespace(lower(code));
+					}
+						
+					else
+					{
+						return null;
+					}
+				]]></javascript-transform>
+			</target-field>
+		</output-column>   -->
+    <output-column>
+      <input-column heading="q_jlr_anonymous_yn" />
+      <target-field fieldId="q_jlr_anonymous_yn" fieldName="Anonymous" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_ltr_cmt" />
+      <target-field fieldId="q_jlr_ltr_cmt" fieldName="NPS - Why Do You Say That?" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_post_service_scale11" />
+      <target-field fieldId="q_jlr_post_service_scale11" fieldName="Post Service Contact" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_post_service_sv_alt" />
+      <target-field fieldId="q_jlr_post_service_sv_alt" fieldName="Post Service Contact" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_accessories_offer_scale11" />
+      <target-field fieldId="q_jlr_sales_accessories_offer_scale11" fieldName="Offer Of Accessories" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_accessories_offer_sp_alt" />
+      <target-field fieldId="q_jlr_sales_accessories_offer_sp_alt" fieldName="Offer Of Accessories" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_charging_explain_yn" />
+      <target-field fieldId="q_jlr_sales_charging_explain_yn" fieldName="Explanation Of Charging Options" requiredness="OPTIONAL_INVALID_CONVERTED_TO_NULL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_commitments_cmt" />
+      <target-field fieldId="q_jlr_sales_commitments_cmt" fieldName="Purchase/Approved Pre-Owned - Reason Commitments Not Fulfilled" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_commitments_yn" />
+      <target-field fieldId="q_jlr_sales_commitments_yn" fieldName="Fulfilment Of Commitments" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_contact_scale11na" />
+      <target-field fieldId="q_jlr_sales_contact_scale11na" fieldName="Post Sales Contact" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_contact_sv_alt" />
+      <target-field fieldId="q_jlr_sales_contact_sv_alt" fieldName="Post Sales Contact" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_delivery_time_scale11" />
+      <target-field fieldId="q_jlr_sales_delivery_time_scale11" fieldName="Delivery Time" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_feel_welcome_scale11" />
+      <target-field fieldId="q_jlr_sales_feel_welcome_scale11" fieldName="Making You Feel Welcome" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_fs_not_applicable_radio" />
+      <target-field fieldId="q_jlr_sales_fs_not_applicable_radio" fieldName="Offer Of Financial Services" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_fs_offer_scale11na" />
+      <target-field fieldId="q_jlr_sales_fs_offer_scale11na" fieldName="Offer Of Financial Services" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_furtherinfo_alt" />
+      <target-field fieldId="q_jlr_sales_furtherinfo_alt" fieldName="Further Details: Purchase/Approved Pre-Owned" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" delimiter="," />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_furtherinfo_arrival_cmt" />
+      <target-field fieldId="q_jlr_sales_furtherinfo_arrival_cmt" fieldName="Purchase/Approved Pre-Owned - Arrival At The Retailer" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_furtherinfo_at_retailer_cmt" />
+      <target-field fieldId="q_jlr_sales_furtherinfo_at_retailer_cmt" fieldName="Purchase/Approved Pre-Owned - While You Were At The Retailer" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_furtherinfo_collection_cmt" />
+      <target-field fieldId="q_jlr_sales_furtherinfo_collection_cmt" fieldName="Purchase/Approved Pre-Owned - Collecting Your Vehicle" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_furtherinfo_delivery_cmt" />
+      <target-field fieldId="q_jlr_sales_furtherinfo_delivery_cmt" fieldName="Purchase/Approved Pre-Owned - After The Delivery Of Your Vehicle" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_furtherinfo_recommendations_cmt" />
+      <target-field fieldId="q_jlr_sales_furtherinfo_recommendations_cmt" fieldName="Purchase/Approved Pre-Owned - Recommendations" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_furtherinfo_vehicle_cmt" />
+      <target-field fieldId="q_jlr_sales_furtherinfo_vehicle_cmt" fieldName="Purchase/Approved Pre-Owned - Your Vehicle" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_handover_scale11" />
+      <target-field fieldId="q_jlr_sales_handover_scale11" fieldName="Handover Experience" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_homeinfo_scale11na" />
+      <target-field fieldId="q_jlr_sales_homeinfo_scale11na" fieldName="Information On Charging At Home" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_install_scale11" />
+      <target-field fieldId="q_jlr_sales_install_scale11" fieldName="Home Charger Installation" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_install_sv_alt" />
+      <target-field fieldId="q_jlr_sales_install_sv_alt" fieldName="Home Charger Installation" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_ltr_model_scale11" />
+      <target-field fieldId="q_jlr_sales_ltr_model_scale11" fieldName="Model Recommendation" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_ltr_sales_consultant_cmt" />
+      <target-field fieldId="q_jlr_sales_ltr_sales_consultant_cmt" fieldName="Purchase/Approved Pre-Owned Sales Consultant Recommendation - Why Do You Say That" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_ltr_sc_scale11" />
+      <target-field fieldId="q_jlr_sales_ltr_sc_scale11" fieldName="Sales Consultant Recommendation" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_ltr_scale11" />
+      <target-field fieldId="q_jlr_sales_ltr_scale11" fieldName="Purchase NPS" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_public_scale11na" />
+      <target-field fieldId="q_jlr_sales_public_scale11na" fieldName="Information On Charging In Public Places" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_recommend_mention_cmt" />
+      <target-field fieldId="q_jlr_sales_recommend_mention_cmt" fieldName="Purchase/Approved Pre-Owned - Mentioned Other Person Details" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_recommend_mention_yn" />
+      <target-field fieldId="q_jlr_sales_recommend_mention_yn" fieldName="Purchase/Approved Pre-Owned - Mentioned Other Person" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_showroom_app_scale11" />
+      <target-field fieldId="q_jlr_sales_showroom_app_scale11" fieldName="Showroom Appearance" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_test_drive_alt" />
+      <target-field fieldId="q_jlr_sales_test_drive_alt" fieldName="Test Drive Experience" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_test_drive_scale11" />
+      <target-field fieldId="q_jlr_sales_test_drive_scale11" fieldName="Test Drive Experience" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_sales_understand_needs_scale11" />
+      <target-field fieldId="q_jlr_sales_understand_needs_scale11" fieldName="Understanding Needs" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_booking_ease_scale11" />
+      <target-field fieldId="q_jlr_service_booking_ease_scale11" fieldName="Booking Process" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_condition_scale11" />
+      <target-field fieldId="q_jlr_service_condition_scale11" fieldName="Vehicle Cleanliness And Condition" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_days_vehicle_seen_alt" />
+      <target-field fieldId="q_jlr_service_days_vehicle_seen_alt" fieldName="Service - Number Of Days Before Vehicle Could Be Seen" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_explanation_work_scale11" />
+      <target-field fieldId="q_jlr_service_explanation_work_scale11" fieldName="Explanation Of Work Carried Out" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_feel_welcome_scale11" />
+      <target-field fieldId="q_jlr_service_feel_welcome_scale11" fieldName="Making You Feel Welcome" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_fixed_right_yn" />
+      <target-field fieldId="q_jlr_service_fixed_right_yn" fieldName="Fixed Right First Time" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_furtherinfo_alt" />
+      <target-field fieldId="q_jlr_service_furtherinfo_alt" fieldName="Further Details: Service" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" delimiter="," />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_furtherinfo_booking_cmt" />
+      <target-field fieldId="q_jlr_service_furtherinfo_booking_cmt" fieldName="Service - Booking Your Appointment" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_furtherinfo_contact_cmt" />
+      <target-field fieldId="q_jlr_service_furtherinfo_contact_cmt" fieldName="Service - Contact From Your Retailer" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_furtherinfo_recommendations_cmt" />
+      <target-field fieldId="q_jlr_service_furtherinfo_recommendations_cmt" fieldName="Service - Recommendations" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_furtherinfo_retailer_cmt" />
+      <target-field fieldId="q_jlr_service_furtherinfo_retailer_cmt" fieldName="Service - Arrival At The Retailer" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_furtherinfo_return_cmt" />
+      <target-field fieldId="q_jlr_service_furtherinfo_return_cmt" fieldName="Service - Return Of Your Vehicle" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_furtherinfo_transport_cmt" />
+      <target-field fieldId="q_jlr_service_furtherinfo_transport_cmt" fieldName="Service - Transportation Needs" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_ltr_advisor_cmt" />
+      <target-field fieldId="q_jlr_service_ltr_advisor_cmt" fieldName="Service Advisor Recommendation - Why Do You Say That" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_ltr_advisor_scale11" />
+      <target-field fieldId="q_jlr_service_ltr_advisor_scale11" fieldName="Service Advisor Recommendation" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_ltr_buy_lease_scale11" />
+      <target-field fieldId="q_jlr_service_ltr_buy_lease_scale11" fieldName="Repurchase Intention" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_ltr_scale11" />
+      <target-field fieldId="q_jlr_service_ltr_scale11" fieldName="Service NPS" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_mention_other_cmt" />
+      <target-field fieldId="q_jlr_service_mention_other_cmt" fieldName="Service Mentioned Other Person Details" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_mention_other_yn" />
+      <target-field fieldId="q_jlr_service_mention_other_yn" fieldName="Service - Mentioned Other Person" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_mobility_option_mvalt" />
+      <target-field fieldId="q_jlr_service_mobility_option_mvalt" fieldName="Transportation Options Provided" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" delimiter="," />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_mobility_requirements_scale11" />
+      <target-field fieldId="q_jlr_service_mobility_requirements_scale11" fieldName="Understanding Your Transportation Needs" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_osat_value_money_scale11" />
+      <target-field fieldId="q_jlr_service_osat_value_money_scale11" fieldName="Value For Money" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_osat_vehicle_seen_scale11" />
+      <target-field fieldId="q_jlr_service_osat_vehicle_seen_scale11" fieldName="How Quickly Vehicle Was Seen" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_other_cmt" />
+      <target-field fieldId="q_jlr_service_other_cmt" fieldName="Service Other Comment - Reason Not Fixed Right" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_other_mobility_cmt" />
+      <target-field fieldId="q_jlr_service_other_mobility_cmt" fieldName="Service Other Comment - Transportation Option" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_reason_fixed_right_alt" />
+      <target-field fieldId="q_jlr_service_reason_fixed_right_alt" fieldName="Service Not Fixed Right First Time - Reason" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" delimiter="," />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="q_jlr_service_reason_fixed_right_cmt" />
+      <target-field fieldId="q_jlr_service_reason_fixed_right_cmt" fieldName="Service Fixed Right First Time - Why" requiredness="OPTIONAL" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_country_id_enum" />
+      <target-field fieldId="e_status" fieldName="Status" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <javascript-transform>
+          <![CDATA[
+					var originalValue = original.e_status;
+					if(originalValue == 'COMPLETED')
+					{
+						return '1';
+					}
+					
+					else return '0';
+				]]>
+        </javascript-transform>
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="43" to="0" />
+          <mapping-transform-pair from="172" to="0" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="e_responsedate" />
+      <target-field fieldId="e_responsedate" fieldName="Responsedate" requiredness="OPTIONAL" type="TIMESTAMP">
+        <timestamp-field-parse-options format="dd-MM-yyyy H:mm " timeZone="+00:00" />
+        <javascript-transform>
+          <![CDATA[
+					var country = record['e_jlr_country_id_enum'];
+					
+					
+						return value;
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_employee_name_text" />
+      <target-field fieldId="e_jlr_sales_consultant_unit" fieldName="Sales Consultant" requiredness="OPTIONAL" type="UNIT">
+        <enumerated-field-parse-options mappingKey="IDENTIFIER" />
+        <javascript-transform>
+          <![CDATA[
+					var prefix;
+					var SurveyType = record.e_jlr_survey_type_id_enum;
+					var Sales = lower(record['e_jlr_employee_name_text']);
+					if (Sales != null && (SurveyType == '1' || SurveyType == '15'))
+						{
+					        Sales = lower(record['e_jlr_employee_name_text']).replace("\"","");
+							var prefix = 'sales_consultant_na';
+							var sales = Sales.split(" (jlr");
+							var sales_name = sales[0];
+							var pag_number = sales[1].replace(")","");
+							var sales_final = sales_name+"_jlr"+pag_number;
+							return idMap(prefix, sales_final);
+					     }
+					
+					else	
+						return null;
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_employee_name_text" />
+      <target-field fieldId="e_jlr_service_advisor_name_unit" fieldName="Service Advisor Name" requiredness="OPTIONAL" type="UNIT">
+        <enumerated-field-parse-options mappingKey="IDENTIFIER" />
+        <javascript-transform>
+          <![CDATA[
+					var prefix;
+					var SurveyType = record.e_jlr_survey_type_id_enum;
+					var Service = lower(record['e_jlr_employee_name_text']);
+					if (Service != null && SurveyType == '2')
+						{
+					        Service = lower(record['e_jlr_employee_name_text']).replace("\"","");
+							var prefix = 'service_advisor_na';
+							var service = Service.split(" (jlr");
+							var service_name = service[0];
+							var pag_number = service[1].replace(")","");
+							var service_final = service_name+"_jlr"+pag_number;
+							return idMap(prefix, service_final);
+					     }
+					else	
+						return null;
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <!-- 1 = Sampled -->
+      <constant value="1" />
+      <target-field fieldId="e_jlr_record_sampling_lifecycle_enum" fieldName="Sampling Lifecycle" requiredness="REQUIRED" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <target-field fieldId="e_jlr_invitation_file_name_txt" fieldName="Invitation File Name" requiredness="OPTIONAL" type="STRING">
+        <javascript-transform>
+          <![CDATA[
+					return requestInfo.filename;
+				]]>
+        </javascript-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_language_id_enum" />
+      <target-field fieldId="survey_language" fieldName="Survey Language" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+        <mapping-transform fallbackMode="LEAVE_UNCHANGED">
+          <mapping-transform-pair from="90" to="54" />
+          <mapping-transform-pair from="28" to="81" />
+          <mapping-transform-pair from="393" to="37" />
+          <mapping-transform-pair from="533" to="119" />
+          <mapping-transform-pair from="536" to="237" />
+          <mapping-transform-pair from="23" to="5" />
+          <mapping-transform-pair from="534" to="126" />
+          <mapping-transform-pair from="537" to="53" />
+          <mapping-transform-pair from="109" to="8" />
+          <mapping-transform-pair from="121" to="32" />
+          <mapping-transform-pair from="148" to="15" />
+          <mapping-transform-pair from="168" to="10" />
+          <mapping-transform-pair from="211" to="21" />
+          <mapping-transform-pair from="224" to="22" />
+          <mapping-transform-pair from="225" to="23" />
+          <mapping-transform-pair from="254" to="25" />
+          <mapping-transform-pair from="338" to="2" />
+          <mapping-transform-pair from="373" to="34" />
+          <mapping-transform-pair from="375" to="35" />
+          <mapping-transform-pair from="393" to="37" />
+          <mapping-transform-pair from="447" to="3" />
+          <mapping-transform-pair from="493" to="48" />
+          <mapping-transform-pair from="130" to="1" />
+          <mapping-transform-pair from="69" to="95" />
+          <mapping-transform-pair from="241" to="160" />
+          <mapping-transform-pair from="269" to="168" />
+          <mapping-transform-pair from="293" to="56" />
+          <mapping-transform-pair from="317" to="180" />
+          <mapping-transform-pair from="428" to="216" />
+          <mapping-transform-pair from="466" to="44" />
+          <mapping-transform-pair from="472" to="46" />
+          <mapping-transform-pair from="508" to="51" />
+        </mapping-transform>
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_survey_type_id_enum" />
+      <target-field fieldId="e_jlr_event_type_id_enum" fieldName="Event type" requiredness="OPTIONAL" type="ENUMERATED">
+        <enumerated-field-parse-options mappingKey="SEQUENCE_NUMBER" />
+      </target-field>
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_id_text" />
+      <target-field fieldId="e_jlr_event_id_text" fieldName="Event ID" requiredness="REQUIRED_USED_FOR_DUPLICATE_CHECK" type="STRING" />
+    </output-column>
+    <output-column>
+      <input-column heading="e_jlr_sub_brand_text" />
+      <target-field fieldId="e_jlr_subbrand_text" fieldName="Sub Brand" requiredness="OPTIONAL" type="ENUMERATED_AUTOINDEX" />
+    </output-column>
+    <survey-processor-options />
+  </output-column-group>
+</import-spec>

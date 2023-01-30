@@ -1,0 +1,3 @@
+﻿CREATE NONCLUSTERED INDEX [IX_Vista_Contract_Sales_DateTransferredToVWT_ACCT_COUNTRY_CODE] 
+	ON [CRM].[Vista_Contract_Sales] ([DateTransferredToVWT],[ACCT_COUNTRY_CODE]) 
+	INCLUDE ([ACCT_PREF_LANGUAGE_CODE])

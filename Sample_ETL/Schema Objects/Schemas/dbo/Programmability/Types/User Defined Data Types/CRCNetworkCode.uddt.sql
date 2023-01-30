@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[CRCNetworkCode]
+	FROM NVARCHAR(50) NOT NULL

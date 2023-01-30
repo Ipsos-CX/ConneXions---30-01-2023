@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[RoleTypeID]
+	FROM SMALLINT NOT NULL

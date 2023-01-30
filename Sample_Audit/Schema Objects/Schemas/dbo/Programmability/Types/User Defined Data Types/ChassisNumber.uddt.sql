@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[ChassisNumber]
+	FROM NVARCHAR(20) NOT NULL

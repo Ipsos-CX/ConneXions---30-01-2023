@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[CountryID]
+	FROM SMALLINT NOT NULL

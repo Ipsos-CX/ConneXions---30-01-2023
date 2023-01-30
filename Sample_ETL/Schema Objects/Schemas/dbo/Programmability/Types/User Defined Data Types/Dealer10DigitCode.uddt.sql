@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[Dealer10DigitCode]
+	FROM NVARCHAR(10) NOT NULL

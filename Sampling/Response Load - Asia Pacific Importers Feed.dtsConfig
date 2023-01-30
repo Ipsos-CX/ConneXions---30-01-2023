@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Response Load - Asia Pacific Importers Feed" GeneratedFromPackageID="{0CC3CAF0-B3DA-4035-8517-081BE4D68357}" GeneratedDate="19/10/2021 12:44:31"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Response Load - Asia Pacific Importers Feed.dtsx\Response Load - Asia Pacific Importers Feed.log</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::FTPEnabled].Properties[Value]" ValueType="Boolean">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[AuditID]
+	FROM BIGINT NOT NULL

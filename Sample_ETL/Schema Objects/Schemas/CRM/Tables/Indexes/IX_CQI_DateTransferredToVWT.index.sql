@@ -1,0 +1,3 @@
+﻿CREATE NONCLUSTERED INDEX [IX_CQI_DateTransferredToVWT] 
+	ON [CRM].[CQI] ([DateTransferredToVWT]) 
+	INCLUDE ([ID], [ACCT_ACCT_TYPE], [VEH_VIN], [CNT_LAST_NAME])

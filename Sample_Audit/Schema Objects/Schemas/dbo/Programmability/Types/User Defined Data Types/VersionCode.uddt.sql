@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[VersionCode]
+	FROM VARCHAR(200) NOT NULL

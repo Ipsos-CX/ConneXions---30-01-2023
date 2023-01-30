@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Sample Reporting - SampleReport" GeneratedFromPackageID="{F7EE3C47-C628-4647-ACC9-54F2583E7B7C}" GeneratedDate="09/06/2014 10:51:05"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Sample Reporting - SampleReport.dtsx\Sample Reporting - SampleReport.dtsx.log</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::bEchoOutputEnabled].Properties[Value]" ValueType="Boolean">
+    <ConfiguredValue>1</ConfiguredValue>
+   </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::bEchoOutput12mthRolling].Properties[Value]" ValueType="Boolean">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::bEchoDailyOutputEnabled].Properties[Value]" ValueType="Boolean">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+   <Configuration ConfiguredType="Property" Path="\Package.Variables[User::sFilePath_EchoFeed].Properties[Value]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\DataOutput\DPandOnline\EchoSampleFeed\</ConfiguredValue>
+	</Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::sFilePath_EchoFeedEvents].Properties[Value]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\DataOutput\DPandOnline\EchoSampleFeed\</ConfiguredValue>
+	</Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::RunDateAdjust].Properties[Value]" ValueType="Int16">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::FTPDisabled].Properties[Value]" ValueType="Boolean">
+    <ConfiguredValue>1</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

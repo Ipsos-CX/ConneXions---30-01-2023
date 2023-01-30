@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SqlCommandVariables xmlns="urn:Microsoft.VisualStudio.Data.Schema.Project.SqlCmdVars">
+  <Version>1</Version>
+  <Properties>
+    <Property>
+      <PropertyName>DataFilePath</PropertyName>
+      <PropertyValue>D:\aa97.data01\</PropertyValue>
+    </Property>
+    <Property>
+      <PropertyName>LogFilePath</PropertyName>
+      <PropertyValue>D:\aa97.log01\</PropertyValue>
+    </Property>
+    <Property>
+      <PropertyName>ReleaseDate</PropertyName>
+      <PropertyValue>07/03/2012</PropertyValue>
+    </Property>
+  </Properties>
+</SqlCommandVariables>

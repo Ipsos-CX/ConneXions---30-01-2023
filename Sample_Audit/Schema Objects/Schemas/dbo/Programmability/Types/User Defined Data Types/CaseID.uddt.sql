@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[CaseID]
+	FROM INT NOT NULL

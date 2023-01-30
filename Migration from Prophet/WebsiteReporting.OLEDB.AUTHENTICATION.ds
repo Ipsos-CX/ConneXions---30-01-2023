@@ -1,0 +1,19 @@
+﻿<DataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" xsi:type="RelationalDataSource" dwd:design-time-name="94e4a723-454c-4ee0-a639-b9dc339b7d4f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>WebsiteReporting.OLEDB.AUTHENTICATION</ID>
+  <Name>WebsiteReporting.OLEDB.AUTHENTICATION</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>ProjectReference</Name>
+      <Value>807bb1b7-a1b0-4e78-8970-72c2e723d4ba</Value>
+    </Annotation>
+    <Annotation>
+      <Name>DataSourceReference</Name>
+      <Value>807bb1b7-a1b0-4e78-8970-72c2e723d4ba#WebsiteReporting.OLEDB.AUTHENTICATION</Value>
+    </Annotation>
+  </Annotations>
+  <ConnectionString>Provider=SQLNCLI10.1;Data Source=NUEW-SQUKCXS01;Integrated Security=SSPI;Initial Catalog=WebsiteReporting</ConnectionString>
+  <ConnectionStringSecurity>Unchanged</ConnectionStringSecurity>
+  <Timeout>PT0S</Timeout>
+</DataSource>

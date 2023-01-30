@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[Country]
+	FROM VARCHAR(200) NOT NULL

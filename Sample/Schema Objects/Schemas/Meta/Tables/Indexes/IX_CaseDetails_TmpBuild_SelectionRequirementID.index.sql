@@ -1,0 +1,3 @@
+﻿CREATE NONCLUSTERED INDEX [IX_CaseDetails_TmpBuild_SelectionRequirementID]
+    ON [Meta].[CaseDetails_TmpBuild]([SelectionRequirementID] ASC)
+	INCLUDE ([QuestionnaireVersion], [SelectionTypeID], [CaseID], [Title], [FirstName], [Initials], [LastName], [SecondLastName], [GenderID], [LanguageID], [OrganisationName], [PostalAddressContactMechanismID], [EmailAddressContactMechanismID], [CountryID], [Country], [EventTypeID], [EventType], [EventDate], [PartyID], [OwnershipCycle], [ModelRequirementID], [RegistrationNumber], [RegistrationDate], [ModelDescription], [VIN], [ChassisNumber], [ManufacturerPartyID], [DealerPartyID], [DealerCode], [DealerName], [SaleType])

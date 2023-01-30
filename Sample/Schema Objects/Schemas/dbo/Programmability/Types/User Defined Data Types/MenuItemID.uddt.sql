@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[MenuItemID]
+	FROM TINYINT NOT NULL

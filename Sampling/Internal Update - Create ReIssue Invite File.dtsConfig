@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Internal Update - Create ReIssue Invite File" GeneratedFromPackageID="{A7E224D9-145A-4D1C-8342-A829D338DDED}" GeneratedDate="23/09/2016 13:42:40"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Internal Update - Case Rejections.dtsx\Internal Update - Case Rejections.log</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::FileType].Properties[Value]" ValueType="String">
+    <ConfiguredValue>Internal Update</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

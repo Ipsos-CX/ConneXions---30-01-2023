@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Customer Update - Contact Outcome" GeneratedFromPackageID="{EF1649FE-927E-4AF9-8787-4B117E8CD86E}" GeneratedDate="23/04/2019 11:26:42"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Connexions SSIS Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Customer Update - Contact Outcome.dtsx\Customer Update - Contact Outcome.log</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailFrom].Properties[Value]" ValueType="String">
+		<ConfiguredValue>CNX_JLR_Output@ipsos-online.com</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailTo].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Chris.Ledger@ipsos.com;Eddie.Thomas@ipsos.com;Ben.King@ipsos.com;Dipak.Gohil@ipsos.com</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::FileType].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Customer Update</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::PackageFTPEnabled].Properties[Value]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::RemoteCATIArchive].Properties[Value]" ValueType="String">
+		<ConfiguredValue>CATI outcome files downloaded by GfK/</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SMTPServer].Properties[Value]" ValueType="String">
+		<ConfiguredValue>PMTA.extranet.iext</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

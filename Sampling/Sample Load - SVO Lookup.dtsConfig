@@ -1,0 +1,35 @@
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="GFK\Edward.Thomas" GeneratedFromPackageName="Sample Load - SVO Lookup" GeneratedFromPackageID="{13C115A4-7B5A-4A73-919A-72585AF886D3}" GeneratedDate="25/10/2021 16:48:10"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Sample Load - SVO Lookup.dtsx\Sample Load - SVO Lookup.log</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::ExcelSheetName].Properties[Value]" ValueType="String">
+    <ConfiguredValue>Slotted Report$A2:X</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::FilePathAndName].Properties[Value]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\DataLoading\SampleFiles\SVOLookupData\Template\SVO_Sale_Vins_New_2021-07-12.xlsx</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::FileType].Properties[Value]" ValueType="String">
+    <ConfiguredValue>SVO Lookup</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::FTPDisabled].Properties[Value]" ValueType="Boolean">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::JaguarWorkBookPattern].Properties[Value]" ValueType="String">
+    <ConfiguredValue>Slotted Report</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::LocalArchivePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\DataLoading\SampleFiles\SVOLookupData\Archive</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::LocalErrorPath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\DataLoading\SampleFiles\SVOLookupData\Errors</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::LocalPath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\DataLoading\SampleFiles\SVOLookupData</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::LRWorkBookPattern].Properties[Value]" ValueType="String">
+    <ConfiguredValue>LRSVO</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

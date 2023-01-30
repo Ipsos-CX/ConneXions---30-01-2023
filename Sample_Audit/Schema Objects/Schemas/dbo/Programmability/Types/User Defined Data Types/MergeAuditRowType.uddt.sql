@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[MergeAuditRowType]
+	FROM VARCHAR(10) NOT NULL

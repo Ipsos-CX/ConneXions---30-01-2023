@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[EventCategoryID]
+	FROM TINYINT NOT NULL

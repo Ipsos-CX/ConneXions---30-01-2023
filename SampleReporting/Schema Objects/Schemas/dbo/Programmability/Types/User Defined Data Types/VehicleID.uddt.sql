@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[VehicleID]
+	FROM BIGINT NOT NULL

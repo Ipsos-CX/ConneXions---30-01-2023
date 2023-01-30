@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="WebsiteReporting - Migrate SampleQualityReport" GeneratedFromPackageID="{E853FAD6-7125-4415-B552-8895BDB69C7C}" GeneratedDate="13/01/2012 15:46:57"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Destination].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>SqlServerName=NUEW-SQUKCXS02;UseWindowsAuthentication=False;UserName=SampleSystem;Password=P4ssw0rd;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Source].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>SqlServerName=NUEW-SQUKCXS01;UseWindowsAuthentication=False;UserName=SampleSystem;Password=P4ssw0rd;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package\Copy Reporting Table.Properties[DestinationDatabase]" ValueType="String">
+		<ConfiguredValue>CNX_JLR_WebReporting</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package\Copy Reporting Table.Properties[SourceDatabase]" ValueType="String">
+		<ConfiguredValue>WebsiteReporting</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\WebsiteReporting - Migrate Report Tables.dtsx\WebsiteReporting - Migrate Report Tables.log</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

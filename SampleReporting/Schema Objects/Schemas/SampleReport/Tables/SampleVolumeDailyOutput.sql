@@ -1,0 +1,19 @@
+﻿CREATE TABLE [SampleReport].[SampleVolumeDailyOutput](
+	[HeaderID] [int] NULL,
+	[Brand] [nvarchar](255) NULL,
+	[Market] [nvarchar](255) NULL,
+	[Questionnaire] [nvarchar](255) NULL,
+	[Frequency] [nvarchar](255) NULL,
+	[BenchMark] [nvarchar](255) NULL,
+	[FileRow_LoadedCount_Monday] [nvarchar](255) NULL,
+	[FileRow_LoadedCount_Tuesday] [nvarchar](255) NULL,
+	[FileRow_LoadedCount_Wednesday] [nvarchar](255) NULL,
+	[FileRow_LoadedCount_Thursday] [nvarchar](255) NULL,
+	[FileRow_LoadedCount_Friday] [nvarchar](255) NULL,
+	[FileRow_LoadedCount_Saturday] [nvarchar](255) NULL,
+	[FileRow_LoadedCount_Sunday] [nvarchar](255) NULL,
+	[PreviousWeekDayCount] [nvarchar](255) NULL,
+	[CurrentWkTotal] [nvarchar](255) NULL,
+	[PreviousWkTotal] [nvarchar](255) NULL,
+	[ReportDate] [datetime] NULL
+) ON [PRIMARY]

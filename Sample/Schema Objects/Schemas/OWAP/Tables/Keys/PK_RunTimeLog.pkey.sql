@@ -1,0 +1,3 @@
+﻿ALTER TABLE [OWAP].[RunTimeLog]
+	ADD CONSTRAINT [PK_RunTimeLog]
+	PRIMARY KEY (LogID)

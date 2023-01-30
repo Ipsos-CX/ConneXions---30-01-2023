@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\poorvi.prasad" GeneratedFromPackageName="Sample Reporting - LoadSelectionReport" GeneratedFromPackageID="{87D839AF-E677-4055-91B1-F93572F4DDE3}" GeneratedDate="13/11/2018 13:42:15"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailBCC].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Chris.Ross@ipsos.com;Chris.Ledger@ipsos.com;Ben.king@ipsos.com</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailCC].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Eddie.Thomas@ipsos.com</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailFrom].Properties[Value]" ValueType="String">
+		<ConfiguredValue>CNX_JLR_Output@ipsos-online.com</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailTo].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Eddie.Thomas@ipsos.com</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SMTPServer].Properties[Value]" ValueType="String">
+		<ConfiguredValue>PMTA.extranet.iext</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::ReportPeriodInDays].Properties[Value]" ValueType="Int32">
+		<ConfiguredValue>7</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

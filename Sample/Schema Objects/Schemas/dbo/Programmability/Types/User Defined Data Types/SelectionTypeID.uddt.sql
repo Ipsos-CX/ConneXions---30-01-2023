@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[SelectionTypeID]
+	FROM SMALLINT NOT NULL

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Selection Output Child - PreOwned All File" GeneratedFromPackageID="{5B135418-0458-4E90-833C-CD76A5575476}" GeneratedDate="29/04/2021 14:21:51"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Connexions SSIS Log.txt].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\SSIS Logs\Daily Log\Connexions Sample System.log</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Sample.OLEDB.AUTHENTICATION].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>Data Source=1005797-CXNSQLS;Initial Catalog=Sample;Provider=SQLNCLI11.1;Integrated Security=SSPI;</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Sample_Audit.OLEDB.AUTHENTICATION].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>Data Source=1005797-CXNSQLS;Initial Catalog=Sample_Audit;Provider=SQLNCLI11.1;Integrated Security=SSPI;</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Sample_Errors.OLEDB.AUTHENTICATION].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>Data Source=1005797-CXNSQLS;Initial Catalog=Sample_Errors;Provider=SQLNCLI11.1;Integrated Security=SSPI;</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Sample_ETL.OLEDB.AUTHENTICATION].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>Data Source=1005797-CXNSQLS;Initial Catalog=Sample_ETL;Provider=SQLNCLI11.1;Integrated Security=SSPI;</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[SampleReporting.OLEDB.AUTHENTICATION].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>Data Source=1005797-CXNSQLS;Initial Catalog=SampleReporting;Provider=SQLNCLI11.1;Integrated Security=SSPI;</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[WebsiteReporting.OLEDB.AUTHENTICATION].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>Data Source=1005797-CXNSQLS;Initial Catalog=WebsiteReporting;Provider=SQLNCLI11.1;Integrated Security=SSPI;</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="GFK\martin.riverol" GeneratedFromPackageName="Sample Reporting - EventXDealerList - InclTransfers" GeneratedFromPackageID="{ADE8F291-4016-4342-976B-3643D209F4A5}" GeneratedDate="13/04/2021 15:21:36"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[SMTP Connection Manager].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>SmtpServer=PMTA.extranet.iext;UseWindowsAuthentication=False;EnableSsl=False;</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[SMTP Connection Manager].Properties[SmtpServer]" ValueType="String">
+    <ConfiguredValue>PMTA.extranet.iext</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::FTPEnabled].Properties[Value]" ValueType="Boolean">
+    <ConfiguredValue>0</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::OutputFileLocation].Properties[Value]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\DataOutput\DPandOnline\DealerList\</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package\Send Mail Task.Properties[FromLine]" ValueType="String">
+    <ConfiguredValue>CNX_JLR_Output@ipsos-online.com</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package\Send Mail Task.Properties[MessageSource]" ValueType="String">
+    <ConfiguredValue>Connexions UAT</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package\Send Mail Task.Properties[Subject]" ValueType="String">
+    <ConfiguredValue>EventX Dealer list</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package\Send Mail Task.Properties[ToLine]" ValueType="String">
+    <ConfiguredValue>ben.king@ipsos.com; Eddie.Thomas@ipsos.com; Chris.Ledger@ipsos.com; Dipak.Gohil@ipsos.com</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package\Send Mail Task - Online.Properties[FromLine]" ValueType="String">
+    <ConfiguredValue>CNX_JLR_Output@ipsos-online.com</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package\Send Mail Task - Online.Properties[MessageSource]" ValueType="String">
+    <ConfiguredValue>Connexions UAT</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package\Send Mail Task - Online.Properties[Subject]" ValueType="String">
+    <ConfiguredValue>Online Dealer list</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package\Send Mail Task - Online.Properties[ToLine]" ValueType="String">
+    <ConfiguredValue>ben.king@ipsos.com; Eddie.Thomas@ipsos.com; Chris.Ledger@ipsos.com; Dipak.Gohil@ipsos.com</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

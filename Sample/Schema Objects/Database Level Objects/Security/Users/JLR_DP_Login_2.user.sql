@@ -1,0 +1,2 @@
+﻿CREATE USER [JLR_DP_Login_2] --FOR LOGIN [JLR_DP_Login_2];
+

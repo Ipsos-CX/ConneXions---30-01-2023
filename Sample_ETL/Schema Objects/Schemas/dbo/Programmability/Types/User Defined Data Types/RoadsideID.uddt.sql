@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[RoadsideID]
+	FROM INT NOT NULL

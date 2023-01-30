@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Sample Process - Deduplication" GeneratedFromPackageID="{F55CCE3A-6E60-4DEB-8779-67105B7051AA}" GeneratedDate="24/11/2011 16:46:41"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Sample Process - Load Warranty to VWT.dtsx\Sample Process - Load Warranty to VWT.log</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

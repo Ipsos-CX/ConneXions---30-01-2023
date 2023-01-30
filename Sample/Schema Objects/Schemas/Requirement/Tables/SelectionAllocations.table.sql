@@ -1,0 +1,27 @@
+﻿CREATE TABLE [Requirement].[SelectionAllocations] (
+    [RequirementIDMadeUpOf] dbo.RequirementID NOT NULL,
+    [RequirementIDPartOf]   dbo.RequirementID NOT NULL,
+    [PostalTarget] INT NULL,
+	[EmailTarget] INT NULL,
+	[PhoneTarget] INT NULL,
+	[PostalPreviousAdjustment] INT NULL,
+	[EmailPreviousAdjustment] INT NULL,
+	[PhonePreviousAdjustment] INT NULL,
+	[PostalOtherAdjustment] INT NULL,
+	[EmailOtherAdjustment] INT NULL,
+	[PhoneOtherAdjustment] INT NULL,
+	[PostalTargetPostAdjustments] INT NULL,
+	[EmailTargetPostAdjustments] INT NULL,
+	[PhoneTargetPostAdjustments] INT NULL,
+	[PostalActual] INT NULL,
+	[EmailActual] INT NULL,
+	[PhoneActual] INT NULL,
+	[PostalNextAdjustment] INT NULL,
+	[EmailNextAdjustment] INT NULL,
+	[PhoneNextAdjustment] INT NULL,
+	[TotalTarget] INT NULL,
+	[TotalTargetPercentage] INT NULL,
+	[TotalAvailable] INT NULL,
+	[TotalActual] INT NULL
+);
+

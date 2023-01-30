@@ -1,0 +1,1606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>"DatabaseProject"</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>3.5</ProjectVersion>
+    <ProjectGuid>{ec0ab5d6-fb3c-4beb-9196-9e07ae6bf916}</ProjectGuid>
+    <DSP>Microsoft.Data.Schema.Sql.SqlDsp.Sql100DatabaseSchemaProvider</DSP>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <ShowWizard>False</ShowWizard>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <IncludeSchemaNameInFileName>False</IncludeSchemaNameInFileName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchema</DefaultFileStructure>
+    <DeployToDatabaseAddToServerExplorer>False</DeployToDatabaseAddToServerExplorer>
+    <DeployToScript>True</DeployToScript>
+    <CatalogPropertiesFile>Properties\Database.sqlsettings</CatalogPropertiesFile>
+    <RootNamespace>Sample_Audit</RootNamespace>
+    <DefaultSchema>dbo</DefaultSchema>
+    <PreviousProjectVersion>3.5</PreviousProjectVersion>
+    <SccProjectName>"$/Connexions/Connexions/Sample_Audit", SOUAAAAA</SccProjectName>
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>.</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>.\sql\release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetConnectionString>
+    </TargetConnectionString>
+    <TargetDatabase>
+    </TargetDatabase>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <SuppressWarnings>
+    </SuppressWarnings>
+    <DeploymentConfigFile>Properties\Database.sqldeployment</DeploymentConfigFile>
+    <SqlCommandVariablesFile>Properties\Database.sqlcmdvars</SqlCommandVariablesFile>
+    <DeployToDatabase>False</DeployToDatabase>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>.\sql\debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetConnectionString>Data Source=NUEW-SQUKCXS01;Integrated Security=True;Pooling=False</TargetConnectionString>
+    <TargetDatabase>
+    </TargetDatabase>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <SuppressWarnings>
+    </SuppressWarnings>
+    <DeploymentConfigFile>Properties\Database.sqldeployment</DeploymentConfigFile>
+    <SqlCommandVariablesFile>Properties\Database.sqlcmdvars</SqlCommandVariablesFile>
+    <DeployToDatabase>False</DeployToDatabase>
+  </PropertyGroup>
+  <!--Import the settings-->
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\TeamData\Microsoft.Data.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties\" />
+    <Folder Include="Schema Objects\" />
+    <Folder Include="Schema Objects\Database Level Objects\" />
+    <Folder Include="Schema Objects\Database Level Objects\Assemblies\" />
+    <Folder Include="Schema Objects\Database Level Objects\Database Triggers\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Asymmetric Keys\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Certificates\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Database Audit Specification\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Database Encryption Keys\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Master Keys\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\Application Roles\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\Database Roles\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Schemas\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Signatures\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Symmetric Keys\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Users\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Broker Priorities\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Contracts\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Event Notifications\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Message Types\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Queues\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Remote Service Binding\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Routes\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Services\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Filegroups\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Files\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Full Text Catalogs\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Full Text Stoplists\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Partition Functions\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Partition Schemes\" />
+    <Folder Include="Schema Objects\Schemas\" />
+    <Folder Include="Schema Objects\Schemas\Audit\" />
+    <Folder Include="Schema Objects\Schemas\Audit\Programmability\" />
+    <Folder Include="Schema Objects\Schemas\Audit\Programmability\Defaults\" />
+    <Folder Include="Schema Objects\Schemas\Audit\Programmability\Functions\" />
+    <Folder Include="Schema Objects\Schemas\Audit\Programmability\Rules\" />
+    <Folder Include="Schema Objects\Schemas\Audit\Programmability\Stored Procedures\" />
+    <Folder Include="Schema Objects\Schemas\Audit\Programmability\Types\" />
+    <Folder Include="Schema Objects\Schemas\Audit\Programmability\Types\User Defined Data Types\" />
+    <Folder Include="Schema Objects\Schemas\Audit\Programmability\Types\User Defined Table Types\" />
+    <Folder Include="Schema Objects\Schemas\Audit\Programmability\Types\User Defined Types CLR\" />
+    <Folder Include="Schema Objects\Schemas\Audit\Programmability\Types\XML Schema Collections\" />
+    <Folder Include="Schema Objects\Schemas\Audit\Synonyms\" />
+    <Folder Include="Schema Objects\Schemas\Audit\Tables\" />
+    <Folder Include="Schema Objects\Schemas\Audit\Tables\Constraints\" />
+    <Folder Include="Schema Objects\Schemas\Audit\Tables\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\Audit\Tables\Keys\" />
+    <Folder Include="Schema Objects\Schemas\Audit\Tables\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\Audit\Tables\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\Audit\Views\" />
+    <Folder Include="Schema Objects\Schemas\Audit\Views\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\Audit\Views\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\Audit\Views\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Defaults\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Functions\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Rules\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Stored Procedures\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Types\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Types\User Defined Data Types\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Types\User Defined Table Types\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Types\User Defined Types CLR\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Types\XML Schema Collections\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Synonyms\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Tables\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Tables\Constraints\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Tables\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Tables\Keys\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Tables\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Tables\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Views\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Views\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Views\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Views\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\dbo\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Defaults\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Functions\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Rules\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Table Types\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Types CLR\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\XML Schema Collections\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Synonyms\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Constraints\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Keys\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Programmability\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Programmability\Defaults\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Programmability\Functions\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Programmability\Rules\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Programmability\Stored Procedures\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Programmability\Types\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Programmability\Types\User Defined Data Types\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Programmability\Types\User Defined Table Types\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Programmability\Types\User Defined Types CLR\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Programmability\Types\XML Schema Collections\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Synonyms\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Tables\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Tables\Constraints\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Tables\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Tables\Keys\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Tables\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Tables\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Views\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Views\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Views\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Views\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\Merge\" />
+    <Folder Include="Schema Objects\Schemas\Merge\Programmability\" />
+    <Folder Include="Schema Objects\Schemas\Merge\Programmability\Defaults\" />
+    <Folder Include="Schema Objects\Schemas\Merge\Programmability\Functions\" />
+    <Folder Include="Schema Objects\Schemas\Merge\Programmability\Rules\" />
+    <Folder Include="Schema Objects\Schemas\Merge\Programmability\Stored Procedures\" />
+    <Folder Include="Schema Objects\Schemas\Merge\Programmability\Types\" />
+    <Folder Include="Schema Objects\Schemas\Merge\Programmability\Types\User Defined Data Types\" />
+    <Folder Include="Schema Objects\Schemas\Merge\Programmability\Types\User Defined Table Types\" />
+    <Folder Include="Schema Objects\Schemas\Merge\Programmability\Types\User Defined Types CLR\" />
+    <Folder Include="Schema Objects\Schemas\Merge\Programmability\Types\XML Schema Collections\" />
+    <Folder Include="Schema Objects\Schemas\Merge\Synonyms\" />
+    <Folder Include="Schema Objects\Schemas\Merge\Tables\" />
+    <Folder Include="Schema Objects\Schemas\Merge\Tables\Constraints\" />
+    <Folder Include="Schema Objects\Schemas\Merge\Tables\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\Merge\Tables\Keys\" />
+    <Folder Include="Schema Objects\Schemas\Merge\Tables\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\Merge\Tables\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\Merge\Views\" />
+    <Folder Include="Schema Objects\Schemas\Merge\Views\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\Merge\Views\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\Merge\Views\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\OWAP\" />
+    <Folder Include="Schema Objects\Schemas\OWAP\Programmability\" />
+    <Folder Include="Schema Objects\Schemas\OWAP\Programmability\Defaults\" />
+    <Folder Include="Schema Objects\Schemas\OWAP\Programmability\Functions\" />
+    <Folder Include="Schema Objects\Schemas\OWAP\Programmability\Rules\" />
+    <Folder Include="Schema Objects\Schemas\OWAP\Programmability\Stored Procedures\" />
+    <Folder Include="Schema Objects\Schemas\OWAP\Programmability\Types\" />
+    <Folder Include="Schema Objects\Schemas\OWAP\Programmability\Types\User Defined Data Types\" />
+    <Folder Include="Schema Objects\Schemas\OWAP\Programmability\Types\User Defined Table Types\" />
+    <Folder Include="Schema Objects\Schemas\OWAP\Programmability\Types\User Defined Types CLR\" />
+    <Folder Include="Schema Objects\Schemas\OWAP\Programmability\Types\XML Schema Collections\" />
+    <Folder Include="Schema Objects\Schemas\OWAP\Synonyms\" />
+    <Folder Include="Schema Objects\Schemas\OWAP\Tables\" />
+    <Folder Include="Schema Objects\Schemas\OWAP\Tables\Constraints\" />
+    <Folder Include="Schema Objects\Schemas\OWAP\Tables\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\OWAP\Tables\Keys\" />
+    <Folder Include="Schema Objects\Schemas\OWAP\Tables\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\OWAP\Tables\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\OWAP\Views\" />
+    <Folder Include="Schema Objects\Schemas\OWAP\Views\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\OWAP\Views\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\OWAP\Views\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\RollbackSample\" />
+    <Folder Include="Schema Objects\Schemas\RollbackSample\Programmability\" />
+    <Folder Include="Schema Objects\Schemas\RollbackSample\Programmability\Defaults\" />
+    <Folder Include="Schema Objects\Schemas\RollbackSample\Programmability\Functions\" />
+    <Folder Include="Schema Objects\Schemas\RollbackSample\Programmability\Rules\" />
+    <Folder Include="Schema Objects\Schemas\RollbackSample\Programmability\Stored Procedures\" />
+    <Folder Include="Schema Objects\Schemas\RollbackSample\Programmability\Types\" />
+    <Folder Include="Schema Objects\Schemas\RollbackSample\Programmability\Types\User Defined Data Types\" />
+    <Folder Include="Schema Objects\Schemas\RollbackSample\Programmability\Types\User Defined Table Types\" />
+    <Folder Include="Schema Objects\Schemas\RollbackSample\Programmability\Types\User Defined Types CLR\" />
+    <Folder Include="Schema Objects\Schemas\RollbackSample\Programmability\Types\XML Schema Collections\" />
+    <Folder Include="Schema Objects\Schemas\RollbackSample\Synonyms\" />
+    <Folder Include="Schema Objects\Schemas\RollbackSample\Tables\" />
+    <Folder Include="Schema Objects\Schemas\RollbackSample\Tables\Constraints\" />
+    <Folder Include="Schema Objects\Schemas\RollbackSample\Tables\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\" />
+    <Folder Include="Schema Objects\Schemas\RollbackSample\Tables\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\RollbackSample\Tables\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\RollbackSample\Views\" />
+    <Folder Include="Schema Objects\Schemas\RollbackSample\Views\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\RollbackSample\Views\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\RollbackSample\Views\Triggers\" />
+    <Folder Include="Scripts" />
+    <Folder Include="Scripts\Pre-Deployment" />
+    <Folder Include="Scripts\Post-Deployment" />
+    <Folder Include="Data Generation Plans" />
+    <Folder Include="Schema Comparisons" />
+  </ItemGroup>
+  <ItemGroup>
+    <PropertiesFile Include="Properties\Database.sqlsettings">
+    </PropertiesFile>
+    <PropertiesFile Include="Properties\Database.sqldeployment">
+    </PropertiesFile>
+    <PropertiesFile Include="Properties\Database.sqlcmdvars">
+    </PropertiesFile>
+    <Build Include="Properties\Database.sqlpermissions">
+      <ModelBuilderType>Permissions</ModelBuilderType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Security\Schemas\Audit.schema.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Security\Schemas\CustomerUpdateFeeds.schema.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Security\Schemas\GDPR.schema.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Security\Schemas\Merge.schema.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Security\Schemas\OWAP.schema.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Security\Schemas\Rollback.schema.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Security\Schemas\RollbackSample.schema.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Security\Users\JLRExecLogin.user.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Storage\Files\Sample_Audit_Data.sqlfile.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Storage\Files\Sample_Audit_Log.sqlfile.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\CaseContactMechanismOutcomes.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\CaseRejections.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Cases.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Constraints\CustomerUpdate_LostLeadModelOfInterest.DF_CustomerUpdate_LostLeadModelOfInterest_DateProcessed.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Constraints\CustomerUpdate_Dealer.DF_CustomerUpdate_Dealer_DateProcessed.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Constraints\CustomerUpdate_EmailAddress.DF_CustomerUpdate_EmailAddress_DateProcessed.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Constraints\CustomerUpdate_Organisation.DF_CustomerUpdate_Organisation_DateProcessed.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Constraints\CustomerUpdate_Person.DF_CustomerUpdate_Person_DateProcessed.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Constraints\CustomerUpdate_PostalAddress.DF_CustomerUpdate_PostalAddress_DateProcessed.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Constraints\CustomerUpdate_RegistrationNumber.DF_CustomerUpdate_RegistrationNumber_DateProcessed.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Constraints\CustomerUpdate_TelephoneNumber.DF_CustomerUpdate_TelephoneNumber_DateProcessed.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Constraints\InternalUpdate_ReissueInvite.DF_InternalUpdate_ReissueInvite_DateProcessed.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\AdditionalInfoSales.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\CaseUpdate_CRMHeaderFile.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\CaseUpdate_CRMResponseFile.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\CaseCRM_Outputs.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\AFRLCodesLookup.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Constraints\InternalUpdate_CaseRejections.DF_InternalUpdate_CaseRejections_DateProcessed.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Constraints\DF_InternalUpdate_NonSolicitations_DateProcessed.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\ContactPreferencesBySurvey.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\CaseUpdate_LostLeadResponseFile.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\CaseLostLeads_Outputs.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\CustomerUpdate_ExtraVehicleFeed.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_Organisations_AuditItemID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_ContactPreferences_PartyID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_ContactPreferencesBySurvey_PartyID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\InternalUpdate_DirectSalesDealerUpdate.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\PK_LegalOrganisationsByLanguage.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\PK_ContactPreferencesBySurvey.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\CustomerUpdate_ExtraVehicleFeed.FK_CustomerUpdate_ExtraVehicleFeed_AuditItemID.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\CustomerUpdate_ExtraVehicleFeed.PK_CustomerUpdate_ExtraVehicleFeed.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Lookup_LostLeadsAgencyStatus.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Markets.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\PK_ContactPreferences.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\ContactPreferences.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\CustomerUpdate_LostLeadModelOfInterest.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\IndustryClassifications_REMOVED.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\InternalUpdate_MergeParties.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\InternalUpdate_UnMergeParties.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\CustomerUpdate_CRCAgentLookUp.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_AdditionalInfoSales_EventID_SalesmanInfo.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\InternalUpdate_CaseRejections.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\InternalUpdate_CaseRejections.PK_InternalUpdate_CaseRejections.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\InternalUpdate_CaseRejections.FK_InternalUpdate_CaseRejections_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\PK_InternalUpdate_NonSolicitations.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\FK_InternalUpdate_NonSolicitations_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\RejectedCRCCases.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\InternalUpdate_NonSolicitations.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\LegalOrganisationsByLanguage.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\VehiclePartyRoleEventsAFRL.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_VehiclePartyRoleEvents_AuditItemID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\CustomerUpdate_NonSolicitationRemoval.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\CustomerUpdate_NonSolicitationRemoval_NonSols.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\CustomerUpdate_SMSBouncebacks.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\CustomerUpdate_ContactOutcome.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\CustomerUpdate_Dealer.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\CustomerUpdate_ElectronicAddress.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\CustomerUpdate_Organisation.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\CustomerUpdate_Person.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\CustomerUpdate_PostalAddress.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\CustomerUpdate_RegistrationNumber.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\CustomerUpdate_TelephoneNumber.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\DealerNetworks.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\EmployeeRelationships.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\EventNonSolicitations.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\Cases.IX_Cases_AuditItemID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\Cases.IX_Cases_CaseID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_CustomerRelationships_PartyID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_EventPartyRoles_AuditItemID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_Events.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_PartyContactMechanismsPurposes_AuditItemID_ContactMechanismID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_People_AuditItemID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_SelectionOutput_CaseID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_Vehicles_AuditItemID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\InternalUpdate_ReissueInvite.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\CaseRejections.FK_CaseRejections_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\CaseRejections.PK_CaseRejections.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\Cases.FK_Cases_AuditItemID.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\Cases.PK_Cases_AuditItemID.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\FK_AdditionalInfoSales_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\CustomerUpdate_ContactOutcome.FK_CustomerUpdate_ContactOutcome_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\CustomerUpdate_ContactOutcome.PK_CustomerUpdate_ContactOutcome.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\CustomerUpdate_Dealer.FK_CustomerUpdate_Dealer_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\CustomerUpdate_Dealer.PK_CustomerUpdate_Dealer.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\CustomerUpdate_EmailAddress.FK_CustomerUpdate_EmailAddress_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\CustomerUpdate_EmailAddress.PK_CustomerUpdate_EmailAddress.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\CustomerUpdate_Organisation.FK_CustomerUpdate_Organisation_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\CustomerUpdate_Organisation.PK_CustomerUpdate_Organisation.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\CustomerUpdate_Person.FK_CustomerUpdate_Person_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\CustomerUpdate_Person.PK_CustomerUpdate_Person.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\CustomerUpdate_PostalAddress.FK_CustomerUpdate_PostalAddress_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\CustomerUpdate_PostalAddress.PK_CustomerUpdate_PostalAddress.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\CustomerUpdate_RegistrationNumber.FK_CustomerUpdate_RegistrationNumber_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\CustomerUpdate_RegistrationNumber.PK_CustomerUpdate_RegistrationNumber.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\CustomerUpdate_TelephoneNumber.FK_CustomerUpdate_TelephoneNumber_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\CustomerUpdate_TelephoneNumber.PK_CustomerUpdate_TelephoneNumber.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\FK_DealerNetworks_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\FK_EmployeeRelationships_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\InternalUpdate_ReissueInvite.FK_InternalUpdate_ReissueInvite_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\PK_Audit_DealerNetworks.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\PK_EmployeeRelationships.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\SelectionRequirements.FK_SelectionRequirements_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\SelectionRequirements.PK_SelectionRequirements.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\FK_PartySalutation_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\LandRover_Brazil_Sales_Contract.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Landrover_Brazil_Sales_Customer.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Landrover_Brazil_Sales_Matching.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\PartySalutations.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\SelectionRequirements.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\SelectionOutput.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Events_AuditItemID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\IndustryClassifications.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\FK_SelectionOutput_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\FK_SelectionOutput_SelectionOutputTypes.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\FK_IndustryClassifications_PartyClassifications.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\FK_PartyClassifications_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\FK_Registrations_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\PK_SelectionOutput.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\PK_Events.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\PK_IndustryClassifications.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\PK_PartyClassifications.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\PK_Registrations.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\PartyClassifications.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\BlacklistContactMechanisms.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\ContactMechanismNonSolicitations.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\ContactMechanisms.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\ContactMechanismTypeNonSolicitations.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\EmailAddresses.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\EventPartyRoles.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Events.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_ContactMechanisms_AuditItemID_ContactMechanismID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_EmailAddresses_AuditItemID_ContactMechanismID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_PartyContactMechanisms_ContactMechanismID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_PartyContactMechanisms_PartyIDContactMechanismID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_People_PartyID_TitleID_FirstName_LastName_SecondLastName_NameChecksum.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_PostalAddresses_PartyID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_PostalAddress_AddressChecksum.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_PostalAddress_ContactMechanismID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_TelephoneNumbers_AuditItemID_ContactMechanismID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_TelephoneNumbers_ContactMechanismID_ContactNumber_ContactNumberChecksum.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_TelephoneNumbers_ContactNumber_ContactNumberChecksum.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_VehiclePartyRoles_VehicleID_PartyID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_Vehicles_VehicleID_VIN.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\InformalOrganisations.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\NonSolicitations.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\OwnershipCycle.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\PartyContactMechanismPurposes.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\PartyLanguages.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\PartyNonSolicitations.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\PartyRelationships.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\PartyRoles.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Registrations.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\TelephoneNumbers.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\VehiclePartyRoleEvents.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\VehiclePartyRoles.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\VehicleRegistrationEvents.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Vehicles.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\LegalOrganisations.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\PartyContactMechanisms.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_PostalAddresses_ContactMechanismIDCountryIDAddressChecksum.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\FK_LegalOrganisations_Organisations.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\FK_Parties_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\FK_PostalAddresses_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\PK_LegalOrganisations.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\PK_PostalAddresses.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\PostalAddresses.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\FK_Titles_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\FK_TitleVariations_AuditItemID.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Organisations.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\FK_CustomerRelationships_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\FK_Organisations_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\FK_People_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\PK_CustomerRelationships.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\PK_Organisations.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\PK_Parties.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\PK_People.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\PK_Titles.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\PK_TitleVariations.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Parties.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\People.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\CustomerRelationships.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Titles.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\TitleVariations.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Triggers\TR_IU_Audit_PostalAddresses.trigger.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\SVOLookup.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CustomerUpdateFeeds\Tables\AuditRowsCustomerUpdateFilesLoaded.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CustomerUpdateFeeds\Tables\CustomerUpdateFeed.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\AddressingText.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\AddressNumberText.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\AddressText.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\AuditID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\AuditItemID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\BinaryFlag.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\BlacklistStringID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\CaseID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\ContactMechanismID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\ContactMechanismPurposeTypeID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\ContactMechanismTypeID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\ContactNumber.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\ContractRelationshipTypeID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\AFRLCode.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\Approved.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\CaseStatusTypeID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\ParentFlag.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\VINPrefix.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\ChassisNumber.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\RoadsideNetworkCode.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\RoadsideNetworkName.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\Requirement.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\MergeAuditRowType.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\EmailAddressSource.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\Country.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\DealerCode.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\DealerName.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\EmailAddress.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\EmployeeIdentifier.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\EventTypeID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\LanguageID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\LoadText.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\ModelDescription.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\ModelID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\NonSolicitationID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\NonSolicitationTextID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\OutcomeCode.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\OutcomeCodeTypeID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\OwnershipCycle.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\PartyRelationshipTypeID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\PartyRoleID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\PartyTypeID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\QuestionnaireVersion.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\RegistrationNumber.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\RequirementID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\SalesCodeTypeId.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\Salutation.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\SelectionOutputTypeID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\SelectionStatusTypeID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\SelectionTypeID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\SessionID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\TelephoneNumber.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\CountryID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\CustomerIdentifier.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\EventID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\FileName.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\FileTypeID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\GenderID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\NameDetail.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\OrganisationName.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\PartyID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\Postcode.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\RegistrationID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\RoleTypeID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\Title.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\TitleID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\VehicleDescription.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\VehicleID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\VehiclePartyRoleEventID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\VehicleRoleTypeID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\VersionCode.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\VIN.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Audit.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\AuditItems.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\FileRowsRemovedBeforeLoad.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\IX_Files_Filename.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_FileRowsRemovedBeforeLoad_AuditID_FileRow.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_SelectionOutputTypes.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\SelectionOutputTypes.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Files_ActionDate.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Files_AuditID.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_IncomingFiles_AuditID.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_IncomingFiles_LoadSuccess.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\FileFailureReasons.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\FileRows.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Files.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\FileTypes.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\IncomingFiles.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\IX_AuditItems_AuditID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\FK_OutgoingFiles_Files_1.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\FK_PartyContactMechanisms_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\FK_Files_FileTypes.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\FK_FileRows_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\FK_IncomingFiles_Files.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_OutgoingFiles.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_PartyContactMechanisms.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_FileFailureReasons.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\FK_AuditItems_Audit.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\FK_Files_Audit.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_AuditItems.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_FileRows_AuditItemID.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_FileTypes.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Audit.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Files.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_IncomingFiles.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\FK_IncomingFiles_FileFailureReasons.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\OutgoingFiles.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Views\Triggers\TR_I_vwDA_FileRows.trigger.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Views\vwDA_FileRows.view.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\ErasureRequests.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\OriginatingDataRows.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Merge\Tables\AutomotiveEventBasedInterviews.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Merge\Tables\CustomerRelationships.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Merge\Tables\EmployeeRelationships.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Merge\Tables\UnMergeChildren.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Merge\Tables\PartyContactMechanismPurposes.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Merge\Tables\PartyContactMechanisms.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Merge\Tables\SampleQualityAndSelectionLogging.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Merge\Tables\UnMerges.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Merge\Tables\Merges.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Merge\Tables\VehiclePartyRoleEvents.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Merge\Tables\VehiclePartyRoles.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\OWAP\Tables\Keys\FK_Actions_AuditItems.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\OWAP\Tables\Keys\PK_Actions_AuditItemID.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\OWAP\Tables\Keys\FK_Sessions_Audit.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\OWAP\Tables\Keys\PK_Sessions.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\OWAP\Tables\Sessions.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\OWAP\Tables\Actions.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\OWAP\Views\Triggers\TR_I_vwDA_Sessions.trigger.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\OWAP\Views\Triggers\TR_I_vwDA_Actions.trigger.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\OWAP\Views\vwDA_Sessions.view.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\OWAP\Views\vwDA_Actions.view.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Audit_Files.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Audit_PartyContactMechanismPurposes.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Audit_PartyContactMechanisms.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Audit_IncomingFiles.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\AutomotiveEventBasedInterviews.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\CaseContactMechanisms.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\CaseRejections.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\CaseOutput.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Cases.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Audit_CaseRejections.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Audit_Events.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\CaseDetails.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Audit_Organisations.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Audit_People.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Audit_LegalOrganisations.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\CaseContactMechanismOutcomes.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Canada_Sales.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Canada_Service.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Audit_CustomerRelationships.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Audit_ContactPreferences.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Audit_ContactPreferencesBySurvey.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\ContactPreferences.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\ContactPreferencesBySurvey.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\CustomerRelationships.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\CRM_RoadsideIncident_Roadside.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\CRM_CRCCall_Call.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\CRM_DMS_Repair_Service.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\CRM_Vista_Contract_Sales.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\CRM_PreOwned.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\CRCEvents.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\WarrantyEvents.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\RoadsideEvents.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\LegalOrganisations.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\People.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Organisations.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Events.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\SampleQualityAndSelectionLogging.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\PartyContactMechanismPurposes.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\SelectionRequirements.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\VehiclePartyRoleEvents.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Requirements.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\SelectionCases.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\PartyContactMechanisms.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <PreDeploy Include="Scripts\Pre-Deployment\Script.PreDeployment.sql">
+      <SubType>Code</SubType>
+    </PreDeploy>
+    <PostDeploy Include="Scripts\Post-Deployment\Script.PostDeployment.sql">
+      <SubType>Code</SubType>
+    </PostDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <ArtifactReference Include="$(VSTSDBDirectory)\Extensions\SqlServer\2008\DBSchemas\Microsoft.SqlTypes.dbschema">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Visual Studio 9.0\VSTSDB\Extensions\SqlServer\2008\DBSchemas\Microsoft.SqlTypes.dbschema</HintPath>
+    </ArtifactReference>
+  </ItemGroup>
+  <ItemGroup>
+    <DeploymentExtensionConfiguration Include="Sample_Audit.refactorlog">
+      <SubType>NotInBuild</SubType>
+    </DeploymentExtensionConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sample_Errors\Sample_Errors.dbproj">
+      <Name>Sample_Errors</Name>
+      <Project>{c04dc70a-100f-4442-9ee8-7a21379bdc9b}</Project>
+      <Private>True</Private>
+      <DatabaseVariableName>ErrorDB</DatabaseVariableName>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <NotInBuild Include="Schema Comparisons\Sample_Audit.scmp">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <Build Include="Schema Objects\Database Level Objects\Security\Roles\Sample_Audit.RoleMemberships.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Keys\PK_NWB_SelectionOutputsStaging_AuditItemID.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\NWB_SelectionOutputsStaging.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_VehiclePartyRoleEventsAFRL.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_AdditionalInfoSales_AuditItemID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Functions\udfGenerateAddressChecksum.function.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Functions\udfRemovePunctuation.function.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\GDPRErasuresFeed_Outputs.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\ErasedRecordCounts.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Indexes\IX_EraseRequests_PartyID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Keys\PK_ErasureRequests.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\IAssistanceEvents.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_VehiclePartyRoleEvents.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_WarrantyEvents.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_PartyContactMechanisms.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_Organisations.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_IAssistanceEvents.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_LegalOrganisations.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_PartyContactMechanismPurposes.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_People.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_Requirements.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_RoadsideEvents.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_SelectionRequirements.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_SampleQualityAndSelectionLogging.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_SelectionCases.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_CRCEvents.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_CRM_CRCCall_Call.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_CRM_DMS_Repair_Service.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_CRM_PreOwned.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_CRM_RoadsideIncident_Roadside.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_CRM_Vista_Contract_Sales.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_CustomerRelationships.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_Events.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_ContactPreferencesBySurvey.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_Cases.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_CaseRejections.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_CaseOutput.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_Canada_Service.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_Canada_Sales.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_CaseContactMechanismOutcomes.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_CaseContactMechanisms.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_CaseDetails.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_ContactPreferences.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_Audit_PartyContactMechanismPurposes.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_Audit_PartyContactMechanisms.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_Audit_People.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_Audit_CustomerRelationships.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_Audit_Events.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_Audit_Files.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_Audit_LegalOrganisations.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_Audit_Organisations.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_Audit_IncomingFiles.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_AutomotiveEventBasedInterviews.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_Audit_ContactPreferences.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_Audit_ContactPreferencesBySurvey.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\RollbackSample\Tables\Keys\PK_RollbackSample_Audit_CaseRejections.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\Audit\Tables\Indexes\IX_Audit_EmailAddresses_ContactMechanismID.index.sql">
+      <SubType>NotInBuild</SubType>
+    </Build>
+    <NotInBuild Include="Schema Objects\Schemas\Audit\Tables\Keys\InternalUpdate_ReissueInvite.PK_InternalUpdate_ReissueInvitepkey.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="Schema Objects\Schemas\Audit\Tables\Keys\PK_CustomerUpdate_NonSolicitationRemoval_NonSols.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,6 @@
+﻿CREATE NONCLUSTERED INDEX [IX_Audit_AdditionalInfoSales_AuditItemID]
+ON [Audit].[AdditionalInfoSales] ([AuditItemID])
+INCLUDE ([EventID],[SalesOrderNumber],[SalesCustomerType],[SalesPaymentType],[Salesman],[ContractRelationship],[ContractCustomer],[SalesmanCode],[InvoiceNumber],[InvoiceValue],[PrivateOwner],[OwningCompany],[UserChooserDriver],[EmployerCompany],[AdditionalCountry],[State],[VehiclePurchaseDate],[VehicleDeliveryDate],[TypeOfSaleOrig],[Approved],[LostLead_DateOfLeadCreation],[ServiceAdvisorID],[ServiceAdvisorName],[TechnicianID],[TechnicianName],[VehicleSalePrice],[SalesAdvisorID],[SalesAdvisorName],[PDI_Flag],[ParentAuditItemID],[LostLead_CompleteSuppressionJLR],[LostLead_CompleteSuppressionRetailer],[LostLead_PermissionToEmailJLR],[LostLead_PermissionToEmailRetailer],[LostLead_PermissionToPhoneJLR],[LostLead_PermissionToPhoneRetailer],[LostLead_PermissionToPostJLR],[LostLead_PermissionToPostRetailer],[LostLead_PermissionToSMSJLR],[LostLead_PermissionToSMSRetailer],[LostLead_PermissionToSocialMediaJLR],[LostLead_PermissionToSocialMediaRetailer],[LostLead_DateOfLastContact],[LostLead_ConvertedDateOfLastContact],[LostLead_MarketingPermission],[JLRSuppliedEventType],[IAssistanceHelpdeskAdvisorName],[IAssistanceHelpdeskAdvisorID])
+GO
+
+

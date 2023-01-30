@@ -1,0 +1,3 @@
+﻿ALTER TABLE [dbo].[CrushFTPLogins]
+	ADD CONSTRAINT [PK_CrushFTPLogins]
+	PRIMARY KEY (CrushFTPLoginID)

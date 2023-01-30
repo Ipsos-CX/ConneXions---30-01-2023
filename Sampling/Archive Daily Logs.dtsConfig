@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Archive Daily Logs" GeneratedFromPackageID="{1D4D1A77-D20E-4CA3-9FE7-7DEC7514BFCE}" GeneratedDate="23/01/2012 13:28:35"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::ArchiveFilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Daily Log\Archive\</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::DailyLogFile].Properties[Value]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Daily Log\Connexions Sample System.log</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

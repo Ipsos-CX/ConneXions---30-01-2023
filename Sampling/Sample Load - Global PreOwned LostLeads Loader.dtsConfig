@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Sample Load - Global PreOwned LostLeads Loader" GeneratedFromPackageID="{863A7F71-55EC-402C-9E14-A4B5E793A59B}" GeneratedDate="02/10/2019 11:44:03"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Sample Load - Global PreOwned LostLeads Loader.dtsx\Sample Load - Global PreOwned LostLeads Loader.log</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::FileType].Properties[Value]" ValueType="String">
+    <ConfiguredValue>Sample</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::Questionnaire].Properties[Value]" ValueType="String">
+    <ConfiguredValue>PreOwned LostLeads</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::SampleFileNamePrefix].Properties[Value]" ValueType="String">
+    <ConfiguredValue>GSL_PreOwned_LostLeads</ConfiguredValue>
+  </Configuration>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::SamplePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\DataLoading\SampleFiles\GlobalPreOwnedLostLeadsLoader\</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

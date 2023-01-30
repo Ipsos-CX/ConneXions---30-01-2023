@@ -1,0 +1,11 @@
+<DTSConfiguration>
+<DTSConfigurationHeading>
+<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Internal Update - Sample Volume Settings" GeneratedFromPackageID="{AE5FD0F1-DD74-4D01-9901-6C9A6DACDD70}" GeneratedDate="19/11/2021 10:18:13"/>
+</DTSConfigurationHeading>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::FTPEnabled].Properties[Value]" ValueType="Boolean">
+<ConfiguredValue>0</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SamplePath].Properties[Value]" ValueType="String">
+<ConfiguredValue>P:\Sampling\DataLoading\InternalUpdateFiles\SampleVolumeSettings\</ConfiguredValue>
+</Configuration>
+</DTSConfiguration>

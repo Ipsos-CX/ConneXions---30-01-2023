@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\poorvi.prasad" GeneratedFromPackageName="Sample Reporting - Sample Receipt Report" GeneratedFromPackageID="{D10C116A-46CA-4B09-BEE1-FAC922E3953F}" GeneratedDate="23/04/2019 11:58:54"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailFrom].Properties[Value]" ValueType="String">
+		<ConfiguredValue>CNX_JLR_Output@ipsos-online.com</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailTitleEnvironmentText].Properties[Value]" ValueType="String">
+		<ConfiguredValue>UAT (Test)</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::Environment].Properties[Value]" ValueType="String">
+		<ConfiguredValue>UAT</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::FilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\DataOutput\SampleReceiptReport\</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::LocalArchivePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\DataOutput\SampleReceiptReport\Archive</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SMTPServer].Properties[Value]" ValueType="String">
+		<ConfiguredValue>PMTA.extranet.iext</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::ZipPassword].Properties[Value]" ValueType="String">
+		<ConfiguredValue>S4mpleR3ceipt</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::ZipProgramPath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>C:\Program Files\7-Zip\7z.exe</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

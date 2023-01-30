@@ -1,0 +1,18 @@
+﻿CREATE TABLE [ParallelRun].[DailyFilesLoaded](
+	[RemoteAuditID] [bigint] NULL,
+	[RemoteFileName] [varchar](100) NULL,
+	[RemoteFileRowCount] [int] NULL,
+	[RemoteActionDate] [datetime2](7) NULL,
+	[RemoteLoadSuccess] [bit] NULL,
+	[RemoteFileLoadFailure] [varchar](100) NULL,
+	[RemoteEvents] [int] NULL,
+	[RemoteCases] [int] NULL,
+	[LocalAuditID] [bigint] NULL,
+	[LocalFileName] [varchar](100) NULL,
+	[LocalFileRowCount] [int] NULL,
+	[LocalActionDate] [datetime2](7) NULL,
+	[LocalLoadSuccess] [bit] NULL,
+	[LocalFileLoadFailure] [varchar](100) NULL,
+	[LocalEvents] [int] NULL,
+	[LocalCases] [int] NULL
+) ON [PRIMARY]

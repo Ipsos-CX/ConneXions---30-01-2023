@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[NonSolicitationTextID]
+	FROM SMALLINT NOT NULL

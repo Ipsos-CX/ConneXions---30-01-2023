@@ -1,0 +1,3 @@
+﻿ALTER TABLE [Party].[PartyRoles]
+    ADD CONSTRAINT [FK_PartyRoles_PartyID] FOREIGN KEY ([PartyID]) REFERENCES [Party].[Parties] ([PartyID]) ON DELETE NO ACTION ON UPDATE NO ACTION;
+

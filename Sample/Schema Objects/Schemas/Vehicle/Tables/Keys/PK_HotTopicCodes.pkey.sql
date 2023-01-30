@@ -1,0 +1,2 @@
+﻿ALTER TABLE [Vehicle].[HotTopicCodes]
+    ADD CONSTRAINT [PK_HotTopicCodes] PRIMARY KEY CLUSTERED ([VIN] ASC) 

@@ -1,0 +1,3 @@
+﻿ALTER TABLE [Lookup].[SVOLookup]
+	ADD CONSTRAINT [PK_SVOLookup]
+	PRIMARY KEY (VIN)

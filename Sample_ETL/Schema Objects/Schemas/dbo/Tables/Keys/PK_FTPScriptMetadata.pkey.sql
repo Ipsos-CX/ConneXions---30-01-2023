@@ -1,0 +1,3 @@
+﻿ALTER TABLE [dbo].[FTPScriptMetadata]
+	ADD CONSTRAINT [PK_FTPScriptMetadata]
+	PRIMARY KEY (FTPID)

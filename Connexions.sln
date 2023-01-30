@@ -1,0 +1,466 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{41FA17A6-3119-4C2C-AE6B-AF88466355E5}"
+	ProjectSection(SolutionItems) = preProject
+		Add Error Message.sql = Add Error Message.sql
+		Connexions.vsmdi = Connexions.vsmdi
+		Deployment Process.txt = Deployment Process.txt
+		SQL Jobs.xlsx = SQL Jobs.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "P", "P", "{E0918B6A-6C05-4FAC-9F43-533350E4115C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sampling", "Sampling", "{62A00CDD-5079-4BDE-A9EF-AF390ECE3D00}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataOutput", "DataOutput", "{F8BB167E-AB7B-4F92-9799-9BECEE86F31E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SelectionOutput", "SelectionOutput", "{BE734C99-72D0-4DB0-82F2-9B7C0C44D8B7}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataOutput\SelectionOutput\All Roadside Output.xlsx = P\Sampling\DataOutput\SelectionOutput\All Roadside Output.xlsx
+		P\Sampling\DataOutput\SelectionOutput\All Sales Output.xlsx = P\Sampling\DataOutput\SelectionOutput\All Sales Output.xlsx
+		P\Sampling\DataOutput\SelectionOutput\All Service Output.xlsx = P\Sampling\DataOutput\SelectionOutput\All Service Output.xlsx
+		P\Sampling\DataOutput\SelectionOutput\CATI CRC China Output.xlsx = P\Sampling\DataOutput\SelectionOutput\CATI CRC China Output.xlsx
+		P\Sampling\DataOutput\SelectionOutput\CATI CRC Output.xlsx = P\Sampling\DataOutput\SelectionOutput\CATI CRC Output.xlsx
+		P\Sampling\DataOutput\SelectionOutput\CATI LostLeads Output.xlsx = P\Sampling\DataOutput\SelectionOutput\CATI LostLeads Output.xlsx
+		P\Sampling\DataOutput\SelectionOutput\CATI Output.xlsx = P\Sampling\DataOutput\SelectionOutput\CATI Output.xlsx
+		P\Sampling\DataOutput\SelectionOutput\China Sales Output.xlsx = P\Sampling\DataOutput\SelectionOutput\China Sales Output.xlsx
+		P\Sampling\DataOutput\SelectionOutput\China Service Output.xlsx = P\Sampling\DataOutput\SelectionOutput\China Service Output.xlsx
+		P\Sampling\DataOutput\SelectionOutput\Non Output.xlsx = P\Sampling\DataOutput\SelectionOutput\Non Output.xlsx
+		P\Sampling\DataOutput\SelectionOutput\Postal Bodyshop Output.xlsx = P\Sampling\DataOutput\SelectionOutput\Postal Bodyshop Output.xlsx
+		P\Sampling\DataOutput\SelectionOutput\Postal CRC Output.xlsx = P\Sampling\DataOutput\SelectionOutput\Postal CRC Output.xlsx
+		P\Sampling\DataOutput\SelectionOutput\Postal PreOwned Output.xlsx = P\Sampling\DataOutput\SelectionOutput\Postal PreOwned Output.xlsx
+		P\Sampling\DataOutput\SelectionOutput\Postal Sales Output.xlsx = P\Sampling\DataOutput\SelectionOutput\Postal Sales Output.xlsx
+		P\Sampling\DataOutput\SelectionOutput\Postal Service Output.xlsx = P\Sampling\DataOutput\SelectionOutput\Postal Service Output.xlsx
+		P\Sampling\DataOutput\SelectionOutput\Roadside DP Output.xlsx = P\Sampling\DataOutput\SelectionOutput\Roadside DP Output.xlsx
+		P\Sampling\DataOutput\SelectionOutput\Russia Sales Output.xlsx = P\Sampling\DataOutput\SelectionOutput\Russia Sales Output.xlsx
+		P\Sampling\DataOutput\SelectionOutput\Russia Service Output.xlsx = P\Sampling\DataOutput\SelectionOutput\Russia Service Output.xlsx
+		P\Sampling\DataOutput\SelectionOutput\SMS Merged Output.xlsx = P\Sampling\DataOutput\SelectionOutput\SMS Merged Output.xlsx
+		P\Sampling\DataOutput\SelectionOutput\SMS Output.xlsx = P\Sampling\DataOutput\SelectionOutput\SMS Output.xlsx
+		P\Sampling\DataOutput\SelectionOutput\South Africa Sales Output.xlsx = P\Sampling\DataOutput\SelectionOutput\South Africa Sales Output.xlsx
+		P\Sampling\DataOutput\SelectionOutput\South Africa Service Output.xlsx = P\Sampling\DataOutput\SelectionOutput\South Africa Service Output.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NonOutput", "NonOutput", "{FDCAB199-0248-480D-AA3F-6ECE195AEB56}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Log Templates", "Log Templates", "{FF61FC4C-AB81-47FE-A7BC-BF0B5B8BD302}"
+	ProjectSection(SolutionItems) = preProject
+		Sampling\Log Templates\Daily.xml = Sampling\Log Templates\Daily.xml
+		Sampling\Log Templates\Execute SQL Task.xml = Sampling\Log Templates\Execute SQL Task.xml
+		Sampling\Log Templates\File System Task.xml = Sampling\Log Templates\File System Task.xml
+		Sampling\Log Templates\FTP Task.xml = Sampling\Log Templates\FTP Task.xml
+		Sampling\Log Templates\Loop Task.xml = Sampling\Log Templates\Loop Task.xml
+		Sampling\Log Templates\Migration Data Flow Task.xml = Sampling\Log Templates\Migration Data Flow Task.xml
+		Sampling\Log Templates\Migration Package.xml = Sampling\Log Templates\Migration Package.xml
+		Sampling\Log Templates\Package Log.xml = Sampling\Log Templates\Package Log.xml
+		Sampling\Log Templates\Script Task.xml = Sampling\Log Templates\Script Task.xml
+		Sampling\Log Templates\Transfer SQL Object Task.xml = Sampling\Log Templates\Transfer SQL Object Task.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DispositionReport", "DispositionReport", "{87CB9C5C-D4F1-4C75-A92C-D076C624A1CE}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataOutput\DispositionReport\JaguarSalesDispositionReport.xlsx = P\Sampling\DataOutput\DispositionReport\JaguarSalesDispositionReport.xlsx
+		P\Sampling\DataOutput\DispositionReport\JaguarServiceDispositionReport.xlsx = P\Sampling\DataOutput\DispositionReport\JaguarServiceDispositionReport.xlsx
+		P\Sampling\DataOutput\DispositionReport\LandRoverSalesDispositionReport.xlsx = P\Sampling\DataOutput\DispositionReport\LandRoverSalesDispositionReport.xlsx
+		P\Sampling\DataOutput\DispositionReport\LandRoverServiceDispositionReport.xlsx = P\Sampling\DataOutput\DispositionReport\LandRoverServiceDispositionReport.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SampleReportEvents", "SampleReportEvents", "{76087C1E-BDC0-4836-B81B-CFED1AA99BE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{06DB084B-1F25-4414-8085-B2D8E62ECAC8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SampleReports", "SampleReports", "{7FFAD347-CD25-42E7-8C0A-1FA663921FB7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{31EA736E-2603-409C-B1AA-2B5DD726E3D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Template", "Template", "{4C31841C-0794-4635-BF81-B60D0E3F7CAF}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataOutput\SampleReports\Data\Template\Template_JLRSampleReport.xlsb = P\Sampling\DataOutput\SampleReports\Data\Template\Template_JLRSampleReport.xlsb
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Template", "Template", "{5AA8EB52-1C36-400D-87A3-A8158D846513}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataOutput\SampleReportEvents\Data\Template\Template_JLRSampleEventReport.xlsx = P\Sampling\DataOutput\SampleReportEvents\Data\Template\Template_JLRSampleEventReport.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GlobalSampleReports", "GlobalSampleReports", "{5A70D079-59C6-4DF2-B146-F8CD0067C779}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{84B856E2-FC77-4566-8070-801DABE4DEDE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Template", "Template", "{7EC06162-C2BA-46D8-ABFA-0878B2807EB8}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataOutput\GlobalSampleReports\Data\Template\Template_JLRGlobalSampleReport.xlsx = P\Sampling\DataOutput\GlobalSampleReports\Data\Template\Template_JLRGlobalSampleReport.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GlobalSampleReportEvents", "GlobalSampleReportEvents", "{6FBCF503-DC62-4AF1-BFB6-6314EF46970C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{38B13E3C-DCF2-4056-B529-7723C9108E16}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Template", "Template", "{BD453B3F-CBB6-40AA-9384-7B218E4E96E9}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataOutput\GlobalSampleReportEvents\Data\Template\Template_JLRGlobalSampleEventsReport.xlsx = P\Sampling\DataOutput\GlobalSampleReportEvents\Data\Template\Template_JLRGlobalSampleEventsReport.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataLoading", "DataLoading", "{905011DA-9A7F-454E-B52B-6A73D6006A51}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Combined_CRC", "Combined_CRC", "{E838943F-1B99-4FCB-8E0D-3F49E65E168C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Combined_CRM_XSD", "Combined_CRM_XSD", "{8E126142-73E7-4C61-A46C-23F0878A253D}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataLoading\SampleFiles\Combined_CRM_XSD\CRM_S0600SendCampaignAndTargetGroupSurveyStyle1Messages - saved 09-11-2015.xsd = P\Sampling\DataLoading\SampleFiles\Combined_CRM_XSD\CRM_S0600SendCampaignAndTargetGroupSurveyStyle1Messages - saved 09-11-2015.xsd
+		P\Sampling\DataLoading\SampleFiles\Combined_CRM_XSD\CRM_S0600SendCampaignAndTargetGroupSurveyStyle1Messages - v1.3.xsd = P\Sampling\DataLoading\SampleFiles\Combined_CRM_XSD\CRM_S0600SendCampaignAndTargetGroupSurveyStyle1Messages - v1.3.xsd
+		P\Sampling\DataLoading\SampleFiles\Combined_CRM_XSD\CRM_S0600SendCampaignAndTargetGroupSurveyStyle1Messages.xsd = P\Sampling\DataLoading\SampleFiles\Combined_CRM_XSD\CRM_S0600SendCampaignAndTargetGroupSurveyStyle1Messages.xsd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gpg_keys", "gpg_keys", "{1D324E89-67A8-477C-B72C-8BBBAF61258E}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataLoading\SampleFiles\gpg_keys\mypubkey.asc = P\Sampling\DataLoading\SampleFiles\gpg_keys\mypubkey.asc
+		P\Sampling\DataLoading\SampleFiles\gpg_keys\seckey.gpg = P\Sampling\DataLoading\SampleFiles\gpg_keys\seckey.gpg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lost_Lead_Retailers", "Lost_Lead_Retailers", "{AC3B05B6-56CC-423F-B406-5CBF59B10127}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SVOLookupData", "SVOLookupData", "{DA6AB34B-357E-44B3-9ED2-C14AA00F5F6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Template", "Template", "{ED3842C4-F5C4-486C-BB5F-61C96DFE5E0E}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataLoading\SampleFiles\Combined_CRC\Template\Combined_CRC_Template.xlsx = P\Sampling\DataLoading\SampleFiles\Combined_CRC\Template\Combined_CRC_Template.xlsx
+		P\Sampling\DataLoading\SampleFiles\Combined_CRC\Template\Combined_CRC_Template_09012018.xlsx = P\Sampling\DataLoading\SampleFiles\Combined_CRC\Template\Combined_CRC_Template_09012018.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "v3.0 - Nov version", "v3.0 - Nov version", "{A9835830-2FB9-407E-8E7F-24829035C63E}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataLoading\SampleFiles\Combined_CRM_XSD\v3.0 - Nov version\genericobjectdefinitions.xsd = P\Sampling\DataLoading\SampleFiles\Combined_CRM_XSD\v3.0 - Nov version\genericobjectdefinitions.xsd
+		P\Sampling\DataLoading\SampleFiles\Combined_CRM_XSD\v3.0 - Nov version\SC-000146SendCampaignAndTargetGroupSurveyStyle1Messages.xsd = P\Sampling\DataLoading\SampleFiles\Combined_CRM_XSD\v3.0 - Nov version\SC-000146SendCampaignAndTargetGroupSurveyStyle1Messages.xsd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "v3.1 - Jan 2017 version", "v3.1 - Jan 2017 version", "{6FAE4416-FCC0-4B4A-8193-01F072F26F71}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataLoading\SampleFiles\Combined_CRM_XSD\v3.1 - Jan 2017 version\genericobjectdefinitions.xsd = P\Sampling\DataLoading\SampleFiles\Combined_CRM_XSD\v3.1 - Jan 2017 version\genericobjectdefinitions.xsd
+		P\Sampling\DataLoading\SampleFiles\Combined_CRM_XSD\v3.1 - Jan 2017 version\SC-000146SendCampaignAndTargetGroupSurveyStyle1Messages.xsd = P\Sampling\DataLoading\SampleFiles\Combined_CRM_XSD\v3.1 - Jan 2017 version\SC-000146SendCampaignAndTargetGroupSurveyStyle1Messages.xsd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "v4.0 - October 2017", "v4.0 - October 2017", "{739AC910-516D-4D02-AFE4-22747A932C3A}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataLoading\SampleFiles\Combined_CRM_XSD\v4.0 - October 2017\genericobjectdefinitions.xsd = P\Sampling\DataLoading\SampleFiles\Combined_CRM_XSD\v4.0 - October 2017\genericobjectdefinitions.xsd
+		P\Sampling\DataLoading\SampleFiles\Combined_CRM_XSD\v4.0 - October 2017\SC-000146SendCampaignAndTargetGroupSurveyStyle1Messages.xsd = P\Sampling\DataLoading\SampleFiles\Combined_CRM_XSD\v4.0 - October 2017\SC-000146SendCampaignAndTargetGroupSurveyStyle1Messages.xsd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "v4.1 - July 2018", "v4.1 - July 2018", "{C1AD743C-AAA9-43FF-8450-450085384710}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataLoading\SampleFiles\Combined_CRM_XSD\v4.1 - July 2018\genericobjectdefinitions.xsd = P\Sampling\DataLoading\SampleFiles\Combined_CRM_XSD\v4.1 - July 2018\genericobjectdefinitions.xsd
+		P\Sampling\DataLoading\SampleFiles\Combined_CRM_XSD\v4.1 - July 2018\SC-000146SendCampaignAndTargetGroupSurveyStyle1Messages.xsd = P\Sampling\DataLoading\SampleFiles\Combined_CRM_XSD\v4.1 - July 2018\SC-000146SendCampaignAndTargetGroupSurveyStyle1Messages.xsd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "v4.4 - October 2017", "v4.4 - October 2017", "{51BD144A-CD09-4C51-8BE4-B65E5CE794B9}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataLoading\SampleFiles\Combined_CRM_XSD\v4.4 - October 2017\genericobjectdefinitions.xsd = P\Sampling\DataLoading\SampleFiles\Combined_CRM_XSD\v4.4 - October 2017\genericobjectdefinitions.xsd
+		P\Sampling\DataLoading\SampleFiles\Combined_CRM_XSD\v4.4 - October 2017\SC-000146SendCampaignAndTargetGroupSurveyStyle1Messages.xsd = P\Sampling\DataLoading\SampleFiles\Combined_CRM_XSD\v4.4 - October 2017\SC-000146SendCampaignAndTargetGroupSurveyStyle1Messages.xsd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reports", "Reports", "{77663FAB-2755-4723-A1A6-91CD91FA3D96}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataLoading\SampleFiles\Lost_Lead_Retailers\Reports\MissingDealers_template.xlsx = P\Sampling\DataLoading\SampleFiles\Lost_Lead_Retailers\Reports\MissingDealers_template.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Template", "Template", "{0D86B35A-F66C-4E8E-8330-8C5A4F9E389C}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataLoading\SampleFiles\Lost_Lead_Retailers\Template\Retailer_LLA_Status.xlsx = P\Sampling\DataLoading\SampleFiles\Lost_Lead_Retailers\Template\Retailer_LLA_Status.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Template", "Template", "{950282A7-6895-413F-AACD-E8BD27F94B62}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataLoading\SampleFiles\SVOLookupData\Template\SVO file with Amended Titles_14032019.xlsx = P\Sampling\DataLoading\SampleFiles\SVOLookupData\Template\SVO file with Amended Titles_14032019.xlsx
+		P\Sampling\DataLoading\SampleFiles\SVOLookupData\Template\SVO JAGUAR Sale Vins SV PAINT.xlsx = P\Sampling\DataLoading\SampleFiles\SVOLookupData\Template\SVO JAGUAR Sale Vins SV PAINT.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SampleFiles", "SampleFiles", "{F7665347-C73E-452F-999F-F965C4A45CE0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CustomerUpdateFiles", "CustomerUpdateFiles", "{76608E6C-F49E-48AA-B211-CEBD79483F55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InternalUpdateFiles", "InternalUpdateFiles", "{A8213871-D7E8-4ADD-A8D0-1CBD4AAF151B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AgentLookup", "AgentLookup", "{FB3E8C6C-CB70-4674-98B9-F6241E089BB1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Template", "Template", "{0D5500A9-ECD0-4BA8-8B66-CAC71B48D4BC}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataLoading\CustomerUpdateFiles\AgentLookup\Template\Template - AgentLookup.xlsx = P\Sampling\DataLoading\CustomerUpdateFiles\AgentLookup\Template\Template - AgentLookup.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExtraVehicleFeed", "ExtraVehicleFeed", "{3475A13F-77FA-4D65-B013-379831042770}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Template", "Template", "{32AE682D-73E5-44E0-823A-DDB31442A672}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataLoading\CustomerUpdateFiles\ExtraVehicleFeed\Template\ExtraVehicleFeed.csv = P\Sampling\DataLoading\CustomerUpdateFiles\ExtraVehicleFeed\Template\ExtraVehicleFeed.csv
+		P\Sampling\DataLoading\CustomerUpdateFiles\ExtraVehicleFeed\Template\ExtraVehicleFeed_Template.xlsx = P\Sampling\DataLoading\CustomerUpdateFiles\ExtraVehicleFeed\Template\ExtraVehicleFeed_Template.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CaseRejections", "CaseRejections", "{C641C4EA-2619-4121-8A56-FB1D6E052A85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NonSolicitations", "NonSolicitations", "{8305F395-4350-4D72-9762-88A305444E80}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Template", "Template", "{BAD234ED-3751-4164-8E71-71EDDD03377B}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataLoading\InternalUpdateFiles\CaseRejections\Template\CaseRejections.xlsx = P\Sampling\DataLoading\InternalUpdateFiles\CaseRejections\Template\CaseRejections.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Template", "Template", "{7A580187-6ECF-43ED-A9D6-2EB0172361EC}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataLoading\InternalUpdateFiles\NonSolicitations\Template\NonSolicitations.xlsx = P\Sampling\DataLoading\InternalUpdateFiles\NonSolicitations\Template\NonSolicitations.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DailySampleStatus", "DailySampleStatus", "{9ADAEF93-BC6C-4955-8D3A-7BD366CC065F}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataOutput\DailySampleStatus\Daily Load Selection Report JLR.xlsx = P\Sampling\DataOutput\DailySampleStatus\Daily Load Selection Report JLR.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Template", "Template", "{DC1B4EFF-2C3F-4811-BDAD-022958B2BF1A}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataOutput\DailySampleStatus\Template\Daily Load Selection Report JLR.xlsb = P\Sampling\DataOutput\DailySampleStatus\Template\Daily Load Selection Report JLR.xlsb
+		P\Sampling\DataOutput\DailySampleStatus\Template\Daily Load Selection Report JLR.xlsx = P\Sampling\DataOutput\DailySampleStatus\Template\Daily Load Selection Report JLR.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GDPR", "GDPR", "{EC5035E7-77A8-4483-85B9-79765A2014AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GDPRErasuresFeed", "GDPRErasuresFeed", "{45AA1048-CE26-4202-947F-BEAE09697CBF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Template", "Template", "{97281867-37D1-4262-AD8D-447684997BC3}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataOutput\GDPR\GDPRErasuresFeed\Template\GDPRErasuresFeed_Template_v2.xlsx = P\Sampling\DataOutput\GDPR\GDPRErasuresFeed\Template\GDPRErasuresFeed_Template_v2.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Archive", "Archive", "{153FAFF3-824D-4754-979F-1DD486F6537E}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataOutput\GDPR\GDPRErasuresFeed\Template\Archive\GDPRErasuresFeed_Template_v1.xlsx = P\Sampling\DataOutput\GDPR\GDPRErasuresFeed\Template\Archive\GDPRErasuresFeed_Template_v1.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NASelectionsReport", "NASelectionsReport", "{004D4692-5028-475D-8632-A6B064C31512}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataOutput\NASelectionsReport\NASelectionsReport_Template.xlsx = P\Sampling\DataOutput\NASelectionsReport\NASelectionsReport_Template.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SampleReceiptReport", "SampleReceiptReport", "{548F7BE5-8B34-4A65-A8D6-FA46CE60F71E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Template", "Template", "{E74B700D-61D8-43CD-B5FC-BCFE00C3C714}"
+	ProjectSection(SolutionItems) = preProject
+		P\Sampling\DataOutput\SampleReceiptReport\Template\SampleReceiptReport_Template_v1.xlsx = P\Sampling\DataOutput\SampleReceiptReport\Template\SampleReceiptReport_Template_v1.xlsx
+		P\Sampling\DataOutput\SampleReceiptReport\Template\SampleReceiptReport_Template_v1_OLD.xlsx = P\Sampling\DataOutput\SampleReceiptReport\Template\SampleReceiptReport_Template_v1_OLD.xlsx
+	EndProjectSection
+EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Sampling", "Sampling\Sampling.dtproj", "{807BB1B7-A1B0-4E78-8970-72C2E723D4BA}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Sample_ETL", "Sample_ETL\Sample_ETL.sqlproj", "{305C6E9D-C16C-4898-A689-7AA86426EFA9}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Sample_Audit", "Sample_Audit\Sample_Audit.sqlproj", "{A7B52600-E0CF-4CEA-AC40-E8FED32B0958}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Sample_Errors", "Sample_Errors\Sample_Errors.sqlproj", "{7A6E333D-2C80-4D29-926A-6C5DB4AF9508}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Sample", "Sample\Sample.sqlproj", "{61548C73-5421-480A-BFEA-1C95269B597B}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "WebsiteReporting", "WebsiteReporting\WebsiteReporting.sqlproj", "{61383B6F-D724-49A2-849D-6DE4BDC9C8EB}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SampleReporting", "SampleReporting\SampleReporting.sqlproj", "{A1C40809-3D5D-4B0D-844E-56A2D8C579D6}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "NwbSampleUpload", "NwbSampleUpload\NwbSampleUpload.sqlproj", "{104A88E1-730A-43DE-88B4-C037FC3FB384}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "JLR-Email", "JLR-Email\JLR-Email.sqlproj", "{FB12C018-E169-4C4E-9798-25FAC92F7E54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Medallia Files", "Medallia Files", "{03DE4143-C117-4E80-8CB8-AE0A0241F592}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Importers", "Importers", "{25D82A3B-BBFC-4D94-9FA9-BD773482787F}"
+	ProjectSection(SolutionItems) = preProject
+		Medallia Files\Importers\[IPSOS QA]JLRINVITE AI.xml = Medallia Files\Importers\[IPSOS QA]JLRINVITE AI.xml
+		Medallia Files\Importers\[IPSOS QA}JLR INVITE AI (CL).xml = Medallia Files\Importers\[IPSOS QA}JLR INVITE AI (CL).xml
+		[LIVE][STEP 3] APIO AND TURKEY DATA FEED.xml = [LIVE][STEP 3] APIO AND TURKEY DATA FEED.xml
+		[LIVE][STEP 3]JLR CHINA RUSSIA Import AI.xml = [LIVE][STEP 3]JLR CHINA RUSSIA Import AI.xml
+		Medallia Files\Importers\[LIVE][STEP 6]JLR INVITE AI.xml = Medallia Files\Importers\[LIVE][STEP 6]JLR INVITE AI.xml
+		[LIVE]JLR Sample Health Feed.xml = [LIVE]JLR Sample Health Feed.xml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Development|Any CPU = Development|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{807BB1B7-A1B0-4E78-8970-72C2E723D4BA}.Debug|Any CPU.ActiveCfg = Development
+		{807BB1B7-A1B0-4E78-8970-72C2E723D4BA}.Debug|Any CPU.Build.0 = Development
+		{807BB1B7-A1B0-4E78-8970-72C2E723D4BA}.Debug|Any CPU.Deploy.0 = Development
+		{807BB1B7-A1B0-4E78-8970-72C2E723D4BA}.Development|Any CPU.ActiveCfg = Development
+		{807BB1B7-A1B0-4E78-8970-72C2E723D4BA}.Development|Any CPU.Build.0 = Development
+		{807BB1B7-A1B0-4E78-8970-72C2E723D4BA}.Release|Any CPU.ActiveCfg = Development
+		{807BB1B7-A1B0-4E78-8970-72C2E723D4BA}.Release|Any CPU.Build.0 = Development
+		{305C6E9D-C16C-4898-A689-7AA86426EFA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{305C6E9D-C16C-4898-A689-7AA86426EFA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{305C6E9D-C16C-4898-A689-7AA86426EFA9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{305C6E9D-C16C-4898-A689-7AA86426EFA9}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{305C6E9D-C16C-4898-A689-7AA86426EFA9}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{305C6E9D-C16C-4898-A689-7AA86426EFA9}.Development|Any CPU.Deploy.0 = Debug|Any CPU
+		{305C6E9D-C16C-4898-A689-7AA86426EFA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{305C6E9D-C16C-4898-A689-7AA86426EFA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{305C6E9D-C16C-4898-A689-7AA86426EFA9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A7B52600-E0CF-4CEA-AC40-E8FED32B0958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7B52600-E0CF-4CEA-AC40-E8FED32B0958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7B52600-E0CF-4CEA-AC40-E8FED32B0958}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A7B52600-E0CF-4CEA-AC40-E8FED32B0958}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7B52600-E0CF-4CEA-AC40-E8FED32B0958}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{A7B52600-E0CF-4CEA-AC40-E8FED32B0958}.Development|Any CPU.Deploy.0 = Debug|Any CPU
+		{A7B52600-E0CF-4CEA-AC40-E8FED32B0958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7B52600-E0CF-4CEA-AC40-E8FED32B0958}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7B52600-E0CF-4CEA-AC40-E8FED32B0958}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7A6E333D-2C80-4D29-926A-6C5DB4AF9508}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A6E333D-2C80-4D29-926A-6C5DB4AF9508}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A6E333D-2C80-4D29-926A-6C5DB4AF9508}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7A6E333D-2C80-4D29-926A-6C5DB4AF9508}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A6E333D-2C80-4D29-926A-6C5DB4AF9508}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{7A6E333D-2C80-4D29-926A-6C5DB4AF9508}.Development|Any CPU.Deploy.0 = Debug|Any CPU
+		{7A6E333D-2C80-4D29-926A-6C5DB4AF9508}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A6E333D-2C80-4D29-926A-6C5DB4AF9508}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A6E333D-2C80-4D29-926A-6C5DB4AF9508}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{61548C73-5421-480A-BFEA-1C95269B597B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61548C73-5421-480A-BFEA-1C95269B597B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61548C73-5421-480A-BFEA-1C95269B597B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{61548C73-5421-480A-BFEA-1C95269B597B}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{61548C73-5421-480A-BFEA-1C95269B597B}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{61548C73-5421-480A-BFEA-1C95269B597B}.Development|Any CPU.Deploy.0 = Debug|Any CPU
+		{61548C73-5421-480A-BFEA-1C95269B597B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61548C73-5421-480A-BFEA-1C95269B597B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61548C73-5421-480A-BFEA-1C95269B597B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{61383B6F-D724-49A2-849D-6DE4BDC9C8EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61383B6F-D724-49A2-849D-6DE4BDC9C8EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61383B6F-D724-49A2-849D-6DE4BDC9C8EB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{61383B6F-D724-49A2-849D-6DE4BDC9C8EB}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{61383B6F-D724-49A2-849D-6DE4BDC9C8EB}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{61383B6F-D724-49A2-849D-6DE4BDC9C8EB}.Development|Any CPU.Deploy.0 = Debug|Any CPU
+		{61383B6F-D724-49A2-849D-6DE4BDC9C8EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61383B6F-D724-49A2-849D-6DE4BDC9C8EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61383B6F-D724-49A2-849D-6DE4BDC9C8EB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A1C40809-3D5D-4B0D-844E-56A2D8C579D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1C40809-3D5D-4B0D-844E-56A2D8C579D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1C40809-3D5D-4B0D-844E-56A2D8C579D6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A1C40809-3D5D-4B0D-844E-56A2D8C579D6}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1C40809-3D5D-4B0D-844E-56A2D8C579D6}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{A1C40809-3D5D-4B0D-844E-56A2D8C579D6}.Development|Any CPU.Deploy.0 = Debug|Any CPU
+		{A1C40809-3D5D-4B0D-844E-56A2D8C579D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1C40809-3D5D-4B0D-844E-56A2D8C579D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1C40809-3D5D-4B0D-844E-56A2D8C579D6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{104A88E1-730A-43DE-88B4-C037FC3FB384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{104A88E1-730A-43DE-88B4-C037FC3FB384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{104A88E1-730A-43DE-88B4-C037FC3FB384}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{104A88E1-730A-43DE-88B4-C037FC3FB384}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{104A88E1-730A-43DE-88B4-C037FC3FB384}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{104A88E1-730A-43DE-88B4-C037FC3FB384}.Development|Any CPU.Deploy.0 = Debug|Any CPU
+		{104A88E1-730A-43DE-88B4-C037FC3FB384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{104A88E1-730A-43DE-88B4-C037FC3FB384}.Release|Any CPU.Build.0 = Release|Any CPU
+		{104A88E1-730A-43DE-88B4-C037FC3FB384}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FB12C018-E169-4C4E-9798-25FAC92F7E54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB12C018-E169-4C4E-9798-25FAC92F7E54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB12C018-E169-4C4E-9798-25FAC92F7E54}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FB12C018-E169-4C4E-9798-25FAC92F7E54}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB12C018-E169-4C4E-9798-25FAC92F7E54}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{FB12C018-E169-4C4E-9798-25FAC92F7E54}.Development|Any CPU.Deploy.0 = Debug|Any CPU
+		{FB12C018-E169-4C4E-9798-25FAC92F7E54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB12C018-E169-4C4E-9798-25FAC92F7E54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB12C018-E169-4C4E-9798-25FAC92F7E54}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E0918B6A-6C05-4FAC-9F43-533350E4115C} = {41FA17A6-3119-4C2C-AE6B-AF88466355E5}
+		{62A00CDD-5079-4BDE-A9EF-AF390ECE3D00} = {E0918B6A-6C05-4FAC-9F43-533350E4115C}
+		{F8BB167E-AB7B-4F92-9799-9BECEE86F31E} = {62A00CDD-5079-4BDE-A9EF-AF390ECE3D00}
+		{BE734C99-72D0-4DB0-82F2-9B7C0C44D8B7} = {F8BB167E-AB7B-4F92-9799-9BECEE86F31E}
+		{FDCAB199-0248-480D-AA3F-6ECE195AEB56} = {BE734C99-72D0-4DB0-82F2-9B7C0C44D8B7}
+		{FF61FC4C-AB81-47FE-A7BC-BF0B5B8BD302} = {41FA17A6-3119-4C2C-AE6B-AF88466355E5}
+		{87CB9C5C-D4F1-4C75-A92C-D076C624A1CE} = {F8BB167E-AB7B-4F92-9799-9BECEE86F31E}
+		{76087C1E-BDC0-4836-B81B-CFED1AA99BE3} = {F8BB167E-AB7B-4F92-9799-9BECEE86F31E}
+		{06DB084B-1F25-4414-8085-B2D8E62ECAC8} = {76087C1E-BDC0-4836-B81B-CFED1AA99BE3}
+		{7FFAD347-CD25-42E7-8C0A-1FA663921FB7} = {F8BB167E-AB7B-4F92-9799-9BECEE86F31E}
+		{31EA736E-2603-409C-B1AA-2B5DD726E3D4} = {7FFAD347-CD25-42E7-8C0A-1FA663921FB7}
+		{4C31841C-0794-4635-BF81-B60D0E3F7CAF} = {31EA736E-2603-409C-B1AA-2B5DD726E3D4}
+		{5AA8EB52-1C36-400D-87A3-A8158D846513} = {06DB084B-1F25-4414-8085-B2D8E62ECAC8}
+		{5A70D079-59C6-4DF2-B146-F8CD0067C779} = {F8BB167E-AB7B-4F92-9799-9BECEE86F31E}
+		{84B856E2-FC77-4566-8070-801DABE4DEDE} = {5A70D079-59C6-4DF2-B146-F8CD0067C779}
+		{7EC06162-C2BA-46D8-ABFA-0878B2807EB8} = {84B856E2-FC77-4566-8070-801DABE4DEDE}
+		{6FBCF503-DC62-4AF1-BFB6-6314EF46970C} = {F8BB167E-AB7B-4F92-9799-9BECEE86F31E}
+		{38B13E3C-DCF2-4056-B529-7723C9108E16} = {6FBCF503-DC62-4AF1-BFB6-6314EF46970C}
+		{BD453B3F-CBB6-40AA-9384-7B218E4E96E9} = {38B13E3C-DCF2-4056-B529-7723C9108E16}
+		{905011DA-9A7F-454E-B52B-6A73D6006A51} = {62A00CDD-5079-4BDE-A9EF-AF390ECE3D00}
+		{E838943F-1B99-4FCB-8E0D-3F49E65E168C} = {F7665347-C73E-452F-999F-F965C4A45CE0}
+		{8E126142-73E7-4C61-A46C-23F0878A253D} = {F7665347-C73E-452F-999F-F965C4A45CE0}
+		{1D324E89-67A8-477C-B72C-8BBBAF61258E} = {F7665347-C73E-452F-999F-F965C4A45CE0}
+		{AC3B05B6-56CC-423F-B406-5CBF59B10127} = {F7665347-C73E-452F-999F-F965C4A45CE0}
+		{DA6AB34B-357E-44B3-9ED2-C14AA00F5F6A} = {F7665347-C73E-452F-999F-F965C4A45CE0}
+		{ED3842C4-F5C4-486C-BB5F-61C96DFE5E0E} = {E838943F-1B99-4FCB-8E0D-3F49E65E168C}
+		{A9835830-2FB9-407E-8E7F-24829035C63E} = {8E126142-73E7-4C61-A46C-23F0878A253D}
+		{6FAE4416-FCC0-4B4A-8193-01F072F26F71} = {8E126142-73E7-4C61-A46C-23F0878A253D}
+		{739AC910-516D-4D02-AFE4-22747A932C3A} = {8E126142-73E7-4C61-A46C-23F0878A253D}
+		{C1AD743C-AAA9-43FF-8450-450085384710} = {8E126142-73E7-4C61-A46C-23F0878A253D}
+		{51BD144A-CD09-4C51-8BE4-B65E5CE794B9} = {8E126142-73E7-4C61-A46C-23F0878A253D}
+		{77663FAB-2755-4723-A1A6-91CD91FA3D96} = {AC3B05B6-56CC-423F-B406-5CBF59B10127}
+		{0D86B35A-F66C-4E8E-8330-8C5A4F9E389C} = {AC3B05B6-56CC-423F-B406-5CBF59B10127}
+		{950282A7-6895-413F-AACD-E8BD27F94B62} = {DA6AB34B-357E-44B3-9ED2-C14AA00F5F6A}
+		{F7665347-C73E-452F-999F-F965C4A45CE0} = {905011DA-9A7F-454E-B52B-6A73D6006A51}
+		{76608E6C-F49E-48AA-B211-CEBD79483F55} = {905011DA-9A7F-454E-B52B-6A73D6006A51}
+		{A8213871-D7E8-4ADD-A8D0-1CBD4AAF151B} = {905011DA-9A7F-454E-B52B-6A73D6006A51}
+		{FB3E8C6C-CB70-4674-98B9-F6241E089BB1} = {76608E6C-F49E-48AA-B211-CEBD79483F55}
+		{0D5500A9-ECD0-4BA8-8B66-CAC71B48D4BC} = {FB3E8C6C-CB70-4674-98B9-F6241E089BB1}
+		{3475A13F-77FA-4D65-B013-379831042770} = {76608E6C-F49E-48AA-B211-CEBD79483F55}
+		{32AE682D-73E5-44E0-823A-DDB31442A672} = {3475A13F-77FA-4D65-B013-379831042770}
+		{C641C4EA-2619-4121-8A56-FB1D6E052A85} = {A8213871-D7E8-4ADD-A8D0-1CBD4AAF151B}
+		{8305F395-4350-4D72-9762-88A305444E80} = {A8213871-D7E8-4ADD-A8D0-1CBD4AAF151B}
+		{BAD234ED-3751-4164-8E71-71EDDD03377B} = {C641C4EA-2619-4121-8A56-FB1D6E052A85}
+		{7A580187-6ECF-43ED-A9D6-2EB0172361EC} = {8305F395-4350-4D72-9762-88A305444E80}
+		{9ADAEF93-BC6C-4955-8D3A-7BD366CC065F} = {F8BB167E-AB7B-4F92-9799-9BECEE86F31E}
+		{DC1B4EFF-2C3F-4811-BDAD-022958B2BF1A} = {9ADAEF93-BC6C-4955-8D3A-7BD366CC065F}
+		{EC5035E7-77A8-4483-85B9-79765A2014AB} = {F8BB167E-AB7B-4F92-9799-9BECEE86F31E}
+		{45AA1048-CE26-4202-947F-BEAE09697CBF} = {EC5035E7-77A8-4483-85B9-79765A2014AB}
+		{97281867-37D1-4262-AD8D-447684997BC3} = {45AA1048-CE26-4202-947F-BEAE09697CBF}
+		{153FAFF3-824D-4754-979F-1DD486F6537E} = {97281867-37D1-4262-AD8D-447684997BC3}
+		{004D4692-5028-475D-8632-A6B064C31512} = {F8BB167E-AB7B-4F92-9799-9BECEE86F31E}
+		{548F7BE5-8B34-4A65-A8D6-FA46CE60F71E} = {F8BB167E-AB7B-4F92-9799-9BECEE86F31E}
+		{E74B700D-61D8-43CD-B5FC-BCFE00C3C714} = {548F7BE5-8B34-4A65-A8D6-FA46CE60F71E}
+		{03DE4143-C117-4E80-8CB8-AE0A0241F592} = {41FA17A6-3119-4C2C-AE6B-AF88466355E5}
+		{25D82A3B-BBFC-4D94-9FA9-BD773482787F} = {03DE4143-C117-4E80-8CB8-AE0A0241F592}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0C8952A-BE04-4209-B9C2-A8B75262F4FC}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://1005795-cxnwebs:8080/tfs/ipsos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Sampling\\Sampling.dtproj
+		SccProjectName1 = Sampling
+		SccLocalPath1 = Sampling
+		SccProjectUniqueName2 = Sample_ETL\\Sample_ETL.sqlproj
+		SccProjectName2 = Sample_ETL
+		SccLocalPath2 = Sample_ETL
+		SccProjectUniqueName3 = Sample_Audit\\Sample_Audit.sqlproj
+		SccProjectName3 = Sample_Audit
+		SccLocalPath3 = Sample_Audit
+		SccProjectUniqueName4 = Sample_Errors\\Sample_Errors.sqlproj
+		SccProjectName4 = Sample_Errors
+		SccLocalPath4 = Sample_Errors
+		SccProjectUniqueName5 = Sample\\Sample.sqlproj
+		SccProjectName5 = Sample
+		SccLocalPath5 = Sample
+		SccProjectUniqueName6 = WebsiteReporting\\WebsiteReporting.sqlproj
+		SccProjectName6 = WebsiteReporting
+		SccLocalPath6 = WebsiteReporting
+		SccProjectUniqueName7 = SampleReporting\\SampleReporting.sqlproj
+		SccProjectName7 = SampleReporting
+		SccLocalPath7 = SampleReporting
+		SccProjectUniqueName8 = NwbSampleUpload\\NwbSampleUpload.sqlproj
+		SccLocalPath8 = .
+		SccProjectFilePathRelativizedFromConnection8 = NwbSampleUpload\\
+		SccProjectUniqueName9 = JLR-Email\\JLR-Email.sqlproj
+		SccProjectName9 = JLR-Email
+		SccLocalPath9 = JLR-Email
+	EndGlobalSection
+EndGlobal

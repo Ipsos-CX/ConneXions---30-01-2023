@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+  <DTSConfigurationHeading>
+    <DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Sample Load - Franchise Dealer Hierarchy" GeneratedFromPackageID="{3279FDBE-6039-47BD-AD3A-22768B93C316}" GeneratedDate="19/04/2021 12:50:05"/>
+  </DTSConfigurationHeading>
+  <Configuration ConfiguredType="Property" Path="\Package.Variables[User::SamplePath].Properties[Value]" ValueType="String">
+    <ConfiguredValue>P:\Sampling\DataOutput\WeeklySampleCheck\</ConfiguredValue>
+  </Configuration>
+</DTSConfiguration>

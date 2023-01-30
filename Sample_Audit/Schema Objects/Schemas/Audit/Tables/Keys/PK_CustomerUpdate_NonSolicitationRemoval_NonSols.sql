@@ -1,0 +1,2 @@
+﻿ALTER TABLE Audit.CustomerUpdate_NonSolicitationRemoval_NonSols
+ADD CONSTRAINT PK_CustomerUpdate_NonSolicitationRemoval_NonSols PRIMARY KEY CLUSTERED  (Id)

@@ -1,0 +1,20 @@
+﻿CREATE TABLE [ParallelRun].[PersonAndOrganisation] (
+	[FileName] [nvarchar](100) NULL,
+	[PhysicalFileRow] [int] NOT NULL,
+	[AuditID] [bigint] NOT NULL,
+	[AuditItemID] [bigint] NOT NULL,
+	[FromDate] [datetime2](7) NULL,
+	[TitleID] [smallint] NULL,
+	[Initials] [nvarchar](100) NULL,
+	[FirstName] [nvarchar](100) NULL,
+	[MiddleName] [nvarchar](100) NULL,
+	[LastName] [nvarchar](100) NULL,
+	[SecondLastName] [nvarchar](100) NULL,
+	[GenderID] [tinyint] NULL,
+	[BirthDate] [datetime2](7) NULL,
+	[MonthAndYearOfBirth] [nvarchar](100) NULL,
+	[PreferredMethodOfContact] [nvarchar](100) NULL,
+	[NameChecksum] [int] NULL,
+	[OrganisationName] [nvarchar](510) NULL,
+	[OrganisationNameChecksum] [int] NULL
+);

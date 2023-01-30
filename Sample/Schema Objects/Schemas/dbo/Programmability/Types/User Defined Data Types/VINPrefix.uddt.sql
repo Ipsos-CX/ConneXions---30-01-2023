@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[VINPrefix]
+	FROM NVARCHAR(30) NOT NULL

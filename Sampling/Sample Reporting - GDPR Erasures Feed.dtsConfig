@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\poorvi.prasad" GeneratedFromPackageName="Sample Reporting - GDPR Erasures Feed" GeneratedFromPackageID="{B49A520A-C145-4EEF-8056-2FCA0A7245D2}" GeneratedDate="03/07/2018 11:11:30"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailTitleEnvironmentText].Properties[Value]" ValueType="String">
+		<ConfiguredValue>UAT (Test)</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::Environment].Properties[Value]" ValueType="String">
+		<ConfiguredValue>UAT</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::FilePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\DataOutput\GDPR\GDPRErasuresFeed\</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::LocalArchivePath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\DataOutput\GDPR\GDPRErasuresFeed\Archive</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

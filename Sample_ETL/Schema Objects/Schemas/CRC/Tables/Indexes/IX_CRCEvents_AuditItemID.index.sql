@@ -1,0 +1,3 @@
+﻿CREATE NONCLUSTERED INDEX [IX_CRCEventsAuditItemID]
+    ON [CRC].[CRCEvents](AuditItemID ASC)
+  INCLUDE (ODSEventID)

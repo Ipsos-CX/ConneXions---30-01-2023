@@ -1,0 +1,3 @@
+﻿ALTER TABLE [dbo].[Brands]
+	ADD CONSTRAINT [PK_Brands]
+	PRIMARY KEY (BrandID)

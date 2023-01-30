@@ -1,0 +1,3 @@
+﻿ALTER TABLE LostLeads.ExternalEventID
+    ADD CONSTRAINT [PK_ExternalEventID] PRIMARY KEY CLUSTERED (EventID ASC) 
+ 

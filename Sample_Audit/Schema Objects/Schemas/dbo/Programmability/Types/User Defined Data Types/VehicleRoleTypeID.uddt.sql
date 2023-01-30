@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[VehicleRoleTypeID]
+	FROM SMALLINT NOT NULL

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+<DTSConfigurationHeading>
+<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Sample Load - Global France Sales VISTA CQI" GeneratedFromPackageID="{F0BD5184-047C-4819-9A51-0D8F37A107BB}" GeneratedDate="07/05/2021 11:36:08"/>
+</DTSConfigurationHeading>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Sample Load - Global France Sales VISTA CQI.dtsx\Sample Load - Global France Sales VISTA CQI.log</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::Brand].Properties[Value]" ValueType="String">
+<ConfiguredValue>Jaguar</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::FileType].Properties[Value]" ValueType="String">
+<ConfiguredValue>Sample</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::Market].Properties[Value]" ValueType="String">
+<ConfiguredValue>France</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::Questionnaire].Properties[Value]" ValueType="String">
+<ConfiguredValue>Sales</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SampleFileNamePrefix].Properties[Value]" ValueType="String">
+<ConfiguredValue>Global_France_VISTA_Sales_CQI</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SamplePath].Properties[Value]" ValueType="String">
+<ConfiguredValue>P:\Sampling\DataLoading\SampleFiles\Global_France_Sales_VISTA_CQI\</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SQLCmdConvertDates].Properties[Value]" ValueType="String">
+<ConfiguredValue>EXEC [Sample_ETL].Stage.uspStandardise_Global_France_Sales_VISTA_CQI</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SQLStagingTableName].Properties[Value]" ValueType="String">
+<ConfiguredValue>[Sample_ETL].Stage.Global_France_Sales_VISTA_CQI</ConfiguredValue>
+</Configuration>
+</DTSConfiguration>

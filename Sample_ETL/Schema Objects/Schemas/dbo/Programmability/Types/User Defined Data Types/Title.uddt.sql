@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[Title]
+	FROM NVARCHAR(200) NOT NULL

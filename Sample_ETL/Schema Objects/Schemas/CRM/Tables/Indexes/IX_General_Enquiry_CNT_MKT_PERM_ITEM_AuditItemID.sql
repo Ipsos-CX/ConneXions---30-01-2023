@@ -1,0 +1,3 @@
+﻿CREATE NONCLUSTERED INDEX [IX_General_Enquiry_CNT_MKT_PERM_ITEM_AuditItemID]
+	ON [CRM].[General_Enquiry_CNT_MKT_PERM_ITEM] ([AuditItemID])
+	INCLUDE ([AuditID],[CNT_MKT_PERM_Id])

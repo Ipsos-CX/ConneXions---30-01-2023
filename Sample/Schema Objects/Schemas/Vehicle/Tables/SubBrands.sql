@@ -1,0 +1,6 @@
+﻿CREATE TABLE [Vehicle].[SubBrands]
+(
+	[SubBrandID] SMALLINT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	[ManufacturerPartyID] SMALLINT NOT NULL,
+	[SubBrand] VARCHAR(50) NOT NULL
+)

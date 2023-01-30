@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Archive Package Logs" GeneratedFromPackageID="{A1A56CF6-D802-4547-BF38-CAD2D5869B7B}" GeneratedDate="23/01/2012 13:26:44"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::LogPath].Properties[Value]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

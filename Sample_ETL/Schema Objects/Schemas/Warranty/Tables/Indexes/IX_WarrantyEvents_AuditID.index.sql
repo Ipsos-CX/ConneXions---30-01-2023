@@ -1,0 +1,4 @@
+﻿CREATE NONCLUSTERED INDEX [IX_WarrantyEvents_AuditID]
+    ON [Warranty].[WarrantyEvents]([AuditID] ASC)
+    INCLUDE([WarrantyID], [SampleSupplierPartyID], [ManufacturerID], [CICode], [ClaimNumber], [OverseasDealerCode], [MarketOrig], [CountryID], [VINPrefix], [ChassisNumber], [ComplaintCode], [OdometerDistance], [DistanceUnit], [ClaimType], [DateOfRepairOrig], [DateOfRepair], [DateOfSaleOrig], [DateOfSale], [VWTID], [AuditItemID], [PhysicalRow], [ServiceDealerCodeOriginatorPartyID], [MatchedODSVehicleID], [MatchedODSPersonID], [MatchedODSOrganisationID], [DateTransferredToVWT], [ISOCountryCode], [RONumber], [ROSeqNumber], [CLAIMSTATUS], [WIAA02_CLAIM_TYPE_C], [COVERAGECATEGORY], [PROGRAMCODE], [WIAA02_TOTAL_LABOR_A]) WITH (ALLOW_PAGE_LOCKS = ON, ALLOW_ROW_LOCKS = ON, PAD_INDEX = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, IGNORE_DUP_KEY = OFF, STATISTICS_NORECOMPUTE = OFF, ONLINE = OFF, MAXDOP = 0);
+

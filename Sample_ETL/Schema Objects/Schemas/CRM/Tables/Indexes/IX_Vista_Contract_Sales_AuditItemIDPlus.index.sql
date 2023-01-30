@@ -1,0 +1,6 @@
+﻿CREATE NONCLUSTERED INDEX [IX_Vista_Contract_Sales_AuditItemIDPlus]
+ON [CRM].[Vista_Contract_Sales] ([AuditItemID])
+INCLUDE ([ACCT_PREF_LANGUAGE_CODE],[VISTACONTRACT_COMMON_ORDER_NUM])
+
+
+

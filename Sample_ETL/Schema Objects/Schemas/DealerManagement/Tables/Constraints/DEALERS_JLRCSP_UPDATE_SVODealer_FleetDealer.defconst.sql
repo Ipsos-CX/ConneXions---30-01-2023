@@ -1,0 +1,5 @@
+﻿ALTER TABLE [DealerManagement].[DEALERS_JLRCSP_UPDATE_SVODealer]
+   ADD  CONSTRAINT [DEALERS_JLRCSP_UPDATE_SVODealer_FleetDealer]  DEFAULT ((0)) FOR [FleetDealer]
+
+
+ 

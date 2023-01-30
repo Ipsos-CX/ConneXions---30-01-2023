@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[SessionID]
+	FROM VARCHAR(100) NOT NULL

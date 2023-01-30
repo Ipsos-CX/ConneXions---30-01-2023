@@ -1,0 +1,48 @@
+CREATE TABLE [SelectionOutput].[CATI] (
+    [VIN]                     [dbo].[VIN]                     NULL,
+    [DealerCode]              [dbo].[DealerCode]              NULL,
+    [ModelDesc]               VARCHAR(50)					  NULL,
+    [CoName]                  [dbo].[OrganisationName]        NULL,
+    [Add1]                    [dbo].[AddressText]             NULL,
+    [Add2]                    [dbo].[AddressText]             NULL,
+    [Add3]                    [dbo].[AddressText]             NULL,
+    [Add4]                    [dbo].[AddressText]             NULL,
+    [Add5]                    [dbo].[AddressText]             NULL,
+    [LandPhone]               [dbo].[ContactNumber]           NULL,
+    [WorkPhone]               [dbo].[ContactNumber]           NULL,
+    [MobilePhone]             [dbo].[ContactNumber]           NULL,
+    [PartyID]                 [dbo].[PartyID]                 NULL,
+    [CaseID]                  [dbo].[CaseID]                  NULL,
+    [DateOutput]              DATETIME2 (7)                   NULL,
+    [JLR]                     INT                             NULL,
+    [EventTypeID]             [dbo].[EventTypeID]             NULL,
+    [EventDate]               DATETIME2 (7)                   NULL,
+    [RegNumber]               [dbo].[RegistrationNumber]      NULL,
+    [RegDate]                 NVARCHAR (10)                   NULL,
+    [LocalName]               [dbo].[OrganisationName]        NULL,
+    [SelectionOutputPassword] [dbo].[SelectionOutputPassword] NULL,
+    [GDDDealerCode]           NVARCHAR (20)                   NULL,
+    [ReportingDealerPartyID]  INT                             NULL,
+    [VariantID]               SMALLINT                        NULL,
+    [ModelVariant]            VARCHAR (50)                    NULL,
+    [ReOutputFlag]			  BIT							  NULL,
+    Queue					VARCHAR(10)						 NULL,
+	AssignedMode			VARCHAR(10)						 NULL, 
+	RequiresManualDial		VARCHAR(1)						 NULL, 
+	CallRecordingsCount		VARCHAR(1)						 NULL, 
+	TimeZone				INT								 NULL, 
+	CallOutcome				VARCHAR(10)						 NULL,
+	PhoneNumber				[dbo].[ContactNumber]			NULL,	 
+	PhoneSource				VARCHAR(50)						 NULL, 
+	[Language]				VARCHAR(10)						 NULL,
+	ExpirationTime			DATETIME2 (7)					 NULL,  
+	HomePhoneNumber			[dbo].[ContactNumber]			 NULL,
+	WorkPhoneNumber			[dbo].[ContactNumber]			 NULL,
+	MobilePhoneNumber		[dbo].[ContactNumber]			 NULL,
+	EmployeeName			[dbo].[NameDetail]               NULL   
+);
+
+
+
+
+

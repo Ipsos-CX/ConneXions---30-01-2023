@@ -1,0 +1,27 @@
+﻿CREATE TABLE [Stage].[Landrover_France_Service] (
+    [ID]                        INT            IDENTITY (1, 1) NOT NULL,
+    [AuditID]                   dbo.AuditID         NULL,
+    [PhysicalRowID]             INT            NULL,
+    [CompanyName]               dbo.LoadText NULL,
+    [Title]                     dbo.LoadText NULL,
+    [FirstName]                 dbo.LoadText NULL,
+    [Initials]                  dbo.LoadText NULL,
+    [Surname]                   dbo.LoadText NULL,
+    [Address1]                  dbo.LoadText NULL,
+    [Address2]                  dbo.LoadText NULL,
+    [Address3]                  dbo.LoadText NULL,
+    [Address4]                  dbo.LoadText NULL,
+    [Address5]                  dbo.LoadText NULL,
+    [PostCode]                  dbo.LoadText NULL,
+    [Town]                      dbo.LoadText NULL,
+    [Telephone]                 dbo.LoadText NULL,
+    [VIN]                       dbo.LoadText NULL,
+    [RegistrationNumber]        dbo.LoadText NULL,
+    [ServiceDealerCode]         dbo.LoadText NULL,
+    [ServiceEventDate]          dbo.LoadText NULL,
+    [RegistrationDate]          dbo.LoadText NULL,
+    [EmailAddress]              dbo.LoadText NULL,
+    [ConvertedServiceEventDate] DATETIME2       NULL,
+    [ConvertedRegistrationDate] DATETIME2       NULL
+);
+

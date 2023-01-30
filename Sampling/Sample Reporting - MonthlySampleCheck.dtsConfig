@@ -1,0 +1,11 @@
+<DTSConfiguration>
+<DTSConfigurationHeading>
+<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Sample Reporting- Weekly Sample Check" GeneratedFromPackageID="{21E137FA-9E6A-430A-9254-9716613DE10E}" GeneratedDate="24/05/2021 09:43:14"/>
+</DTSConfigurationHeading>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::FTPEnabled].Properties[Value]" ValueType="Boolean">
+<ConfiguredValue>0</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SamplePath].Properties[Value]" ValueType="String">
+<ConfiguredValue>P:\Sampling\DataOutput\MonthlySampleCheck\</ConfiguredValue>
+</Configuration>
+</DTSConfiguration>

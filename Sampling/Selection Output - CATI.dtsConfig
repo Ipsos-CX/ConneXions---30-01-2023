@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\martin.riverol" GeneratedFromPackageName="Selection Output - CATI" GeneratedFromPackageID="{998786BD-B24A-4DDC-A42D-139A0F1E9AFF}" GeneratedDate="14/03/2018 08:12:05"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Selection Output - CATI.dtsx\Selection Output - CATI.log</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

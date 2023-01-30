@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[RoadsideNetworkName]
+	FROM NVARCHAR(150) NOT NULL

@@ -1,0 +1,58 @@
+﻿CREATE VIEW Load.vwPartyLanguages
+
+AS
+
+-- ORGANISATIONS
+SELECT
+	AuditItemID, 
+	MatchedODSOrganisationID AS PartyID, 
+	ISNULL(LanguageID, 0) AS LanguageID, 
+	CURRENT_TIMESTAMP AS FromDate, 
+	CAST(NULL AS DATETIME2) AS ThroughDate, 
+	CONVERT(BIT, 1) AS PreferredFlag
+FROM dbo.VWT
+WHERE MatchedODSOrganisationID > 0
+-- USE THE LANGUAGEID SUPPLIED FOR THE ORGANISATION EVEN IF A PERSON EXISTS ON THE ROW
+--AND ISNULL(MatchedODSPersonID, 0) = 0
+AND ISNULL(LanguageID, 0) > 0
+
+UNION 
+
+-- PEOPLE
+SELECT
+	AuditItemID, 
+	MatchedODSPersonID, 
+	ISNULL(LanguageID, 0), 
+	CURRENT_TIMESTAMP, 
+	CAST(NULL AS DATETIME2), 
+	CONVERT(BIT, 1)
+FROM dbo.VWT
+WHERE MatchedODSPersonID > 0
+AND ISNULL(LanguageID, 0) > 0
+
+UNION
+
+-- PARTIES
+SELECT
+	AuditItemID, 
+	MatchedODSPartyID, 
+	ISNULL(LanguageID, 0), 
+	CURRENT_TIMESTAMP, 
+	CAST(NULL AS DATETIME2), 
+	CONVERT(BIT, 1)
+FROM dbo.VWT
+WHERE MatchedODSPartyID > 0
+AND ISNULL(MatchedODSPersonID, 0) = 0
+AND ISNULL(MatchedODSOrganisationID, 0) = 0
+AND ISNULL(LanguageID, 0) > 0
+
+
+
+
+
+
+
+
+
+
+

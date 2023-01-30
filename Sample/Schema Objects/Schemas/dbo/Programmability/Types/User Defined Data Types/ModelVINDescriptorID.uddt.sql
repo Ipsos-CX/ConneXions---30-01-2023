@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[ModelVINDescriptorID]
+	FROM INT NOT NULL

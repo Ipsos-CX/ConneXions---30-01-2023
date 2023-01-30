@@ -1,0 +1,3 @@
+﻿ALTER TABLE [Vehicle].[VehicleRegistrationEvents]
+    ADD CONSTRAINT [PK_VehicleRegistrationEvents] PRIMARY KEY CLUSTERED ([VehicleID] ASC, [RegistrationID] ASC, [EventID] ASC) WITH (ALLOW_PAGE_LOCKS = ON, ALLOW_ROW_LOCKS = ON, PAD_INDEX = OFF, IGNORE_DUP_KEY = OFF, STATISTICS_NORECOMPUTE = OFF);
+

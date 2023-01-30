@@ -1,0 +1,2750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:go="http://jlrint.com/mss/message/genericobjectdefinitions">
+	<xs:import namespace="http://jlrint.com/mss/message/genericobjectdefinitions" schemaLocation="genericobjectdefinitions.xsd"/>
+	<xs:element name="Campaign_MasterType" type="Campaign_MasterType"/>
+	<xs:complexType name="Campaign_MasterType">
+		<xs:annotation>
+			<xs:documentation>Campaign List Container Master Type</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="item" type="CampaignItem_MasterType" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="CampaignItem_MasterType" type="CampaignItem_MasterType"/>
+	<xs:complexType name="CampaignItem_MasterType">
+		<xs:annotation>
+			<xs:documentation>Single Campaign Record</xs:documentation>
+		</xs:annotation>
+		<xs:all>
+			<xs:element name="ACCT_ACADEMIC_TITLE" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>A designation given to individual Accounts due to the their Academic role or qualification.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_ACADEMIC_TITLE_CODE" type="go:string4" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code for a designation given to individual Accounts due to their Academic role or qualification.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_ACCT_ID" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Unique ID generated for the Account in the system.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_ACCT_ORIGIN" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates how the Account record was first created.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_ACCT_ORIGIN_CODE" type="go:string5" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code to indicate how the Account record was first created.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_ACCT_TYPE" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates whether the Account is an individual or an organisation</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_ACCT_TYPE_CODE" type="go:string1" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code to indicate whether the Account is an individual or an organisation</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_ADDITIONAL_LAST_NAME" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Second family name commonly used in some countries.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_ADDRESS_VALIDATION_STATUS" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates whether and what kind of validation has been applied to the address.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_ASKZFM_ID" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Ask ZFM ID associated with the customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_BEBO_ID" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Bebo ID associated with the customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_BP_ROLE" type="xs:string" minOccurs="1" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Pipe (|) delimited list of SAP CRM Account roles</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_BUILDING" type="go:string20" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Building (Number or Code)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CAFEMOM_ID" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Cafe Mom ID associated with the customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CITY_CODE" type="go:string12" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>City code for city/street file</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CITY_CODE2" type="go:string12" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>City PO box code (City file)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CITY_TOWN" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Town or City.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CITYH_CODE" type="go:string12" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Different city for city/street file</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_JAGUAR_CHAT" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Jaguar to contact them via chat</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_JAGUAR_EMAIL" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Jaguar to contact them by email.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_JAGUAR_FAX" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Jaguar to contact them by Fax</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_JAGUAR_PEVENT" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Jaguar to contact them about Events.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_JAGUAR_PHONE" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Jaguar to contact them by phone.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_JAGUAR_PND3P" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Jaguar to share their data with Non Dealer 3rd Party Organizations.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_JAGUAR_POST" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Jaguar to contact them by post.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_JAGUAR_PTAM" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Jaguar to contact them on After-sales Marketing</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_JAGUAR_PTNAU" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Jaguar to contact them on News And Updates</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_JAGUAR_PTPA" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Jaguar to keep their data in a Privacy Agreement.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_JAGUAR_PTSDWD" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Jaguar to Share their Data With Dealers.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_JAGUAR_PTSMR" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Jaguar to contact them for Surveys Market Response</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_JAGUAR_PTVSM" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Jaguar to contact them for Vehicle Sales Marketing </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_JAGUAR_SMEDIA" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Jaguar to contact them via Social Media Channels</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_JAGUAR_SMS" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Jaguar to contact them via SMS text message.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_LAND_ROVER_CHAT" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Land Rover to contact them via chat.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_LAND_ROVER_EMAIL" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Land Rover to contact them by email.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_LAND_ROVER_FAX" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Land Rover to contact them by Fax</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_LAND_ROVER_PEVENT" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Land Rover to contact them about Events.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_LAND_ROVER_PND3P" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Land Rover to share their data with Non Dealer 3rd Party Organizations.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_LAND_ROVER_POST" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Land Rover to contact them by post.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_LAND_ROVER_PTAM" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Land Rover to contact them on After-sales Marketing </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_LAND_ROVER_PTNAU" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Land Rover to contact them on News And Updates.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_LAND_ROVER_PTPA" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Land Rover to their data in a Privacy Agreement.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_LAND_ROVER_PTSDWD" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Land Rover to Share their Data With Dealers.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_LAND_ROVER_PTSMR" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Land Rover to contact them for Surveys Market Response</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_LAND_ROVER_PTVSM" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Land Rover to contact them for Vehicle Sales Marketing </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_LAND_ROVER_SMEDIA" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Land Rover to contact them via Social Media Channels</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_LAND_ROVER_SMS" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Land Rover to contact them via SMS text message.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_LR_PHONE" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given permission for Land Rover to contact them by phone.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_OVER_CONT_SUP_JAG" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given Jaguar permission on Overall Contact Suppression</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CONSENT_OVER_CONT_SUP_LR" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if customer has given Land Rover permission on Overall Contact Suppression.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CORRESPONDENCE_LANG_CODE" type="go:string2" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code for Language in which the correspondence should be sent.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CORRESPONDENCE_LANGUAGE" type="go:string16" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Language in which the correspondence should be sent.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_COUNTRY" type="go:string50" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Country in which Account resides</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_COUNTRY_CODE" type="go:string3" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code for Country</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_COUNTY" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Address county</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_COUNTY_CODE" type="go:string8" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>County code for county</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CRMBPID_ASSGND_SAL_DEA_LR" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>SAP CRM business partner ID of the assigned sales dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CRMBPID_ASSGND_SEL_DEA_LR" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>SAP CRM business partner ID of the assigned selling dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CRMBPID_ASSGND_SER_DEA_LR" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>SAP CRM business partner ID of the assigned service dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CRMBPID_ASSIGND_SAL_DEA_J" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>SAP CRM business partner ID of the assigned selling dealer for Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CRMBPID_ASSIGNED_SERV_DEA" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>SAP CRM business partner ID of the assigned service dealer for Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CRMBPID_LAST_ENQ_DEA_LR" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>SAP CRM business partner ID of the most recent enquiry dealer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CRMBPID_LAST_ENQ_SALDEA_J" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>SAP CRM business partner ID of the most recent enquiry dealer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CRMBPID_LAST_SELLINGDEA_J" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>SAP CRM business partner ID of the most recent selling dealer for Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CRMBPID_LAST_SERV_DEA_J" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>SAP CRM business partner ID of the most recent service dealer for Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CRMBPID_LAST_SERVI_DEA_LR" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>SAP CRM business partner ID of the most recent service dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CRMBPID_LASTSELL_DEA_LR" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>SAP CRM business partner ID of the most recent selling dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CRMBPID_PREF_SALE_DEA_JAG" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>SAP CRM business partner ID of the preferred sales dealer for Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CRMBPID_PREF_SALES_DEA_LR" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>SAP CRM business partner ID of the preferred sales dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CRMBPID_PREF_SERV_DEA_JAG" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>SAP CRM business partner ID of the preferred service dealer for Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CRMBPID_PREF_SERV_DEAL_LR" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>SAP CRM business partner ID of the preferred service dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CRMBPID_PRIOR_SAL_DEA_JAG" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>SAP CRM business partner ID of the priority sales dealer for Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CRMBPID_PRIOR_SAL_DEAL_LR" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>SAP CRM business partner ID of the priority sales dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CRMBPID_PRIOR_SERV_DEA_LR" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>SAP CRM business partner ID for the priority service dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CRMBPID_PRIOR_SERV_DEAL_J" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>SAP CRM business partner ID for the priority service dealer for Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CUSTOMER_OF_BRAND_JAGUAR" type="go:string1" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates whether the account is a customer of Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_CUSTOMER_OF_BRAND_LAND" type="go:string1" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates whether the account is a customer of Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_DATE_ADVISED_OF_DEATH" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date on which the individual died or on which the death was recorded in the system.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_DATE_DECL_TO_GIVE_EMAIL" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date on which the request to provide an e-mail address was declined by the Account.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_DATE_OF_BIRTH" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Individual' Date of Birth.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_DATE_OF_GOLD_STAR" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date that the account was set to Gold Star status with Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_DATE_OF_LANDROVER_REDFLAG" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date that the account was red flagged by Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_DATE_OF_RED_FLAG" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date that the account was red flagged by Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_DATEOF_LANDROVER_GOLDSTAR" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date that the account was set to Gold Star status with Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_DEAL_FULNAME_OF_CREAT_DEA" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Full name of the Dealer that created the Account</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_DECLINED_TO_GIVE_EMAIL" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates that Account refused to provide an e-mail address.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_DEVIANTART_ID" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Deviant Art ID associated with the customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_DISTRICT" type="go:string8" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>District code for City and Street file</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_EMAIL_VALIDATION_STATUS" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates whether and what kind of validation has been applied to the email address.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_EMPLOYER_NAME" type="go:string35" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The name of the organisation that an individual is employed by.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_EXTERN_FINANC_COMP_ACCTID" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Customer Identification Number with any external finance company</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_FACEBOOK_ID" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Facebook ID associated with the customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_FINANCE_COMPANY_CODE" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Finance Company Code</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_FIRST_NAME" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Individual's first name (forename).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_FLOOR" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Floor in building</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_FRIENDSTER_ID" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Friendster ID associated with the customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_FULL_NAME" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Full Name of the Customer
+(First Name + Last Name for individual, Organisation Name for Organisation)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_GENDER_FEMALE" type="go:string1" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Individual's gender (sex) - Female</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_GENDER_MALE" type="go:string1" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Individual's gender (sex) - Male</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_GENDER_UNKNOWN" type="go:string1" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Individual's gender (sex) - Unknown</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_GENERATION" type="go:string5" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name field element relating to customers generation.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_GERMAN_ONLY_NON_ACAD_CODE" type="go:string4" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code for Additional royal or noble title of Germany</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_GERMAN_ONLY_NON_ACADEMIC" type="go:string80" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Additional royal or noble title of Germany</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_GOOGLE_PLUS_ID" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Google Plus ID associated with the customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_HI5_ID" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Hi5 ID associated with the customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_HOME_CITY" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>City (different from postal city)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_HOME_EMAIL_ADDR_PRIMARY" type="go:string241" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Personal Email address for customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_HOME_PHONE_NUMBER" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Personal Landline Telephone Number for customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_HOUSE_NO" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Building number.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_HOUSE_NUM2" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>ACCT_HOUSE_NUM2</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_HOUSE_NUM3" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>(Not supported) House Number Range</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_INDUSTRY_SECTOR" type="go:string20" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The industry or business sector of the organisation account </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_INDUSTRY_SECTOR_CODE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code for The industry or business sector of the organisation account </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_INITIALS" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Inidividual?s initials.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_JAG_LAST_AFT_SAL_SURV_DAT" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date on which the most recent Jaguar after sales score was collected or calculated</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_JAG_LAST_AFT_SAL_SURV_SCO" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The most recent Jaguar after sales survey score collected for the account.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_JAG_LAST_CASE_SURVEY_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date on which the most recent Jaguar case score was collected or calculated</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_JAG_LAST_CASE_SURVEY_SCOR" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The most recent Jaguar case survey score collected for the account</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_JAG_LAST_SALES_SURV_SCORE" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The most recent Jaguar sales survey score collected for the account</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_JAG_LAST_SALES_SURVEY_DAT" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date on which the most recent Jaguar sales score was collected or calculated</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_JAGUAR_ACCT_SCORE" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Jaguar score or grade generated for, by or about the account</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_JAGUAR_ACCT_SCORE_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date on which the Jaguar score was collected or calculated</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_JAGUAR_GOLD_STAR" type="go:string1" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates whether the account is in Gold Star status with Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_JAGUAR_IN_MARKET_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date at which customer is expected to be purchasing a Jaguar vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_JAGUAR_LOYALTY_STATUS" type="go:string25" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Jaguar loyalty status of the Account</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_JAGUAR_RED_FLAG" type="go:string1" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates whether the account is red flagged by Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_JOB_TITLE" type="go:string70" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Individual's job description.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_JOB_TITLE_CODE" type="go:string4" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code for Individual's job description.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_JOB_TITLE_OTHER" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Individual's job description (used if the individual's job description is not in the standard job title list).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_KNOWN_AS" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Nicknames or other names by which the individual is known.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_LAND_ROVER_ACCT_SCORE" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Land Rover score or grade generated for, by or about the account</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_LAND_ROVER_ACCT_SCORE_DAT" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date on which the Land Rover score was collected or calculated</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_LAND_ROVER_GOLD_STAR" type="go:string1" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date that the account was set to Gold Star status with Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_LAND_ROVER_LOYALTY_STATUS" type="go:string25" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Land Rover loyalty status of the Account</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_LAND_ROVER_MARKET_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date at which customer is expected to be purchasing a Land Rover vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_LAND_ROVER_RED_FLAG" type="go:string1" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates whether the account is red flagged by Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_LAST_NAME" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Individual's last name (surname).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_LEGAL_FORM" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The legal entity type of the organisation account </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_LEGAL_FORM_CODE" type="go:string2" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code for The legal entity type of the organisation account </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_LINKEDIN_ID" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Linkedin ID associated with the customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_LOCATION" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Street 5</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_LR_LAST_AFT_SAL_SURV_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date on which the most recent Land Rover after sales score was collected or calculated</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_LR_LAST_AFT_SAL_SURV_SCOR" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The most recent Land Rover after sales survey score collected for the account.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_LR_LAST_CASE_SURVEY_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date on which the most recent Land Rover case score was collected or calculated</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_LR_LAST_CASE_SURVEY_SCORE" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The most recent Land Rover case survey score collected for the account</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_LR_LAST_SALES_SURVEY_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date on which the most recent Land Rover sales score was collected or calculated</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_LR_LAST_SALES_SURVEY_SCOR" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The most recent Land Rover sales survey score collected for the account</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_MARITAL_STATUS" type="go:string20" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The marital status of an individual.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_MARITAL_STATUS_CODE" type="go:string1" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code for The marital status of an individual.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_MARKETING_ATTRIBUTES_SET" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Additional attributes relating to an Account which may be useful for direct marketing purposes.
+This is a concatenated list of the individual marketing attributes.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_MEETUP_ID" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Meetup ID associated with the customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_MIDDLE_NAME" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Individual's middle name.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_MOBILE_NUMBER" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Personal Mobile Telephone Number</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_MULTIPLY_ID" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Multiply ID associated with the customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_MYLIFE_ID" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Mylife ID associated with the customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_MYSPACE_ID" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Myspace ID associated with the customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NAME_1" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>First line of the Organisation?s name.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NAME_2" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Second line of the Organisation?s name.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NAME_3" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Account Name 3</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NAME_4" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Account Name 3</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NAME_ASSGND_SAL_DEA_LR" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the assigned sales dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NAME_ASSIGNED_SELL_DEA_LR" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the assigned selling dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NAME_ASSIGNED_SERV_DEA_J" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the assigned service dealer for Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NAME_ASSIGNED_SERV_DEA_LR" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the assigned service dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NAME_CO" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Account Name Care Of</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NAME_LAST_ENQ_SAL_DEA_JAG" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the most recent enquiry sales dealer for Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NAME_LAST_ENQ_SAL_DEA_LR" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the most recent enquiry sales dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NAME_LAST_SELLING_DEA_JAG" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the most recent selling dealer for Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NAME_LAST_SERVICING_DEA_J" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the most recent service dealer for Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NAME_LASTSELL_DEA_LR" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the most recent selling dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NAME_PREF_SALES_DEAL_JAG" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the preferred sales dealer for Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NAME_PREF_SALES_DEALER_LR" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the preferred sales dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NAME_PREF_SERV_DEAL_JAG" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the preferred service dealer for Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NAME_PREF_SERVICE_DEAL_LR" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the preferred service dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NAME_PRIORITY_SAL_DEA_JAG" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the priority sales dealer for Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NAME_PRIORITY_SAL_DEAL_LR" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the priority sales dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NAME_PRIORITY_SERV_DEA_LR" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the priority service dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NAME_PRIORITY_SERV_DEAL_J" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the priority service dealer for Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NAMEFOR_ASSIGND_SAL_DEA_J" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the assigned sales dealer for Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NAMELAST_SERVICING_DEA_LR" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the most recent service dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NETLOG_ID" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Netlog ID associated with the customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NING_ID" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Ning ID associated with the customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NON_ACADEMIC_TITLE" type="go:string80" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Additional royal or noble title</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_NON_ACADEMIC_TITLE_CODE" type="go:string4" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code for Additional royal or noble title</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_ORG_TYPE" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Type of organisation account.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_ORG_TYPE_CODE" type="go:string4" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code for Type of organisation account.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_ORKUT_ID" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Orkut ID associated with the customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_PCODE1_EXT" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>(Not Supported)City Postal Code Extension, e.g. ZIP+4+2 Code</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_PCODE2_EXT" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>(Not Supported) PO Box Postal Code Extension</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_PCODE3_EXT" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>(Not Supported) Major Customer Postal Code Extension</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_PINTEREST_ID" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Pinterest ID associated with the customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_PO_BOX" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Post office box.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_PO_BOX_CTY" type="go:string3" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>PO box country</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_PO_BOX_LOBBY" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>PO Box Lobby</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_PO_BOX_LOC" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>PO Box city</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_PO_BOX_NUM" type="go:string1" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Flag: PO Box Without Number</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_PO_BOX_REG" type="go:string3" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Region for PO Box (Country, State, Province, ...)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_POST_CODE2" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>PO Box Postal Code</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_POST_CODE3" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Company Postal Code (for Large Customers)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_POSTALAREA" type="go:string15" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>(Not Supported) Post Delivery District</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_POSTCODE_ZIP" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Postal code.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_PREF_CONTACT_METHOD" type="go:string20" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Communication channel which the Account prefers to be communicated through.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_PREF_CONTACT_METHOD_CODE" type="go:string3" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code for Communication channel which the Account prefers to be communicated through.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_PREF_CONTACT_TIME" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Time of day at which the individual prefers to be contacted.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_PREF_LANGUAGE" type="go:string16" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Individual's preferred language.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_PREF_LANGUAGE_CODE" type="go:string2" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code for Individual's preferred language.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_REGION_STATE" type="go:string25" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Region, State or County.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_REGION_STATE_CODE" type="go:string3" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code for Region, State or County.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_ROOM_NUMBER" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Room or Appartment Number</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_SEC_DC_ASSGND_SERV_DEA_LR" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary dealer code of the assigned service dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_SEC_DEACODE_LAST_ENQ_SD_J" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary dealer code of the most recent enquiry sales dealer for Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_SEC_DEALCODE_ASSIGN_SD_J" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary dealer code that is the assigned sales dealer for Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_SEC_DEALCODE_OF_CREAT_DEA" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary Dealer Code for the Dealer that created the Account </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_SECDEA_LASTENQ_SAL_DEA_LR" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary dealer code of the most recent enquiry sales dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_SECDEACOD_ASSIG_SER_DEA_J" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary dealer code of the assigned service dealer for Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_SECDEACOD_LAST_SELL_DEA_J" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary dealer code of the most recent selling dealer for Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_SECDEACOD_LAST_SERVDEA_LR" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary dealer code of the most recent servicing dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_SECDEACOD_LASTSELL_DEA_LR" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary dealer code of the most recent selling dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_SECDEACOD_PRE_SERV_DEA_LR" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary dealer code of the preferred service dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_SECDEACOD_PREF_SAL_DEA_LR" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary dealer code of the preferred sales dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_SECDEACOD_PREF_SALE_DEA_J" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary dealer code of the preferred sales dealer for Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_SECDEACOD_PRIO_SERVDEA_LR" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary dealer code of the priority service dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_SECDEACOD_PRIOR_SAL_DEA_J" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary dealer code of the priority sales dealer for Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_SECDEACOD_PRIOR_SALDEA_LR" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary dealer code of the priority sales dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_SECDEACOD_PRIOR_SER_DEA_J" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary dealer code of the priority service dealer for Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_SECDEACODE_PREF_SER_DEA_J" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary dealer code of the preferred service dealer for Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_SECDEALCOD_ASSGND_SD_LR" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary dealer code that is the assigned sales dealer for Land Rover</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_SECDEALCOD_LAST_SER_DEA_J" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary dealer code of the most recent servicing dealer for Jaguar</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_SOURCE_NAME_CODE" type="go:string5" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code for Name of the system or company which provided the data that was used to create the Account record.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_SOURCE_NAME_DESCRIPTION" type="go:string25" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the system or company which provided the data that was used to create the Account record.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_STREET" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Street address.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_STREETABBR" type="go:string2" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>(Not Supported) Abbreviation of Street Name</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_STREETCODE" type="go:string12" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Street Number for City/Street File</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_SUPPLEMENT_1" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>First additional line of the address.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_SUPPLEMENT_2" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Second additional line of the address.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_SUPPLEMENT_3" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Third additional line of the address.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_TAGGED_ID" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Tagged ID associated with the customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_TITLE" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Individual's Title.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_TITLE_CODE" type="go:string4" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code for Individual's Title</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_TOWNSHIP" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Township name</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_TOWNSHIP_CODE" type="go:string8" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Township code for Township</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_TWITTER_ID" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Twitter ID associated with the customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_VIP_FLAG" type="go:string1" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates that the Individual is a very important person and special treatment must be applied during interactions with them.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_VISTA_CODE" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>VISTA Code for Customer Account</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_WEBSITE" type="go:string132" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Website address.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_WORK_PHONE_EXTENSION" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Extension Number for Work Phone</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACCT_WORK_PHONE_PRIMARY" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Primary Work Telephone Number for customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ACTIVITY_ID" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Campaign Activity ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CAMPAIGN_CAMPAIGN_CHANNEL" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Means of communication to be used by Campaign</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CAMPAIGN_CAMPAIGN_DESC" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Description of Campaign </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CAMPAIGN_CAMPAIGN_ID" type="go:string24" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Unique Identification Number of the Campaign.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CAMPAIGN_CATEGORY_1" type="go:string24" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Campaign description.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CAMPAIGN_CATEGORY_2" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Description of the campaign objective.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CAMPAIGN_CATEGORY_3" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Description of the campaign tactic</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CAMPAIGN_DEALERFULNAME_DEALER1" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary Dealer Full Name</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CAMPAIGN_DEALERFULNAME_DEALER2" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary Dealer Full Name</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CAMPAIGN_DEALERFULNAME_DEALER3" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary Dealer Full Name</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CAMPAIGN_DEALERFULNAME_DEALER4" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary Dealer Full Name</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CAMPAIGN_DEALERFULNAME_DEALER5" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary Dealer Code Full Name</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CAMPAIGN_SECDEALERCODE_DEALER1" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary Dealer Code</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CAMPAIGN_SECDEALERCODE_DEALER2" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary Dealer Code</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CAMPAIGN_SECDEALERCODE_DEALER3" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary Dealer Code</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CAMPAIGN_SECDEALERCODE_DEALER4" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary Dealer Code</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CAMPAIGN_SECDEALERCODE_DEALER5" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary Dealer Code</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CAMPAIGN_TARGET_GROUP_DESC" type="go:string72" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>CRM Marketing: Description of a Target Group</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CAMPAIGN_TARGET_GROUP_ID" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Target Group/Product Segment Id.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CASE_BRAND" type="go:string20" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Brand to which the Case relates</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CASE_BRAND_CODE" type="go:string20" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code for Brand to which the Case relates</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CASE_CASE_CREATION_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date on which Case is created</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CASE_CASE_DESC" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Description of Case</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CASE_CASE_EMPL_RESPONSIBLE_NAM" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Full Name of Employee responsible for progressing the case.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CASE_CASE_ID" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Unique ID of Case</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CASE_CASE_SOLVED_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date on which Case marked as solved </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CASE_CASE_STATUS" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Status of Case</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CASE_CASE_STATUS_CODE" type="go:string5" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code for Status of case</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CASE_DEALER_FULL_NAME" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Full Name of dealer associated with the case</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CASE_EMPL_RESPONSIBLE_ID" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Business Partner Number</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CASE_GOODWILL_INDICATOR" type="go:string1" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Goodwill Indicator</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CASE_REASON_FOR_STATUS" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Case Reason for Status</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CASE_SECON_DEALER_CODE_OF_DEAL" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary Dealer code of dealer associated with the case</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CASE_VEH_REG_PLATE" type="go:string35" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Registration Licence Plate Number for Vehicle associated with the Case</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CASE_VEH_VIN_NUMBER" type="go:string35" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Vehicle Identification number of vehicle associated with the case.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CASE_VEHMODEL_DERIVED_FROM_VIN" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Vehicle Model (derived from VIN number) of Vehicle associated with the Case</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CR_OBJECT_ID" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Transaction ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CRH_DEALER_ROA_CITY_TOWN" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>City address of the Car Hire company</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CRH_DEALER_ROA_COUNTRY" type="go:string50" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Country of the Car Hire company</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CRH_DEALER_ROA_HOUSE_NO" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>House Number address of Car Hire company</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CRH_DEALER_ROA_ID" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Car Hire Business Partner Id (Account Id) - roadside assistance</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CRH_DEALER_ROA_NAME_1" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Car Hire company Organisation Name1</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CRH_DEALER_ROA_NAME_2" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Car Hire company Organisation Name2</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CRH_DEALER_ROA_PO_BOX" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>PO Box Number of Car Hire company</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CRH_DEALER_ROA_POSTCODE_ZIP" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Postal Code of the Car Hire company</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CRH_DEALER_ROA_PREFIX_1" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Street Name 2 address of the Car Hire company</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CRH_DEALER_ROA_PREFIX_2" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Street Name 3 address of the Car Hire company</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CRH_DEALER_ROA_REGION_STATE" type="go:string20" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Region, State or County of the Car Hire company
+
+Please Note: This field is bounded by a list of valid values. Please refer to Appendix B for the list of valid values associated with this field.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CRH_DEALER_ROA_STREET" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Street Name address of the Car Hire company</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CRH_DEALER_ROA_SUPPLEMENT_1" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Street Name 4 address of the Car Hire company</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CRH_DEALER_ROA_SUPPLEMENT_2" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Street Name 5 address of the Car Hire company</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CRH_DEALER_ROA_SUPPLEMENT_3" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>District address of the Car Hire company</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CRH_END_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Car Hire End Date.  
+
+Date format yyyymmdd</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="CRH_START_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Car Hire Start Date.  
+
+Date format yyyymmdd</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_ACTIVITY_DESC" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Description of the service or repair activity</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_CREATION_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date that the repair order was created</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_DAYS_OPEN" type="go:string5" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Number of days open</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_DEPARTMENT" type="go:string15" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The department that carried out the service or repair work.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_EVENT_TYPE" type="go:string15" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The type of work carried out on the vehicle </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_LICENSE_PLATE_REGISTRATION" type="go:string15" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Vehicle license plate registration number</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_MILEAGE_IN_WITH_UNIT_MEASU" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Vehicle mileage when repair order is opened.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_MILEAGE_OUT_WITH_UNIT_MEAS" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Vehicle mileage when repair order is closed.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_OTHER_RELATED_SERVICES" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Concatenated List of Codes and Descriptions for other services carried out in relation to the actual repair</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_POTENTIAL_CHANGE_OF_OWNERS" type="go:string5" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates the likelihood that a change of ownership has occurred</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_REPAIR_ORDER_CLOSED_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date that the repair order was closed</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_REPAIR_ORDER_NUMBER" type="go:string20" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>An alphanumeric reference assigned to each repair order in the dealer system. Please note that this is not a unique identifier as multiple dealers may supply the same Id.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_REPAIR_ORDER_NUMBER_UNIQUE" type="go:string35" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The unique ID of the repair order in the source system.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_REPAIR_ORDER_OPEN_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date that the repair order was opened</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_SECON_DEALER_CODE" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary dealer code for Dealer carrying out repair</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_SERVICE_ADVISOR" type="go:string15" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the service advisor</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_SERVICE_ADVISOR_ID" type="go:string15" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>ID of the service advisor</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_TECHNICIAN" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the technician carrying out the service or repair</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_TECHNICIAN_ID" type="go:string15" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>ID of the technician carrying out the service or repair</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_TOTAL_CUSTOMER_PRICE" type="go:decimal17.2" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Total cost of the service or repair to the customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_TOTAL_LABOUR_PRICE" type="go:decimal17.2" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Total price of labour used on the service or repair</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_TOTAL_PARTS_PRICE" type="go:decimal17.2" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Total price of all parts used in the service or repair</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_TOTAL_REPAIR_COST" type="go:decimal17.2" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Total cost of the service or repair</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_TOTAL_WARRANTY_PRICE" type="go:decimal17.2" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Total value of the service or repair that is covered by warranty</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_USER_STATUS" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Status of Repair</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_USER_STATUS_CODE" type="go:string5" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code for Status of Repair</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="DMS_VIN" type="go:string35" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Vehicle Identification Number</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_BRAND" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Description of Vehicle Brand Code</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_BRAND_CODE" type="go:string5" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Vehicle Brand </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_CREATION_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Lead creation date</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_DEALER_LEAD_ID" type="go:string20" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>ID for the Dealer ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_DEALER_NAME" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Dealer Name</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_DIRECT_LINK_VEH_CONFIGURA" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Direct Link to the vehicle configuration</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_EMP_RESPONSIBLE_DEAL_NAME" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Full name of the Business Partner.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_ENQUIRY_TYPE" type="go:string20" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Lead enquiry type</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_ENQUIRY_TYPE_CODE" type="go:string4" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Lead Group</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_FUEL_TYPE" type="go:string8" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Fuel Type description for the Fuel Type code.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_FUEL_TYPE_CODE" type="go:string8" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Fuel Type Code</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_IN_MARKET_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Lead in-market date.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_LEAD_CATEGORY" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Lead Category.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_LEAD_CATEGORY_CODE" type="go:string4" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Lead Category Code</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_LEAD_ID" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Transaction ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_LEAD_STATUS" type="go:string5" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Lead status</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_LEAD_STATUS_CODE" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code used for the Lead status</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_LEAD_STATUS_REASON" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The Reason for the Lead Status</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_LEAD_STATUS_REASON_CODE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The code used for the Lead Status Reason</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_LEAD_TRANSACTION_TYPE" type="go:string20" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Lead transaction type.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_LEAD_TRANSACTION_TYPE_COD" type="go:string4" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Business Transaction Type</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_MODEL_DERIVATIVE" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Model Derivative</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_MODEL_OF_INTEREST" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Description of the Vehicle Model Of Interest for the Lead</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_MODEL_OF_INTEREST_CODE" type="go:string5" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Vehicle Model of Interest for the Lead</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_MODEL_YEAR" type="go:string4" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Model Year</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_NEW_USED_INDICATOR" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>New Used Indicator</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_ORIGIN" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Description of Origin of Opportunity/Lead</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_ORIGIN_CODE" type="go:string3" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Origin of Opportunity/Lead</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_PRE_LAUNCH_MODEL" type="go:string1" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Pre-Launch Model</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_PREF_CONTACT_METHOD" type="go:string5" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Preferred contact method for the Lead</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_PREF_DATE_TIME_OF_CONTACT" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Preferred contact date and time for the Lead</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_SCORE" type="go:string2" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Lead Score</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_SECON_DEALER_CODE" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary Dealer Code</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_VEH_SALE_TYPE" type="go:string20" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Vehicle sale type related to the Lead</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LEAD_VEH_SALE_TYPE_CODE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Vehicle sale type code for the Lead</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="OBJECT_ID" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Transaction ID.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RESP_DEALER_ROA_CITY_TOWN" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>City of the roadside assistance responsible dealer.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RESP_DEALER_ROA_COUNTRY" type="go:string50" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Country where the roadside assistance responsible dealer is located.
+
+Please Note: This field is bounded by a list of valid values. Please refer to Appendix B for the list of valid values associated with this field.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RESP_DEALER_ROA_HOUSE_NO" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>House Number of the roadside assistance responsible dealer.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RESP_DEALER_ROA_ID" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Business Partner Id (Account ID) for the responsible dealer in roadside assistance</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RESP_DEALER_ROA_NAME_1" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Organisation Name1 for the roadside assistance responsible dealer.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RESP_DEALER_ROA_NAME_2" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Organisation Name2 for the roadside assistance responsible dealer.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RESP_DEALER_ROA_PO_BOX" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>PO Pox number for the roadside assistance responsible dealer.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RESP_DEALER_ROA_POSTCODE_ZIP" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>City postal code of the roadside assistance responsible dealer.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RESP_DEALER_ROA_PREFIX_1" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Street Name 2 of the roadside assistance responsible dealer.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RESP_DEALER_ROA_PREFIX_2" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Street Name 3 of the roadside assistance responsible dealer.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RESP_DEALER_ROA_REGION_STATE" type="go:string20" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Region, State or County of the roadside assistance responsible dealer.
+
+Please Note: This field is bounded by a list of valid values. Please refer to Appendix B for the list of valid values associated with this field.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RESP_DEALER_ROA_STREET" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Street Name of the roadside assistance responsible dealer.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RESP_DEALER_ROA_SUPPLEMENT_1" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Street Name 4 of the roadside assistance responsible dealer.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RESP_DEALER_ROA_SUPPLEMENT_2" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Street Name 5 of the roadside assistance responsible dealer.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="RESP_DEALER_ROA_SUPPLEMENT_3" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>District of the roadside assistance responsible dealer.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROA_END_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Roadside Assistance End Date</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROA_START_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Roadside Assistance Start Date</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_ACTIVE_STATUS" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Description of the Activity Status</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_ACTIVE_STATUS_CODE" type="go:string5" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code of the Activity Status</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_ACTIVITY_DESC" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Brief Description of Activity</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_COUNTRY_ISO_CODE" type="go:string3" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>ISO Code of Country where the breakdown took place.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_CUSTOMER_SUMMARY_INC" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Summary of customer including details captured during  the incident</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_DATA_SOURCE" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The system from which the information was ultimately sourced.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_DATE_CALL_ANSWERED" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The date when call was answered by the call operator</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_DATE_CALL_RECEIVED" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The date when call was received by the service provider</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_DATE_JOB_COMPLETED" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The date when the repair was finished by dedicated technician or repair was aborted (decision about recovery was made).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_DATE_RESOURCE_ALL" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The date when the resource was allocated by the call operator.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_DATE_RESOURCE_ARRIVED" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The date when resource arrived at the breakdown location.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_DATE_SECON_RES_ALL" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The date when the secondary resource was allocated (if needed) by the call operator.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_DATE_SECON_RES_ARR" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The date when secondary resource (if needed) arrived at the breakdown location.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_DIAGNOSIS" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Description of the diagnosis</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_DRIVER_EMAIL" type="go:string241" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Roadside Driver Email Address.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_DRIVER_FIRST_NAME" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Roadside Driver First Name.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_DRIVER_LAST_NAME" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Roadside Driver Last Name.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_DRIVER_MOBILE" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>First Mobile Telephone No.: Dialing Code + Number</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_DRIVER_TITLE" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Roadside Driver Title.
+
+Please Note: This field is bounded by a list of valid values. Please refer to Appendix B for the list of valid values associated with this field.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_GEO_LOCATION" type="go:string100" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Location coordinates of the vehicle at the time of the breakdown.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_INCIDENT_CATEGORY" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Category of the incident</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_INCIDENT_COUNTRY" type="go:string3" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code for Country where the breakdown took place.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_INCIDENT_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date of the breakdown.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_INCIDENT_ID" type="go:string20" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Unique ID of the incident</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_INCIDENT_SUMMARY" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Summary of the incident</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_INCIDENT_TIME" type="go:string8" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Time of the breakdown.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_LICENSE_PLATE_REG_NO" type="go:string15" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Vehicle license plate or registration number</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_PROVIDER" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the Company providing the roadside assistance</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_RECOVERY_DETAILS" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Details of the actions taken to effect the recovery</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_REPAIR_DEAL_SEC_CO_CD" type="go:string2" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Country code for country in which the repairing dealer operates.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_REPAIRING_SEC_DEAL_CD" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary Dealer code of dealer carrying out repair on vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_RESOLUTION" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Description of the resolution</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_RESOLUTION_TIME" type="go:string8" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Time of the resolution</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_ROADSIDE_INCIDENT" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Details of the roadside incident</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_TIME_CALL_ANSWERED" type="go:string8" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The time when call was answered by the call operator</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_TIME_CALL_RECEIVED" type="go:string8" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The time when call was received by the service provider</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_TIME_JOB_COMPLETED" type="go:string8" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The time when the repair was finished by dedicated technician or repair was aborted (decision about recovery was made).</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_TIME_RESOURCE_ALL" type="go:string8" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The time when the resource was allocated by the call operator.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_TIME_RESOURCE_ARRIVED" type="go:string8" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The time when resource arrived at the breakdown location.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_TIME_SECON_RES_ALL" type="go:string8" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The time when the secondary resource was allocated (if needed) by the call operator.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_TIME_SECON_RES_ARR" type="go:string8" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The time when secondary resource (if needed) arrived at the breakdown location.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_VIN" type="go:string35" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Vehicle Identification number</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ROADSIDE_WAIT_TIME" type="go:string8" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Total customer wait time</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_ACCEPTED_DELIVERY_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Accepted delivery date of the vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_ANCIL_PROD_ENDDAT_MANF_EXT" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date at which the Extended Manufacturers warranty expires</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_ANCIL_PROD_ENDDAT_MANF_STD" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date at which the Standard Manufacturers warranty expires</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_ANCIL_PRODENDDAT_3PARTY_EX" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date at which the Third Party extended warranty expires</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_ANCIL_PRODENDDAT_OSH_SERV" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date at which the OSH Service contract expires</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_ANCIL_PRODENDDAT_ROADSIDE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date at which the Roadside Assistance product expires</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_ANCIL_PRODSTARTDAT_3PARTY" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date at which the Third Party extended warranty starts</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_ANCIL_PRODSTARTDAT_MANFEXT" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date at which the Extended Manufacturers warranty starts</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_ANCIL_PRODSTARTDAT_MANFSTD" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date at which the Standard Manufacturers warranty starts</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_ANCIL_PRODSTARTDAT_OSH_SER" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date at which the OSH Service contract starts</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_ANCIL_PRODSTARTDAT_ROADSID" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date at which the Roadside Assistance product starts</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_APPR_WARNTY_TYPE" type="go:string100" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>JLR Approved Warranty Type Code.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_APPR_WARNTY_TYPE_DESC" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>JLR Approved Warranty Type Description.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_BRAND" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Vehicle Brand</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_BUILD_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Vehicle build date</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_CAR_LINE_DESC" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Car Line Description</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_CHASSIS_NUMBER" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Chassis number for vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_COMMON_ORDER_NUMBER" type="go:string35" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>JLR Internal Order Number</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_COUNTRY_EQUIPMENT_CODE" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Country specific code for Equipment spec of Vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_CREATING_DEALER" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>SAP CRM Business Partner ID of Dealer creating order for vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_CURR_PLANNED_DELIVERY_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Current planned delivery date of the vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_CURRENT_PLANNED_BUILD_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Current planned build date of the vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_DEA_NAME_LAST_SELLING_DEAL" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the most recent selling dealer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_DEALER_NAME_OF_SELLING_DEA" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the selling dealer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_DELIVERED_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Actual delivery date</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_DERIVATIVE" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Vehicle Model Derivative</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_DRIVER_FULL_NAME" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Full name of the driver of the vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_EMISSIONS_TEST_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date of Emissions test</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_END_OF_TERM_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date at which Finance Agreement finishes.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_ENGINE_NUMBER" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Engine number for vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_ENGINE_SIZE" type="go:decimal6.2" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Quoted Vehicle Engine Capacity</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_ENGINE_SIZE_UOM" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Unit of Measure for Engine Size</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_EXTERIOR_COLOUR_CODE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code for Vehicle's exterior colour</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_EXTERIOR_COLOUR_DESC" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Vehicle's exterior colour</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_EXTERIOR_COLOUR_SUPPL_CODE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code for exterior colour supplement</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_EXTERIOR_COLOUR_SUPPL_DESC" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Exterior colour supplement description</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_FACTORY_COMPLETE_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Actual factory complete date</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_FEATURE_CODE" type="xs:string" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Concatenated list of Vehicle Features</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_FINANCE_CONTRACT_NUMBER" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Unique agreement or reference number for the finance contract</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_FINANCE_PROD" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Type Financial Product used to purchase vehicle ( eg Hire Purchase, </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_FIRST_RETAIL_SALE" type="go:string1" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates if this is the First Retail Sale of the vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_FUEL_TYPE" type="go:string20" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Type of fuel used by the Vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_FUEL_TYPE_CODE" type="go:string1" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code for Type of fuel used by the Vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_HANDOVER_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date on which vehicle was handed over to customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_LAST_DATE_FOR_ORDER_CHANGE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Last date at which vehicle order can be changed</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_LAST_SERVICE_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Most recent service date</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_LAST_SERVICE_MILEAGE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Vehicle Mileage at most recent service</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_LAST_UPDATED_SPECIFICA_DAT" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Most recent updated specification date</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_MILEAGE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The current Vehicle Mileage.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_MILEAGE_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date that the vehicle mileage was recorded</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_MILEAGE_UOM" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Unit of Measure in which the Vehicle Mileage is expressed.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_MODEL" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code for Model of Vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_MODEL_DESC" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Model of Vehicle Description</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_MODEL_YEAR" type="go:string4" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Model Year of the model </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_NAME_OF_LAST_SERVICING_DEA" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of the most recent servicing dealer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_NEXT_SERVICE_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Next planned service date</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_NEXT_SERVICE_MILEAGE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Vehicle mileage at the next planned service</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_NUM_OF_OWNERS_RELATIONSHIP" type="go:integer2" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Number of Owner Accounts to which Vehicle is related.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_ORDER_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date of Vehicle Order</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_ORIGIN" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Vehicle origin</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_OWNER_FULL_NAME" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Full name of the owner of the vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_OWNERSHIP_STATUS" type="go:string15" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The current ownership status of the vehicle eg New, Used, CPO, Dealer Owned</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_OWNERSHIP_STATUS_CODE" type="go:string5" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code of the ownership status</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_PAYMENT_TYPE" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>How customer will pay for vehicle eg Cash, Finance etc.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_POSITIVE_EQUITY_INDICATOR" type="go:string1" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates that the residual value of the vehicle exceeds the outstanding amount remaining on the finance contract.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_PREDICTD_REPLACEM_MILE_UOM" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Unit of Measure for predicted replacement mileage</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_PREDICTED_REPLACEM_MILEAGE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Mileage at which it Is predicted that the customer will replace the vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_PREDICTED_REPLACEMENT_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date at which it Is predicted that the customer will replace the vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_REACQUIRED_INDICATOR" type="go:string1" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates whether the vehicle has been reacquired</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_REGISTRAT_LICENC_PLATE_NUM" type="go:string15" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Registration Licence Plate Number for Vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_REGISTRATION_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date vehicle was first registered</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_REQUESTED_DELIVERY_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Requested delivery date of the vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_ROAD_WORTHINES_TESTDAT_MOT" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Road worthiness or MOT test date</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_SALE_TYPE_DESC" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>VISTA Sale type indicating type of sale eg Retail, Corporate, Dealer Stock, Motability, Demonstrator etc.)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_SEC_DEALCOD_OF_SELLING_DEA" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary dealer code of selling dealer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_SECDEACOD_LAST_SERVICI_DEA" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary dealer code of most recent serviceing dealer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_SECDEALCOD_LAST_SELLIN_DEA" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary dealer code of the most recent selling dealer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_SPECIAL_EDITION" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of special edition of vehicle if appropriate</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_SPECIFICATION_MARKET" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Market in which Vehicle specification applies</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_STATUS_CODEVEH" type="go:string5" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Vehicle status code</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_STATUS_VEH" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Vehicle status</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_SUBJECT_TO_RECAL_INDICATOR" type="go:string1" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Indicates whether vehicle is subject to recall</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_TRANSMISSION" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Type of Vehicle Transmission/Gearbox</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_VEH_ID" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Additional Vehicle Identifier</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_VIN" type="go:string35" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Vehicle Identification number</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_VISTA_CONTRACT_NUMBER" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The Contract Number held in VISTA for this vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VEH_VISTA_VEH_ORDERSTATUS_DESC" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Status of Order for vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_ACTIVE_STATUS_CD" type="go:string5" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Code for Status of Activity</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_ACTIVE_STATUS_TX" type="go:string30" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Status of Activity</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_ACTIVITY_CATEGRY" type="go:string3" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Description of Activity</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_ACTIVITY_DESC" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Description of Activity</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_CANCEL_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date on which vehicle order was cancelled</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_COMM_TY_SALE_DS" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>VISTA Sale type indicating type of sale eg Retail, Corporate, Dealer Stock, Motability, Demonstrator etc.)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_COMMON_ORDER_NUM" type="go:string35" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>JLR Internal Order Number</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_CONTRACT_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date on which Contract created.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_CONTRACT_NO" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>The Contract Number held in VISTA for this vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_EXT_WARR" type="go:string5" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Retailer Provided Warranty Extension Code.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_EXT_WARR_DESC" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Retailer Provided Warranty Extension Description.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_HANDOVER_DATE" type="go:string10" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Date on which vehicle was handed over to customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_LEAD_ID" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>SAP CRM Lead ID of Lead which resulted in sale of vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_LEAS_FIN_DUR_UNI" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Units of Time for length of finance agreement ( eg Months, Years etc.)</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_LEASING_FIN_DUR" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Length of the finance agreement</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_MARKETING_PROGRA" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of Marketing programme resulting in vehicle sale</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_PAYMENT_TYPE" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>How customer will pay for vehicle eg Cash, Finance etc.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_PREV_VEH_BRAND" type="go:string20" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Brand of previous vehicle used by customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_PREV_VEH_MODEL" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Model of previous vehicle used by customer</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_REP_MILEAGE_UNIT" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Unit of Measure for predicted replacement mileage</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_REPLACE_MILEAGE" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Mileage at which it Is predicted that the customer will replace the vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_RETAIL_PRICE" type="go:decimal17.2" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Price paid for the used vehicle.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_SALES_MAN_CD_DES" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Description associated with code for Salesman responsible for sale of vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_SALES_MAN_FULNAM" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Full Name of Salesman responsible for sale of vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_SALESMAN_CODE" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>User ID of Salesman responsible for sale of vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_SECON_DEAL_NAME" type="go:string81" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Name of dealer responsible for VISTA contract</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_SECON_DEALER_CD" type="go:string60" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Secondary Dealer code of dealer responsible for VISTA contract</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_TRADE_IN_MANUFAC" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Brand for vehicle Traded In as part of purchase of Current Vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACT_TRADE_IN_MODEL" type="go:string40" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Model for vehicle Traded In as part of purchase of Current Vehicle</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACTNAPPRO_RETAIL_DES" type="go:string100" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Non Approved JLR Retailer Extended Warranty Description.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="VISTACONTRACTNAPPRO_RETAIL_WAR" type="go:string5" minOccurs="0" maxOccurs="1">
+				<xs:annotation>
+					<xs:documentation>Non Approved JLR Retailer Extended Warranty Code.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:all>
+	</xs:complexType>
+	<xs:element name="DATA" type="Campaign_MasterType">
+		<xs:annotation>
+			<xs:documentation>Campaign List Container</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,17 @@
+<DTSConfiguration>
+<DTSConfigurationHeading>
+<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Sample Reporting - Chinese VIN Report" GeneratedFromPackageID="{6917E674-E104-49BE-8A2A-FE57B0DAE091}" GeneratedDate="15/03/2021 14:31:21"/>
+</DTSConfigurationHeading>
+<Configuration ConfiguredType="Property" Path="\Package.Connections[Connexions SSIS Log.txt].Properties[ConnectionString]" ValueType="String">
+<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Sample Reporting - Chinese VIN Report.dtsx\Sample Reporting - Chinese VIN Report.log</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::FileType].Properties[Value]" ValueType="String">
+<ConfiguredValue>Chinese VINs</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::FTPEnabled].Properties[Value]" ValueType="Boolean">
+<ConfiguredValue>1</ConfiguredValue>
+</Configuration>
+<Configuration ConfiguredType="Property" Path="\Package.Variables[User::RemoteCATIArchive].Properties[Value]" ValueType="String">
+<ConfiguredValue>CATI outcome files downloaded by GfK/</ConfiguredValue>
+</Configuration>
+</DTSConfiguration>

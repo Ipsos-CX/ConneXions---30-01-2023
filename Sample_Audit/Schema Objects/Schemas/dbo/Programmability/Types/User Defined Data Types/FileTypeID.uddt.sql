@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[FileTypeID]
+	FROM INT NULL

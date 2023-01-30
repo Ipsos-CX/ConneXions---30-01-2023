@@ -1,0 +1,3 @@
+﻿ALTER TABLE [OWAP].[Sessions]
+	ADD CONSTRAINT [PK_Sessions]
+	PRIMARY KEY (AuditID)

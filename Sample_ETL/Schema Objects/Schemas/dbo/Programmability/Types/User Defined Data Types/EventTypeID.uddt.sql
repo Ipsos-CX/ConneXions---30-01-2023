@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[EventTypeID]
+	FROM SMALLINT NOT NULL

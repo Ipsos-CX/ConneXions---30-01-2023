@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[RequirementTypeID]
+	FROM SMALLINT NOT NULL

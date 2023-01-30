@@ -1,0 +1,3 @@
+﻿ALTER TABLE [OWAP].[Users]
+	ADD CONSTRAINT [PK_Users]
+	PRIMARY KEY (PartyID)

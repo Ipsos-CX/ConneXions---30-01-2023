@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Sample Process - Matching" GeneratedFromPackageID="{1126FE59-52FA-4134-8E23-93324E8EEDB6}" GeneratedDate="24/11/2011 16:48:07"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Sample Process - Matching.dtsx\Sample Process - Matching.log</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

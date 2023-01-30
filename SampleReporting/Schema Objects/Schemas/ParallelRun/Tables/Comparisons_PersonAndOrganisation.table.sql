@@ -1,0 +1,23 @@
+﻿CREATE TABLE [ParallelRun].[Comparisons_PersonAndOrganisation](
+	[ComparisonLoadDate] [date] NULL,
+	[FileName] [nvarchar](100) NULL,
+	[PhysicalFileRow] [int] NOT NULL,
+	[RemoteAuditID] [bigint] NOT NULL,
+	[LocalAuditID] [bigint] NOT NULL,
+	[RemoteAuditItemID] [bigint] NOT NULL,
+	[LocalAuditItemID] [bigint] NOT NULL,
+	[Mismatch_FromDate] [int] NOT NULL,
+	[Mismatch_TitleID] [int] NOT NULL,
+	[Mismatch_Initials] [int] NOT NULL,
+	[Mismatch_FirstName] [int] NOT NULL,
+	[Mismatch_MiddleName] [int] NOT NULL,
+	[Mismatch_LastName] [int] NOT NULL,
+	[Mismatch_SecondLastName] [int] NOT NULL,
+	[Mismatch_GenderID] [int] NOT NULL,
+	[Mismatch_BirthDate] [int] NOT NULL,
+	[Mismatch_MonthAndYearOfBirth] [int] NOT NULL,
+	[Mismatch_PreferredMethodOfContact] [int] NOT NULL,
+	[Mismatch_NameChecksum] [int] NOT NULL,
+	[Mismatch_OrganisationName] [int] NOT NULL,
+	[Mismatch_OrganisationNameChecksum] [int] NOT NULL
+)

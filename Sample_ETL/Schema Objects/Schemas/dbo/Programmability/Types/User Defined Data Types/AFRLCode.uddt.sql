@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[AFRLCode]
+	FROM VARCHAR(10) NULL

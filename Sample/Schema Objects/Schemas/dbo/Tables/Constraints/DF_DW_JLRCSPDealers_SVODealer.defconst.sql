@@ -1,0 +1,4 @@
+﻿ALTER TABLE [dbo].[DW_JLRCSPDealers]
+   ADD CONSTRAINT [DF_DW_JLRCSPDealers_SVODealer]
+   DEFAULT 0
+   FOR [SVODealer]

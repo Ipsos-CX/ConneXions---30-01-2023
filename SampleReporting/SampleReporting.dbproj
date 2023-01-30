@@ -1,0 +1,1558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>"DatabaseProject"</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>3.5</ProjectVersion>
+    <ProjectGuid>{bdb8eaff-a13e-44d4-8531-cf2185932be1}</ProjectGuid>
+    <DSP>Microsoft.Data.Schema.Sql.SqlDsp.Sql100DatabaseSchemaProvider</DSP>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <ShowWizard>False</ShowWizard>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <IncludeSchemaNameInFileName>False</IncludeSchemaNameInFileName>
+    <ModelCollation>1033, CS</ModelCollation>
+    <DefaultFileStructure>BySchema</DefaultFileStructure>
+    <DeployToDatabaseAddToServerExplorer>False</DeployToDatabaseAddToServerExplorer>
+    <DeployToScript>True</DeployToScript>
+    <CatalogPropertiesFile>Properties\Database.sqlsettings</CatalogPropertiesFile>
+    <RootNamespace>SampleReporting</RootNamespace>
+    <DefaultSchema>dbo</DefaultSchema>
+    <PreviousProjectVersion>3.5</PreviousProjectVersion>
+    <SccProjectName>"$/Connexions/Connexions/SampleReporting", JPUAAAAA</SccProjectName>
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>.</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>.\sql\release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetConnectionString>
+    </TargetConnectionString>
+    <TargetDatabase>
+    </TargetDatabase>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <SuppressWarnings>
+    </SuppressWarnings>
+    <DeploymentConfigFile>Properties\Database.sqldeployment</DeploymentConfigFile>
+    <SqlCommandVariablesFile>Properties\Database.sqlcmdvars</SqlCommandVariablesFile>
+    <DeployToDatabase>False</DeployToDatabase>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>.\sql\debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetConnectionString>Data Source=NUEW-SQUKCXS01;Integrated Security=True;Pooling=False</TargetConnectionString>
+    <TargetDatabase>
+    </TargetDatabase>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <SuppressWarnings>
+    </SuppressWarnings>
+    <DeploymentConfigFile>Properties\Database.sqldeployment</DeploymentConfigFile>
+    <SqlCommandVariablesFile>Properties\Database.sqlcmdvars</SqlCommandVariablesFile>
+    <DeployToDatabase>False</DeployToDatabase>
+  </PropertyGroup>
+  <!--Import the settings-->
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\TeamData\Microsoft.Data.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties\" />
+    <Folder Include="Schema Objects\" />
+    <Folder Include="Schema Objects\Database Level Objects\" />
+    <Folder Include="Schema Objects\Database Level Objects\Assemblies\" />
+    <Folder Include="Schema Objects\Database Level Objects\Database Triggers\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Asymmetric Keys\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Certificates\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Database Audit Specification\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Database Encryption Keys\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Master Keys\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\Application Roles\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\Database Roles\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Schemas\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Signatures\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Symmetric Keys\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Users\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Broker Priorities\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Contracts\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Event Notifications\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Message Types\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Queues\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Remote Service Binding\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Routes\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Services\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Filegroups\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Files\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Full Text Catalogs\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Full Text Stoplists\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Partition Functions\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Partition Schemes\" />
+    <Folder Include="Schema Objects\Schemas\" />
+    <Folder Include="Schema Objects\Schemas\CRCNonSolicitation\" />
+    <Folder Include="Schema Objects\Schemas\CRCNonSolicitation\Programmability\" />
+    <Folder Include="Schema Objects\Schemas\CRCNonSolicitation\Programmability\Defaults\" />
+    <Folder Include="Schema Objects\Schemas\CRCNonSolicitation\Programmability\Functions\" />
+    <Folder Include="Schema Objects\Schemas\CRCNonSolicitation\Programmability\Rules\" />
+    <Folder Include="Schema Objects\Schemas\CRCNonSolicitation\Programmability\Stored Procedures\" />
+    <Folder Include="Schema Objects\Schemas\CRCNonSolicitation\Programmability\Types\" />
+    <Folder Include="Schema Objects\Schemas\CRCNonSolicitation\Programmability\Types\User Defined Data Types\" />
+    <Folder Include="Schema Objects\Schemas\CRCNonSolicitation\Programmability\Types\User Defined Table Types\" />
+    <Folder Include="Schema Objects\Schemas\CRCNonSolicitation\Programmability\Types\User Defined Types CLR\" />
+    <Folder Include="Schema Objects\Schemas\CRCNonSolicitation\Programmability\Types\XML Schema Collections\" />
+    <Folder Include="Schema Objects\Schemas\CRCNonSolicitation\Synonyms\" />
+    <Folder Include="Schema Objects\Schemas\CRCNonSolicitation\Tables\" />
+    <Folder Include="Schema Objects\Schemas\CRCNonSolicitation\Tables\Constraints\" />
+    <Folder Include="Schema Objects\Schemas\CRCNonSolicitation\Tables\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\CRCNonSolicitation\Tables\Keys\" />
+    <Folder Include="Schema Objects\Schemas\CRCNonSolicitation\Tables\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\CRCNonSolicitation\Tables\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\CRCNonSolicitation\Views\" />
+    <Folder Include="Schema Objects\Schemas\CRCNonSolicitation\Views\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\CRCNonSolicitation\Views\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\CRCNonSolicitation\Views\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\CRM\" />
+    <Folder Include="Schema Objects\Schemas\CRM\Programmability\" />
+    <Folder Include="Schema Objects\Schemas\CRM\Programmability\Defaults\" />
+    <Folder Include="Schema Objects\Schemas\CRM\Programmability\Functions\" />
+    <Folder Include="Schema Objects\Schemas\CRM\Programmability\Rules\" />
+    <Folder Include="Schema Objects\Schemas\CRM\Programmability\Stored Procedures\" />
+    <Folder Include="Schema Objects\Schemas\CRM\Programmability\Types\" />
+    <Folder Include="Schema Objects\Schemas\CRM\Programmability\Types\User Defined Data Types\" />
+    <Folder Include="Schema Objects\Schemas\CRM\Programmability\Types\User Defined Table Types\" />
+    <Folder Include="Schema Objects\Schemas\CRM\Programmability\Types\User Defined Types CLR\" />
+    <Folder Include="Schema Objects\Schemas\CRM\Programmability\Types\XML Schema Collections\" />
+    <Folder Include="Schema Objects\Schemas\CRM\Synonyms\" />
+    <Folder Include="Schema Objects\Schemas\CRM\Tables\" />
+    <Folder Include="Schema Objects\Schemas\CRM\Tables\Constraints\" />
+    <Folder Include="Schema Objects\Schemas\CRM\Tables\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\CRM\Tables\Keys\" />
+    <Folder Include="Schema Objects\Schemas\CRM\Tables\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\CRM\Tables\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\CRM\Views\" />
+    <Folder Include="Schema Objects\Schemas\CRM\Views\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\CRM\Views\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\CRM\Views\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Defaults\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Functions\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Rules\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Stored Procedures\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Types\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Types\User Defined Data Types\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Types\User Defined Table Types\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Types\User Defined Types CLR\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Types\XML Schema Collections\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Synonyms\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Tables\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Tables\Constraints\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Tables\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Tables\Keys\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Tables\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Tables\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Views\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Views\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Views\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\CustomerUpdateFeeds\Views\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\dbo\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Defaults\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Functions\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Rules\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Table Types\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Types CLR\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\XML Schema Collections\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Synonyms\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Constraints\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Keys\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Programmability\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Programmability\Defaults\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Programmability\Functions\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Programmability\Rules\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Programmability\Stored Procedures\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Programmability\Types\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Programmability\Types\User Defined Data Types\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Programmability\Types\User Defined Table Types\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Programmability\Types\User Defined Types CLR\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Programmability\Types\XML Schema Collections\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Synonyms\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Tables\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Tables\Constraints\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Tables\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Tables\Keys\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Tables\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Tables\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Views\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Views\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Views\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\GDPR\Views\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\LostLeads\" />
+    <Folder Include="Schema Objects\Schemas\LostLeads\Programmability\" />
+    <Folder Include="Schema Objects\Schemas\LostLeads\Programmability\Defaults\" />
+    <Folder Include="Schema Objects\Schemas\LostLeads\Programmability\Functions\" />
+    <Folder Include="Schema Objects\Schemas\LostLeads\Programmability\Rules\" />
+    <Folder Include="Schema Objects\Schemas\LostLeads\Programmability\Stored Procedures\" />
+    <Folder Include="Schema Objects\Schemas\LostLeads\Programmability\Types\" />
+    <Folder Include="Schema Objects\Schemas\LostLeads\Programmability\Types\User Defined Data Types\" />
+    <Folder Include="Schema Objects\Schemas\LostLeads\Programmability\Types\User Defined Table Types\" />
+    <Folder Include="Schema Objects\Schemas\LostLeads\Programmability\Types\User Defined Types CLR\" />
+    <Folder Include="Schema Objects\Schemas\LostLeads\Programmability\Types\XML Schema Collections\" />
+    <Folder Include="Schema Objects\Schemas\LostLeads\Synonyms\" />
+    <Folder Include="Schema Objects\Schemas\LostLeads\Tables\" />
+    <Folder Include="Schema Objects\Schemas\LostLeads\Tables\Constraints\" />
+    <Folder Include="Schema Objects\Schemas\LostLeads\Tables\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\LostLeads\Tables\Keys\" />
+    <Folder Include="Schema Objects\Schemas\LostLeads\Tables\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\LostLeads\Tables\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\LostLeads\Views\" />
+    <Folder Include="Schema Objects\Schemas\LostLeads\Views\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\LostLeads\Views\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\LostLeads\Views\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\MSX\" />
+    <Folder Include="Schema Objects\Schemas\MSX\Programmability\" />
+    <Folder Include="Schema Objects\Schemas\MSX\Programmability\Defaults\" />
+    <Folder Include="Schema Objects\Schemas\MSX\Programmability\Functions\" />
+    <Folder Include="Schema Objects\Schemas\MSX\Programmability\Rules\" />
+    <Folder Include="Schema Objects\Schemas\MSX\Programmability\Stored Procedures\" />
+    <Folder Include="Schema Objects\Schemas\MSX\Programmability\Types\" />
+    <Folder Include="Schema Objects\Schemas\MSX\Programmability\Types\User Defined Data Types\" />
+    <Folder Include="Schema Objects\Schemas\MSX\Programmability\Types\User Defined Table Types\" />
+    <Folder Include="Schema Objects\Schemas\MSX\Programmability\Types\User Defined Types CLR\" />
+    <Folder Include="Schema Objects\Schemas\MSX\Programmability\Types\XML Schema Collections\" />
+    <Folder Include="Schema Objects\Schemas\MSX\Synonyms\" />
+    <Folder Include="Schema Objects\Schemas\MSX\Tables\" />
+    <Folder Include="Schema Objects\Schemas\MSX\Tables\Constraints\" />
+    <Folder Include="Schema Objects\Schemas\MSX\Tables\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\MSX\Tables\Keys\" />
+    <Folder Include="Schema Objects\Schemas\MSX\Tables\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\MSX\Tables\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\MSX\Views\" />
+    <Folder Include="Schema Objects\Schemas\MSX\Views\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\MSX\Views\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\MSX\Views\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\OnlineExpiryReOutputs\" />
+    <Folder Include="Schema Objects\Schemas\OnlineExpiryReOutputs\Programmability\" />
+    <Folder Include="Schema Objects\Schemas\OnlineExpiryReOutputs\Programmability\Defaults\" />
+    <Folder Include="Schema Objects\Schemas\OnlineExpiryReOutputs\Programmability\Functions\" />
+    <Folder Include="Schema Objects\Schemas\OnlineExpiryReOutputs\Programmability\Rules\" />
+    <Folder Include="Schema Objects\Schemas\OnlineExpiryReOutputs\Programmability\Stored Procedures\" />
+    <Folder Include="Schema Objects\Schemas\OnlineExpiryReOutputs\Programmability\Types\" />
+    <Folder Include="Schema Objects\Schemas\OnlineExpiryReOutputs\Programmability\Types\User Defined Data Types\" />
+    <Folder Include="Schema Objects\Schemas\OnlineExpiryReOutputs\Programmability\Types\User Defined Table Types\" />
+    <Folder Include="Schema Objects\Schemas\OnlineExpiryReOutputs\Programmability\Types\User Defined Types CLR\" />
+    <Folder Include="Schema Objects\Schemas\OnlineExpiryReOutputs\Programmability\Types\XML Schema Collections\" />
+    <Folder Include="Schema Objects\Schemas\OnlineExpiryReOutputs\Synonyms\" />
+    <Folder Include="Schema Objects\Schemas\OnlineExpiryReOutputs\Tables\" />
+    <Folder Include="Schema Objects\Schemas\OnlineExpiryReOutputs\Tables\Constraints\" />
+    <Folder Include="Schema Objects\Schemas\OnlineExpiryReOutputs\Tables\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\OnlineExpiryReOutputs\Tables\Keys\" />
+    <Folder Include="Schema Objects\Schemas\OnlineExpiryReOutputs\Tables\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\OnlineExpiryReOutputs\Tables\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\OnlineExpiryReOutputs\Views\" />
+    <Folder Include="Schema Objects\Schemas\OnlineExpiryReOutputs\Views\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\OnlineExpiryReOutputs\Views\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\OnlineExpiryReOutputs\Views\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\ParallelRun\" />
+    <Folder Include="Schema Objects\Schemas\ParallelRun\Programmability\" />
+    <Folder Include="Schema Objects\Schemas\ParallelRun\Programmability\Defaults\" />
+    <Folder Include="Schema Objects\Schemas\ParallelRun\Programmability\Functions\" />
+    <Folder Include="Schema Objects\Schemas\ParallelRun\Programmability\Rules\" />
+    <Folder Include="Schema Objects\Schemas\ParallelRun\Programmability\Stored Procedures\" />
+    <Folder Include="Schema Objects\Schemas\ParallelRun\Programmability\Types\" />
+    <Folder Include="Schema Objects\Schemas\ParallelRun\Programmability\Types\User Defined Data Types\" />
+    <Folder Include="Schema Objects\Schemas\ParallelRun\Programmability\Types\User Defined Table Types\" />
+    <Folder Include="Schema Objects\Schemas\ParallelRun\Programmability\Types\User Defined Types CLR\" />
+    <Folder Include="Schema Objects\Schemas\ParallelRun\Programmability\Types\XML Schema Collections\" />
+    <Folder Include="Schema Objects\Schemas\ParallelRun\Synonyms\" />
+    <Folder Include="Schema Objects\Schemas\ParallelRun\Tables\" />
+    <Folder Include="Schema Objects\Schemas\ParallelRun\Tables\Constraints\" />
+    <Folder Include="Schema Objects\Schemas\ParallelRun\Tables\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\ParallelRun\Tables\Keys\" />
+    <Folder Include="Schema Objects\Schemas\ParallelRun\Tables\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\ParallelRun\Tables\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\ParallelRun\Views\" />
+    <Folder Include="Schema Objects\Schemas\ParallelRun\Views\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\ParallelRun\Views\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\ParallelRun\Views\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\SampleReceipt\" />
+    <Folder Include="Schema Objects\Schemas\SampleReceipt\Programmability\" />
+    <Folder Include="Schema Objects\Schemas\SampleReceipt\Programmability\Defaults\" />
+    <Folder Include="Schema Objects\Schemas\SampleReceipt\Programmability\Functions\" />
+    <Folder Include="Schema Objects\Schemas\SampleReceipt\Programmability\Rules\" />
+    <Folder Include="Schema Objects\Schemas\SampleReceipt\Programmability\Stored Procedures\" />
+    <Folder Include="Schema Objects\Schemas\SampleReceipt\Programmability\Types\" />
+    <Folder Include="Schema Objects\Schemas\SampleReceipt\Programmability\Types\User Defined Data Types\" />
+    <Folder Include="Schema Objects\Schemas\SampleReceipt\Programmability\Types\User Defined Table Types\" />
+    <Folder Include="Schema Objects\Schemas\SampleReceipt\Programmability\Types\User Defined Types CLR\" />
+    <Folder Include="Schema Objects\Schemas\SampleReceipt\Programmability\Types\XML Schema Collections\" />
+    <Folder Include="Schema Objects\Schemas\SampleReceipt\Synonyms\" />
+    <Folder Include="Schema Objects\Schemas\SampleReceipt\Tables\" />
+    <Folder Include="Schema Objects\Schemas\SampleReceipt\Tables\Constraints\" />
+    <Folder Include="Schema Objects\Schemas\SampleReceipt\Tables\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\SampleReceipt\Tables\Keys\" />
+    <Folder Include="Schema Objects\Schemas\SampleReceipt\Tables\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\SampleReceipt\Tables\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\SampleReceipt\Views\" />
+    <Folder Include="Schema Objects\Schemas\SampleReceipt\Views\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\SampleReceipt\Views\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\SampleReceipt\Views\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\SampleReport\" />
+    <Folder Include="Schema Objects\Schemas\SampleReport\Programmability\" />
+    <Folder Include="Schema Objects\Schemas\SampleReport\Programmability\Defaults\" />
+    <Folder Include="Schema Objects\Schemas\SampleReport\Programmability\Functions\" />
+    <Folder Include="Schema Objects\Schemas\SampleReport\Programmability\Rules\" />
+    <Folder Include="Schema Objects\Schemas\SampleReport\Programmability\Stored Procedures\" />
+    <Folder Include="Schema Objects\Schemas\SampleReport\Programmability\Types\" />
+    <Folder Include="Schema Objects\Schemas\SampleReport\Programmability\Types\User Defined Data Types\" />
+    <Folder Include="Schema Objects\Schemas\SampleReport\Programmability\Types\User Defined Table Types\" />
+    <Folder Include="Schema Objects\Schemas\SampleReport\Programmability\Types\User Defined Types CLR\" />
+    <Folder Include="Schema Objects\Schemas\SampleReport\Programmability\Types\XML Schema Collections\" />
+    <Folder Include="Schema Objects\Schemas\SampleReport\Synonyms\" />
+    <Folder Include="Schema Objects\Schemas\SampleReport\Tables\" />
+    <Folder Include="Schema Objects\Schemas\SampleReport\Tables\Constraints\" />
+    <Folder Include="Schema Objects\Schemas\SampleReport\Tables\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\SampleReport\Tables\Keys\" />
+    <Folder Include="Schema Objects\Schemas\SampleReport\Tables\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\SampleReport\Tables\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\SampleReport\Views\" />
+    <Folder Include="Schema Objects\Schemas\SampleReport\Views\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\SampleReport\Views\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\SampleReport\Views\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\UsableEmailReport\" />
+    <Folder Include="Schema Objects\Schemas\UsableEmailReport\Programmability\" />
+    <Folder Include="Schema Objects\Schemas\UsableEmailReport\Programmability\Defaults\" />
+    <Folder Include="Schema Objects\Schemas\UsableEmailReport\Programmability\Functions\" />
+    <Folder Include="Schema Objects\Schemas\UsableEmailReport\Programmability\Rules\" />
+    <Folder Include="Schema Objects\Schemas\UsableEmailReport\Programmability\Stored Procedures\" />
+    <Folder Include="Schema Objects\Schemas\UsableEmailReport\Programmability\Types\" />
+    <Folder Include="Schema Objects\Schemas\UsableEmailReport\Programmability\Types\User Defined Data Types\" />
+    <Folder Include="Schema Objects\Schemas\UsableEmailReport\Programmability\Types\User Defined Table Types\" />
+    <Folder Include="Schema Objects\Schemas\UsableEmailReport\Programmability\Types\User Defined Types CLR\" />
+    <Folder Include="Schema Objects\Schemas\UsableEmailReport\Programmability\Types\XML Schema Collections\" />
+    <Folder Include="Schema Objects\Schemas\UsableEmailReport\Tables\" />
+    <Folder Include="Schema Objects\Schemas\UsableEmailReport\Tables\Constraints\" />
+    <Folder Include="Schema Objects\Schemas\UsableEmailReport\Tables\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\UsableEmailReport\Tables\Keys\" />
+    <Folder Include="Schema Objects\Schemas\UsableEmailReport\Tables\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\UsableEmailReport\Tables\Synonyms" />
+    <Folder Include="Schema Objects\Schemas\UsableEmailReport\Tables\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\UsableEmailReport\Views\" />
+    <Folder Include="Schema Objects\Schemas\UsableEmailReport\Views\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\UsableEmailReport\Views\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\UsableEmailReport\Views\Triggers\" />
+    <Folder Include="Scripts" />
+    <Folder Include="Scripts\Pre-Deployment" />
+    <Folder Include="Scripts\Post-Deployment" />
+    <Folder Include="Data Generation Plans" />
+    <Folder Include="Schema Comparisons" />
+  </ItemGroup>
+  <ItemGroup>
+    <PropertiesFile Include="Properties\Database.sqlsettings">
+    </PropertiesFile>
+    <PropertiesFile Include="Properties\Database.sqldeployment">
+    </PropertiesFile>
+    <PropertiesFile Include="Properties\Database.sqlcmdvars">
+    </PropertiesFile>
+    <Build Include="Properties\Database.sqlpermissions">
+      <ModelBuilderType>Permissions</ModelBuilderType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Security\Roles\SampleReporting.RoleMemberships.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Security\Schemas\CRCNonSolicitation.schema.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Security\Schemas\CRM.schema.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Security\Schemas\CustomerUpdateFeeds.schema.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Security\Schemas\CustomerUpdatesFeed.schema.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Security\Schemas\GDPR.schema.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Security\Schemas\LostLeads.schema.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Security\Schemas\MSX.schema.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Security\Schemas\OnlineExpiryReOutputs.schema.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Security\Schemas\ParallelRun.schema.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Security\Schemas\Report.schema.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Security\Schemas\SampleReceipt.schema.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Security\Schemas\SampleReport.schema.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Security\Schemas\UsableEmailReport.schema.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Security\Users\JLRExecLogin.user.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Security\Users\SampleSystem.user.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Service Broker\Routes\AutoCreatedLocal.route.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Storage\Files\SampleReporting_Data.sqlfile.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Storage\Files\SampleReporting_Data_1.sqlfile.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Storage\Files\SampleReporting_Log.sqlfile.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Database Level Objects\Storage\Files\SampleReporting_Log_1.sqlfile.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRCNonSolicitation\Programmability\Stored Procedures\uspGetCRCNonSolicitations.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRCNonSolicitation\Tables\EmailContactMechanismNonSolicitationData.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRCNonSolicitation\Tables\EmailContactMechanismNonSolicitations.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRCNonSolicitation\Tables\PartyNonSolicitationData.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRCNonSolicitation\Tables\PartyNonSolicitations.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRCNonSolicitation\Tables\PostalContactMechanismNonSolicitationData.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRCNonSolicitation\Tables\PostalContactMechanismNonSolicitations.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Programmability\Stored Procedures\uspCalculateResponseStatuses.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Programmability\Stored Procedures\uspAddNewBouncebacks.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Programmability\Stored Procedures\uspAddNewUnsubscribes.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Programmability\Stored Procedures\uspCalculateOutputBatches.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Programmability\Stored Procedures\uspOutputXMLForBatch.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Programmability\Stored Procedures\uspSetOutputDatesForBatch.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\CaseCRMUnsubscribes.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\CaseCRMBouncebacks.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\CaseResponseStatus.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\Constraints\DF_CaseResponseStatuses_EventID.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\Constraints\DF_CaseResponseStatuses_CaseID.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\Keys\PK_CRM_XMLOutputValues_MarketQuestionnaire.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\Keys\PK_CRM_ReponseMarketQuestionnaires.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\Keys\PK_CRM_XMLOutputValues_Market.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\Keys\PK_ResponseStatuses.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\Keys\PK_CaseResponseStatuses.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\Keys\PK_ResponsesHeldBackDueToSizeLimits_ReleasedRecs.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\Keys\PK_OutputErrors.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\Keys\PK_OutputBatches.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\SystemValues.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\Keys\FK_CRM_ResponseMarketQuestionnaires_EventCategoryID.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\Keys\FK_CRM_ResponseMarketQuestionnaires_CountryID.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\ResponseMarketQuestionnaires.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\ResponseStatuses.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\Keys\PK_ResponsesHeldBackDueToSizeLimits.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\ResponsesHeldBackDueToSizeLimits.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\Indexes\IX_OutputErrors_CaseID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\OutputErrors.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\Keys\XMLOutputValues_MarketQuestionnaire_CountryID_FK.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\Keys\XMLOutputValues_MarketQuestionnaire_EventCategoryID_FK.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\ResponsesHeldBackDueToSizeLimits_ReleasedRecs.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\XMLOutputValues_Market.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\XMLOutputValues_MarketQuestionnaire.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\CountryLookup.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Tables\OutputBatches.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CRM\Views\vwValidResponseMarketQuestionnaires.view.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Stored Procedures\uspGetEmailDetails.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Stored Procedures\uspGetNonSolicitationEmailDetails.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Stored Procedures\uspGetNonSolicitationReports.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Stored Procedures\uspGetReportMarkets.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Stored Procedures\uspNonSolicitationsReportOutput.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Stored Procedures\uspGET_CustomerUpdate_Feed_DATA.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Stored Procedures\uspNonSolicitationsReportGen.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Stored Procedures\uspReportGenerate.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CustomerUpdateFeeds\Programmability\Stored Procedures\uspReportOutput.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CustomerUpdateFeeds\Tables\Constraints\DF_CustomerUpdateFeeds_EmailMarkets_Active.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CustomerUpdateFeeds\Tables\ExcludeFromCustomerUpdateFeed.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CustomerUpdateFeeds\Tables\Keys\PK_CustomerUpdateFeeds_EmailMarkets.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CustomerUpdateFeeds\Tables\ReportingTableOutput.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CustomerUpdateFeeds\Tables\ReportingTable_Nonsolicitations_Output.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CustomerUpdateFeeds\Tables\EmailMarkets.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CustomerUpdateFeeds\Tables\Indexes\IX_CustomerUpdateFeed_PartyID_CaseID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CustomerUpdateFeeds\Tables\ReportingTable_Updates.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CustomerUpdateFeeds\Tables\ReportingTable_Nonsolicitations.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CustomerUpdateFeeds\Tables\CustomerUpdateFeed.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\CustomerUpdateFeeds\Views\vwReporting.view.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Functions\udfCRM_MENA_FormatName.function.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Functions\udfSplitColumnIntoTwo.function.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Functions\udfCleanText.function.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\MysteryShoppers.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\DailySampleStatus.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\NASelectionReport.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\uspSendCATISelectionEmails.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\uspSendPostalSelectionEmails.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\uspSendSelectionEmails.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\SalesDispositionReport.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\ServiceDispositionReport.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\uspEventX_DealerTable_GDD.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\uspSalesDispostionReportFileCount.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\uspSalesDispostionReportFileRowCount.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\uspServiceDispostionReportFileCount.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\uspServiceDispostionReportFileRowCount.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\usp_JLRFC_GetDealerDatabaseCodes.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\AddressText.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\CaseID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\ContactMechanismID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\Country.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\EmailAddress.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\NameDetail.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\OrganisationName.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\PartyID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\Postcode.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\Title.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\VehicleID.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\VIN.uddt.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\AdhocExtractMysteryShopping.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\AspNetRoleClaims.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\AspNetRoles.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\AspNetUserClaims.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\AspNetUserLogins.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\AspNetUserRoles.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\AspNetUsers.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\AspNetUserTokens.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_EventX_DealerTable__GDD_SVODealer.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_EventX_DealerTable_GDD_FleetDealer.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_EventX_LostLeads_BDC_Confirmation.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\DailyBounceBack.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\DailyFilesLoaded.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\DailySelections.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\DailyUncodedDealers.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\DailyUnMatchedVINs.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\EventX_DealerTable_GDD.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\EventX_LostLeads_BDC.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\EmailIndex.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\IX_AspNetUserClaims_UserId.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\IX_AspNetUserLogins_UserId.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\IX_AspNetUserRoles_RoleId.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\RoleNameIndex.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\UserNameIndex.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_dbo_SelectionFiles.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\NA_SelectionReport.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\SalesDispositionReport.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\SalesDispositionReportFileCount.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\SalesDispositionReportFileRowCount.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\SelectionFiles.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\ServiceDispositionReport.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\ServiceDispositionReportFileCount.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\ServiceDispositionReportFileRowCount.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\__EFMigrationsHistory.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Programmability\Stored Procedures\uspErasuresFeedBuildBaseTable.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Programmability\Stored Procedures\uspErasuresFeedPostOutputUpdate.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Programmability\Stored Procedures\uspGetAccessDetails.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_Events_CustomerContactCreationDate.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_Events_CustomerContactStatus.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_Events_CustomerContactDescription.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_Events_CustomerContact.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_Events_DealerCode.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_Events_DealerName.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_Events_InvoiceValue.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_Events_InvoiceNumber.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_Events_RegistrationDate.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_Events_RegistrationNumber.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_Events_ModelDescription.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_Events_VIN.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_Events_EventDate.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_Events_EventType.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_EmailAddresses_BestEmailAddress.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_EmailAddresses_PermissiontoContactByEmail.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_EmailAddresses_EmailAddress.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_PhoneNumbers_PermissiontoContactByPhone.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_PhoneNumbers_BestTelephoneNumber.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_PhoneNumbers_ContactNumberType.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_PhoneNumbers_ContactNumber.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_PostalAddresses_BestPostalAddress.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_PostalAddresses_PermissiontoContactByPost.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_PostalAddresses_PostCode.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_PostalAddresses_Region.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_PostalAddresses_Town.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_CustomerInformation_PermissiontoContact.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_CustomerInformation_Language.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_CustomerInformation_PersonOrganisation.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_CustomerInformation_OrganisationName.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_CustomerInformation_Gender.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_CustomerInformation_BirthDate.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_CustomerInformation_SecondLastName.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_CustomerInformation_LastName.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_CustomerInformation_MiddleName.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_CustomerInformation_Initials.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_CustomerInformation_FirstName.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_CustomerInformation_Title.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_PostalAddresses_BuildingName.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_PostalAddresses_SubStreetNumber.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_PostalAddresses_SubStreet.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_PostalAddresses_StreetNumber.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_PostalAddresses_Street.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_PostalAddresses_SubLocality.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_PostalAddresses_Locality.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Constraints\DF_PostalAddresses_Country.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\ErasuresFeedBaseTable.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\ErasuresFeedParties.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\CustomerInformation.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\EmailAddresses.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Events.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\Keys\PK_ErasuresFeedParties.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\PhoneNumbers.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\GDPR\Tables\PostalAddresses.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\LostLeads\Programmability\Stored Procedures\uspPostOutputUpdate.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\LostLeads\Programmability\Stored Procedures\uspBuildOutputTable.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\LostLeads\Programmability\Stored Procedures\uspCalculateResponseStatuses.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\LostLeads\Programmability\Stored Procedures\uspOutputLostLeads.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\LostLeads\Tables\CaseLostLeadStatuses.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\LostLeads\Tables\Constraints\DF_CaseLostLeadStatuses_EventID.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\LostLeads\Tables\Constraints\DF_CaseLostLeadStatuses_CaseID.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\LostLeads\Tables\ExternalEventID.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\LostLeads\Tables\Keys\PK_ExternalEventID.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\LostLeads\Tables\OutputErrors.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\LostLeads\Tables\CRMMarketRegionCodes.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\LostLeads\Tables\LostLeadStatuses.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\LostLeads\Tables\CRMLeadOriginCodes.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\LostLeads\Tables\CRMLeadStatusCodes.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\LostLeads\Tables\CRMNameplateCodes.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\LostLeads\Tables\CRMBrandCodes.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\LostLeads\Tables\OutputBase.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\LostLeads\Tables\SystemValues.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\LostLeads\Tables\Triggers\TR_I_CaseLostLeadStatuses.trigger.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\MSX\Programmability\Stored Procedures\uspMSXInternationReport.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\MSX\Tables\MSXInternationalReports.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\OnlineExpiryReOutputs\Programmability\Stored Procedures\uspGetReOutputCases.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Programmability\Stored Procedures\uspOutputPackage_LoggingTable.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Programmability\Stored Procedures\uspGenerateComparisonData.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Comparisons_SampleQualityAndSelectionLogging.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Comparisons_PersonAndOrganisation.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Comparisons_PostalAddress.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Comparisons_EmailAddresses.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Comparisons_TelephoneNumbers.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Comparisons_Vehicle.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\CaseDetails.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Comparisons_CustomerUpdate_EmailAddress.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Comparisons_CustomerUpdate_Organisation.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Comparisons_CustomerUpdate_Person.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Comparisons_CustomerUpdate_PostalAddress.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Comparisons_CustomerUpdate_Registration.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Comparisons_CaseDetails.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\CustomerUpdate_EmailAddress.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\CustomerUpdate_Organisation.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\CustomerUpdate_Person.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\CustomerUpdate_PostalAddress.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\CustomerUpdate_Registration.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Indexes\IX_PersonAndOrganisation_FilenamePhysicalRowPlus.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Indexes\IX_PostalAddress_FilenamePhysicalRowPlus.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Indexes\IX_TelephoneNumbers_FilenamePhysicalRowPlus.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Indexes\IX_Vehicle_FilenamePhysicalRowPlus.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Indexes\IX_EmailAddresses_FilenamePhysicalRowPlus.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Indexes\IX_Files_Filename.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Keys\PK_Comparisons_CaseDetails.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Keys\PK_CaseDetails.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Keys\PK_SelectionCases.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Keys\PK_Comparisons_PersonAndOrganisation.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Keys\PK_Comparisons_PostalAddress.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Keys\PK_Comparisons_TelephoneNumbers.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Keys\PK_Comparisons_Vehicle.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Keys\PK_Comparisons_EmailAddresses.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Keys\PK_PostalAddress.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Keys\PK_Vehicle.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Keys\PK_TelephoneNumbers.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Keys\PK_Selections.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Keys\PK_PersonAndOrganisation.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Keys\PK_EmailAddresses.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Keys\PK_SampleQualityAndSelectionLogging.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\RefreshDate.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Files.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Indexes\IX_Comparisons_SampleQualityAndSelectionLogging_FilenamePhysicalRowPlus.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Indexes\IX_SampleQualityAndSelectionLogging_FilenamePhysicalRowPlus.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Keys\PK_Comparisons_SampleQualityAndSelectionLogging.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Keys\PK_Files.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Selections.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\SelectionCases.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\Vehicle.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\TelephoneNumbers.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\PostalAddress.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\EmailAddresses.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\PersonAndOrganisation.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\ParallelRun\Tables\SampleQualityAndSelectionLogging.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReceipt\Programmability\Stored Procedures\uspSetLastRunDate.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReceipt\Programmability\Stored Procedures\uspGetMarketsAndRegionsToOutput.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReceipt\Programmability\Stored Procedures\uspBuildReportTables.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReceipt\Tables\EmailReportOutputs.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReceipt\Tables\Keys\PK_EmailReportOutputs.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReceipt\Tables\Keys\FK_EmailReportOutputs_ReportOutputs.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReceipt\Tables\Keys\PK_ReportOutputs.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReceipt\Tables\Keys\PK_EmailList.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReceipt\Tables\Keys\FK_EmailReportOutputs_EmailList.fkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReceipt\Tables\SystemValues.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReceipt\Tables\ReportOutputs.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReceipt\Tables\EmailList.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReceipt\Tables\FileSummary.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReceipt\Tables\RetailerSummary.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReceipt\Views\vwEmailReportOutputs.view.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Programmability\Functions\FiscalYear.function.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Programmability\Stored Procedures\uspGenerateBaseData.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Programmability\Stored Procedures\uspGetActiveTimePeriods.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Programmability\Stored Procedures\uspGetGlobalSampleReportsToRun.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Programmability\Stored Procedures\uspGetSampleReportsToRun.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Programmability\Stored Procedures\uspPopulateReportTablesDistinctEvents.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Programmability\Stored Procedures\uspEventReportRequired.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Programmability\Stored Procedures\uspGenerateBaseDataDistinctEvents.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Programmability\Stored Procedures\uspPopulateReportTables.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Programmability\Stored Procedures\uspReportWeeklyWebsiteData.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Base.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Constraints\DF_SampleReport_Base_EventDateTooYoung.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Constraints\DF_SampleReport_Base_PreviousEventBounceBack.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Constraints\DF_SampleReport_Base_CaseEmailAddress.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Constraints\DF_SampleReport_Base_SampleEmailAddress.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Constraints\DF_SampleReport_Base_CaseOutputType.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\BMQSpecificInformation.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Constraints\DF_SampleReport_Base_DealerExclusionListMatch.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Constraints\DF_SampleReport_Base_PhoneSuppression.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Constraints\DF_SampleReport_Base_InvalidAFRLCode.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Constraints\DF_SampleReport_Base_InvalidSalesType.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Constraints\DF_SampleReport_IndividualRows_InvalidAFRLCode.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Constraints\DF_SampleReport_IndividualRows_DealerExclusionListMatch.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Constraints\DF_SampleReport_IndividualRows_InvalidSalesType.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Constraints\DF_SampleReport_IndividualRows_PhoneSuppression.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Constraints\DF_SampleReport_IndividualRowsEvents_InvalidAFRLCode.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Constraints\DF_SampleReport_IndividualRowsEvents_InvalidSalesCode.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Constraints\DF_SampleReport_IndividualRowsEvents_DealerExclusionListMatch.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Constraints\DF_SampleReport_IndividualRowsEvents_PhoneSuppression.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Constraints\DF_SummaryResponses_EmailInvites.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Constraints\DF_SummaryResponses_EventsLoaded.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Constraints\DF_SummaryResponses_InvitesSent.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Constraints\DF_SummaryResponses_PhoneInvites.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Constraints\DF_SummaryResponses_PostalInvites.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Constraints\DF_SummaryResponses_SMSInvites.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Constraints\DF_SummaryResponses_TotalResponses.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\GlobalReportDistinctEventSummary.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\GlobalReportSummary.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\GlobalReportDealerRegionDistinctEventAggregate.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\GlobalReportDealerRegionAggregate.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Indexes\IX_Base_DuplicateRowFlag.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Indexes\IX_Base_Vin_EventDate.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Indexes\IX_YearlyEchoHistory_AuditItemID_CheckSumCalc.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Indexes\IX_SummaryResponses_StartDate_EndDate.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Indexes\IX_StaticReports_ReportDate_AuditItemID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Keys\PK_GlobalReportDistinctEventSummary.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Keys\PK_GlobalReportSummary.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Keys\PK_GlobalReportDealerRegionDistinctEventAggregate.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Keys\PK_GlobalReportDealerRegionAggregate.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\StaticReports.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\SummaryDealerRegionEventsUsable.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\IndividualRowsEvents.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\SummaryDealerGroupEvents.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\SummaryDealerRegionEvents.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\SummaryFilesEvents.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\SummaryHeaderEvent.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\SummaryFiles.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\SummaryHeader.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Keys\PK_TimePeriods.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\SummaryResponses.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\SystemValues.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\TimePeriods.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\IndividualRows.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\SummaryDealerGroup.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\SummaryDealerRegion.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\Keys\PK_SampleFilesSchedule.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\SampleFilesSchedule.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\WeeklyEchoHistory.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\YearlyEchoHistory.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Tables\YearlyEchoHistoryRecordChanged.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Views\vwEchoFeed.view.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\SampleReport\Views\vwEchoFeedEvents.view.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\UsableEmailReport\Programmability\Stored Procedures\uspGenerateReportData.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\UsableEmailReport\Tables\Base.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\UsableEmailReport\Tables\Constraints\DF_UsableEmailReport_Base_UsableFlag.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\UsableEmailReport\Tables\Constraints\DF_UsableEmailReport_Base_SampleEmailAddress.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\UsableEmailReport\Tables\Detail.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\UsableEmailReport\Tables\Summary.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <PreDeploy Include="Scripts\Pre-Deployment\Script.PreDeployment.sql">
+      <SubType>Code</SubType>
+    </PreDeploy>
+    <PostDeploy Include="Scripts\Post-Deployment\Script.PostDeployment.sql">
+      <SubType>Code</SubType>
+    </PostDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <ArtifactReference Include="$(VSTSDBDirectory)\Extensions\SqlServer\2008\DBSchemas\Microsoft.SqlTypes.dbschema">
+      <HintPath>..\..\..\Program Files\Microsoft Visual Studio 9.0\VSTSDB\Extensions\SqlServer\2008\DBSchemas\Microsoft.SqlTypes.dbschema</HintPath>
+    </ArtifactReference>
+  </ItemGroup>
+  <ItemGroup>
+    <NotInBuild Include="Schema Comparisons\SampleReporting.scmp">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="Schema Comparisons\SchemaComparison1.scmp">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sample\Sample.dbproj">
+      <Name>Sample</Name>
+      <Project>{d04cc32b-4bad-4293-a990-8330b342128f}</Project>
+      <Private>True</Private>
+      <DatabaseVariableName>SampleDB</DatabaseVariableName>
+      <SuppressMissingDependenciesErrors>True</SuppressMissingDependenciesErrors>
+    </ProjectReference>
+    <ProjectReference Include="..\Sample_Audit\Sample_Audit.dbproj">
+      <Name>Sample_Audit</Name>
+      <Project>{ec0ab5d6-fb3c-4beb-9196-9e07ae6bf916}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>True</SuppressMissingDependenciesErrors>
+      <DatabaseVariableName>AuditDB</DatabaseVariableName>
+    </ProjectReference>
+    <ProjectReference Include="..\Sample_Errors\Sample_Errors.dbproj">
+      <Name>Sample_Errors</Name>
+      <Project>{c04dc70a-100f-4442-9ee8-7a21379bdc9b}</Project>
+      <Private>True</Private>
+      <DatabaseVariableName>ErrorDB</DatabaseVariableName>
+    </ProjectReference>
+    <ProjectReference Include="..\Sample_ETL\Sample_ETL.dbproj">
+      <Name>Sample_ETL</Name>
+      <Project>{dbcf27be-9f5b-445f-9176-d315cd7bed14}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>True</SuppressMissingDependenciesErrors>
+      <DatabaseVariableName>ETLDB</DatabaseVariableName>
+    </ProjectReference>
+    <ProjectReference Include="..\WebsiteReporting\WebsiteReporting.dbproj">
+      <Name>WebsiteReporting</Name>
+      <Project>{61fe4a35-afee-4cfd-b4b4-0917e180c6ed}</Project>
+      <Private>True</Private>
+      <DatabaseVariableName>WebsiteReporting</DatabaseVariableName>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

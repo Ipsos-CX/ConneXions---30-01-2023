@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\simon.peacock" GeneratedFromPackageName="Copy Connexions Sampling Databases" GeneratedFromPackageID="{8E0EF501-9DE4-4750-A922-E25C502B8C8D}" GeneratedDate="28/03/2012 12:47:00"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Destination].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>SqlServerName=499953J\SQL2008;UseWindowsAuthentication=True;UserName=;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Source].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>SqlServerName=NUEW-SQUKCXP01;UseWindowsAuthentication=True;UserName=;</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::DisableSample_AuditCopy].Properties[Value]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::DisableSample_ErrorsCopy].Properties[Value]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::DisableSample_ETLCopy].Properties[Value]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::DisableSampleCopy].Properties[Value]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::DisableSampleReportingCopy].Properties[Value]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::DisableWebsiteReportingCopy].Properties[Value]" ValueType="Boolean">
+		<ConfiguredValue>0</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package\Sample Database.Properties[DestinationDatabaseFiles]" ValueType="String">
+		<ConfiguredValue>"Sample_Data.mdf","C:\Program Files\Microsoft SQL Server\MSSQL10.SQL2008\MSSQL\DATA","";"Sample_Log.ldf","C:\Program Files\Microsoft SQL Server\MSSQL10.SQL2008\MSSQL\Log",""</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package\Sample_Audit Database.Properties[DestinationDatabaseFiles]" ValueType="String">
+		<ConfiguredValue>"Sample_Audit_Data.mdf","C:\Program Files\Microsoft SQL Server\MSSQL10.SQL2008\MSSQL\DATA","";"Sample_Audit_Log.ldf","C:\Program Files\Microsoft SQL Server\MSSQL10.SQL2008\MSSQL\Log",""</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package\Sample_Errors Database.Properties[DestinationDatabaseFiles]" ValueType="String">
+		<ConfiguredValue>"Sample_Errors_Data.mdf","C:\Program Files\Microsoft SQL Server\MSSQL10.SQL2008\MSSQL\DATA","";"Sample_Errors_Log.ldf","C:\Program Files\Microsoft SQL Server\MSSQL10.SQL2008\MSSQL\Log",""</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package\Sample_ETL Database.Properties[DestinationDatabaseFiles]" ValueType="String">
+		<ConfiguredValue>"Sample_ETL_Data.mdf","C:\Program Files\Microsoft SQL Server\MSSQL10.SQL2008\MSSQL\DATA","";"Sample_ETL_Log.ldf","C:\Program Files\Microsoft SQL Server\MSSQL10.SQL2008\MSSQL\Log",""</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package\SampleReporting Database.Properties[DestinationDatabaseFiles]" ValueType="String">
+		<ConfiguredValue>"SampleReporting_Data.mdf","C:\Program Files\Microsoft SQL Server\MSSQL10.SQL2008\MSSQL\DATA","";"SampleReporting_Log.ldf","C:\Program Files\Microsoft SQL Server\MSSQL10.SQL2008\MSSQL\Log",""</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package\WebsiteReporting Database.Properties[DestinationDatabaseFiles]" ValueType="String">
+		<ConfiguredValue>"WebsiteReporting.mdf","C:\Program Files\Microsoft SQL Server\MSSQL10.SQL2008\MSSQL\DATA","";"WebsiteReporting_log.ldf","C:\Program Files\Microsoft SQL Server\MSSQL10.SQL2008\MSSQL\Log",""</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[LoadText]
+	FROM NVARCHAR(4000) NULL

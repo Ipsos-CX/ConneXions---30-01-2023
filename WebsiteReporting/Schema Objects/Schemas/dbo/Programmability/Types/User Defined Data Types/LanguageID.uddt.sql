@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[LanguageID]
+	FROM SMALLINT NOT NULL

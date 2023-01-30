@@ -1,0 +1,2 @@
+﻿ALTER TABLE [dbo].[Timings]
+	ADD CONSTRAINT [PK_Timings] PRIMARY KEY CLUSTERED ([TimingId])

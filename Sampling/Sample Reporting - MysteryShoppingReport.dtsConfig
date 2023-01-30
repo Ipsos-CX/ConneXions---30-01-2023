@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\poorvi.prasad" GeneratedFromPackageName="Sample Reporting - MysteryShoppingReport" GeneratedFromPackageID="{709B7C8A-C292-404F-BDA2-6A2E52537B7A}" GeneratedDate="13/12/2013 14:03:11"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Connections[Package Log.txt].Properties[ConnectionString]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\SSIS Logs\Package Logs\Sample Reporting - MysteryShoppingReport.dtsx\MysteryShoppingReport.log</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailCC].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Chris.ross@gfk.com</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailEnvironmentText].Properties[Value]" ValueType="String">
+		<ConfiguredValue>(UAT)</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailTo].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Chris.Ross@gfk.com</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::OutputFile].Properties[Value]" ValueType="String">
+		<ConfiguredValue>P:\Sampling\DataOutput\MysteryShoppers\MysteryShoppers.txt</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

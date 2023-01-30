@@ -1,0 +1,2 @@
+﻿CREATE NONCLUSTERED INDEX [IX_Lost_Leads_CNT_MKT_PERM_AuditID]
+	ON [CRM].[Lost_Leads_CNT_MKT_PERM] ([AuditID],[item_Id],[CNT_MKT_PERM_Id])

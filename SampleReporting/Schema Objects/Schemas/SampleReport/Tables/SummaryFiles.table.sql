@@ -1,0 +1,10 @@
+﻿CREATE TABLE [SampleReport].[SummaryFiles](
+	[Market] [varchar](100) NULL,
+	[ScheduledFiles] [varchar](100) NULL,
+	[ReceivedFiles] [varchar](100) NULL,
+	[ActionDate] [datetime2](7) NULL,
+	[DueDate] [datetime2](7) NULL,
+	[FileRowCount] [int] NULL,
+	[RecordsLoaded] [int] NULL,
+	[DaysLate] [int] NULL
+) ON [PRIMARY] 

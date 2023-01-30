@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<DTSConfiguration>
+	<DTSConfigurationHeading>
+		<DTSConfigurationFileInfo GeneratedBy="GFK\Edward.Thomas" GeneratedFromPackageName="Sample Reporting - Daily North America Report" GeneratedFromPackageID="{32AFB334-F60C-4F40-BD0A-1765BCAB2865}" GeneratedDate="13/11/2018 15:15:55"/>
+	</DTSConfigurationHeading>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailBCC].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Eddie.Thomas@ipsos.com;Chris.Ross@ipsos.com;Ben.King@ipsos.com;Chris.Ledger@ipsos.com</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailCC].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Dipak.Gohil@ipsos.com;JLRNAHelp@ipsos.com</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailFrom].Properties[Value]" ValueType="String">
+		<ConfiguredValue>CNX_JLR_Output@ipsos-online.com</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::EmailTo].Properties[Value]" ValueType="String">
+		<ConfiguredValue>Tim.Wardle@ipsos.com;clare.yetton@ipsos.com;Simone.King@ipsos.com;Andrew.Erskine@ipsos.com;Stephen.Nunn@ipsos.com;Marija.Petkovic-Cooke@ipsos.com;Milton.Morel@ipsos.com</ConfiguredValue>
+	</Configuration>
+	<Configuration ConfiguredType="Property" Path="\Package.Variables[User::SMTPServer].Properties[Value]" ValueType="String">
+		<ConfiguredValue>PMTA.extranet.iext</ConfiguredValue>
+	</Configuration>
+</DTSConfiguration>

@@ -1,0 +1,2 @@
+﻿CREATE TYPE [dbo].[ModelID]
+	FROM SMALLINT NOT NULL
