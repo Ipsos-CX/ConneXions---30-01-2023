@@ -1,0 +1,159 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/25/2020 12:35:49 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="GBLONWLF8B5TQ2"
+  DTS:CreatorName="IPSOSGROUP\Chris.Ledger"
+  DTS:DTSID="{B8AFFD9E-295C-4CB1-AC4E-41B3C929D5B3}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.3002.113"
+  DTS:LocaleID="2057"
+  DTS:ObjectName="Rename Archive Package Log Files"
+  DTS:PackageType="5"
+  DTS:VersionBuild="15"
+  DTS:VersionGUID="{D83C097B-4CD2-4FE2-A963-CD224C6C9D0F}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{09B69B8C-E5E3-4389-B773-2C3DDDDEEA3A}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Directory">
+      <DTS:VariableValue
+        DTS:DataType="8">N:\SSIS Logs\Package Logs\Selection Output - Enprecis.dtsx\Archive\</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{7B60CF4B-BF39-4D93-805E-939D1652920E}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="RIGHT(  REPLACE( @[User::FileNameBefore] ,&quot;Log&quot;, &quot;txt&quot; ) , 45 )"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FileNameAfter">
+      <DTS:VariableValue
+        DTS:DataType="8">test.log</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{7899D6CF-84C6-4176-AB2C-89B57E246C85}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FileNameBefore">
+      <DTS:VariableValue
+        DTS:DataType="8">test.log</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{6B69A5BE-0B4A-4B4B-8257-FBCE627A35D6}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::Directory]+ @[User::FileNameBefore]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FulluQualifiedFileBefore">
+      <DTS:VariableValue
+        DTS:DataType="8">N:\SSIS Logs\Package Logs\Selection Output - Enprecis.dtsx\Archive\test.log</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{D3A7EDF5-27F0-46FD-BA75-63E3B53DFA69}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::Directory]+ @[User::FileNameAfter]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FullyQualifiedFileAfter">
+      <DTS:VariableValue
+        DTS:DataType="8">N:\SSIS Logs\Package Logs\Selection Output - Enprecis.dtsx\Archive\test.log</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Foreach File In Archive Folder"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{0B1D9BF8-FEEE-4D7E-A8BD-725E565F1EFD}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Foreach File In Archive Folder">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachFileEnumerator"
+        DTS:DTSID="{8A3685DF-7C3C-4ECC-AA14-C9CDED9F0CC0}"
+        DTS:ObjectName="{8A3685DF-7C3C-4ECC-AA14-C9CDED9F0CC0}">
+        <DTS:PropertyExpression
+          DTS:Name="Directory">@[User::Directory]</DTS:PropertyExpression>
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="N:\SSIS Logs\Package Logs\Selection Output - Enprecis.dtsx\Archive\" />
+            <FEFEProperty
+              FileSpec="*.*" />
+            <FEFEProperty
+              FileNameRetrievalType="1" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Foreach File In Archive Folder\Rename Log File"
+          DTS:CreationName="Microsoft.FileSystemTask"
+          DTS:Description="File System Task"
+          DTS:DTSID="{1315057E-B519-40B2-9003-D39BEE2A7ADB}"
+          DTS:ExecutableType="Microsoft.FileSystemTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Rename Log File"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOperationType="RenameFile"
+              TaskOverwriteDestFile="True"
+              TaskSourcePath="User::FulluQualifiedFileBefore"
+              TaskIsSourceVariable="True"
+              TaskDestinationPath="User::FullyQualifiedFileAfter"
+              TaskIsDestinationVariable="True" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{90835FE3-B922-41C7-8A06-946CA7BDBA93}"
+          DTS:ObjectName="{90835FE3-B922-41C7-8A06-946CA7BDBA93}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::FileNameBefore" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Foreach File In Archive Folder\Rename Log File"
+          TopLeft="88,50" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="330,170"
+          Size="330,213"
+          Id="Package\Foreach File In Archive Folder"
+          TopLeft="64,77" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

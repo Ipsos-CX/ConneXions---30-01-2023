@@ -12,7 +12,7 @@
 		</CustomData>
 		<CustomData Category="Reference" Type="Assembly">
 			<Metadata Name="LogicalName" Value="JLR_Email.dll" />
-			<Metadata Name="FileName" Value="C:\USERS\BEN.KING\SOURCE\REPOS\CONNEXIONS---30-01-2023V3\JLR-EMAIL\OBJ\DEBUG\JLR_EMAIL.DLL" />
+			<Metadata Name="FileName" Value="C:\USERS\BEN.KING\SOURCE\REPOS\CONNEXIONS---30-01-2023_VS_2019\JLR-EMAIL\OBJ\DEBUG\JLR_EMAIL.DLL" />
 			<Metadata Name="AssemblyName" Value="JLR_Email" />
 			<Metadata Name="PermissionSet" Value="SAFE" />
 			<Metadata Name="Owner" Value="" />
@@ -20,7 +20,7 @@
 			<Metadata Name="IsVisible" Value="True" />
 			<Metadata Name="IsModelAware" Value="True" />
 			<Metadata Name="SkipCreationIfEmpty" Value="True" />
-			<Metadata Name="AssemblySymbolsName" Value="C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023v3\JLR-Email\obj\Debug\JLR_Email.pdb" />
+			<Metadata Name="AssemblySymbolsName" Value="C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023_VS_2019\JLR-Email\obj\Debug\JLR_Email.pdb" />
 		</CustomData>
 		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
 	</Header>

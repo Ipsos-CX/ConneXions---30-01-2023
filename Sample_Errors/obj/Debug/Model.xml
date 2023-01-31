@@ -12,7 +12,7 @@
 		</CustomData>
 		<CustomData Category="Reference" Type="Assembly">
 			<Metadata Name="LogicalName" Value="Sample_Errors.dll" />
-			<Metadata Name="FileName" Value="C:\USERS\BEN.KING\SOURCE\REPOS\CONNEXIONS---30-01-2023V3\SAMPLE_ERRORS\OBJ\DEBUG\SAMPLE_ERRORS.DLL" />
+			<Metadata Name="FileName" Value="C:\USERS\BEN.KING\SOURCE\REPOS\CONNEXIONS---30-01-2023_VS_2019\SAMPLE_ERRORS\OBJ\DEBUG\SAMPLE_ERRORS.DLL" />
 			<Metadata Name="AssemblyName" Value="Sample_Errors" />
 			<Metadata Name="PermissionSet" Value="SAFE" />
 			<Metadata Name="Owner" Value="" />
@@ -20,7 +20,7 @@
 			<Metadata Name="IsVisible" Value="True" />
 			<Metadata Name="IsModelAware" Value="True" />
 			<Metadata Name="SkipCreationIfEmpty" Value="True" />
-			<Metadata Name="AssemblySymbolsName" Value="C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023v3\Sample_Errors\obj\Debug\Sample_Errors.pdb" />
+			<Metadata Name="AssemblySymbolsName" Value="C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023_VS_2019\Sample_Errors\obj\Debug\Sample_Errors.pdb" />
 		</CustomData>
 		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
 	</Header>

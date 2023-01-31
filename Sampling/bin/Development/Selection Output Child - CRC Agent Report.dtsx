@@ -1,0 +1,1782 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="10/18/2011 12:37:11 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="499953J"
+  DTS:CreatorName="GFK\simon.peacock"
+  DTS:DTSID="{7C0D0877-AA45-4311-8C21-3DFF123EE4AC}"
+  DTS:EnableConfig="True"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.3002.113"
+  DTS:LocaleID="2057"
+  DTS:ObjectName="Selection Output Child - CRC Agent Report"
+  DTS:PackageType="5"
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="115"
+  DTS:VersionGUID="{F8D715BA-FDD0-46EE-9FA3-A6DBE0C729C3}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Connexions SSIS Log.txt]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{2454A325-3EAD-435B-85D1-B401979CEE26}"
+      DTS:ObjectName="Connexions SSIS Log.txt">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="1"
+          DTS:ConnectionString="P:\Sampling\SSIS Logs\Daily Log\Connexions Sample System.log" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CRC Report]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{2e44e27d-0cd4-4e83-befa-6a7f9e07ecd6}"
+      DTS:ObjectName="CRC Report">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=P:\Sampling\DataOutput\SelectionOutput\CRC Agent Code Report.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Package Log.txt]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{FEACC180-82D3-4248-8F2C-2AEF89DBC877}"
+      DTS:ObjectName="Package Log.txt">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="1"
+          DTS:ConnectionString="P:\Sampling\SSIS Logs\Package Logs\Generate Metadata Tables.dtsx\Generate Metadata Tables.log" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Sample.OLEDB.AUTHENTICATION]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{3594FA4F-29F4-40AA-AA97-D0F847D7CC94}"
+      DTS:ObjectName="Sample.OLEDB.AUTHENTICATION">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=Sample;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SampleReporting.OLEDB.AUTHENTICATION]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{34B923BF-2035-4B70-966F-75364FE0DA6F}"
+      DTS:ObjectName="SampleReporting.OLEDB.AUTHENTICATION">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=SampleReporting;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Sample_Audit.OLEDB.AUTHENTICATION]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{59D07634-734B-4B26-97E9-7B2223F1B71D}"
+      DTS:ObjectName="Sample_Audit.OLEDB.AUTHENTICATION">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=Sample_Audit;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Sample_Errors.OLEDB.AUTHENTICATION]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{58094C51-C339-4358-A6F0-9176C1106AF5}"
+      DTS:ObjectName="Sample_Errors.OLEDB.AUTHENTICATION">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=Sample_Errors;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Sample_ETL.OLEDB.AUTHENTICATION]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{121A9E9C-0DED-48DB-8671-28A54D4BA0F4}"
+      DTS:ObjectName="Sample_ETL.OLEDB.AUTHENTICATION">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=Sample_ETL;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[WebsiteReporting.OLEDB.AUTHENTICATION]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{7C5C62CE-C28C-429E-ABE7-DADB1E3B2F80}"
+      DTS:ObjectName="WebsiteReporting.OLEDB.AUTHENTICATION">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=WebsiteReporting;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Configurations>
+    <DTS:Configuration
+      DTS:ConfigurationString="P:\Sampling\SSIS Packages\Sampling.dtsConfig"
+      DTS:ConfigurationType="1"
+      DTS:CreationName=""
+      DTS:DTSID="{CCC318D8-9E1B-4A87-85E4-A36D764B99D5}"
+      DTS:ObjectName="Sampling" />
+    <DTS:Configuration
+      DTS:ConfigurationString="CRCReportTemplatePath"
+      DTS:ConfigurationVariable="\Package.Variables[User::CRCReportTemplatePath].Properties[Value]"
+      DTS:CreationName=""
+      DTS:DTSID="{7856BF50-F10F-49D7-B46C-A2EA728D57EA}"
+      DTS:ObjectName="Parent Variable - CRCReportTemplatePath" />
+    <DTS:Configuration
+      DTS:ConfigurationString="FileNameTimeStamp"
+      DTS:ConfigurationVariable="\Package.Variables[User::FileNameTimeStamp].Properties[Value]"
+      DTS:CreationName=""
+      DTS:DTSID="{532B6FA8-C283-4EE0-A5D0-3579136B4400}"
+      DTS:ObjectName="Parent Variable - FileNameTimeStamp" />
+    <DTS:Configuration
+      DTS:ConfigurationString="LocalDownloadDirectory"
+      DTS:ConfigurationVariable="\Package.Variables[User::LocalDownloadDirectory].Properties[Value]"
+      DTS:CreationName=""
+      DTS:DTSID="{B615532C-3B9B-425A-B3F1-4DACD0AEB987}"
+      DTS:ObjectName="Parent Variable - LocalDownloadDirectory" />
+  </DTS:Configurations>
+  <DTS:LogProviders>
+    <DTS:LogProvider
+      DTS:ConfigString="Connexions SSIS Log.txt"
+      DTS:CreationName="Microsoft.LogProviderTextFile"
+      DTS:Description="Writes log entries for events to a CSV file"
+      DTS:DTSID="{A9521937-BDAE-44C3-B6DD-80176B826042}"
+      DTS:ObjectName="Daily Log">
+      <DTS:ObjectData>
+        <InnerObject />
+      </DTS:ObjectData>
+    </DTS:LogProvider>
+    <DTS:LogProvider
+      DTS:ConfigString="Package Log.txt"
+      DTS:CreationName="Microsoft.LogProviderTextFile"
+      DTS:Description="Writes log entries for events to a CSV file"
+      DTS:DTSID="{C0F1E948-145A-46F6-A419-9B40D34E3702}"
+      DTS:ObjectName="Package Log">
+      <DTS:ObjectData>
+        <InnerObject />
+      </DTS:ObjectData>
+    </DTS:LogProvider>
+  </DTS:LogProviders>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{3A5B6F15-2C97-41BA-B0D1-F5C30822B9DD}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Brand">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9A7B6CD7-F67B-4F35-8F12-101D9C91E71B}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="bRunCRCReport">
+      <DTS:VariableValue
+        DTS:DataType="11">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{C143C512-A59A-4856-AAE4-7B853EF06B07}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="CRCReportTemplatePath">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{DC50D88E-7FF8-497E-AE0B-75B858E801A8}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="DataFileExtension">
+      <DTS:VariableValue
+        DTS:DataType="8">.xlsx</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{04B7365B-3B6C-4D97-B7D9-3A77D36D1EB7}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FileName">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{89B861E3-5B1B-43CC-99B5-E6805D28F176}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FileNameCRCAgentReport">
+      <DTS:VariableValue
+        DTS:DataType="8">CRC Agent Code Report.xlsx</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{8C5A2C13-EB02-4530-AAA0-0B1D7A860263}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FileNameTimeStamp">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{64EA1E49-D610-4B76-8DBC-FE1A1F3608FF}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="LocalDownloadDirectory">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:LoggingOptions
+    DTS:FilterKind="0"
+    DTS:LoggingMode="1">
+    <DTS:Property
+      DTS:DataType="8"
+      DTS:Name="EventFilter">1,7,OnError</DTS:Property>
+    <DTS:Property
+      DTS:EventName="OnError"
+      DTS:Name="ColumnFilter">
+      <DTS:Property
+        DTS:Name="Computer">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="Operator">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceName">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="SourceID">0</DTS:Property>
+      <DTS:Property
+        DTS:Name="ExecutionID">0</DTS:Property>
+      <DTS:Property
+        DTS:Name="MessageText">-1</DTS:Property>
+      <DTS:Property
+        DTS:Name="DataBytes">0</DTS:Property>
+    </DTS:Property>
+    <DTS:SelectedLogProviders>
+      <DTS:SelectedLogProvider
+        DTS:InstanceID="{A9521937-BDAE-44C3-B6DD-80176B826042}" />
+      <DTS:SelectedLogProvider
+        DTS:InstanceID="{C0F1E948-145A-46F6-A419-9B40D34E3702}" />
+    </DTS:SelectedLogProviders>
+  </DTS:LoggingOptions>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Populate CRC Agent Report"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{b6848956-4171-4e3b-a9e0-689230ac3444}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Populate CRC Agent Report">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Populate CRC Agent Report\Audit CRC Agent Report"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{442ced37-db71-4106-aeff-c4b1965bc903}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Audit CRC Agent Report"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{3594FA4F-29F4-40AA-AA97-D0F847D7CC94}"
+              SQLTask:SqlStatementSource="EXEC [SelectionOutput].[uspAuditCRCAgentReport] ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::FileNameCRCAgentReport"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Populate CRC Agent Report\Data Flow Task"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Output CRC Report"
+          DTS:DTSID="{f9242fdb-cb82-4167-a4ca-9dc13520c2f0}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Data Flow Task"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server v10; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              BLOBTempStoragePath=""
+              bufferTempStoragePath=""
+              version="1">
+              <components>
+                <component
+                  refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report"
+                  componentClassID="Microsoft.ExcelDestination"
+                  contactInfo="Excel Destination;Microsoft Corporation; Microsoft SqlServer v10; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Excel Destination"
+                  name="CRC Report"
+                  usesDispositions="true">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">Sheet1$</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[CRC Report]"
+                      connectionManagerRefId="Package.ConnectionManagers[CRC Report]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Inputs[Excel Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="Excel Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Inputs[Excel Destination Input].Columns[PartyID]"
+                          cachedDataType="i4"
+                          cachedName="PartyID"
+                          externalMetadataColumnId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Inputs[Excel Destination Input].ExternalColumns[PartyID]"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].Columns[PartyID]" />
+                        <inputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Inputs[Excel Destination Input].Columns[CaseID]"
+                          cachedDataType="i4"
+                          cachedName="CaseID"
+                          externalMetadataColumnId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Inputs[Excel Destination Input].ExternalColumns[CaseID]"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].Columns[CaseID]" />
+                        <inputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Inputs[Excel Destination Input].Columns[Surname]"
+                          cachedDataType="wstr"
+                          cachedLength="100"
+                          cachedName="Surname"
+                          externalMetadataColumnId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Inputs[Excel Destination Input].ExternalColumns[Surname]"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].Columns[Surname]" />
+                        <inputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Inputs[Excel Destination Input].Columns[CoName]"
+                          cachedDataType="wstr"
+                          cachedLength="100"
+                          cachedName="CoName"
+                          externalMetadataColumnId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Inputs[Excel Destination Input].ExternalColumns[CoName]"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].Columns[CoName]" />
+                        <inputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Inputs[Excel Destination Input].Columns[AgentCode]"
+                          cachedDataType="wstr"
+                          cachedLength="100"
+                          cachedName="AgentCode"
+                          externalMetadataColumnId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Inputs[Excel Destination Input].ExternalColumns[AgentCode]"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].Columns[AgentCode]" />
+                        <inputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Inputs[Excel Destination Input].Columns[Copy of Brand]"
+                          cachedDataType="wstr"
+                          cachedLength="100"
+                          cachedName="Copy of Brand"
+                          externalMetadataColumnId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Inputs[Excel Destination Input].ExternalColumns[Brand]"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Brand]" />
+                        <inputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Inputs[Excel Destination Input].Columns[Copy of Market]"
+                          cachedDataType="wstr"
+                          cachedLength="200"
+                          cachedName="Copy of Market"
+                          externalMetadataColumnId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Inputs[Excel Destination Input].ExternalColumns[Market]"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Market]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Inputs[Excel Destination Input].ExternalColumns[PartyID]"
+                          dataType="wstr"
+                          length="255"
+                          name="PartyID" />
+                        <externalMetadataColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Inputs[Excel Destination Input].ExternalColumns[CaseID]"
+                          dataType="wstr"
+                          length="255"
+                          name="CaseID" />
+                        <externalMetadataColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Inputs[Excel Destination Input].ExternalColumns[Surname]"
+                          dataType="wstr"
+                          length="255"
+                          name="Surname" />
+                        <externalMetadataColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Inputs[Excel Destination Input].ExternalColumns[CoName]"
+                          dataType="wstr"
+                          length="255"
+                          name="CoName" />
+                        <externalMetadataColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Inputs[Excel Destination Input].ExternalColumns[Brand]"
+                          dataType="wstr"
+                          length="255"
+                          name="Brand" />
+                        <externalMetadataColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Inputs[Excel Destination Input].ExternalColumns[Market]"
+                          dataType="wstr"
+                          length="255"
+                          name="Market" />
+                        <externalMetadataColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Inputs[Excel Destination Input].ExternalColumns[AgentCode]"
+                          dataType="wstr"
+                          length="255"
+                          name="AgentCode" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Outputs[Excel Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Excel Destination Error Output"
+                      synchronousInputId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Inputs[Excel Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Outputs[Excel Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Outputs[Excel Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SqlServer v10; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="CRC Report Table"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[SelectionOutput].[RejectedCRCCases]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Sample.OLEDB.AUTHENTICATION]"
+                      connectionManagerRefId="Package.ConnectionManagers[Sample.OLEDB.AUTHENTICATION]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].Columns[PartyID]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].ExternalColumns[PartyID]"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].Columns[PartyID]"
+                          name="PartyID"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].Columns[CaseID]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].ExternalColumns[CaseID]"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].Columns[CaseID]"
+                          name="CaseID"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].Columns[Surname]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].ExternalColumns[Surname]"
+                          length="100"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].Columns[Surname]"
+                          name="Surname"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].Columns[CoName]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].ExternalColumns[CoName]"
+                          length="100"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].Columns[CoName]"
+                          name="CoName"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].Columns[Brand]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].ExternalColumns[Brand]"
+                          length="100"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].Columns[Brand]"
+                          name="Brand"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].Columns[Market]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].ExternalColumns[Market]"
+                          length="200"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].Columns[Market]"
+                          name="Market"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].Columns[AgentCode]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].ExternalColumns[AgentCode]"
+                          length="100"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].Columns[AgentCode]"
+                          name="AgentCode"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].ExternalColumns[PartyID]"
+                          dataType="i4"
+                          name="PartyID" />
+                        <externalMetadataColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].ExternalColumns[CaseID]"
+                          dataType="i4"
+                          name="CaseID" />
+                        <externalMetadataColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].ExternalColumns[Surname]"
+                          dataType="wstr"
+                          length="100"
+                          name="Surname" />
+                        <externalMetadataColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].ExternalColumns[CoName]"
+                          dataType="wstr"
+                          length="100"
+                          name="CoName" />
+                        <externalMetadataColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].ExternalColumns[Brand]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="Brand" />
+                        <externalMetadataColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].ExternalColumns[Market]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="Market" />
+                        <externalMetadataColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].ExternalColumns[AgentCode]"
+                          dataType="wstr"
+                          length="100"
+                          name="AgentCode" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Error Output].Columns[PartyID]"
+                          dataType="i4"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Error Output].Columns[PartyID]"
+                          name="PartyID" />
+                        <outputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Error Output].Columns[CaseID]"
+                          dataType="i4"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Error Output].Columns[CaseID]"
+                          name="CaseID" />
+                        <outputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Error Output].Columns[Surname]"
+                          dataType="wstr"
+                          length="100"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Error Output].Columns[Surname]"
+                          name="Surname" />
+                        <outputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Error Output].Columns[CoName]"
+                          dataType="wstr"
+                          length="100"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Error Output].Columns[CoName]"
+                          name="CoName" />
+                        <outputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Error Output].Columns[Brand]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Error Output].Columns[Brand]"
+                          name="Brand" />
+                        <outputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Error Output].Columns[Market]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Error Output].Columns[Market]"
+                          name="Market" />
+                        <outputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Error Output].Columns[AgentCode]"
+                          dataType="wstr"
+                          length="100"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Error Output].Columns[AgentCode]"
+                          name="AgentCode" />
+                        <outputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Populate CRC Agent Report\Data Flow Task\Data Conversion"
+                  componentClassID="Microsoft.DataConvert"
+                  contactInfo="Data Conversion;Microsoft Corporation; Microsoft SqlServer v10; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Data Conversion"
+                  name="Data Conversion"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Populate CRC Agent Report\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]"
+                      name="Data Conversion Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[Brand]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="Brand"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].Columns[Brand]" />
+                        <inputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[Market]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="200"
+                          cachedName="Market"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].Columns[Market]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Populate CRC Agent Report\Data Flow Task\Data Conversion.Outputs[Data Conversion Output]"
+                      exclusionGroup="1"
+                      name="Data Conversion Output"
+                      synchronousInputId="Package\Populate CRC Agent Report\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Brand]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="100"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Brand]"
+                          name="Copy of Brand"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].Columns[Brand]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Market]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="200"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of Market]"
+                          name="Copy of Market"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output].Columns[Market]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Populate CRC Agent Report\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Data Conversion Error Output"
+                      synchronousInputId="Package\Populate CRC Agent Report\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Populate CRC Agent Report\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Populate CRC Agent Report\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Populate CRC Agent Report\Data Flow Task.Paths[Data Conversion Output]"
+                  endId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report.Inputs[Excel Destination Input]"
+                  name="Data Conversion Output"
+                  startId="Package\Populate CRC Agent Report\Data Flow Task\Data Conversion.Outputs[Data Conversion Output]" />
+                <path
+                  refId="Package\Populate CRC Agent Report\Data Flow Task.Paths[OLE DB Source Output]"
+                  endId="Package\Populate CRC Agent Report\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Populate CRC Agent Report\Generate CRC Report?"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{88fd0ebc-da82-40b4-9a11-03abbb3f3681}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Generate CRC Report?"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{3594FA4F-29F4-40AA-AA97-D0F847D7CC94}"
+              SQLTask:BypassPrepare="False"
+              SQLTask:SqlStatementSource="IF EXISTS (SELECT * FROM SelectionOutput.RejectedCRCCases)&#xA; SELECT Convert (bit,'True') AS RunCRCReport&#xA;ELSE&#xA; SELECT Convert (bit,'False') AS RunCRCReport&#xA;"
+              SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ResultBinding
+                SQLTask:ResultName="RunCRCReport"
+                SQLTask:DtsVariableName="User::bRunCRCReport" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Populate CRC Agent Report\Set Agent Report FileName"
+          DTS:CreationName="Microsoft.ScriptTask"
+          DTS:Description="Script Task"
+          DTS:DTSID="{2d8709e0-6b85-41f0-a527-c1ffcbddaf60}"
+          DTS:ExecutableType="Microsoft.ScriptTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Set Agent Report FileName"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:LoggingOptions
+            DTS:FilterKind="0"
+            DTS:LoggingMode="1">
+            <DTS:Property
+              DTS:DataType="8"
+              DTS:Name="EventFilter">2,7,OnError,18,ScriptTaskLogEntry</DTS:Property>
+            <DTS:Property
+              DTS:EventName="OnError"
+              DTS:Name="ColumnFilter">
+              <DTS:Property
+                DTS:Name="Computer">-1</DTS:Property>
+              <DTS:Property
+                DTS:Name="Operator">-1</DTS:Property>
+              <DTS:Property
+                DTS:Name="SourceName">-1</DTS:Property>
+              <DTS:Property
+                DTS:Name="SourceID">0</DTS:Property>
+              <DTS:Property
+                DTS:Name="ExecutionID">0</DTS:Property>
+              <DTS:Property
+                DTS:Name="MessageText">-1</DTS:Property>
+              <DTS:Property
+                DTS:Name="DataBytes">0</DTS:Property>
+            </DTS:Property>
+            <DTS:Property
+              DTS:EventName="ScriptTaskLogEntry"
+              DTS:Name="ColumnFilter">
+              <DTS:Property
+                DTS:Name="Computer">-1</DTS:Property>
+              <DTS:Property
+                DTS:Name="Operator">-1</DTS:Property>
+              <DTS:Property
+                DTS:Name="SourceName">-1</DTS:Property>
+              <DTS:Property
+                DTS:Name="SourceID">0</DTS:Property>
+              <DTS:Property
+                DTS:Name="ExecutionID">0</DTS:Property>
+              <DTS:Property
+                DTS:Name="MessageText">-1</DTS:Property>
+              <DTS:Property
+                DTS:Name="DataBytes">0</DTS:Property>
+            </DTS:Property>
+          </DTS:LoggingOptions>
+          <DTS:ObjectData>
+            <ScriptProject
+              Name="ST_e4c7765f787143e4b40a3d65df806c1d"
+              VSTAMajorVersion="14"
+              VSTAMinorVersion="0"
+              Language="CSharp"
+              ReadOnlyVariables="User::CRCReportTemplatePath,User::DataFileExtension,User::FileNameTimeStamp,User::LocalDownloadDirectory"
+              ReadWriteVariables="User::FileNameCRCAgentReport">
+              <ProjectItem
+                Name="Properties\Resources.resx"
+                Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope = "member", Target = "ST_b6a2c483dd424970bc6aa21c83ef0568.csproj.Properties.Settings.get_Default():ST_b6a2c483dd424970bc6aa21c83ef0568.csproj.Properties.Sett" +
+    "ings")]
+
+namespace ST_b6a2c483dd424970bc6aa21c83ef0568.csproj.Properties
+{
+
+
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase
+    {
+
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+
+        public static Settings Default
+        {
+            get
+            {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+              <ProjectItem
+                Name="ScriptMain.cs"
+                Encoding="UTF8"><![CDATA[/*
+   Microsoft SQL Server Integration Services Script Task
+   Write scripts using Microsoft Visual C# 2008.
+   The ScriptMain is the entry point class of the script.
+*/
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Runtime;
+using System.Windows.Forms;
+using System.IO;
+
+namespace ST_b6a2c483dd424970bc6aa21c83ef0568.csproj
+{
+    [Microsoft.SqlServer.Dts.Tasks.ScriptTask.SSISScriptTaskEntryPointAttribute]
+    public partial class ScriptMain : Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTARTScriptObjectModelBase
+    {
+
+        #region VSTA generated code
+        enum ScriptResults
+        {
+            Success = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Success,
+            Failure = Microsoft.SqlServer.Dts.Runtime.DTSExecResult.Failure
+        };
+        #endregion
+
+        /*
+		The execution engine calls this method when the task executes.
+		To access the object model, use the Dts property. Connections, variables, events,
+		and logging features are available as members of the Dts property as shown in the following examples.
+
+		To reference a variable, call Dts.Variables["MyCaseSensitiveVariableName"].Value;
+		To post a log entry, call Dts.Log("This is my log text", 999, null);
+		To fire an event, call Dts.Events.FireInformation(99, "test", "hit the help message", "", 0, true);
+
+		To use the connections collection use something like the following:
+		ConnectionManager cm = Dts.Connections.Add("OLEDB");
+		cm.ConnectionString = "Data Source=localhost;Initial Catalog=AdventureWorks;Provider=SQLNCLI10;Integrated Security=SSPI;Auto Translate=False;";
+
+		Before returning from this method, set the value of Dts.TaskResult to indicate success or failure.
+		
+		To open Help, press F1.
+	*/
+
+        public void Main()
+        {
+            try
+            {
+
+
+                Dts.Log("LocalDownloadDirectory: " + Dts.Variables["LocalDownloadDirectory"].Value.ToString(), 0, null);
+                Dts.Log("FileNameTimeStamp: " + Dts.Variables["FileNameTimeStamp"].Value.ToString(), 0, null);
+                Dts.Log("DataFileExtension: " + Dts.Variables["DataFileExtension"].Value.ToString(), 0, null);
+
+
+                // set the output file location and name
+                string excelPath = Dts.Variables["LocalDownloadDirectory"].Value.ToString() +
+                    @"\JLR_Missing_CRC_AgentCodes_" +
+                    Dts.Variables["FileNameTimeStamp"].Value.ToString() +
+                    Dts.Variables["DataFileExtension"].Value.ToString();
+
+                Dts.Log("Output File Path: " + excelPath, 0, null);
+
+                // create the copy of the output file
+                // get the template Excel file path
+                string templatePath;
+
+                templatePath = Dts.Variables["CRCReportTemplatePath"].Value.ToString();
+
+                // create a copy of the template with the new timestamped name
+                File.Copy(templatePath, excelPath);
+
+                // set the filename variable for use in auditing
+                FileInfo f = new FileInfo(excelPath);
+                Dts.Variables["FileNameCRCAgentReport"].Value = f.Name;
+
+                // set the connection path to be the new timestamped file
+                Dts.Connections["CRC Report"].ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + excelPath + ";Extended Properties=\"EXCEL 12.0;HDR=YES\"";
+
+                // log the connection string
+                Dts.Log("Output File XLS Connection String: " + Dts.Connections["CRC Report"].ConnectionString, 0, null);
+
+                Dts.TaskResult = (int)ScriptResults.Success;
+
+
+            }
+
+            catch (Exception e)
+            {
+                Dts.Log(e.Message, 0, null);
+                Dts.TaskResult = (int)ScriptResults.Failure;
+            }
+        }
+    }
+}]]></ProjectItem>
+              <ProjectItem
+                Name="ST_e4c7765f787143e4b40a3d65df806c1d.csproj"
+                Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="utf-16"?><Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003"><!-- This section defines project-level properties.
+
+       Configuration - Specifies whether the default configuration is Release or Debug.
+       Platform - Specifies what CPU the output of this project can run on.
+       OutputType - Must be "Library" for VSTA.
+       NoStandardLibraries - Set to "false" for VSTA.
+       RootNamespace - In C#, this specifies the namespace given to new files.
+                       In Visual Basic, all objects are wrapped in this namespace at runtime.
+       AssemblyName - Name of the output assembly.
+  --><PropertyGroup><ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids><Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><OutputType>Library</OutputType><NoStandardLibraries>false</NoStandardLibraries><RootNamespace>ST_b6a2c483dd424970bc6aa21c83ef0568.csproj</RootNamespace><AssemblyName>ST_e4c7765f787143e4b40a3d65df806c1d</AssemblyName><ProjectGuid>{089C08A3-0EC1-4A7A-A2B9-D20BB68A241B}</ProjectGuid><TargetFrameworkVersion>v4.5</TargetFrameworkVersion><TargetFrameworkProfile></TargetFrameworkProfile></PropertyGroup><!-- This section defines properties that are set when the "Debug" configuration is
+       selected.
+
+       DebugSymbols - If true, create symbols (.pdb). If false, do not create symbols.
+       Optimize - If true, optimize the build output. If false, do not optimize.
+       OutputPath - Output path of the project relative to the project file.
+       EnableUnmanagedDebugging - If true, starting the debugger will attach both managed and unmanaged debuggers.
+       DefineConstants - Constants defined for the preprocessor.
+       Warning Level - Warning level for the compiler.
+  --><PropertyGroup Condition=" '$(Configuration)' == 'Debug' "><DebugSymbols>true</DebugSymbols><Optimize>false</Optimize><OutputPath>.\bin\Debug\</OutputPath><EnableUnmanagedDebugging>false</EnableUnmanagedDebugging><DefineConstants>DEBUG;TRACE</DefineConstants><WarningLevel>4</WarningLevel></PropertyGroup><!-- This section defines properties that are set when the "Release" configuration is
+       selected.
+
+       DebugSymbols - If true, create symbols (.pdb). If false, do not create symbols.
+       Optimize - If true, optimize the build output. If false, do not optimize.
+       OutputPath - Output path of the project relative to the project file.
+       EnableUnmanagedDebugging - If true, starting the debugger will attach both managed and unmanaged debuggers.
+       DefineConstants - Constants defined for the preprocessor.
+       Warning Level - Warning level for the compiler.
+  --><PropertyGroup Condition=" '$(Configuration)' == 'Release' "><DebugSymbols>false</DebugSymbols><Optimize>true</Optimize><OutputPath>.\bin\Release\</OutputPath><EnableUnmanagedDebugging>false</EnableUnmanagedDebugging><DefineConstants>TRACE</DefineConstants><WarningLevel>4</WarningLevel></PropertyGroup><!-- This section enables pre- and post-build steps. However,
+       it is recommended that MSBuild tasks be used instead of these properties.
+  --><PropertyGroup><PreBuildEvent></PreBuildEvent><PostBuildEvent></PostBuildEvent></PropertyGroup><!-- This sections specifies references for the project. --><ItemGroup><Reference Include="System" /><Reference Include="System.Data" /><Reference Include="System.Windows.Forms" /><Reference Include="System.Xml" /><Reference Include="Microsoft.SqlServer.ManagedDTS, Version=13.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" /><Reference Include="Microsoft.SqlServer.ScriptTask, Version=13.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" /></ItemGroup><!-- This section defines the user source files that are part of the
+       project.
+
+       Compile - Specifies a source file to compile.
+       EmbeddedResource - Specifies a .resx file for embedded resources.
+       None - Specifies a file that is not to be passed to the compiler (for instance,
+              a text file or XML file).
+       AppDesigner - Specifies the directory where the application properties files can
+                     be found.
+  --><ItemGroup><AppDesigner Include="Properties\" /><Compile Include="Properties\AssemblyInfo.cs"><SubType>Code</SubType></Compile><EmbeddedResource Include="Properties\Resources.resx"><Generator>ResXFileCodeGenerator</Generator><LastGenOutput>Resources.Designer.cs</LastGenOutput></EmbeddedResource><Compile Include="Properties\Resources.Designer.cs"><AutoGen>True</AutoGen><DependentUpon>Resources.resx</DependentUpon></Compile><None Include="Properties\Settings.settings"><Generator>SettingsSingleFileGenerator</Generator><LastGenOutput>Settings.Designer.cs</LastGenOutput></None><Compile Include="Properties\Settings.Designer.cs"><AutoGen>True</AutoGen><DependentUpon>Settings.settings</DependentUpon></Compile><Compile Include="ScriptMain.cs"><SubType>Code</SubType></Compile><!-- Include the default configuration information and metadata files for the add-in.
+         These files are copied to the build output directory when the project is
+         built, and the path to the configuration file is passed to add-in on the command
+         line when debugging.
+    --></ItemGroup><!-- Include the build rules for a C# project.--><Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" /><!-- This section defines VSTA properties that describe the host-changable project properties. --><ProjectExtensions><VisualStudio><FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}"><ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" /><Host Name="SSIS_ScriptTask" /><ProjectClient><HostIdentifier>SSIS_ST130</HostIdentifier></ProjectClient></FlavorProperties></VisualStudio></ProjectExtensions></Project>]]></ProjectItem>
+              <ProjectItem
+                Name="Project"
+                Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+	<msb:PropertyGroup>
+		<msb:Language>msBuild</msb:Language>
+		<msb:CodeName>st_57a1ffd5cf8b444296f677ef9f8651f4</msb:CodeName>
+		<msb:DisplayName>st_57a1ffd5cf8b444296f677ef9f8651f4</msb:DisplayName>
+		<msb:ProjectId>{39F52BA9-E7E7-4DC2-9759-1518DC3D7BAB}</msb:ProjectId>
+	</msb:PropertyGroup>
+	<msb:ItemGroup>
+		<msb:Project Include="ST_e4c7765f787143e4b40a3d65df806c1d.csproj"/>
+		<msb:File Include="Properties\AssemblyInfo.cs"/>
+		<msb:File Include="Properties\Settings.settings"/>
+		<msb:File Include="Properties\Resources.resx"/>
+		<msb:File Include="Properties\Resources.Designer.cs"/>
+		<msb:File Include="Properties\Settings.Designer.cs"/>
+		<msb:File Include="ScriptMain.cs"/>
+	</msb:ItemGroup>
+</c:Project>]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_b6a2c483dd424970bc6aa21c83ef0568.csproj")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("GfK NOP")]
+[assembly: AssemblyProduct("ST_b6a2c483dd424970bc6aa21c83ef0568.csproj")]
+[assembly: AssemblyCopyright("Copyright @ GfK NOP 2011")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Resources.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope = "member", Target = "ST_b6a2c483dd424970bc6aa21c83ef0568.csproj.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope = "member", Target = "ST_b6a2c483dd424970bc6aa21c83ef0568.csproj.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope = "member", Target = "ST_b6a2c483dd424970bc6aa21c83ef0568.csproj.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace ST_b6a2c483dd424970bc6aa21c83ef0568.csproj.Properties
+{
+
+
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources
+    {
+
+        private static global::System.Resources.ResourceManager resourceMan;
+
+        private static global::System.Globalization.CultureInfo resourceCulture;
+
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources()
+        {
+        }
+
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager
+        {
+            get
+            {
+                if ((resourceMan == null))
+                {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ST_b6a2c483dd424970bc6aa21c83ef0568.csproj.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture
+        {
+            get
+            {
+                return resourceCulture;
+            }
+            set
+            {
+                resourceCulture = value;
+            }
+        }
+    }
+}]]></ProjectItem>
+              <BinaryItem
+                Name="ST_e4c7765f787143e4b40a3d65df806c1d.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDANwG5V0AAAAAAAAAAOAAIiALATAAABQAAAAIAAAAAAAA1jMA
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAIQzAABPAAAAAEAAALQEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAA3BMAAAAgAAAAFAAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAALQEAAAAQAAAAAYAAAAWAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAHAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAC4
+MwAAAAAAAEgAAAACAAUA3CIAAPAPAAABAAAAAAAAAMwyAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAABswBQD6AQAAAQAAEQIoEAAACnIBAABwAigQAAAKbxEAAApy
+MwAAcG8SAAAKbxMAAApvFAAACigVAAAKFhRvFgAACgIoEAAACnJhAABwAigQAAAKbxEAAApyiQAA
+cG8SAAAKbxMAAApvFAAACigVAAAKFhRvFgAACgIoEAAACnKtAABwAigQAAAKbxEAAApy1QAAcG8S
+AAAKbxMAAApvFAAACigVAAAKFhRvFgAACgIoEAAACm8RAAAKcjMAAHBvEgAACm8TAAAKbxQAAApy
++QAAcAIoEAAACm8RAAAKcokAAHBvEgAACm8TAAAKbxQAAAoCKBAAAApvEQAACnLVAABwbxIAAApv
+EwAACm8UAAAKKBcAAAoKAigQAAAKcjMBAHAGKBUAAAoWFG8WAAAKAigQAAAKbxEAAApyWQEAcG8S
+AAAKbxMAAApvFAAACgYoGAAACgZzGQAACgsCKBAAAApvEQAACnKFAQBwbxIAAAoHbxoAAApvGwAA
+CgIoEAAACm8cAAAKcrMBAHBvHQAACnLJAQBwBnInAgBwKB4AAApvHwAACgIoEAAACnJ7AgBwAigQ
+AAAKbxwAAApyswEAcG8dAAAKbyAAAAooFQAAChYUbxYAAAoCKBAAAAoWbyEAAAreIgwCKBAAAAoI
+byIAAAoWFG8WAAAKAigQAAAKF28hAAAK3gAqAABBHAAAAAAAAAAAAADXAQAA1wEAACIAAAAQAAAB
+HgIoIwAACioeAigkAAAKKq5+AQAABC0ecsMCAHDQAwAAAiglAAAKbyYAAApzJwAACoABAAAEfgEA
+AAQqGn4CAAAEKh4CgAIAAAQqGn4DAAAEKh4CKCgAAAoqLnMIAAAGgAMAAAQqAABCU0pCAQABAAAA
+AAAMAAAAdjQuMC4zMDMxOQAAAAAFAGwAAAA0BAAAI34AAKAEAABABgAAI1N0cmluZ3MAAAAA4AoA
+AEQDAAAjVVMAJA4AABAAAAAjR1VJRAAAADQOAAC8AQAAI0Jsb2IAAAAAAAAAAgAAAVcdogEJAwAA
+APoBMwAWAAABAAAAJAAAAAUAAAAGAAAACQAAAAEAAAAoAAAAAgAAABAAAAABAAAAAgAAAAMAAAAE
+AAAAAQAAAAQAAAABAAAAAQAAAAAA/AMBAAAAAAAGAEkCAAUGANgCAAUGAJUB7QQPAHsFAAAGAMIB
+egQGACwCegQGAA0CegQGAL8CegQGAGkCegQGAIICegQGANkBegQGAPQBEAMKAJ0CqwMKABQBqwMG
+AJYECgAGAIwELQQGADQELQQGAHgB7QQGAAwGLQQGAL4EIAUGAJ8EZQQOAEgB5gMOAKkB5gMOADAB
+UAQGAF0BAAUKANQDqwMSAMQFvwASAIQAvwAGAFYDLQQGALEACgAGAKsECgASANsFvwASAM4EvwAG
+AN8ALQQGAI0ALQQGADIGegQAAAAAAQAAAAAAAQABAAEAEABFBGEDOQABAAEAAAAQACcFigVNAAEA
+AwAAARAAzgWKBWEAAwAHAAMBAAD3BQAARQAEAAoAEQA5BKMAEQAEAacAEQBoAKsABgYzAK8AVoDn
+BbIAVoDkALIAUCAAAAAAhgBLBAYAAQB0IgAAAACGGOAEBgABAHwiAAAAAIMY4AQGAAEAhCIAAAAA
+kwi6BLYAAQCwIgAAAACTCOwAuwABALciAAAAAJMI+ADAAAEAvyIAAAAAlggTBsYAAgDGIgAAAACG
+GOAEBgACAM4iAAAAAJEY5gTLAAIAAAABAAoDCQDgBAEAEQDgBAYAGQDgBAoAKQDgBBAAMQDgBBAA
+OQDgBBAAQQDgBBAASQDgBBAAUQDgBBAAWQDgBBAAYQDgBBAAaQDgBAYAkQDgBAYAuQDgBBUAyQDg
+BAYAcQDvBSMA0QDABSgA2QAkBC0A4QD2AjMAmQBUAzcA6QAFBjsA0QBdA0EA6QAFBkkA8QA7BlEA
+eQDgBBAA+QC2ADcA4QAAA1cA0QDXBVwAAQEkBGIA6QAFBmkACQE/AxAACQEqAzcA0QAfBgEAgQB4
+ADcAcQDgBAYAmQDgBAYAEQGfAHAAEQEuBnkAoQDgBH8AwQDgBAYACAAUAJkACAAYAJ4AKQBzAAYB
+LgALAN4ALgATAOcALgAbAAYBLgAjAA8BLgArAD8BLgAzAD8BLgA7AEUBLgBDAA8BLgBLAFIBLgBT
+AD8BLgBbAHABQwBjAJ4ASQBzAAYBYQB7AJ4AYwBrAJ4AGwADAAEABAADAAAAvgTPAAAADAHUAAAA
+FwbZAAIABAADAAIABQAFAAEABgAFAAIABwAHAASAAAABAAAAaxxuWQAAAAAAAEQAAAAEAAAAAAAA
+AAAAAACHADsAAAAAAA0AAAAAAAAAAAAAAJAAjAMAAAAABAAAAAAAAAAAAAAAhwAtBAAAAAANAAAA
+AAAAAAAAAACQABQAAAAAAAAAAAABAAAAMQUAAAUAAgAAAAA8TW9kdWxlPgBTeXN0ZW0uSU8ATWlj
+cm9zb2Z0LlNxbFNlcnZlci5NYW5hZ2VkRFRTAHZhbHVlX18AbXNjb3JsaWIAU1RfZTRjNzc2NWY3
+ODcxNDNlNGI0MGEzZDY1ZGY4MDZjMWQAZGVmYXVsdEluc3RhbmNlAGdldF9NZXNzYWdlAFZhcmlh
+YmxlAFJ1bnRpbWVUeXBlSGFuZGxlAEdldFR5cGVGcm9tSGFuZGxlAEZpbGUAZ2V0X05hbWUATWlj
+cm9zb2Z0LlNxbFNlcnZlci5EdHMuUnVudGltZQBUeXBlAEZhaWx1cmUAZ2V0X0N1bHR1cmUAc2V0
+X0N1bHR1cmUAcmVzb3VyY2VDdWx0dXJlAFZTVEFSVFNjcmlwdE9iamVjdE1vZGVsQmFzZQBBcHBs
+aWNhdGlvblNldHRpbmdzQmFzZQBFZGl0b3JCcm93c2FibGVTdGF0ZQBDb21waWxlckdlbmVyYXRl
+ZEF0dHJpYnV0ZQBEZWJ1Z2dlck5vblVzZXJDb2RlQXR0cmlidXRlAERlYnVnZ2FibGVBdHRyaWJ1
+dGUARWRpdG9yQnJvd3NhYmxlQXR0cmlidXRlAEFzc2VtYmx5VGl0bGVBdHRyaWJ1dGUAQXNzZW1i
+bHlUcmFkZW1hcmtBdHRyaWJ1dGUAVGFyZ2V0RnJhbWV3b3JrQXR0cmlidXRlAEFzc2VtYmx5Q29u
+ZmlndXJhdGlvbkF0dHJpYnV0ZQBBc3NlbWJseURlc2NyaXB0aW9uQXR0cmlidXRlAENvbXBpbGF0
+aW9uUmVsYXhhdGlvbnNBdHRyaWJ1dGUAQXNzZW1ibHlQcm9kdWN0QXR0cmlidXRlAEFzc2VtYmx5
+Q29weXJpZ2h0QXR0cmlidXRlAFNTSVNTY3JpcHRUYXNrRW50cnlQb2ludEF0dHJpYnV0ZQBBc3Nl
+bWJseUNvbXBhbnlBdHRyaWJ1dGUAUnVudGltZUNvbXBhdGliaWxpdHlBdHRyaWJ1dGUAZ2V0X1Zh
+bHVlAHNldF9WYWx1ZQB2YWx1ZQBTeXN0ZW0uUnVudGltZS5WZXJzaW9uaW5nAGdldF9Db25uZWN0
+aW9uU3RyaW5nAHNldF9Db25uZWN0aW9uU3RyaW5nAFRvU3RyaW5nAExvZwBTVF9iNmEyYzQ4M2Rk
+NDI0OTcwYmM2YWEyMWM4M2VmMDU2OC5jc3Byb2oATWljcm9zb2Z0LlNxbFNlcnZlci5TY3JpcHRU
+YXNrAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuRHRzLlRhc2tzLlNjcmlwdFRhc2sAU2NyaXB0T2JqZWN0
+TW9kZWwAU3lzdGVtLkNvbXBvbmVudE1vZGVsAFNUX2U0Yzc3NjVmNzg3MTQzZTRiNDBhM2Q2NWRm
+ODA2YzFkLmRsbABnZXRfSXRlbQBTeXN0ZW0ARW51bQByZXNvdXJjZU1hbgBTY3JpcHRNYWluAFN5
+c3RlbS5Db25maWd1cmF0aW9uAFN5c3RlbS5HbG9iYWxpemF0aW9uAFN5c3RlbS5SZWZsZWN0aW9u
+AEV4Y2VwdGlvbgBGaWxlSW5mbwBDdWx0dXJlSW5mbwBGaWxlU3lzdGVtSW5mbwBnZXRfUmVzb3Vy
+Y2VNYW5hZ2VyAENvbm5lY3Rpb25NYW5hZ2VyAC5jdG9yAC5jY3RvcgBTeXN0ZW0uRGlhZ25vc3Rp
+Y3MAU3lzdGVtLlJ1bnRpbWUuQ29tcGlsZXJTZXJ2aWNlcwBTeXN0ZW0uUmVzb3VyY2VzAFNUX2I2
+YTJjNDgzZGQ0MjQ5NzBiYzZhYTIxYzgzZWYwNTY4LmNzcHJvai5Qcm9wZXJ0aWVzLlJlc291cmNl
+cy5yZXNvdXJjZXMARGVidWdnaW5nTW9kZXMAU1RfYjZhMmM0ODNkZDQyNDk3MGJjNmFhMjFjODNl
+ZjA1NjguY3Nwcm9qLlByb3BlcnRpZXMAZ2V0X1ZhcmlhYmxlcwBTZXR0aW5ncwBnZXRfQ29ubmVj
+dGlvbnMAU3VjY2VzcwBnZXRfRHRzAFNjcmlwdFJlc3VsdHMAQ29uY2F0AE9iamVjdABnZXRfRGVm
+YXVsdABzZXRfVGFza1Jlc3VsdABnZXRfQXNzZW1ibHkAQ29weQAAMUwAbwBjAGEAbABEAG8AdwBu
+AGwAbwBhAGQARABpAHIAZQBjAHQAbwByAHkAOgAgAAAtTABvAGMAYQBsAEQAbwB3AG4AbABvAGEA
+ZABEAGkAcgBlAGMAdABvAHIAeQAAJ0YAaQBsAGUATgBhAG0AZQBUAGkAbQBlAFMAdABhAG0AcAA6
+ACAAACNGAGkAbABlAE4AYQBtAGUAVABpAG0AZQBTAHQAYQBtAHAAACdEAGEAdABhAEYAaQBsAGUA
+RQB4AHQAZQBuAHMAaQBvAG4AOgAgAAAjRABhAHQAYQBGAGkAbABlAEUAeAB0AGUAbgBzAGkAbwBu
+AAA5XABKAEwAUgBfAE0AaQBzAHMAaQBuAGcAXwBDAFIAQwBfAEEAZwBlAG4AdABDAG8AZABlAHMA
+XwAAJU8AdQB0AHAAdQB0ACAARgBpAGwAZQAgAFAAYQB0AGgAOgAgAAArQwBSAEMAUgBlAHAAbwBy
+AHQAVABlAG0AcABsAGEAdABlAFAAYQB0AGgAAC1GAGkAbABlAE4AYQBtAGUAQwBSAEMAQQBnAGUA
+bgB0AFIAZQBwAG8AcgB0AAAVQwBSAEMAIABSAGUAcABvAHIAdAAAXVAAcgBvAHYAaQBkAGUAcgA9
+AE0AaQBjAHIAbwBzAG8AZgB0AC4AQQBDAEUALgBPAEwARQBEAEIALgAxADIALgAwADsARABhAHQA
+YQAgAFMAbwB1AHIAYwBlAD0AAFM7AEUAeAB0AGUAbgBkAGUAZAAgAFAAcgBvAHAAZQByAHQAaQBl
+AHMAPQAiAEUAWABDAEUATAAgADEAMgAuADAAOwBIAEQAUgA9AFkARQBTACIAAEdPAHUAdABwAHUA
+dAAgAEYAaQBsAGUAIABYAEwAUwAgAEMAbwBuAG4AZQBjAHQAaQBvAG4AIABTAHQAcgBpAG4AZwA6
+ACAAAH9TAFQAXwBiADYAYQAyAGMANAA4ADMAZABkADQAMgA0ADkANwAwAGIAYwA2AGEAYQAyADEA
+YwA4ADMAZQBmADAANQA2ADgALgBjAHMAcAByAG8AagAuAFAAcgBvAHAAZQByAHQAaQBlAHMALgBS
+AGUAcwBvAHUAcgBjAGUAcwAAACFAa5PQ+p5EkPt69B00g/UABCABAQgDIAABBSABARERBCABAQ4F
+IAEBEVkHBwMOEj0SQQQgABJpBCAAEm0FIAEScRwDIAAcAyAADgUAAg4ODgcgAwEOCB0FBwAEDg4O
+Dg4FAAIBDg4EIAEBHAUgABKAgQYgARKAhRwGAAMODg4OCAABEoCJEYCNBSAAEoCRByACAQ4SgJEI
+t3pcVhk04IkIiYRdzYCAzJEEAAAAAAQBAAAAAwYSUQMGElUDBhIQAgYIAwYRFAQAABJRBAAAElUF
+AAEBElUEAAASEAMAAAEECAASUQQIABJVBAgAEhAIAQAIAAAAAAAeAQABAFQCFldyYXBOb25FeGNl
+cHRpb25UaHJvd3MBCAEAAgAAAAAALwEAKlNUX2I2YTJjNDgzZGQ0MjQ5NzBiYzZhYTIxYzgzZWYw
+NTY4LmNzcHJvagAABQEAAAAADAEAB0dmSyBOT1AAAB0BABhDb3B5cmlnaHQgQCBHZksgTk9QIDIw
+MTEAAEkBABouTkVURnJhbWV3b3JrLFZlcnNpb249djQuNQEAVA4URnJhbWV3b3JrRGlzcGxheU5h
+bWUSLk5FVCBGcmFtZXdvcmsgNC41AAC0AAAAzsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMu
+UmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJh
+bCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRp
+bWVSZXNvdXJjZVNldAIAAAAAAAAAAAAAAFBBRFBBRFC0AAAArDMAAAAAAAAAAAAAxjMAAAAgAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAALgzAAAAAAAAAAAAAAAAX0NvckRsbE1haW4AbXNjb3JlZS5kbGwA
+AAAAAP8lACAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAQAQAAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAA
+SAAAAFhAAABWBAAAAAAAAAAAAABWBDQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAA
+AAAAvQTv/gAAAQAAAAEAbllrHAAAAQBuWWscPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQA
+AAABAFYAYQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBu
+AAAAAAAAALAEtgMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAAkgMAAAEAMAAwADAA
+MAAwADQAYgAwAAAAGgABAAEAQwBvAG0AbQBlAG4AdABzAAAAAAAAADAACAABAEMAbwBtAHAAYQBu
+AHkATgBhAG0AZQAAAAAARwBmAEsAIABOAE8AUAAAAH4AKwABAEYAaQBsAGUARABlAHMAYwByAGkA
+cAB0AGkAbwBuAAAAAABTAFQAXwBiADYAYQAyAGMANAA4ADMAZABkADQAMgA0ADkANwAwAGIAYwA2
+AGEAYQAyADEAYwA4ADMAZQBmADAANQA2ADgALgBjAHMAcAByAG8AagAAAAAAPgAPAAEARgBpAGwA
+ZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAuADcAMgA3ADUALgAyADIAOAA5ADQAAAAAAHAAKAAB
+AEkAbgB0AGUAcgBuAGEAbABOAGEAbQBlAAAAUwBUAF8AZQA0AGMANwA3ADYANQBmADcAOAA3ADEA
+NAAzAGUANABiADQAMABhADMAZAA2ADUAZABmADgAMAA2AGMAMQBkAC4AZABsAGwAAABWABkAAQBM
+AGUAZwBhAGwAQwBvAHAAeQByAGkAZwBoAHQAAABDAG8AcAB5AHIAaQBnAGgAdAAgAEAAIABHAGYA
+SwAgAE4ATwBQACAAMgAwADEAMQAAAAAAKgABAAEATABlAGcAYQBsAFQAcgBhAGQAZQBtAGEAcgBr
+AHMAAAAAAAAAAAB4ACgAAQBPAHIAaQBnAGkAbgBhAGwARgBpAGwAZQBuAGEAbQBlAAAAUwBUAF8A
+ZQA0AGMANwA3ADYANQBmADcAOAA3ADEANAAzAGUANABiADQAMABhADMAZAA2ADUAZABmADgAMAA2
+AGMAMQBkAC4AZABsAGwAAAB2ACsAAQBQAHIAbwBkAHUAYwB0AE4AYQBtAGUAAAAAAFMAVABfAGIA
+NgBhADIAYwA0ADgAMwBkAGQANAAyADQAOQA3ADAAYgBjADYAYQBhADIAMQBjADgAMwBlAGYAMAA1
+ADYAOAAuAGMAcwBwAHIAbwBqAAAAAABCAA8AAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4A
+AAAxAC4AMAAuADcAMgA3ADUALgAyADIAOAA5ADQAAAAAAEYADwABAEEAcwBzAGUAbQBiAGwAeQAg
+AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADcAMgA3ADUALgAyADIAOAA5ADQAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAA2DMAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
+            </ScriptProject>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Populate CRC Agent Report.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{829e5e93-5832-4b4e-9a15-30276332514d}"
+          DTS:From="Package\Populate CRC Agent Report\Set Agent Report FileName"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Populate CRC Agent Report\Data Flow Task" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Populate CRC Agent Report.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{ea567ca8-708e-454b-88c1-f2bfef6303e5}"
+          DTS:EvalOp="3"
+          DTS:Expression="@[User::bRunCRCReport]==True"
+          DTS:From="Package\Populate CRC Agent Report\Generate CRC Report?"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\Populate CRC Agent Report\Set Agent Report FileName" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Populate CRC Agent Report.PrecedenceConstraints[Constraint 2]"
+          DTS:CreationName=""
+          DTS:DTSID="{4cea6488-f6fd-479d-8187-245eb0088f96}"
+          DTS:From="Package\Populate CRC Agent Report\Data Flow Task"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 2"
+          DTS:To="Package\Populate CRC Agent Report\Audit CRC Agent Report" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph" xmlns:mssge="clr-namespace:Microsoft.SqlServer.Graph.Extended;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+        <NodeLayout
+          Size="191,42"
+          Id="Package\Populate CRC Agent Report\Audit CRC Agent Report"
+          TopLeft="44.0683962264151,269.603773584906" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Populate CRC Agent Report\Data Flow Task"
+          TopLeft="64.0683962264151,193.603773584906" />
+        <NodeLayout
+          Size="184,42"
+          Id="Package\Populate CRC Agent Report\Generate CRC Report?"
+          TopLeft="47.5683962264151,30.5283018867931" />
+        <NodeLayout
+          Size="206,42"
+          Id="Package\Populate CRC Agent Report\Set Agent Report FileName"
+          TopLeft="36.0683962264151,111.452830188679" />
+        <EdgeLayout
+          Id="Package\Populate CRC Agent Report.PrecedenceConstraints[Constraint]"
+          TopLeft="139.318396226415,153.452830188679">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="0,40.150943396227"
+              Start="0,0"
+              End="0,32.650943396227">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.650943396227" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Populate CRC Agent Report.PrecedenceConstraints[Constraint 1]"
+          TopLeft="139.318396226415,72.5283018867931">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="0,38.9245283018859"
+              Start="0,0"
+              End="0,31.4245283018859">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.4245283018859" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-8,7.71226415094295,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Populate CRC Agent Report.PrecedenceConstraints[Constraint 2]"
+          TopLeft="139.568396226415,235.603773584906">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="0,34"
+              Start="0,0"
+              End="0,26.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43.924528301886795"
+          IsExpanded="True"
+          PanelSize="287,367"
+          Size="287,411"
+          Id="Package\Populate CRC Agent Report"
+          TopLeft="222,191" />
+        <AnnotationLayout
+          Text="Name: Selection Output Child - CRC Agent Report.dtsx&#xA;Desc:  Child package of Selection Output used to output the CRC Agent Report &#xA;&#xA;Version  Date            Author             Description&#xA;V1.0      2019-11-12  Chris Ledger     Bug 15191 - Created this package to contain the CRC Agent Report from the main Selection Output package.&#xA;V1.4      2021-04-29  Chris Ledger     Set Samplig Package Configuration file to point to P:."
+          ParentId="Package"
+          Size="758,105"
+          Id="f891988e-0b77-463c-baf6-926b340029b9"
+          TopLeft="40.5,39.5">
+          <AnnotationLayout.FontInfo>
+            <mssge:FontInfo
+              Family="Tahoma"
+              Size="11.25"
+              Color="#FF080000">
+              <mssge:FontInfo.TextDecorations>
+                <av:TextDecorationCollection />
+              </mssge:FontInfo.TextDecorations>
+            </mssge:FontInfo>
+          </AnnotationLayout.FontInfo>
+        </AnnotationLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <ConnectionManager
+    design-time-name="Package.ConnectionManagers[Sample.OLEDB.AUTHENTICATION]">
+    <DataSourceID>Sample</DataSourceID>
+  </ConnectionManager>
+  <ConnectionManager
+    design-time-name="Package.ConnectionManagers[Sample_Audit.OLEDB.AUTHENTICATION]">
+    <DataSourceID>Sample_Audit.OLEDB.AUTHENTICATION</DataSourceID>
+  </ConnectionManager>
+  <ConnectionManager
+    design-time-name="Package.ConnectionManagers[Sample_Errors.OLEDB.AUTHENTICATION]">
+    <DataSourceID>Sample_Errors</DataSourceID>
+  </ConnectionManager>
+  <ConnectionManager
+    design-time-name="Package.ConnectionManagers[Sample_ETL.OLEDB.AUTHENTICATION]">
+    <DataSourceID>Sample_ETL</DataSourceID>
+  </ConnectionManager>
+  <ConnectionManager
+    design-time-name="Package.ConnectionManagers[SampleReporting.OLEDB.AUTHENTICATION]">
+    <DataSourceID>SampleReporting.OLEDB.AUTHENTICATION</DataSourceID>
+  </ConnectionManager>
+  <ConnectionManager
+    design-time-name="Package.ConnectionManagers[WebsiteReporting.OLEDB.AUTHENTICATION]">
+    <DataSourceID>WebsiteReporting.OLEDB.AUTHENTICATION</DataSourceID>
+  </ConnectionManager>
+  <TaskHost
+    design-time-name="Package\Populate CRC Agent Report\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Populate CRC Agent Report\Data Flow Task\Data Conversion"
+          TopLeft="142.166666666667,168" />
+        <NodeLayout
+          Size="162,42"
+          Id="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table"
+          TopLeft="139.166666666667,54" />
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Populate CRC Agent Report\Data Flow Task\CRC Report"
+          TopLeft="153.666666666667,277" />
+        <EdgeLayout
+          Id="Package\Populate CRC Agent Report\Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="220.166666666667,96">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="0,72"
+              Start="0,0"
+              End="0,64.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,64.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Populate CRC Agent Report\Data Flow Task.Paths[Data Conversion Output]"
+          TopLeft="220.166666666667,210">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="0,67"
+              Start="0,0"
+              End="0,59.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,59.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Populate CRC Agent Report\Data Flow Task\CRC Report Table">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Populate CRC Agent Report\Data Flow Task\CRC Report">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

@@ -11,7 +11,7 @@
 			<Metadata Name="CompatibilityMode" Value="130" />
 		</CustomData>
 		<CustomData Category="Reference" Type="SqlSchema">
-			<Metadata Name="FileName" Value="C:\USERS\BEN.KING\SOURCE\REPOS\CONNEXIONS---30-01-2023V3\SAMPLE_ERRORS\SQL\DEBUG\SAMPLE_ERRORS.DACPAC" />
+			<Metadata Name="FileName" Value="C:\USERS\BEN.KING\SOURCE\REPOS\CONNEXIONS---30-01-2023_VS_2019\SAMPLE_ERRORS\SQL\DEBUG\SAMPLE_ERRORS.DACPAC" />
 			<Metadata Name="LogicalName" Value="Sample_Errors.dacpac" />
 			<Metadata Name="ExternalParts" Value="[$(ErrorDB)]" />
 		</CustomData>
@@ -23,7 +23,7 @@
 		</CustomData>
 		<CustomData Category="Reference" Type="Assembly">
 			<Metadata Name="LogicalName" Value="Sample_Audit.dll" />
-			<Metadata Name="FileName" Value="C:\USERS\BEN.KING\SOURCE\REPOS\CONNEXIONS---30-01-2023V3\SAMPLE_AUDIT\OBJ\DEBUG\SAMPLE_AUDIT.DLL" />
+			<Metadata Name="FileName" Value="C:\USERS\BEN.KING\SOURCE\REPOS\CONNEXIONS---30-01-2023_VS_2019\SAMPLE_AUDIT\OBJ\DEBUG\SAMPLE_AUDIT.DLL" />
 			<Metadata Name="AssemblyName" Value="Sample_Audit" />
 			<Metadata Name="PermissionSet" Value="SAFE" />
 			<Metadata Name="Owner" Value="" />
@@ -31,7 +31,7 @@
 			<Metadata Name="IsVisible" Value="True" />
 			<Metadata Name="IsModelAware" Value="True" />
 			<Metadata Name="SkipCreationIfEmpty" Value="True" />
-			<Metadata Name="AssemblySymbolsName" Value="C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023v3\Sample_Audit\obj\Debug\Sample_Audit.pdb" />
+			<Metadata Name="AssemblySymbolsName" Value="C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023_VS_2019\Sample_Audit\obj\Debug\Sample_Audit.pdb" />
 		</CustomData>
 		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable">
 			<Metadata Name="ErrorDB" Value="" />
