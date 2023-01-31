@@ -1,0 +1,10 @@
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023v3\Sample_Errors\sql\debug\Sample_Errors.dacpac
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023v3\Sample_Errors\sql\debug\Sample_Errors.dll
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023v3\Sample_Errors\sql\debug\Sample_Errors.pdb
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023v3\Sample_Errors\obj\Debug\Sample_Errors.sqlproj.AssemblyReference.cache
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023v3\Sample_Errors\obj\Debug\Model.xml
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023v3\Sample_Errors\obj\Debug\refactor.xml
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023v3\Sample_Errors\obj\Debug\postdeploy.sql
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023v3\Sample_Errors\obj\Debug\predeploy.sql
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023v3\Sample_Errors\obj\Debug\Sample_Errors.dll
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023v3\Sample_Errors\obj\Debug\Sample_Errors.pdb
