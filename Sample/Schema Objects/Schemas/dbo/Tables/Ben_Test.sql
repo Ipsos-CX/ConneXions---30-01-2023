@@ -1,5 +1,5 @@
 ﻿
-CREATE TABLE [dbo].[10053_AllUpdates](
+CREATE TABLE [dbo].[10053_BenTest](
 	[SampleDealerPartyID] [int] NULL,
 	[DealerPartyID] [int] NULL,
 
