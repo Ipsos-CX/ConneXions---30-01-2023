@@ -4308,6 +4308,7 @@
     <Build Include="Schema Objects\Schemas\ContactMechanism\Tables\Indexes\IX_BlacklistStrings_Operator_FromDate.sql" />
     <Build Include="Schema Objects\Schemas\Vehicle\Tables\Indexes\IX_Regirstrations_RegistrationNumber.sql" />
     <Build Include="Schema Objects\Schemas\Vehicle\Tables\SubBrands.sql" />
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Ben_Test.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Sample.refactorlog">
