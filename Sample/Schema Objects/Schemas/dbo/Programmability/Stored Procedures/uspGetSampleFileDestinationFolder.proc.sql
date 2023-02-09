@@ -14,9 +14,6 @@ AS
 	1.1				29/08/2013		Chris Ross			Modified to check the whole of the File name part against 
 														the prefix as we were only taking from the 3rd underscore char ("_")
 														and this stopped the VISTA files loading (8969 - France VISTA files)
-
-
-	
 */
 
 SET NOCOUNT ON
@@ -38,7 +35,7 @@ BEGIN TRY
 	WHERE @FileNamePrefix like (SampleFileNamePrefix + '%')  -- v1.1
 	AND SampleFileExtension = @FileNameExtension
 	
-	--SELECT ISNULL(@SampleFileID, 0) AS SampleFileID, ISNULL(@SampleFileDestination, @ErrorPath + '\Errors\') AS SampleFileDestination
+	SELECT ISNULL(@SampleFileID, 0) AS SampleFileID, ISNULL(@SampleFileDestination, @ErrorPath + '\Errors\') AS SampleFileDestinationBen
 
 END TRY
 BEGIN CATCH
