@@ -35,7 +35,7 @@ BEGIN TRY
 	WHERE @FileNamePrefix like (SampleFileNamePrefix + '%')  -- v1.1
 	AND SampleFileExtension = @FileNameExtension
 	
-	SELECT ISNULL(@SampleFileID, 0) AS SampleFileID, ISNULL(@SampleFileDestination, @ErrorPath + '\Errors\') AS SampleFileDestination
+	SELECT ISNULL(@SampleFileID, 0) AS SampleFileID, ISNULL(@SampleFileDestination, @ErrorPath + '\Errors\') AS SampleFileDestinationBen
 
 END TRY
 BEGIN CATCH
