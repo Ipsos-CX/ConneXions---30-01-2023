@@ -28,3 +28,13 @@ C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023_VS_2019_V2\JLR-Email\obj\
 C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023_VS_2019_V2\JLR-Email\obj\Debug\predeploy.sql
 C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023_VS_2019_V2\JLR-Email\obj\Debug\JLR_Email.dll
 C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023_VS_2019_V2\JLR-Email\obj\Debug\JLR_Email.pdb
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023V4\JLR-Email\bin\Debug\JLR-Email.dacpac
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023V4\JLR-Email\bin\Debug\JLR_Email.dll
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023V4\JLR-Email\bin\Debug\JLR_Email.pdb
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023V4\JLR-Email\obj\Debug\JLR-Email.sqlproj.AssemblyReference.cache
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023V4\JLR-Email\obj\Debug\Model.xml
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023V4\JLR-Email\obj\Debug\refactor.xml
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023V4\JLR-Email\obj\Debug\postdeploy.sql
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023V4\JLR-Email\obj\Debug\predeploy.sql
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023V4\JLR-Email\obj\Debug\JLR_Email.dll
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023V4\JLR-Email\obj\Debug\JLR_Email.pdb

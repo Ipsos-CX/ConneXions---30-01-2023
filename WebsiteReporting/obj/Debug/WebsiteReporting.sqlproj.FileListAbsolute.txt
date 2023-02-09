@@ -42,3 +42,15 @@ C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023_VS_2019_V2\WebsiteReporti
 C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023_VS_2019_V2\WebsiteReporting\obj\Debug\WebsiteReporting.sqlproj.CopyComplete
 C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023_VS_2019_V2\WebsiteReporting\obj\Debug\WebsiteReporting.dll
 C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023_VS_2019_V2\WebsiteReporting\obj\Debug\WebsiteReporting.pdb
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023V4\WebsiteReporting\sql\debug\WebsiteReporting.dacpac
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023V4\WebsiteReporting\sql\debug\WebsiteReporting.dll
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023V4\WebsiteReporting\sql\debug\WebsiteReporting.pdb
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023V4\WebsiteReporting\sql\debug\Sample_Errors.dll
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023V4\WebsiteReporting\sql\debug\Sample_Errors.pdb
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023V4\WebsiteReporting\sql\debug\Sample_Errors.dacpac
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023V4\WebsiteReporting\sql\debug\msdb.dacpac
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023V4\WebsiteReporting\sql\debug\master.dacpac
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023V4\WebsiteReporting\obj\Debug\WebsiteReporting.sqlproj.AssemblyReference.cache
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023V4\WebsiteReporting\obj\Debug\WebsiteReporting.sqlproj.CopyComplete
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023V4\WebsiteReporting\obj\Debug\WebsiteReporting.dll
+C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023V4\WebsiteReporting\obj\Debug\WebsiteReporting.pdb
