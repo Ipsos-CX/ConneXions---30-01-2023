@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.572
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33214.272
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{41FA17A6-3119-4C2C-AE6B-AF88466355E5}"
 	ProjectSection(SolutionItems) = preProject
@@ -429,38 +429,5 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B0C8952A-BE04-4209-B9C2-A8B75262F4FC}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 10
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://1005795-cxnwebs:8080/tfs/ipsos
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Sampling\\Sampling.dtproj
-		SccProjectName1 = Sampling
-		SccLocalPath1 = Sampling
-		SccProjectUniqueName2 = Sample_ETL\\Sample_ETL.sqlproj
-		SccProjectName2 = Sample_ETL
-		SccLocalPath2 = Sample_ETL
-		SccProjectUniqueName3 = Sample_Audit\\Sample_Audit.sqlproj
-		SccProjectName3 = Sample_Audit
-		SccLocalPath3 = Sample_Audit
-		SccProjectUniqueName4 = Sample_Errors\\Sample_Errors.sqlproj
-		SccProjectName4 = Sample_Errors
-		SccLocalPath4 = Sample_Errors
-		SccProjectUniqueName5 = Sample\\Sample.sqlproj
-		SccProjectName5 = Sample
-		SccLocalPath5 = Sample
-		SccProjectUniqueName6 = WebsiteReporting\\WebsiteReporting.sqlproj
-		SccProjectName6 = WebsiteReporting
-		SccLocalPath6 = WebsiteReporting
-		SccProjectUniqueName7 = SampleReporting\\SampleReporting.sqlproj
-		SccProjectName7 = SampleReporting
-		SccLocalPath7 = SampleReporting
-		SccProjectUniqueName8 = NwbSampleUpload\\NwbSampleUpload.sqlproj
-		SccLocalPath8 = .
-		SccProjectFilePathRelativizedFromConnection8 = NwbSampleUpload\\
-		SccProjectUniqueName9 = JLR-Email\\JLR-Email.sqlproj
-		SccProjectName9 = JLR-Email
-		SccLocalPath9 = JLR-Email
 	EndGlobalSection
 EndGlobal

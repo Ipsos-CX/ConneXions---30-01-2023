@@ -36,3 +36,9 @@ C:\Users\Eddie.Thomas\Source\Repos\ConneXions---30-01-2023v3\NwbSampleUpload\sql
 C:\Users\Eddie.Thomas\Source\Repos\ConneXions---30-01-2023v3\NwbSampleUpload\obj\Debug\NwbSampleUpload.sqlproj.AssemblyReference.cache
 C:\Users\Eddie.Thomas\Source\Repos\ConneXions---30-01-2023v3\NwbSampleUpload\obj\Debug\NwbSampleUpload.dll
 C:\Users\Eddie.Thomas\Source\Repos\ConneXions---30-01-2023v3\NwbSampleUpload\obj\Debug\NwbSampleUpload.pdb
+C:\Projects\GitHub\NwbSampleUpload\sql\debug\NwbSampleUpload.dacpac
+C:\Projects\GitHub\NwbSampleUpload\sql\debug\NwbSampleUpload.dll
+C:\Projects\GitHub\NwbSampleUpload\sql\debug\NwbSampleUpload.pdb
+C:\Projects\GitHub\NwbSampleUpload\obj\Debug\NwbSampleUpload.sqlproj.AssemblyReference.cache
+C:\Projects\GitHub\NwbSampleUpload\obj\Debug\NwbSampleUpload.dll
+C:\Projects\GitHub\NwbSampleUpload\obj\Debug\NwbSampleUpload.pdb

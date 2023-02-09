@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0">
+  <Operation Name="Move Schema" Key="15afe913-c72d-4c8a-a20e-bee260af485e" ChangeDateTime="10/10/2011 12:26:24" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[Audit].[BinaryFlag]" />
+    <Property Name="ElementType" Value="SqlUserDefinedDataType" />
+    <Property Name="NewSchema" Value="dbo" />
+    <Property Name="IsNewSchemaExternal" Value="True" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="31c44eb3-0fcb-4203-b7e7-507ee446293d" ChangeDateTime="02/15/2017 15:52:13" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[Audit].[VSOLookupData]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[Audit]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[SVOLookupData]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1d001151-5207-404d-8463-f093cbdb8cdc" ChangeDateTime="02/16/2017 11:54:24" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[Audit].[SVOLookupData]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[Audit]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[SVOLookup]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0bcb5cbb-ac4f-4415-ad37-ef4164c5f2d1" ChangeDateTime="03/01/2017 15:44:33" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[Audit].[SVOLookup].[Bespoke]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Audit].[SVOLookup]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[SaleType]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="18caa08f-19cf-4793-8dc7-d08ca17ced77" ChangeDateTime="01/15/2020 13:39:18" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[CustomerUpdateFeeds].[AuditRowsCustomerUpdateFilesLoaded].[AuditItemId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[CustomerUpdateFeeds].[AuditRowsCustomerUpdateFilesLoaded]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AuditItemID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="968d0a3f-6390-4843-ab87-f8ea6b85075e" ChangeDateTime="01/15/2020 13:39:29" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[CustomerUpdateFeeds].[AuditRowsCustomerUpdateFilesLoaded].[loadSuccess]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[CustomerUpdateFeeds].[AuditRowsCustomerUpdateFilesLoaded]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LoadSuccess" />
+  </Operation>
+</Operations>
