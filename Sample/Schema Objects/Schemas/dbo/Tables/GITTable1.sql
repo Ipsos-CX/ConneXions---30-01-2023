@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[GITTable1]
+(
+	[Id] INT NOT NULL PRIMARY KEY, 
+    [TestColumn] VARCHAR(50) NULL
+)
