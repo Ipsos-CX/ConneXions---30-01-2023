@@ -74,7 +74,10 @@ C:\Projects\GitHub\WebsiteReporting\sql\debug\Sample_Errors.pdb
 C:\Projects\GitHub\WebsiteReporting\sql\debug\Sample_Errors.dacpac
 C:\Projects\GitHub\WebsiteReporting\sql\debug\msdb.dacpac
 C:\Projects\GitHub\WebsiteReporting\sql\debug\master.dacpac
-C:\Projects\GitHub\WebsiteReporting\obj\Debug\WebsiteReporting.sqlproj.AssemblyReference.cache
 C:\Projects\GitHub\WebsiteReporting\obj\Debug\WebsiteReporting.sqlproj.CopyComplete
 C:\Projects\GitHub\WebsiteReporting\obj\Debug\WebsiteReporting.dll
 C:\Projects\GitHub\WebsiteReporting\obj\Debug\WebsiteReporting.pdb
+C:\Projects\GitHub\WebsiteReporting\obj\Debug\Model.xml
+C:\Projects\GitHub\WebsiteReporting\obj\Debug\refactor.xml
+C:\Projects\GitHub\WebsiteReporting\obj\Debug\postdeploy.sql
+C:\Projects\GitHub\WebsiteReporting\obj\Debug\predeploy.sql

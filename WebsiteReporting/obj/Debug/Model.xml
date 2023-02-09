@@ -11,7 +11,7 @@
 			<Metadata Name="CompatibilityMode" Value="130" />
 		</CustomData>
 		<CustomData Category="Reference" Type="SqlSchema">
-			<Metadata Name="FileName" Value="C:\USERS\BEN.KING\SOURCE\REPOS\CONNEXIONS---30-01-2023_VS_2019\SAMPLE_ERRORS\SQL\DEBUG\SAMPLE_ERRORS.DACPAC" />
+			<Metadata Name="FileName" Value="C:\PROJECTS\GITHUB\SAMPLE_ERRORS\SQL\DEBUG\SAMPLE_ERRORS.DACPAC" />
 			<Metadata Name="LogicalName" Value="Sample_Errors.dacpac" />
 			<Metadata Name="ExternalParts" Value="[$(ErrorDB)]" />
 		</CustomData>
@@ -29,7 +29,7 @@
 		</CustomData>
 		<CustomData Category="Reference" Type="Assembly">
 			<Metadata Name="LogicalName" Value="WebsiteReporting.dll" />
-			<Metadata Name="FileName" Value="C:\USERS\BEN.KING\SOURCE\REPOS\CONNEXIONS---30-01-2023_VS_2019\WEBSITEREPORTING\OBJ\DEBUG\WEBSITEREPORTING.DLL" />
+			<Metadata Name="FileName" Value="C:\PROJECTS\GITHUB\WEBSITEREPORTING\OBJ\DEBUG\WEBSITEREPORTING.DLL" />
 			<Metadata Name="AssemblyName" Value="WebsiteReporting" />
 			<Metadata Name="PermissionSet" Value="SAFE" />
 			<Metadata Name="Owner" Value="" />
@@ -37,7 +37,7 @@
 			<Metadata Name="IsVisible" Value="True" />
 			<Metadata Name="IsModelAware" Value="True" />
 			<Metadata Name="SkipCreationIfEmpty" Value="True" />
-			<Metadata Name="AssemblySymbolsName" Value="C:\Users\Ben.King\Source\Repos\ConneXions---30-01-2023_VS_2019\WebsiteReporting\obj\Debug\WebsiteReporting.pdb" />
+			<Metadata Name="AssemblySymbolsName" Value="C:\Projects\GitHub\WebsiteReporting\obj\Debug\WebsiteReporting.pdb" />
 		</CustomData>
 		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable">
 			<Metadata Name="AuditDB" Value="" />
