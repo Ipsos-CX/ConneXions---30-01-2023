@@ -8,13 +8,13 @@
   DTS:DTSID="{8A7AF32C-85D6-44F0-A690-7C3C67A1C47B}"
   DTS:EnableConfig="True"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="14.0.3002.113"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
   DTS:LocaleID="2057"
   DTS:ObjectName="Sample Process - Load From VWT"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="177"
-  DTS:VersionGUID="{A5C1AA89-B1D2-4F63-BCED-E2E469BBAAC6}">
+  DTS:VersionBuild="178"
+  DTS:VersionGUID="{90856797-541C-4070-AF06-FB5386B38AA9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -47,6 +47,8 @@
       DTS:ObjectName="Sample.OLEDB.AUTHENTICATION">
       <DTS:ObjectData>
         <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=Sample;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -57,6 +59,8 @@
       DTS:ObjectName="SampleReporting.OLEDB.AUTHENTICATION">
       <DTS:ObjectData>
         <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=SampleReporting;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -67,6 +71,8 @@
       DTS:ObjectName="Sample_Audit.OLEDB.AUTHENTICATION">
       <DTS:ObjectData>
         <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=Sample_Audit;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -77,6 +83,8 @@
       DTS:ObjectName="Sample_Errors.OLEDB.AUTHENTICATION">
       <DTS:ObjectData>
         <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=Sample_Errors;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -87,6 +95,8 @@
       DTS:ObjectName="Sample_ETL.OLEDB.AUTHENTICATION">
       <DTS:ObjectData>
         <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=Sample_ETL;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -97,6 +107,8 @@
       DTS:ObjectName="WebsiteReporting.OLEDB.AUTHENTICATION">
       <DTS:ObjectData>
         <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=WebsiteReporting;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -430,7 +442,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1625,7 +1637,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT	LoadedDate, 
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT	LoadedDate, 
 	AuditID, 
 	AuditItemID, 
 	PhysicalFileRow, 
@@ -6175,9 +6187,9 @@ FROM	dbo.VWT</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <AnnotationLayout
-          Text="Name: Sample Process - Load from VWT.dtsx&#xA;&#xA;Desc:  Runs proc's to load data from the VWT into the Sample database.  Also writes to the logging database. &#xA;&#xA;         Version  Date              Author              Description&#xA;LIVE  1.1         2016-09-22   Chris Ross         BUG 12777 - CRM 3.0  - Update industry classifcations  (Released to Live 15-12-2016)&#xA;LIVE  1.2         2016-12-01   Chris Ross         Bug 13364 - Remove Sample Supplied Non-solicitations step and replace with Contact Preferences step.&#xA;LIVE  1.3         2017-02-16   Eddie Thomas    Bug 13466 - Flagging SVO Vehicles&#xA;LIVE  1.4         2017-03-23   Chris Ledger      ROLLBACK TO VERSION 1.1 AND ADD Flag SVO Vehicles BACK IN (Released to LIVE: 2017-03-23)&#xA;LIVE  1.5         2017-03-29   Ben King           Factory of Build code added, BUG 13465&#xA;LIVE  1.6         2017-03-30   Chris Ledger      Bug 13364 - Remove Sample Supplied Non-solicitations step and replace with Contact Preferences step [CGR: Released to Live 12-12-2017]&#xA;LIVE  1.7         2017-05-05   Chris Ledger      Bug 13897 - Add Deduplication of Lost Lead Events (Released to LIVE: 2017-05-09)&#xA;LIVE  1.8         2018-01-30   Chris Ross         BUG 14335 - Modify the &quot;Copy Data for Sample Quality&quot; source to now include a lookup and populate of pre-existing CaseIDs (Released to LIVE: CL 26-03-2018)&#xA;LIVE  1.9         2018-05-15   Chris Ledger      BUG 14727 - Uncheck Lock Table from Copy Data for Sample Quality OLE DB Destination.&#xA;LIVE  1.10       2018-11-02   Chris Ledger      BUG 15056 - Add Update IAssistance table with EventID task and I-Assistance columns to Copy Data for Sample Quality task.&#xA;LIVE  1.11       2021-03-24   Chris Ledger      TASK 299 - Add Update GeneralEnquiry table with EventID task and GeneralEnquiry columns to Copy Data for Sample Quality task.&#xA;LIVE  1.12       2022-02-10   Chris Ledger      TASK 628 - Do not update CaseID in Copy Data for Sample Quality SQL task.&#xA;LIVE  1.13       2022-03-02   Chris Ledger      TASK 791 - Move Set ModelVariant task to before Copy Data for Sample Quality task.&#xA;LIVE  1.14       2022-03-24   Chris Ledger      TASK 729 - Remove Update Model Year &amp; Set ModelVariant tasks.&#xD;&#xA;UAT  1.15        2022-06-08   Eddie Thomas    TASK 877 - Populate new LR Experience fields (Copy Data for Sample Quality step)"
+          Text="Name: Sample Process - Load from VWT.dtsx&#xA;&#xA;Desc:  Runs proc's to load data from the VWT into the Sample database.  Also writes to the logging database. &#xA;&#xA;         Version  Date              Author              Description&#xA;LIVE  1.1         2016-09-22   Chris Ross         BUG 12777 - CRM 3.0  - Update industry classifcations  (Released to Live 15-12-2016)&#xA;LIVE  1.2         2016-12-01   Chris Ross         Bug 13364 - Remove Sample Supplied Non-solicitations step and replace with Contact Preferences step.&#xA;LIVE  1.3         2017-02-16   Eddie Thomas    Bug 13466 - Flagging SVO Vehicles&#xA;LIVE  1.4         2017-03-23   Chris Ledger      ROLLBACK TO VERSION 1.1 AND ADD Flag SVO Vehicles BACK IN (Released to LIVE: 2017-03-23)&#xA;LIVE  1.5         2017-03-29   Ben King           Factory of Build code added, BUG 13465&#xA;LIVE  1.6         2017-03-30   Chris Ledger      Bug 13364 - Remove Sample Supplied Non-solicitations step and replace with Contact Preferences step [CGR: Released to Live 12-12-2017]&#xA;LIVE  1.7         2017-05-05   Chris Ledger      Bug 13897 - Add Deduplication of Lost Lead Events (Released to LIVE: 2017-05-09)&#xA;LIVE  1.8         2018-01-30   Chris Ross         BUG 14335 - Modify the &quot;Copy Data for Sample Quality&quot; source to now include a lookup and populate of pre-existing CaseIDs (Released to LIVE: CL 26-03-2018)&#xA;LIVE  1.9         2018-05-15   Chris Ledger      BUG 14727 - Uncheck Lock Table from Copy Data for Sample Quality OLE DB Destination.&#xA;LIVE  1.10       2018-11-02   Chris Ledger      BUG 15056 - Add Update IAssistance table with EventID task and I-Assistance columns to Copy Data for Sample Quality task.&#xA;LIVE  1.11       2021-03-24   Chris Ledger      TASK 299 - Add Update GeneralEnquiry table with EventID task and GeneralEnquiry columns to Copy Data for Sample Quality task.&#xA;LIVE  1.12       2022-02-10   Chris Ledger      TASK 628 - Do not update CaseID in Copy Data for Sample Quality SQL task.&#xA;LIVE  1.13       2022-03-02   Chris Ledger      TASK 791 - Move Set ModelVariant task to before Copy Data for Sample Quality task.&#xA;LIVE  1.14       2022-03-24   Chris Ledger      TASK 729 - Remove Update Model Year &amp; Set ModelVariant tasks.&#xA;UAT  1.15        2022-06-08   Eddie Thomas    TASK 877 - Populate new LR Experience fields (Copy Data for Sample Quality step)&#xD;&#xA;BK LOAD TEST V1"
           ParentId="Package"
-          Size="1058,296"
+          Size="1058,309"
           Id="b5a61275-d6bd-4eda-b021-b5799a37c229"
           TopLeft="111.5,1.5">
           <AnnotationLayout.FontInfo>

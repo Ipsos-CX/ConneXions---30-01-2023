@@ -8,13 +8,13 @@
   DTS:DTSID="{D16C14C0-1689-400A-B944-1AEC225C6770}"
   DTS:EnableConfig="True"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="14.0.3002.113"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
   DTS:LocaleID="2057"
   DTS:ObjectName="Selection Output Child - Combined Online File"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="67"
-  DTS:VersionGUID="{085A8483-A283-4712-BF87-52C99E9D5A7A}">
+  DTS:VersionBuild="83"
+  DTS:VersionGUID="{BC76B6B5-5054-456E-856A-A53A07636503}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -41,7 +41,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CaseID"
-              DTS:DTSID="{D3E06872-70B5-4D47-A052-D708BDCCE0C5}"
+              DTS:DTSID="{9FFCE9FC-EBDF-4CD2-BC12-EE01CF0D1678}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -50,7 +50,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="SurveyTypeID"
-              DTS:DTSID="{E670E9FA-6259-4EA2-94BE-2FFB6E6FFD7C}"
+              DTS:DTSID="{6AD8340F-571C-491C-956E-F84D19C56016}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -59,7 +59,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ModelCode"
-              DTS:DTSID="{483A4CD7-8962-43D5-9D37-DBA9B3493FEE}"
+              DTS:DTSID="{ACC257C1-933F-4F11-A7E3-D266FADF9CB6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -68,7 +68,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ModelDescription"
-              DTS:DTSID="{7FE88DDA-A58B-43DA-B499-07A38C05A9C0}"
+              DTS:DTSID="{50D925B1-A25B-49D3-A57F-CA7E264FA61B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -77,7 +77,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ModelYear"
-              DTS:DTSID="{272C392E-2972-411B-8B11-DB178F9A8F05}"
+              DTS:DTSID="{9F39DAD5-8D8D-4C13-B299-7720B898C869}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -86,7 +86,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ManufacturerID"
-              DTS:DTSID="{DD0E46CE-9199-4BAE-8613-15A6B1371776}"
+              DTS:DTSID="{073B64BC-F02F-402B-AC2C-109C7AEC520B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -95,7 +95,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Manufacturer"
-              DTS:DTSID="{64E613C0-CA1D-4537-B557-E14898B38410}"
+              DTS:DTSID="{602001AF-BCC8-4D1B-8512-099A13492ABC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -104,7 +104,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CarRegistration"
-              DTS:DTSID="{38FB06C2-5807-4EC2-ABBE-D44722D6AE0F}"
+              DTS:DTSID="{1C99988B-0937-423B-98B3-ED65BC526819}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -113,7 +113,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="VIN"
-              DTS:DTSID="{0E701662-79B3-41B2-B441-0E97F7A879B4}"
+              DTS:DTSID="{58E53417-F6C7-401B-967F-A7F4544397C3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -122,7 +122,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ModelVariantCode"
-              DTS:DTSID="{734CD6EE-1375-4DE7-8A9D-AE5947DF9556}"
+              DTS:DTSID="{E7B272B3-9DFF-4825-A3A5-416442DDD1E9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -131,7 +131,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ModelVariantDescription"
-              DTS:DTSID="{33EEBFE1-D190-49D5-933B-11C54E19F05A}"
+              DTS:DTSID="{E236835F-09D9-43EC-8506-A7EFA358835F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -140,7 +140,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PartyID"
-              DTS:DTSID="{7983F3D1-A642-40D6-B4D7-1B36B118BF18}"
+              DTS:DTSID="{9DD7A807-8C93-467C-B3AB-E6E4B12D610A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -149,7 +149,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Title"
-              DTS:DTSID="{D2FD1BC1-AA73-4261-8052-2AC0784450B5}"
+              DTS:DTSID="{7188A977-D418-4E44-AC3D-15BDA6588ADB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -158,7 +158,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Initial"
-              DTS:DTSID="{076469B7-3346-42D4-83AA-E0DDFD1C35FC}"
+              DTS:DTSID="{76803F1E-7169-4E4B-9AD0-6F9694EF9427}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -167,7 +167,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="LastName"
-              DTS:DTSID="{75D95001-09D1-417A-BF25-FC2B0225E617}"
+              DTS:DTSID="{A75D346A-DBAD-472F-B9AD-0774C13623EA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -176,7 +176,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FullName"
-              DTS:DTSID="{83317411-DF19-40EB-86AB-B5EFEAEFFFCE}"
+              DTS:DTSID="{2A67EC30-421F-428D-83E9-EF067CEA71B8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -185,7 +185,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DearName"
-              DTS:DTSID="{3A05BF9F-DCB7-4AC7-8961-F49A6C4D67DA}"
+              DTS:DTSID="{2FB2C947-97CD-439F-90B8-5FAD48EF00D3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -194,7 +194,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CompanyName"
-              DTS:DTSID="{2CEE9ACB-1F81-4E4E-8EBE-2A772044F8D4}"
+              DTS:DTSID="{E6ACCA35-125B-4A5A-8DC0-16FF7A816048}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -203,7 +203,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Address1"
-              DTS:DTSID="{B0609999-2194-4176-B9FE-A4EF26B9C578}"
+              DTS:DTSID="{B118A0B7-7A66-4BDE-8C8C-ECCFB7DB44EF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -212,7 +212,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Address2"
-              DTS:DTSID="{EDFA1B57-36D0-4ECD-BF5E-045CBE30E35F}"
+              DTS:DTSID="{51C9D795-03CF-48C0-B00F-882410A86EBD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -221,7 +221,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Address3"
-              DTS:DTSID="{FA79263E-3B9F-4303-B114-B3BCD7369C33}"
+              DTS:DTSID="{2C9D90B5-EE09-4951-960E-E70089A659CC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -230,7 +230,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Address4"
-              DTS:DTSID="{A7ADDF28-93AB-4D87-A9AA-49E66D0D4480}"
+              DTS:DTSID="{0DF6D1E5-F47F-4708-AA65-0AFDDEE4EE82}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -239,7 +239,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Address5"
-              DTS:DTSID="{5999C486-3820-4FBF-9C74-0BDE5AF8DFF2}"
+              DTS:DTSID="{71CD9410-AA08-4CAC-8035-3B321E557B93}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -248,7 +248,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Address6"
-              DTS:DTSID="{A53B0E71-8297-4092-8C20-F754957B4F9C}"
+              DTS:DTSID="{DB667575-0FDA-43F9-8D4D-8DC4B0FD3B54}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -257,7 +257,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Address7"
-              DTS:DTSID="{834B0868-1890-4B5E-A540-C34E020EEC5D}"
+              DTS:DTSID="{FDCE391C-42D7-4F88-98C9-599611E55F83}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -266,7 +266,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Address8"
-              DTS:DTSID="{5444E962-297B-4561-AAD0-935CB8CDF7E0}"
+              DTS:DTSID="{C5BCAA15-ADB3-4B7B-B6E5-673AAFAB3F0E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -275,7 +275,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Country"
-              DTS:DTSID="{D6ACBD02-1902-4977-B74B-4B3AE829E888}"
+              DTS:DTSID="{3BAFBD32-F3AF-4405-A53E-D2474AE11CBE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -284,7 +284,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CountryID"
-              DTS:DTSID="{E78C6382-0016-43BB-8B54-020E4289BC5B}"
+              DTS:DTSID="{A4873A6A-BEEB-4192-86A7-1A20805F562D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -293,7 +293,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="EmailAddress"
-              DTS:DTSID="{236ABA87-B43E-4041-A533-0BC74C62E72E}"
+              DTS:DTSID="{DE5C4647-DF3A-4FF9-AD1B-F71DEEEB9F57}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -302,7 +302,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="HomeNumber"
-              DTS:DTSID="{CC95E82B-7C84-46A9-BE67-A886DB482B47}"
+              DTS:DTSID="{5D0D5F60-1D75-452B-8E14-3A13C7A9D92C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -311,7 +311,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="WorkNumber"
-              DTS:DTSID="{66D48235-DB3E-46C9-BC33-A672D00E5876}"
+              DTS:DTSID="{043D804C-F6F5-4E35-B5E1-089E88C7C0AA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -320,7 +320,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="MobileNumber"
-              DTS:DTSID="{4175A53B-8463-45DD-B026-5833529BD31F}"
+              DTS:DTSID="{B99B27A2-10E0-42DD-AF38-D9E07438F926}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -329,7 +329,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CustomerUniqueID"
-              DTS:DTSID="{35D2B5D9-FED1-4EE3-AC08-53B171E7E94A}"
+              DTS:DTSID="{F7378E74-D808-4D97-9BA9-84FD70A4CEBC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -338,7 +338,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="VersionCode"
-              DTS:DTSID="{316C634E-19FF-4623-A1F3-C12CEB733885}"
+              DTS:DTSID="{70F2C0A1-C8D6-4907-96D1-0CE86F148A91}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -347,7 +347,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="LanguageID"
-              DTS:DTSID="{A20DDCD3-D459-4FEE-B044-70279BD4A173}"
+              DTS:DTSID="{895C1C1D-A4DB-4060-8CD2-1CB55C292EDF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -356,7 +356,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="GenderID"
-              DTS:DTSID="{A264F437-F987-42FE-98BF-F635D3382FF9}"
+              DTS:DTSID="{6C79FB90-9CC5-4192-8FB6-FC047600E5C5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -365,7 +365,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="EventTypeID"
-              DTS:DTSID="{F92DC037-4BE4-4AE4-B375-177C8778306F}"
+              DTS:DTSID="{9FE5FB33-7DB7-4473-932C-69DFC85A135D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -374,7 +374,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="EventDate"
-              DTS:DTSID="{2A4F5545-6AD7-403A-979D-732C50A77E2B}"
+              DTS:DTSID="{74C5D70B-5430-4424-B15A-A0E3A0FBFAAA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -383,7 +383,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Password"
-              DTS:DTSID="{E821C6BB-AF01-48CC-A003-004A65258678}"
+              DTS:DTSID="{4ECF3166-F42C-4777-8A60-9481F03A33B4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -392,7 +392,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="IType"
-              DTS:DTSID="{A7BDE3D4-E747-46C2-B11E-1183D9254C65}"
+              DTS:DTSID="{8090B0C5-320D-448E-86BE-79C0FAA014FB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -401,7 +401,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="SelectionDate"
-              DTS:DTSID="{EE6AC7AF-3356-4A41-9832-31EE4EC58263}"
+              DTS:DTSID="{96638D36-20F5-48EA-AA30-4AA612D61243}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -410,7 +410,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Week"
-              DTS:DTSID="{BB9748FC-B81C-4B1C-B17A-D62094DEB74E}"
+              DTS:DTSID="{ED9F6661-F4BB-449D-8762-F9AC0BAE5A21}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -419,7 +419,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Expired"
-              DTS:DTSID="{01D058A3-81A6-4810-B8C6-15A3ABF44C81}"
+              DTS:DTSID="{78C3591E-D896-414F-A4A9-A804DA8F952B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -428,7 +428,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CampaignID"
-              DTS:DTSID="{6BF13A76-FB41-4DEC-BAFD-B848A0BE01DA}"
+              DTS:DTSID="{31BCAC1F-50F2-475E-81E3-968B4A5D5D2C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -437,7 +437,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Test"
-              DTS:DTSID="{85144B9E-8BDA-46B5-A73D-ADD4667031CD}"
+              DTS:DTSID="{021092B4-4F62-4CA8-A7EB-23ECCC56BD2F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -446,7 +446,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DealerPartyID"
-              DTS:DTSID="{2AEA9E62-3E1E-4908-BCA1-9E79346E9A2F}"
+              DTS:DTSID="{8289AC92-4B67-433B-AC64-56AFFFD9DAAB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -455,7 +455,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ReportingDealerPartyID"
-              DTS:DTSID="{D18FAE63-A673-4188-BBFA-55B784B246C2}"
+              DTS:DTSID="{46F50942-B3C0-4C69-A913-47A41429DEE4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -464,7 +464,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DealerName"
-              DTS:DTSID="{5F7F90EB-96A3-45CB-97A7-CDD8D0750712}"
+              DTS:DTSID="{518863CC-DFEC-4B4A-9804-F2A32AA7A4ED}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -473,7 +473,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DealerCode"
-              DTS:DTSID="{80913AD6-86A9-4B5B-83A1-2E2EF1BCAE96}"
+              DTS:DTSID="{D6013D29-5197-4696-A8CE-FE028B73A805}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -482,7 +482,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="GlobalDealerCode"
-              DTS:DTSID="{26EC75B6-DC4F-4DDB-9455-B1E833657DE2}"
+              DTS:DTSID="{C5434BBB-E9E6-4A19-9349-7FB89AA8C991}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -491,7 +491,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="BusinessRegion"
-              DTS:DTSID="{2F47AC1B-62EA-4A08-B4A7-0B3C92C40CC7}"
+              DTS:DTSID="{C1591459-7377-4766-9C46-762F201CCFAA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -500,7 +500,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="OwnershipCycle"
-              DTS:DTSID="{86DB81B7-39D8-4104-A128-C2C13629EC03}"
+              DTS:DTSID="{2E771090-EEBE-4307-B0B0-326E4FB75C00}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -509,7 +509,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="EmailSignator"
-              DTS:DTSID="{E4ED9774-3238-4C39-B757-36678AAAC33B}"
+              DTS:DTSID="{9B5E3938-00AA-4FF7-B00D-A843967A0956}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -518,7 +518,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="EmailSignatorTitle"
-              DTS:DTSID="{50F12165-B163-4162-9757-100FD88C910D}"
+              DTS:DTSID="{11752ADD-F2F0-49F9-86E5-29DE0A9241FD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -527,7 +527,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="EmailContactText"
-              DTS:DTSID="{0DAE42BA-CC03-498E-849B-D97CD95A6B92}"
+              DTS:DTSID="{8296CEFA-138E-4819-9AF5-8F1FC6FDE24E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -536,7 +536,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="EmailCompanyDetails"
-              DTS:DTSID="{94C2C197-4AFE-4F46-9AD1-AD8AB8332FDF}"
+              DTS:DTSID="{2FA861D1-F4F6-42AA-9728-4C3DA85F0E2A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -545,7 +545,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="JLRPrivacyPolicy"
-              DTS:DTSID="{F8C78F58-0005-46A0-824C-62ECCC4A9007}"
+              DTS:DTSID="{FE7A2127-70E8-4205-8C93-3F8F25E1142D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -554,7 +554,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="JLRCompanyName"
-              DTS:DTSID="{6B3080F0-A841-4F80-A873-D471EFBAA568}"
+              DTS:DTSID="{B8E4E86E-9278-4950-B56B-03F57E11AC31}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -563,7 +563,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="UnknownLanguage"
-              DTS:DTSID="{2E7A9777-25F8-4C71-9818-78619F6C0771}"
+              DTS:DTSID="{1EBD3B30-F307-4FAB-846D-C7268277DA08}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -572,7 +572,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="BilingualFlag"
-              DTS:DTSID="{40043878-F83B-45BE-993B-A122EB578CBC}"
+              DTS:DTSID="{E3D26C0D-E6A4-4935-B74E-2249E044ED81}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -581,7 +581,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="BilingualLanguageID"
-              DTS:DTSID="{393A0E8E-77BA-498D-A52D-724D8F073AEC}"
+              DTS:DTSID="{ABCA6D12-F2AB-42EE-8148-2302900D49C1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -590,7 +590,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DearNameBilingual"
-              DTS:DTSID="{1E2BB2A2-321D-46F3-8D1E-4C7651B7A580}"
+              DTS:DTSID="{D291EEFF-E692-4156-8BF1-A63388BB2896}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -599,7 +599,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="EmailSignatorTitleBilingual"
-              DTS:DTSID="{6480FE13-DFE6-40BD-9B8A-E1076F276130}"
+              DTS:DTSID="{9A663720-E55D-4A42-A371-EFDD8303F9C8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -608,7 +608,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="EmailContactTextBilingual"
-              DTS:DTSID="{FAA87E54-69A3-49B3-BBCC-C99E1B513801}"
+              DTS:DTSID="{72977D6E-194E-43F3-8F6D-722879A40C30}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -617,7 +617,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="EmailCompanyDetailsBilingual"
-              DTS:DTSID="{9C4E7939-F2AC-4A01-AA22-1E59AD866609}"
+              DTS:DTSID="{1B0A5331-B6A6-4CCF-A86A-9CD73A88D25E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -626,7 +626,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="JLRPrivacyPolicyBilingual"
-              DTS:DTSID="{25CEC9D8-49E0-4974-A2D8-79E55BDF7C49}"
+              DTS:DTSID="{163DC772-88AA-45E2-96F2-B245CF6840F6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -635,7 +635,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="EmployeeCode"
-              DTS:DTSID="{9D51348F-09BB-4F68-AA6A-65771FBEFA03}"
+              DTS:DTSID="{2EFC1DD0-BD24-4DBA-BAFB-1D4EA05261EA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -644,7 +644,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="EmployeeName"
-              DTS:DTSID="{4024EBC5-F025-4248-A6F6-F663DCEE60DE}"
+              DTS:DTSID="{1D40F8A3-E353-4E22-8E4F-B216BCB4983C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -653,7 +653,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CRMSalesmanCode"
-              DTS:DTSID="{86FC8A4E-6FB2-426F-B595-4960627BA73A}"
+              DTS:DTSID="{9A67C643-80D3-4C4C-9CC9-02878F239424}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -662,7 +662,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CRMSalesmanName"
-              DTS:DTSID="{46200AAD-A766-4E3C-969C-24E0B1D4E644}"
+              DTS:DTSID="{AAE102A4-26B3-4E10-A9B9-C7578A4AFFC4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -671,7 +671,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="RockarDealer"
-              DTS:DTSID="{2F6BE018-8406-47BC-B118-E5EBB15466DA}"
+              DTS:DTSID="{84E45DF2-40BA-4E5D-8BE3-515E7EDA7E3F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -680,7 +680,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="SVOTypeID"
-              DTS:DTSID="{891848BC-FDAA-471A-B97A-50600599BC4F}"
+              DTS:DTSID="{20B282BC-21D1-41C1-8FCE-2EFA4C6960B3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -689,7 +689,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="SVODealer"
-              DTS:DTSID="{B7E74909-2ED8-4AC9-9FDD-6670B8823FE0}"
+              DTS:DTSID="{670D0E09-1015-4B71-ADE2-72747058903B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -698,7 +698,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="VistaContractOrderNumber"
-              DTS:DTSID="{CDE64E3D-C341-4728-88B0-86C72AA8A7A5}"
+              DTS:DTSID="{4DEB60FE-B087-4D4F-A5B3-F1F794186CE3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -707,7 +707,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DealerNumber"
-              DTS:DTSID="{C1E00ED3-290A-4302-9D41-970476BCD4D2}"
+              DTS:DTSID="{FFB039D7-2D84-4F47-8DC2-5580FB9F3606}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -716,7 +716,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FOBCode"
-              DTS:DTSID="{C7090F43-8601-4B85-9906-D7E6ABABDEEA}"
+              DTS:DTSID="{676AA5E7-AD24-4B65-A2B2-BC3FE547885C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -725,7 +725,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="HotTopicCodes"
-              DTS:DTSID="{466F52F9-2F28-4E0E-B006-BCC89BF8F8E6}"
+              DTS:DTSID="{F64A1757-0B2A-429D-9495-780921BF8478}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -734,7 +734,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ServiceTechnicianID"
-              DTS:DTSID="{1D3CF941-9E76-4AD9-8692-B046C6AE0954}"
+              DTS:DTSID="{2E3993B9-4EF8-4731-82C8-B3E8C8B385FF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -743,7 +743,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ServiceTechnicianName"
-              DTS:DTSID="{BB6624EB-33A6-493B-92DF-4598215F6AFC}"
+              DTS:DTSID="{81B1AE9C-A96C-4711-A252-15EC970924D2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -752,7 +752,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ServiceAdvisorID"
-              DTS:DTSID="{FA17B7DB-6079-488F-989E-1ECCEA9C970D}"
+              DTS:DTSID="{398C8400-5E76-4886-A555-4FDA14E3C353}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -761,7 +761,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ServiceAdvisorName"
-              DTS:DTSID="{8CFA6F7A-48C9-406F-992A-C9D49468853D}"
+              DTS:DTSID="{391DB161-85E5-4D50-92FF-2A12CE746DB8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -770,7 +770,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="RepairOrderNumber"
-              DTS:DTSID="{49960408-7213-4B62-9E4F-F14756884725}"
+              DTS:DTSID="{9773B6EB-E9EE-4204-87D4-6F12922468E5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -779,7 +779,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ServiceEventType"
-              DTS:DTSID="{14936CB7-F6DD-4314-897F-518553181BA9}"
+              DTS:DTSID="{B2F4DC7E-0786-450C-B0BF-0B32EADE322B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -788,7 +788,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Approved"
-              DTS:DTSID="{79EFCC4C-D911-42CF-82D9-7992063BE89D}"
+              DTS:DTSID="{8E2BBEBD-6A7F-4541-A38C-F327CD4E5F52}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -797,7 +797,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="BreakdownDate"
-              DTS:DTSID="{86EE132D-924F-4791-BD54-D1873386D52C}"
+              DTS:DTSID="{D4E567F7-FC18-44FB-988F-CA9430A8CBBC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -806,7 +806,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="BreakdownCountry"
-              DTS:DTSID="{13706466-D0AB-4236-BA8A-34CF1969F8A3}"
+              DTS:DTSID="{3DF19F58-35B8-450A-AA2A-72B309A816B8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -815,7 +815,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="BreakdownCountryID"
-              DTS:DTSID="{22C14838-02E0-4079-AE78-C9D85DD05D6E}"
+              DTS:DTSID="{694C4A05-F0B0-4A0E-B864-ACF70277E294}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -824,7 +824,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="BreakdownCaseID"
-              DTS:DTSID="{DA0A73E5-269F-4DB1-B696-1DA3353E0A8B}"
+              DTS:DTSID="{673275AF-C83D-4AE9-ACA0-FC4F956369CC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -833,7 +833,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CarHireStartDate"
-              DTS:DTSID="{42BDF52A-0AB1-4EA1-9311-52EF51921881}"
+              DTS:DTSID="{6829832D-51FF-4EAE-9912-C3DE75B7C14C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -842,7 +842,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ReasonForHire"
-              DTS:DTSID="{E1BAE455-7581-487A-A532-D59C8AA9F993}"
+              DTS:DTSID="{49E3828D-93E0-4D4A-8C31-1B3D242133AB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -851,7 +851,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="HireGroupBranch"
-              DTS:DTSID="{AB550F0C-CD03-4EEF-BD66-CA01C1C4EF1B}"
+              DTS:DTSID="{376948E1-686D-4408-813F-67C8710B8D8C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -860,7 +860,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CarHireTicketNumber"
-              DTS:DTSID="{86B1C980-B1AD-45AF-B5FF-55B01612F7C4}"
+              DTS:DTSID="{5049F2EF-7ACB-4EF2-B79C-5AE669859A2F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -869,7 +869,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="HireJobNumber"
-              DTS:DTSID="{08DE2743-62EC-46DC-A469-BC4F5225F4EE}"
+              DTS:DTSID="{7EC23ADF-7901-45D2-B34A-3C203924CC94}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -878,7 +878,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="RepairingDealer"
-              DTS:DTSID="{9F27F07D-BB59-4A6F-B224-6C2422754C73}"
+              DTS:DTSID="{696A5671-98BE-4329-AB4E-5BA93689860C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -887,7 +887,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DataSource"
-              DTS:DTSID="{B1219965-A419-4593-A07F-D34771CD3D17}"
+              DTS:DTSID="{1923685B-2F86-4284-BF26-94122499486E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -896,7 +896,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ReplacementVehicleMake"
-              DTS:DTSID="{69D8522D-394C-4C66-A7E4-80F2E1FB8346}"
+              DTS:DTSID="{48242F6C-E987-4F95-8D1D-627B55C2D77D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -905,7 +905,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ReplacementVehicleModel"
-              DTS:DTSID="{EBA88804-8399-4A1B-847A-4F94A746EA0C}"
+              DTS:DTSID="{6137B1A5-640B-4DE5-BAC1-8288B984F792}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -914,7 +914,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CarHireStartTime"
-              DTS:DTSID="{52374927-CE67-45E1-9B81-4A742EB6AE1D}"
+              DTS:DTSID="{CC5E8708-4D80-456D-88DC-73C296021C27}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -923,7 +923,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="RepairingDealerCountry"
-              DTS:DTSID="{08CED0D3-A73A-4E6E-BF2A-993C72CA777E}"
+              DTS:DTSID="{2782ED36-0ADD-4A98-B742-10B7A971DA3C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -932,7 +932,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="RoadsideAssistanceProvider"
-              DTS:DTSID="{B1B6BCBF-D8A3-45E5-8C62-F1112DC19BF8}"
+              DTS:DTSID="{50F0F7EB-DF78-4531-BA34-6369917F56C8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -941,7 +941,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="BreakdownAttendingResource"
-              DTS:DTSID="{E271E3F8-085C-4CF0-970C-AE5FAB98776B}"
+              DTS:DTSID="{8F3C6809-447B-4A2B-A7C1-7128FDBEB68B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -950,7 +950,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CarHireProvider"
-              DTS:DTSID="{A2CFA545-2ABA-4422-B621-3C3D364AB519}"
+              DTS:DTSID="{27C076BF-EB4E-4AD0-8B20-400E2A05B014}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -959,7 +959,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="VehicleOriginCountry"
-              DTS:DTSID="{8A0B6B1D-D641-428C-90BC-810066AD4658}"
+              DTS:DTSID="{1AFD5770-2811-4ADB-B279-4BF383C89927}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -968,7 +968,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CRCOwnerCode"
-              DTS:DTSID="{25A85F07-A6C8-4C8F-840B-4A8D40055E1E}"
+              DTS:DTSID="{F318EE00-B51C-4AEF-9D6F-03FADEC0F8E0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -977,7 +977,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CRCCode"
-              DTS:DTSID="{4F1E38BE-AAB9-4089-B93B-73BBC70EFBC7}"
+              DTS:DTSID="{852CDDF8-8262-44A7-B4A1-C3E3D08E0264}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -986,7 +986,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CRCMarketCode"
-              DTS:DTSID="{DF047BA8-530B-478D-BC6C-A18DEA04B5A2}"
+              DTS:DTSID="{32373615-1A03-4717-82D3-FAC1965EFFBB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -995,7 +995,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="SampleYear"
-              DTS:DTSID="{48039A8A-E1AC-493E-80CC-F8475FB19BCC}"
+              DTS:DTSID="{80E0AE7C-C78D-4CD6-938F-01B839ED7BD2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1004,7 +1004,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="VehicleMileage"
-              DTS:DTSID="{A33E1A70-EECF-43A4-A42F-EA54FF2D3E36}"
+              DTS:DTSID="{4D11B0D8-E6B6-48A7-8F8F-1D19DCCA3217}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1013,7 +1013,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="VehicleMonthsinService"
-              DTS:DTSID="{93CB8343-3304-4189-BD24-93FA65253C87}"
+              DTS:DTSID="{F4BB9EAA-AB13-4B76-8F03-DF2EEF217D06}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1022,7 +1022,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CRCRowID"
-              DTS:DTSID="{39BC77F1-871B-4C73-9013-DC55070FC74A}"
+              DTS:DTSID="{1B50E649-1B2C-4F1F-BF1B-43D4DD09003F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1031,7 +1031,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CRCSerialNumber"
-              DTS:DTSID="{52839EB5-D979-4B91-B147-018701BEDF88}"
+              DTS:DTSID="{BC484700-7B4C-4A0A-8001-A30E9F92306C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1040,7 +1040,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="NSCFlag"
-              DTS:DTSID="{C95E5DA8-E83A-4436-B2D7-ADCC8F29DA06}"
+              DTS:DTSID="{AC3000C7-34F8-441E-A3A3-8C136E5E9419}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1049,7 +1049,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="JLREventType"
-              DTS:DTSID="{0FAE07E6-BDCD-439E-B445-2917F6248A38}"
+              DTS:DTSID="{D155FBAD-28CF-43BF-895F-BFD7A2AA6829}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1058,7 +1058,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DealerType"
-              DTS:DTSID="{839BAA88-6443-4DB4-B557-4154A9AA3201}"
+              DTS:DTSID="{5CD5438B-D017-4095-9025-B124EDD90C67}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1067,7 +1067,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Queue"
-              DTS:DTSID="{C40709FD-A0D4-4DD8-8357-7C1B49496D08}"
+              DTS:DTSID="{AF2D5F42-0AEF-4CDD-B81A-CE00FC178C6B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1076,7 +1076,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Dealer10DigitCode"
-              DTS:DTSID="{E1CC0AD6-913C-49DB-92F6-09E8B71BFA59}"
+              DTS:DTSID="{23786F68-B5E5-499F-8DB1-DB8126DE9710}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1085,7 +1085,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="EventID"
-              DTS:DTSID="{3BE0A7CC-CE45-444B-9534-F59B4E30FA05}"
+              DTS:DTSID="{B8194E21-9690-4A70-BDFE-5CC02A600ED1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1094,7 +1094,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="EngineType"
-              DTS:DTSID="{9E662614-0D21-44D1-B2AB-039C142B0E66}"
+              DTS:DTSID="{694DF70B-C54A-4352-A626-0FE9C49F7707}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1103,7 +1103,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="LeadVehSaleType"
-              DTS:DTSID="{4823AD85-5BEE-46DC-B8D4-2FC774C61219}"
+              DTS:DTSID="{45BE2846-D698-4C17-8B3A-DC7987E451CF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1112,7 +1112,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="LeadOrigin"
-              DTS:DTSID="{F58337FA-95C7-41BB-B501-B910B4F37C93}"
+              DTS:DTSID="{A35F3E68-C629-442E-9EE8-69768E3320F1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1121,7 +1121,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="LegalGrounds"
-              DTS:DTSID="{86B15F52-0638-4A45-8A3E-04BD555CCCD8}"
+              DTS:DTSID="{98BC8217-94AB-4506-90BC-4E7FC43F6B9F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1130,7 +1130,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="AnonymityQuestion"
-              DTS:DTSID="{FFC29CD6-7CA5-47F1-8B28-FA6C4AE302C4}"
+              DTS:DTSID="{4593D5C3-9A7D-4A15-B710-9AA448393B2D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1139,7 +1139,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="LandRoverExperienceID"
-              DTS:DTSID="{92B94618-6B53-4F2D-88EF-74534684824B}"
+              DTS:DTSID="{73145BCC-3C13-4924-AE20-E7E2EF018182}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1148,7 +1148,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="BusinessFlag"
-              DTS:DTSID="{02F11245-6C68-4D69-8AF3-2DDA80449A6E}"
+              DTS:DTSID="{53CA869A-150E-4655-A808-35FEE8D5A80B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -1157,16 +1157,43 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CommonSaleType"
-              DTS:DTSID="{EE433A6B-951D-4DC4-8AEF-F9882CFF4A12}"
+              DTS:DTSID="{2C5C69A5-A03E-4EC7-9DCC-7E07BBB5ACDA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:ColumnDelimiter="_x0009_"
               DTS:MaximumWidth="50"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="SubBrand"
-              DTS:DTSID="{B90AD7B6-9D20-419C-83DF-76C21662DDC9}"
+              DTS:DTSID="{75BAAFA3-7769-4A20-BA76-5702B3C36D14}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LRE_Customer_type"
+              DTS:DTSID="{7D707506-AE76-402F-98B2-283068E13592}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CorporateCustomer"
+              DTS:DTSID="{4EA657FE-9C6C-46DC-8BD4-EB70D6F281B5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CompanyNameBusinessFleet"
+              DTS:DTSID="{09A6535F-6C7C-4469-BADF-2A3FB8BCEDB4}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -1199,6 +1226,8 @@
       DTS:ObjectName="Sample.OLEDB.AUTHENTICATION">
       <DTS:ObjectData>
         <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=Sample;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1209,6 +1238,8 @@
       DTS:ObjectName="SampleReporting.OLEDB.AUTHENTICATION">
       <DTS:ObjectData>
         <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=SampleReporting;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1219,6 +1250,8 @@
       DTS:ObjectName="Sample_Audit.OLEDB.AUTHENTICATION">
       <DTS:ObjectData>
         <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=Sample_Audit;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1229,6 +1262,8 @@
       DTS:ObjectName="Sample_Errors.OLEDB.AUTHENTICATION">
       <DTS:ObjectData>
         <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=Sample_Errors;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1239,6 +1274,8 @@
       DTS:ObjectName="Sample_ETL.OLEDB.AUTHENTICATION">
       <DTS:ObjectData>
         <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=Sample_ETL;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1249,6 +1286,8 @@
       DTS:ObjectName="WebsiteReporting.OLEDB.AUTHENTICATION">
       <DTS:ObjectData>
         <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=WebsiteReporting;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -3353,6 +3392,10 @@
                       description="Specifies the text to write to the destination file before any data is written."
                       expressionType="Notify"
                       name="Header" />
+                    <property
+                      dataType="System.Boolean"
+                      description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                      name="EscapeQualifier">false</property>
                   </properties>
                   <connections>
                     <connection
@@ -4226,6 +4269,27 @@
                           cachedName="DC_ModelYear"
                           externalMetadataColumnId="Package\Output Combined Online File\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ModelYear]"
                           lineageId="Package\Output Combined Online File\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[DC_ModelYear]" />
+                        <inputColumn
+                          refId="Package\Output Combined Online File\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[LRECustomerType]"
+                          cachedDataType="wstr"
+                          cachedLength="10"
+                          cachedName="LRECustomerType"
+                          externalMetadataColumnId="Package\Output Combined Online File\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LRE_Customer_type]"
+                          lineageId="Package\Output Combined Online File\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[LRECustomerType]" />
+                        <inputColumn
+                          refId="Package\Output Combined Online File\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[CorporateCustomer]"
+                          cachedDataType="wstr"
+                          cachedLength="10"
+                          cachedName="CorporateCustomer"
+                          externalMetadataColumnId="Package\Output Combined Online File\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CorporateCustomer]"
+                          lineageId="Package\Output Combined Online File\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[CorporateCustomer]" />
+                        <inputColumn
+                          refId="Package\Output Combined Online File\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[CompanyNameBusinessFleet]"
+                          cachedDataType="wstr"
+                          cachedLength="81"
+                          cachedName="CompanyNameBusinessFleet"
+                          externalMetadataColumnId="Package\Output Combined Online File\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CompanyNameBusinessFleet]"
+                          lineageId="Package\Output Combined Online File\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[CompanyNameBusinessFleet]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -4859,6 +4923,21 @@
                           dataType="wstr"
                           length="50"
                           name="SubBrand" />
+                        <externalMetadataColumn
+                          refId="Package\Output Combined Online File\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LRE_Customer_type]"
+                          dataType="wstr"
+                          length="10"
+                          name="LRE_Customer_type" />
+                        <externalMetadataColumn
+                          refId="Package\Output Combined Online File\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CorporateCustomer]"
+                          dataType="wstr"
+                          length="10"
+                          name="CorporateCustomer" />
+                        <externalMetadataColumn
+                          refId="Package\Output Combined Online File\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CompanyNameBusinessFleet]"
+                          dataType="wstr"
+                          length="100"
+                          name="CompanyNameBusinessFleet" />
                       </externalMetadataColumns>
                     </input>
                   </inputs>
@@ -4888,7 +4967,7 @@
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT DISTINCT [ID],
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT DISTINCT [ID],
 		[SurveyTypeID],
 		[ModelCode],
 		[ModelDescription],
@@ -5013,7 +5092,10 @@
                                [LandRoverExperienceID],
                                [BusinessFlag],
                                [CommonSaleType],
-                               [SubBrand]
+                               [SubBrand],
+                               [LRECustomerType],
+                               [CorporateCustomer],
+                               [CompanyNameBusinessFleet]
 	FROM [SelectionOutput].[CombinedOnlineOutput]</property>
                     <property
                       dataType="System.String"
@@ -6303,6 +6385,36 @@
                           lineageId="Package\Output Combined Online File\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[SubBrand]"
                           name="SubBrand"
                           truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Output Combined Online File\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[LRECustomerType]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Output Combined Online File\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[LRECustomerType]"
+                          length="10"
+                          lineageId="Package\Output Combined Online File\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[LRECustomerType]"
+                          name="LRECustomerType"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Output Combined Online File\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[CorporateCustomer]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Output Combined Online File\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CorporateCustomer]"
+                          length="10"
+                          lineageId="Package\Output Combined Online File\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[CorporateCustomer]"
+                          name="CorporateCustomer"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Output Combined Online File\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[CompanyNameBusinessFleet]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Output Combined Online File\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CompanyNameBusinessFleet]"
+                          length="81"
+                          lineageId="Package\Output Combined Online File\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[CompanyNameBusinessFleet]"
+                          name="CompanyNameBusinessFleet"
+                          truncationRowDisposition="FailComponent" />
                       </outputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -6929,6 +7041,21 @@
                           dataType="str"
                           length="50"
                           name="SubBrand" />
+                        <externalMetadataColumn
+                          refId="Package\Output Combined Online File\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[LRECustomerType]"
+                          dataType="wstr"
+                          length="10"
+                          name="LRECustomerType" />
+                        <externalMetadataColumn
+                          refId="Package\Output Combined Online File\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CorporateCustomer]"
+                          dataType="wstr"
+                          length="10"
+                          name="CorporateCustomer" />
+                        <externalMetadataColumn
+                          refId="Package\Output Combined Online File\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CompanyNameBusinessFleet]"
+                          dataType="wstr"
+                          length="81"
+                          name="CompanyNameBusinessFleet" />
                       </externalMetadataColumns>
                     </output>
                     <output
@@ -7685,6 +7812,24 @@
                           length="50"
                           lineageId="Package\Output Combined Online File\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[SubBrand]"
                           name="SubBrand" />
+                        <outputColumn
+                          refId="Package\Output Combined Online File\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[LRECustomerType]"
+                          dataType="wstr"
+                          length="10"
+                          lineageId="Package\Output Combined Online File\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[LRECustomerType]"
+                          name="LRECustomerType" />
+                        <outputColumn
+                          refId="Package\Output Combined Online File\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CorporateCustomer]"
+                          dataType="wstr"
+                          length="10"
+                          lineageId="Package\Output Combined Online File\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CorporateCustomer]"
+                          name="CorporateCustomer" />
+                        <outputColumn
+                          refId="Package\Output Combined Online File\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CompanyNameBusinessFleet]"
+                          dataType="wstr"
+                          length="81"
+                          lineageId="Package\Output Combined Online File\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CompanyNameBusinessFleet]"
+                          name="CompanyNameBusinessFleet" />
                         <outputColumn
                           refId="Package\Output Combined Online File\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                           dataType="i4"
@@ -8754,14 +8899,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               ReadOnlyVariables="User::DataFileExtensionTAB,User::FileNameTimeStamp,User::LocalDownloadDirectory,User::ReoutputFolder,User::ReoutputRequest"
               ReadWriteVariables="User::FileName,User::OutputFileOnline">
               <ProjectItem
-                Name="Properties\Settings.settings"
-                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_ec6d507936d04fcda9e49e2b79de2890")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_ec6d507936d04fcda9e49e2b79de2890")]
+[assembly: AssemblyCopyright("Copyright @  2021")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -9204,35 +9370,14 @@ namespace ST_ec6d507936d04fcda9e49e2b79de2890.Properties {
     }
 }]]></ProjectItem>
               <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_ec6d507936d04fcda9e49e2b79de2890")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_ec6d507936d04fcda9e49e2b79de2890")]
-[assembly: AssemblyCopyright("Copyright @  2021")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.Designer.cs"
                 Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -9654,18 +9799,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           PanelSize="250,263"
           Size="250,306"
           Id="Package\Output Combined Online File"
-          TopLeft="417.666666666667,409" />
+          TopLeft="417.666666666667,429" />
         <NodeLayout
           Size="232,42"
           Id="Package\Populate Combined Online Table"
-          TopLeft="426.666666666667,243" />
+          TopLeft="426.666666666667,263" />
         <NodeLayout
           Size="130,42"
           Id="Package\Row Count"
-          TopLeft="477.666666666667,321" />
+          TopLeft="477.666666666667,341" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="542.666666666667,285">
+          TopLeft="542.666666666667,305">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
@@ -9687,7 +9832,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="542.666666666667,363">
+          TopLeft="542.666666666667,383">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{x:Null}"
@@ -9710,11 +9855,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <AnnotationLayout
-          Text="Name: Selection Output Child - Combined Online File.dtsx&#xA;Desc:  Child package of Selection Output used to output the Online Files &#xA;&#xA;&#xA;         Version  Date             Author                  Description&#xA;LIVE   V1.0      2021-03-31   Eddie Thomas        Created from Selection Output Child - Online File.dtsx&#xA;LIVE   V1.1      2021-04-29   Chris Ledger          Change ModelCode from INT to BIGINT&#xA;LIVE   V1.2      2021-04-29   Chris Ledger          Reset Samplig Package Configuration file to point to P:.&#xA;LIVE   V1.3      2021-08-24   Ben King               TASK 567 - Add LeadVehSaleType &amp; LeadOrigin to combined output&#xA;LIVE   V1.4      2021-09-30   Ben King               TASK 600 - 18342 - Legitimate Business Interest (LBI) Consent&#xA;LIVE   V1.5      2022-06-14   Eddie Thomas        TASK 877 - Added field LandRoverExperienceID to combined output step&#xA;LIVE   V1.6      2022-06-27   Eddie Thomas        TASK 900 - Added  CommonSaleType TypeOfSaleID&#xA;LIVE   V1.7      2022-09-08   Eddie Thomas        TASK 1017 - Added SubBrand&#xD;&#xA;LIVE   V1.8      2022-10-18   Chris Ledger          TASK 1046 - ModelYear changed from INT to VARCHAR "
+          Text="Name: Selection Output Child - Combined Online File.dtsx&#xA;Desc:  Child package of Selection Output used to output the Online Files &#xA;&#xA;&#xA;         Version  Date             Author                  Description&#xA;LIVE   V1.0      2021-03-31   Eddie Thomas        Created from Selection Output Child - Online File.dtsx&#xA;LIVE   V1.1      2021-04-29   Chris Ledger          Change ModelCode from INT to BIGINT&#xA;LIVE   V1.2      2021-04-29   Chris Ledger          Reset Samplig Package Configuration file to point to P:.&#xA;LIVE   V1.3      2021-08-24   Ben King               TASK 567 - Add LeadVehSaleType &amp; LeadOrigin to combined output&#xA;LIVE   V1.4      2021-09-30   Ben King               TASK 600 - 18342 - Legitimate Business Interest (LBI) Consent&#xA;LIVE   V1.5      2022-06-14   Eddie Thomas        TASK 877 - Added field LandRoverExperienceID to combined output step&#xA;LIVE   V1.6      2022-06-27   Eddie Thomas        TASK 900 - Added  CommonSaleType TypeOfSaleID&#xA;LIVE   V1.7      2022-09-08   Eddie Thomas        TASK 1017 - Added SubBrand&#xA;LIVE   V1.8      2022-10-18   Chris Ledger          TASK 1046 - ModelYear changed from INT to VARCHAR&#xA;UAT    V1.9     2022-02-10   Eddie Thomas         TASK 1132 - Corporate Purchase changes&#xA;BK LOAD TEST V1"
           ParentId="Package"
-          Size="621,210"
+          Size="621,236"
           Id="f6b9de76-2b6a-469c-acca-4549ef14761b"
-          TopLeft="239,16">
+          TopLeft="237,19">
           <AnnotationLayout.FontInfo>
             <mssge:FontInfo
               Color="#FF000000">
@@ -9755,11 +9900,15 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     design-time-name="Package\Output Combined Online File\Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="172,42"
           Id="Package\Output Combined Online File\Data Flow Task\Flat File Destination"
           TopLeft="460.375,374" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Output Combined Online File\Data Flow Task\Data Conversion"
+          TopLeft="468.375,211.333333333333" />
         <NodeLayout
           Size="193,42"
           Id="Package\Output Combined Online File\Data Flow Task\Pad CaseID and PartyID"
@@ -9768,10 +9917,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           Size="150,42"
           Id="Package\Output Combined Online File\Data Flow Task\OLE DB Source"
           TopLeft="471.375,130" />
-        <NodeLayout
-          Size="156,42"
-          Id="Package\Output Combined Online File\Data Flow Task\Data Conversion"
-          TopLeft="468.375,211.333333333333" />
+        <EdgeLayout
+          Id="Package\Output Combined Online File\Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="546.375,172">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="0,39.3333333333333"
+              Start="0,0"
+              End="0,31.8333333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.8333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Output Combined Online File\Data Flow Task.Paths[Pad CaseID and PartyID]"
           TopLeft="546.375,253.333333333333">
@@ -9791,7 +9960,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -9813,29 +9984,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Output Combined Online File\Data Flow Task.Paths[OLE DB Source Output]"
-          TopLeft="546.375,172">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="0,39.3333333333333"
-              Start="0,0"
-              End="0,31.8333333333333">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.8333333333333" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

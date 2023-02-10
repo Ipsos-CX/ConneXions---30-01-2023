@@ -8,13 +8,13 @@
   DTS:DTSID="{87D839AF-E677-4055-91B1-F93572F4DDE3}"
   DTS:EnableConfig="True"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="14.0.3002.113"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
   DTS:LocaleID="2057"
   DTS:ObjectName="Sample Reporting - LoadSelectionReport"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="157"
-  DTS:VersionGUID="{67B2170B-6A16-4EE4-BCF5-6A9F44A962CB}">
+  DTS:VersionBuild="158"
+  DTS:VersionGUID="{A8EC117C-F731-4684-ADDA-68C829C036CC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -66,6 +66,8 @@
       DTS:ObjectName="Load Data Connection">
       <DTS:ObjectData>
         <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
           DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=P:\Sampling\DataOutput\DailySampleStatus\Daily Load Selection Report JLR.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -76,7 +78,9 @@
       DTS:ObjectName="Sample.OLEDB.AUTHENTICATION">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=1005796-CXNSQLP;Initial Catalog=Sample;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=Sample;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -86,7 +90,9 @@
       DTS:ObjectName="SampleReporting.OLEDB.AUTHENTICATION">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=1005796-CXNSQLP;Initial Catalog=SampleReporting;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=SampleReporting;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -96,7 +102,9 @@
       DTS:ObjectName="Sample_Audit.OLEDB.AUTHENTICATION">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=1005796-CXNSQLP;Initial Catalog=Sample_Audit;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=Sample_Audit;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -106,7 +114,9 @@
       DTS:ObjectName="Sample_Errors.OLEDB.AUTHENTICATION">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=1005796-CXNSQLP;Initial Catalog=Sample_Errors;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=Sample_Errors;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -116,7 +126,9 @@
       DTS:ObjectName="Sample_ETL.OLEDB.AUTHENTICATION">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=1005796-CXNSQLP;Initial Catalog=Sample_ETL;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=Sample_ETL;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -130,7 +142,8 @@
         DTS:Name="SmtpServer">@[User::SMTPServer]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <SmtpConnectionManager
-          ConnectionString="SmtpServer=PMTA.extranet.iext;UseWindowsAuthentication=True;EnableSsl=False;" />
+          ConnectionString="SmtpServer=PMTA.extranet.iext;UseWindowsAuthentication=True;EnableSsl=False;"
+          ConnectByProxy="False" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -140,7 +153,9 @@
       DTS:ObjectName="WebsiteReporting.OLEDB.AUTHENTICATION">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=1005796-CXNSQLP;Initial Catalog=WebsiteReporting;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=WebsiteReporting;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -175,7 +190,8 @@
       DTS:Namespace="User"
       DTS:ObjectName="EmailBCC">
       <DTS:VariableValue
-        DTS:DataType="8">Ben.King@ipsos.com;chris.ledger@ipsos.com;chris.ross@ipsos.com</DTS:VariableValue>
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -184,7 +200,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="EmailCC">
       <DTS:VariableValue
-        DTS:DataType="8">Stephen.Nunn@ipsos.com;dipak.gohil@ipsos.com;alan.wayman@ipsos.com</DTS:VariableValue>
+        DTS:DataType="8">&gt;Dipak.Gohil@ipsos.com;ben.king@ipsos.com;Eddie.Thomas@ipsos.com;Chris.Ledger@ipsos.com</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -202,7 +218,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="EmailTo">
       <DTS:VariableValue
-        DTS:DataType="8">clare.yetton@ipsos.com;tim.wardle@ipsos.com;simone.king@ipsos.com;Claire.Lodge@ipsos.com;Andrew.Erskine@ipsos.com;Stephen.Nunn@ipsos.com; BG-ResearchSupportServices@ipsos.com;Steve.Vidler@ipsos.com</DTS:VariableValue>
+        DTS:DataType="8">Pia.Forslund@ipsos.com;Andrew.Erskine@ipsos.com;Louisa.Tassell@ipsos.com;jacob.warren@ipsos.com;Graham.Larkin@ipsos.com</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -350,7 +366,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -1058,7 +1074,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
@@ -1221,7 +1237,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
@@ -1329,12 +1345,6 @@
                       cachedName="Copy of FileLoadFailure"
                       externalMetadataColumnId="Package\Data Flow Task\Loaded OP.Inputs[Excel Destination Input].ExternalColumns[FileLoadFailure]"
                       lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of FileLoadFailure]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\Loaded OP.Inputs[Excel Destination Input].Columns[EventsTooYoung]"
-                      cachedDataType="i4"
-                      cachedName="EventsTooYoung"
-                      externalMetadataColumnId="Package\Data Flow Task\Loaded OP.Inputs[Excel Destination Input].ExternalColumns[EventsTooYoung]"
-                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[EventsTooYoung]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -1393,11 +1403,6 @@
                       dataType="wstr"
                       length="255"
                       name="RemovedMIsalignedRecords" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow Task\Loaded OP.Inputs[Excel Destination Input].ExternalColumns[EventsTooYoung]"
-                      dataType="wstr"
-                      length="255"
-                      name="EventsTooYoung" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -1451,7 +1456,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -1770,7 +1775,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -1956,7 +1961,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
@@ -2109,7 +2114,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -2283,7 +2288,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
@@ -2426,7 +2431,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -2598,7 +2603,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
@@ -2912,14 +2917,35 @@
               ReadOnlyVariables="User::SampleFilePathAndName"
               ReadWriteVariables="User::FileChecksum,User::FileRowCount,User::LoadSuccess,User::SampleFileName,User::SampleFileNamePrefix">
               <ProjectItem
-                Name="Properties\Settings.settings"
-                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_ecaee4badb0d4f87a63a95c81434a258.csproj")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("GfK NOP")]
+[assembly: AssemblyProduct("ST_ecaee4badb0d4f87a63a95c81434a258.csproj")]
+[assembly: AssemblyCopyright("Copyright @ GfK NOP 2011")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -3132,166 +3158,6 @@ namespace ST_ecaee4badb0d4f87a63a95c81434a258.csproj
     }
 }]]></ProjectItem>
               <ProjectItem
-                Name="Properties\Resources.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope = "member", Target = "ST_ecaee4badb0d4f87a63a95c81434a258.csproj.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
-    "rceManager")]
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope = "member", Target = "ST_ecaee4badb0d4f87a63a95c81434a258.csproj.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
-    "fo")]
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope = "member", Target = "ST_ecaee4badb0d4f87a63a95c81434a258.csproj.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
-    "):Void")]
-
-namespace ST_ecaee4badb0d4f87a63a95c81434a258.csproj.Properties
-{
-
-
-    /// <summary>
-    ///   A strongly-typed resource class, for looking up localized strings, etc.
-    /// </summary>
-    // This class was auto-generated by the StronglyTypedResourceBuilder
-    // class via a tool like ResGen or Visual Studio.
-    // To add or remove a member, edit your .ResX file then rerun ResGen
-    // with the /str option, or rebuild your VS project.
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    internal class Resources
-    {
-
-        private static global::System.Resources.ResourceManager resourceMan;
-
-        private static global::System.Globalization.CultureInfo resourceCulture;
-
-        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources()
-        {
-        }
-
-        /// <summary>
-        ///   Returns the cached ResourceManager instance used by this class.
-        /// </summary>
-        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if ((resourceMan == null))
-                {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ST_ecaee4badb0d4f87a63a95c81434a258.csproj.Properties.Resources", typeof(Resources).Assembly);
-                    resourceMan = temp;
-                }
-                return resourceMan;
-            }
-        }
-
-        /// <summary>
-        ///   Overrides the current thread's CurrentUICulture property for all
-        ///   resource lookups using this strongly typed resource class.
-        /// </summary>
-        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
-                return resourceCulture;
-            }
-            set
-            {
-                resourceCulture = value;
-            }
-        }
-    }
-}]]></ProjectItem>
-              <ProjectItem
-                Name="Project"
-                Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
-<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
-	<msb:PropertyGroup>
-		<msb:Language>msBuild</msb:Language>
-		<msb:CodeName>st_89c27b7094274974a205ebcf6ca8465a</msb:CodeName>
-		<msb:DisplayName>st_89c27b7094274974a205ebcf6ca8465a</msb:DisplayName>
-		<msb:ProjectId>{6890B97C-DC3B-40CD-A309-C35E4791EC92}</msb:ProjectId>
-	</msb:PropertyGroup>
-	<msb:ItemGroup>
-		<msb:Project Include="st_89c27b7094274974a205ebcf6ca8465a.csproj"/>
-		<msb:File Include="Properties\AssemblyInfo.cs"/>
-		<msb:File Include="Properties\Settings.settings"/>
-		<msb:File Include="Properties\Resources.resx"/>
-		<msb:File Include="Properties\Resources.Designer.cs"/>
-		<msb:File Include="Properties\Settings.Designer.cs"/>
-		<msb:File Include="ScriptMain.cs"/>
-	</msb:ItemGroup>
-</c:Project>]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope = "member", Target = "ST_ecaee4badb0d4f87a63a95c81434a258.csproj.Properties.Settings.get_Default():ST_ecaee4badb0d4f87a63a95c81434a258.csproj.Properties.Sett" +
-    "ings")]
-
-namespace ST_ecaee4badb0d4f87a63a95c81434a258.csproj.Properties
-{
-
-
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase
-    {
-
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-
-        public static Settings Default
-        {
-            get
-            {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_ecaee4badb0d4f87a63a95c81434a258.csproj")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("GfK NOP")]
-[assembly: AssemblyProduct("ST_ecaee4badb0d4f87a63a95c81434a258.csproj")]
-[assembly: AssemblyCopyright("Copyright @ GfK NOP 2011")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
-              <ProjectItem
                 Name="st_89c27b7094274974a205ebcf6ca8465a.csproj"
                 Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="utf-16"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -3424,6 +3290,145 @@ using System.Runtime.CompilerServices;
     </VisualStudio>
   </ProjectExtensions>
 </Project>]]></ProjectItem>
+              <ProjectItem
+                Name="Project"
+                Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+	<msb:PropertyGroup>
+		<msb:Language>msBuild</msb:Language>
+		<msb:CodeName>st_89c27b7094274974a205ebcf6ca8465a</msb:CodeName>
+		<msb:DisplayName>st_89c27b7094274974a205ebcf6ca8465a</msb:DisplayName>
+		<msb:ProjectId>{6890B97C-DC3B-40CD-A309-C35E4791EC92}</msb:ProjectId>
+	</msb:PropertyGroup>
+	<msb:ItemGroup>
+		<msb:Project Include="st_89c27b7094274974a205ebcf6ca8465a.csproj"/>
+		<msb:File Include="Properties\AssemblyInfo.cs"/>
+		<msb:File Include="Properties\Settings.settings"/>
+		<msb:File Include="Properties\Resources.resx"/>
+		<msb:File Include="Properties\Resources.Designer.cs"/>
+		<msb:File Include="Properties\Settings.Designer.cs"/>
+		<msb:File Include="ScriptMain.cs"/>
+	</msb:ItemGroup>
+</c:Project>]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope = "member", Target = "ST_ecaee4badb0d4f87a63a95c81434a258.csproj.Properties.Settings.get_Default():ST_ecaee4badb0d4f87a63a95c81434a258.csproj.Properties.Sett" +
+    "ings")]
+
+namespace ST_ecaee4badb0d4f87a63a95c81434a258.csproj.Properties
+{
+
+
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase
+    {
+
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+
+        public static Settings Default
+        {
+            get
+            {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Resources.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope = "member", Target = "ST_ecaee4badb0d4f87a63a95c81434a258.csproj.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope = "member", Target = "ST_ecaee4badb0d4f87a63a95c81434a258.csproj.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope = "member", Target = "ST_ecaee4badb0d4f87a63a95c81434a258.csproj.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace ST_ecaee4badb0d4f87a63a95c81434a258.csproj.Properties
+{
+
+
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources
+    {
+
+        private static global::System.Resources.ResourceManager resourceMan;
+
+        private static global::System.Globalization.CultureInfo resourceCulture;
+
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources()
+        {
+        }
+
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager
+        {
+            get
+            {
+                if ((resourceMan == null))
+                {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ST_ecaee4badb0d4f87a63a95c81434a258.csproj.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture
+        {
+            get
+            {
+                return resourceCulture;
+            }
+            set
+            {
+                resourceCulture = value;
+            }
+        }
+    }
+}]]></ProjectItem>
               <BinaryItem
                 Name="st_89c27b7094274974a205ebcf6ca8465a.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
@@ -3797,9 +3802,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         <SendMailTask:SendMailTaskData
           SendMailTask:SMTPServer="{3267A79A-2EF1-44B4-A859-45858279FF62}"
           SendMailTask:From="CNX_JLR_Output@ipsos-online.com"
-          SendMailTask:To="clare.yetton@ipsos.com;tim.wardle@ipsos.com;simone.king@ipsos.com;Claire.Lodge@ipsos.com;Andrew.Erskine@ipsos.com;Stephen.Nunn@ipsos.com; BG-ResearchSupportServices@ipsos.com;Steve.Vidler@ipsos.com"
-          SendMailTask:CC="Stephen.Nunn@ipsos.com;dipak.gohil@ipsos.com;alan.wayman@ipsos.com"
-          SendMailTask:BCC="Ben.King@ipsos.com;chris.ledger@ipsos.com;chris.ross@ipsos.com"
+          SendMailTask:To="Pia.Forslund@ipsos.com;Andrew.Erskine@ipsos.com;Louisa.Tassell@ipsos.com;jacob.warren@ipsos.com;Graham.Larkin@ipsos.com"
+          SendMailTask:CC="&gt;Dipak.Gohil@ipsos.com;ben.king@ipsos.com;Eddie.Thomas@ipsos.com;Chris.Ledger@ipsos.com"
           SendMailTask:Subject="Daily load and selection report" xmlns:SendMailTask="www.microsoft.com/sqlserver/dts/tasks/sendmailtask">
           <SendMailTask:Attachments
             SendMailTask:FileName="P:\Sampling\DataOutput\DailySampleStatus\Daily Load Selection Report JLR.xlsx" />
@@ -3862,31 +3866,31 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssge="clr-namespace:Microsoft.SqlServer.Graph.Extended;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
         <NodeLayout
-          Size="290.666666666667,44"
+          Size="291,44"
           Id="Package\Create New File"
           TopLeft="445.839622641509,284.933962264151" />
         <NodeLayout
-          Size="290.666666666667,44"
+          Size="291,44"
           Id="Package\Data Flow Task"
           TopLeft="445.839622641509,468.707547169811" />
         <NodeLayout
-          Size="290.666666666667,44"
+          Size="291,44"
           Id="Package\Delete Exisiting Report"
           TopLeft="445.839622641509,193.047169811321" />
         <NodeLayout
-          Size="290.666666666667,44"
+          Size="291,44"
           Id="Package\Execute DailySampleStatus"
           TopLeft="445.839622641509,376.820754716981" />
         <NodeLayout
-          Size="238.666666666667,44"
+          Size="239,44"
           Id="Package\Loop Through Sample Download Files\Get FileName and Calculate File Checksum and RowCount"
           TopLeft="29.1320754716981,27.4528301886792" />
         <NodeLayout
-          Size="238.666666666667,44"
+          Size="239,44"
           Id="Package\Loop Through Sample Download Files\Log the File into Audit"
           TopLeft="29.1320754716981,115.452830188679" />
         <NodeLayout
-          Size="238.666666666667,44"
+          Size="239,44"
           Id="Package\Loop Through Sample Download Files\Set LoadFailure"
           TopLeft="29.1320754716981,203.490566037736" />
         <EdgeLayout
@@ -3940,12 +3944,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
         <ContainerLayout
           HeaderHeight="43.924528301886795"
           IsExpanded="True"
-          PanelSize="304,283.333333333334"
-          Size="304,326.666666666667"
+          PanelSize="304,283"
+          Size="304,327"
           Id="Package\Loop Through Sample Download Files"
           TopLeft="5.5,191.311320754717" />
         <NodeLayout
-          Size="290.666666666667,44"
+          Size="291,44"
           Id="Package\Send Mail Task"
           TopLeft="445.839622641509,559.985324960503" />
         <EdgeLayout
@@ -4063,9 +4067,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <AnnotationLayout
-          Text="Name: Sample Reporting - LoadSelectionReport.dtsx&#xA;Desc: Load Selection Report&#xA;&#xA;          Version   Date             Author                 Description&#xA;LIVE   1.1         2017-10-16    Chris Ledger        Bug 14242: Log Files from Download Folder Into Audit so they will be included in Loaded Sheet RELEASED LIVE: CL 2017-10-17&#xA;LIVE   1.2         2018-11-13    Chris Ledger        Make SMTPServer property a variable and move to package configuration file.&#xA;LIVE   1.3         2019-04-24    BKING                BUG 15326 - Add new field to daily load and selection report - misaligned records&#xA;LIVE   1.4         2020-01-08    BKING                BUG 16783 - Add new tab CaseIDNotOuput, not output as no Invite Matrix match on output&#xA;LIVE   1.5         2021-03-31    BKING                UPDATED EMAIL LIST&#xA;LIVE   1.6         2021-07-01    BKING                REMOVE CASES NOT OUTPUT TAB - REPORTED VIA EMAIL&#xD;&#xA;LIVE   1.7         2022-03-24    Eddie Thomas     TASK 839 -  Added new column EventsTooYoung"
+          Text="Name: Sample Reporting - LoadSelectionReport.dtsx&#xA;Desc: Load Selection Report&#xA;&#xA;          Version   Date             Author                 Description&#xA;LIVE   1.1         2017-10-16    Chris Ledger        Bug 14242: Log Files from Download Folder Into Audit so they will be included in Loaded Sheet RELEASED LIVE: CL 2017-10-17&#xA;LIVE   1.2         2018-11-13    Chris Ledger        Make SMTPServer property a variable and move to package configuration file.&#xA;LIVE   1.3         2019-04-24    BKING                BUG 15326 - Add new field to daily load and selection report - misaligned records&#xA;LIVE   1.4         2020-01-08    BKING                BUG 16783 - Add new tab CaseIDNotOuput, not output as no Invite Matrix match on output&#xA;LIVE   1.5         2021-03-31    BKING                UPDATED EMAIL LIST&#xA;LIVE   1.6         2021-07-01    BKING                REMOVE CASES NOT OUTPUT TAB - REPORTED VIA EMAIL&#xA;LIVE   1.7         2022-03-24    Eddie Thomas     TASK 839 -  Added new column EventsTooYoung&#xD;&#xA;BK LOAD TEST V1"
           ParentId="Package"
-          Size="908,173.333333333334"
+          Size="908,187"
           Id="e81c6e1b-9042-4c9e-929b-8ac40969805a"
           TopLeft="15.5943396226415,2.5">
           <AnnotationLayout.FontInfo>
@@ -4419,19 +4423,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\Uncoded OP">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task\Selected data">
     <Properties>
       <Property>
@@ -4458,7 +4449,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\Uncoded VINS">
+    design-time-name="Package\Data Flow Task\Selected OP">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4471,7 +4462,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\Selected OP">
+    design-time-name="Package\Data Flow Task\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4497,19 +4488,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\Uncoded data">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task\Uncoded VINs">
     <Properties>
       <Property>
@@ -4523,7 +4501,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\BounceBack">
+    design-time-name="Package\Data Flow Task\Uncoded data">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4536,7 +4514,33 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Source">
+    design-time-name="Package\Data Flow Task\Uncoded VINS">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Uncoded OP">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\BounceBack">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
