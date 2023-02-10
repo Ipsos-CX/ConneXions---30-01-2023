@@ -2,4 +2,9 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/JLR-Email/JLR-Email.dbmdl
+*.suo
+*.user
+bin/
+obj/
+Debug/
+Release/
