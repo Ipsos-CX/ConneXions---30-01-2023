@@ -8,13 +8,13 @@
   DTS:DTSID="{199A3C7D-F663-4448-979B-46091E5937DE}"
   DTS:EnableConfig="True"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="14.0.3002.113"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
   DTS:LocaleID="2057"
   DTS:ObjectName="Sample Process - Standardisation"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="50"
-  DTS:VersionGUID="{F2D5CE4F-F9A6-4693-B02E-A77EEFC27D60}">
+  DTS:VersionBuild="51"
+  DTS:VersionGUID="{4249FD07-6C44-47D6-A1CA-F2BA942253A6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -47,6 +47,8 @@
       DTS:ObjectName="Sample.OLEDB.AUTHENTICATION">
       <DTS:ObjectData>
         <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=Sample;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -57,6 +59,8 @@
       DTS:ObjectName="SampleReporting.OLEDB.AUTHENTICATION">
       <DTS:ObjectData>
         <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=SampleReporting;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -67,6 +71,8 @@
       DTS:ObjectName="Sample_Audit.OLEDB.AUTHENTICATION">
       <DTS:ObjectData>
         <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=Sample_Audit;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -77,6 +83,8 @@
       DTS:ObjectName="Sample_Errors.OLEDB.AUTHENTICATION">
       <DTS:ObjectData>
         <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=Sample_Errors;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -87,6 +95,8 @@
       DTS:ObjectName="Sample_ETL.OLEDB.AUTHENTICATION">
       <DTS:ObjectData>
         <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=Sample_ETL;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -97,6 +107,8 @@
       DTS:ObjectName="WebsiteReporting.OLEDB.AUTHENTICATION">
       <DTS:ObjectData>
         <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=1005797-CXNSQLS;Initial Catalog=WebsiteReporting;Provider=SQLNCLI11.1;Integrated Security=SSPI;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1970,9 +1982,9 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <AnnotationLayout
-          Text="Name: Sample Process - Standardisation.dtsx&#xA;Desc: Standardisation SPs &#xA;&#xA;          Version    Date             Author              Description&#xA;LIVE   V1.1        2018-10-29    Chris Ledger      Bug 15056: Add Set IAssistance AuditItemID task.&#xA;LIVE   V1.2        2021-03-24    Chris Ledger      Task 299: Add Set General Enquiry AufitItemID task.&#xA;LIVE   V1.3        2022-03-24    Chris Ledger      Task 729: Add Standardise VehicleIdentificationNumberUsable task."
+          Text="Name: Sample Process - Standardisation.dtsx&#xA;Desc: Standardisation SPs &#xA;&#xA;          Version    Date             Author              Description&#xA;LIVE   V1.1        2018-10-29    Chris Ledger      Bug 15056: Add Set IAssistance AuditItemID task.&#xA;LIVE   V1.2        2021-03-24    Chris Ledger      Task 299: Add Set General Enquiry AufitItemID task.&#xA;LIVE   V1.3        2022-03-24    Chris Ledger      Task 729: Add Standardise VehicleIdentificationNumberUsable task.&#xD;&#xA;BK LOAD TEST V1"
           ParentId="Package"
-          Size="604,119"
+          Size="604,133"
           Id="f6ebf00b-148c-49a0-8189-598e08314816"
           TopLeft="19.3679245283018,2.5">
           <AnnotationLayout.FontInfo>
