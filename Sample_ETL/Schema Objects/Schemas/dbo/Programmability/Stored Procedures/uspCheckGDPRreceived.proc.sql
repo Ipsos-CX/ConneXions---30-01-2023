@@ -8,6 +8,7 @@ SET NOCOUNT ON
 			
 	Version			Date			Developer			Comment
 	1.0				24/07/2018		Ben King			Creation BUG 14840
+	checked out
 */
 
 DECLARE @ErrorNumber INT
