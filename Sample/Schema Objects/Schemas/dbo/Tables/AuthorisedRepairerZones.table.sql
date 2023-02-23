@@ -4,5 +4,5 @@
 	AuthorisedRepairerZone			[NVARCHAR](255) NOT NULL,
 	AuthorisedRepairerZoneCode		[NVARCHAR](20) NOT NULL,
 	CountryID						[INT] NOT NULL, 
-    SubNationalRegion				[NVARCHAR](25) NULL
+    SubNationalRegion				[NVARCHAR](2500) NULL
 )
