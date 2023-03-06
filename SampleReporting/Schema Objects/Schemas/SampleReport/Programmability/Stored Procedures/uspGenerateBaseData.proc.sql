@@ -124,7 +124,8 @@ AS
 	LIVE		1.93		05/10/2022			Eddie Thomas		TASK 926 - Adding ModelCode & ModelDescription
 	LIVE		1.94		14/10/2022			Eddie Thomas		TASK 1064 - Adding LeadVehSaleType & ModelVariant
 	LIVE		1.95		28/10/2022			Ben King			TASK 1053 - 19616 - Sample Health - clear out reasons for non selections for duplicates
-	CL CHECKED OUT
+	
+	CHECKED OUT	CL			06/03/2023
 	*/
 
 	-- TEST PARAMETERS
