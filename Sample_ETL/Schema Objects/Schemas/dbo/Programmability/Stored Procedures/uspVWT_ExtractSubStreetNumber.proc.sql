@@ -19,7 +19,7 @@ AS
 	
 	Version			Date			Developer			Comment
 	1.0				$(ReleaseDate)		Simon Peacock		Created from [Prophet-ETL].dbo.uspSTANDARDISEADDRESS_ExtractSubStreetNumber
-
+	bk 2222
 */
 
 SET NOCOUNT ON
