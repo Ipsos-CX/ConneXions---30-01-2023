@@ -1,4 +1,7 @@
-﻿CREATE TABLE [DealerManagement].[Franchises_Load]
+﻿/*
+STATUS: CHECKED OUT CL 2023-03-17
+*/
+CREATE TABLE [DealerManagement].[Franchises_Load]
 (
 [IP_ID]								INT IDENTITY(1,1) NOT NULL,
 [IP_AuditItemID]					INT NULL,
