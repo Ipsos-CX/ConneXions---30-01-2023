@@ -1,5 +1,5 @@
 ﻿/*
-STATUS: CHECKED OUT CL 2023-03-17
+STATUS: CHECKED IN CL 2023-03-17
 */
 CREATE TABLE [DealerManagement].[Franchises_Load]
 (
