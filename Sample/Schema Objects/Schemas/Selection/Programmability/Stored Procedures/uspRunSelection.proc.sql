@@ -3,9 +3,6 @@ CREATE PROCEDURE [Selection].[uspRunSelection]
 	@SelectionRequirementID [dbo].[RequirementID]
 AS
 /*
-
-STATUS: CHECKED OUT – BK <2023-03-17> OR CHECKED IN – BK <2023-03-17>
-
 		Purpose: main sample selection run
 		
 		Version			Date			Developer			Comment
