@@ -24,8 +24,6 @@ AS
 		Version		Date				Developer			Comment
 		1.0			26/08/2015			Chris Ledger		BUG 11658 - Addition of Roadside (major change for regions)
 		1.1			11/10/2016			Ben King			Regional Report Fix. Can now run any Market by itself and Regional report associated will run.
-
-CHECKED OUT			06/04/2023			Chris Ledger
 	*/
 	
 	BEGIN TRY
